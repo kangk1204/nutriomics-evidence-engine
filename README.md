@@ -121,3 +121,9 @@ python scripts/record_validation.py --manifest artifacts/ctd-2026-09-29/manifest
 ```
 
 The summary derives test counts from JUnit and graph counts from SQLite. Optional `--drugprot-evaluation` records a completed real corpus evaluation; without it, corpus/model evaluation is explicitly unrecorded.
+
+### Separate operational retry
+
+`scripts/retry_literature_oom.py` performs one frozen, fixed-batch1 retry of exactly the eight CUDA OOM records from the original1,198-document literature run. The actual authorized RTX5060Ti run generated8/8 replies with0 retry errors; source/code bytes and all model-file hashes were verified unchanged before and after execution. `docs/literature/oom_retry_protocol.json` records the original response SHA, selected PMIDs, exact prompts, model commit, generation settings and separate output hashes. Raw responses remain in ignored `data/literature_oom_retry_batch1_v1`.
+
+This is an operational generation-success check. The original194 replies+8 failures+996 abstentions, strict0 relations and separate13 review-pending candidates remain unchanged. The retry was not scored against relation gold and does not establish extraction accuracy, semantic validity, output parity, binding or clinical efficacy.
