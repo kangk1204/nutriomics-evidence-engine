@@ -1,0 +1,63 @@
+{
+  "reviewer": "Codex textual-support audit; not clinical-expert adjudication or a domain gold standard",
+  "frozen_rule_candidates_unchanged": true,
+  "candidate_rows": [
+    {
+      "pmid": "16330143",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/16330143/",
+      "candidate_relation": "INHIBITOR",
+      "subject_candidate_ids": [
+        "MESH:D000804"
+      ],
+      "object_candidate_ids": [
+        "NCBIGene:1636"
+      ],
+      "source_text_sha256": "003e897a68a793160c2cf815f01f1e2dd4c98cf597a26c91a039b1bc70794741",
+      "status": "unsupported_direction_on_text_inspection",
+      "reason": "The stated inhibitor is a tetramer. Angiotensin II is a reduced product of ACE activity, not the inhibitor identified by this rule tuple."
+    },
+    {
+      "pmid": "20373696",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/20373696/",
+      "candidate_relation": "ACTIVATOR",
+      "subject_candidate_ids": [
+        "MESH:D009569"
+      ],
+      "object_candidate_ids": [
+        "NCBIGene:3630"
+      ],
+      "source_text_sha256": "2a8b9696cff56bdb3e5f68f559c174b49e369e81eb421a235b6a238fc87d1a60",
+      "status": "unsupported_direction_on_text_inspection",
+      "reason": "The sentence lists possible activation of nitric oxide and improved insulin resistance; it does not state that nitric oxide activates the insulin protein."
+    },
+    {
+      "pmid": "25672499",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/25672499/",
+      "candidate_relation": "ACTIVATOR",
+      "subject_candidate_ids": [
+        "MESH:D010100"
+      ],
+      "object_candidate_ids": [
+        "NCBIGene:6648"
+      ],
+      "source_text_sha256": "7a196cb0365ea0fffea776f79defb6fb5e673906e48fefadadd4a09cd9d70c90",
+      "status": "unsupported_direction_on_text_inspection",
+      "reason": "The stated activation concerns HIF in an oxygen-sensing discussion; it does not state oxygen activates SOD2."
+    },
+    {
+      "pmid": "42225253",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42225253/",
+      "candidate_relation": "ACTIVATOR",
+      "subject_candidate_ids": [
+        "MESH:D000450"
+      ],
+      "object_candidate_ids": [
+        "NCBIGene:5972"
+      ],
+      "source_text_sha256": "308c21daaeed976314bda357d8311f5ce7b4afd56f42d11ff3e2acdac642628a",
+      "status": "unsupported_direction_on_text_inspection",
+      "reason": "Immune activation and renin-angiotensin-aldosterone system dysregulation are mentioned; no aldosterone-activates-renin relation is explicitly stated."
+    }
+  ],
+  "eligible_for_curated_or_direct_binding_promotion": 0
+}

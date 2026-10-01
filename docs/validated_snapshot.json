@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-01T07:55:17.955733+00:00",
+  "status": "actual_run_artifact_counts",
+  "ctd": {
+    "CTD_chem_gene_ixns.csv.gz": {
+      "sha256": "84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a",
+      "bytes": 43366575,
+      "rows": 3171202,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:22:17 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "a23385428857aa8134fcac13431ec02fb4cb710ddf7f00cb0102f374859c1463"
+    },
+    "CTD_curated_chemicals_diseases.csv.gz": {
+      "sha256": "bf0d0807ce3192d8618a937bfbf126b7216df1ed9af2108ba9fda8aa99c5483a",
+      "bytes": 2196651,
+      "rows": 109737,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:21:42 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "75f9bf4965b7bc637492d7c2d64cb6b4eb103c02996758238884aa1c171834d8"
+    },
+    "CTD_curated_genes_diseases.csv.gz": {
+      "sha256": "a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa",
+      "bytes": 569524,
+      "rows": 34315,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:24:49 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "dd4dcaf525bc404f7b521c6f09fd5cc0948e1c292dbafc3acbfc67e94f986c78"
+    },
+    "CTD_chemicals.csv.gz": {
+      "sha256": "765ac006d7f12d2e79c3ec92061960292f3cec575c4242825f3003d68b441f7e",
+      "bytes": 10537824,
+      "rows": 179669,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:07:01 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "8918f2185ba6cd3611e31904f77555efe320f0bffe7f7694dd4797d5b7aac10b"
+    },
+    "CTD_diseases.csv.gz": {
+      "sha256": "3312a1645132e6869de9becd3b5da197db3f996a4623ace3bd653dcc230327ed",
+      "bytes": 1799805,
+      "rows": 13323,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:07:12 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "eef421cfc6e30beb36191bedb7aaf24e568c63bd17ca0b4ff83b7359e2526aab"
+    },
+    "CTD_genes_pathways.csv.gz": {
+      "sha256": "34734b2c1a0cbf9402d93279574dee3d87a42e321e1abb11767972c7a587b45b",
+      "bytes": 1095186,
+      "rows": 135792,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:16:00 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "a1f7abddc866cc321137cead90ebc2a15e8c758ac62cfd50a52515be3d5852e5"
+    },
+    "CTD_pathways.csv.gz": {
+      "sha256": "775cf8e2467174f7b58e93f850a8d45d29ce6f3d6b8a26cca868771a3525cca1",
+      "bytes": 42885,
+      "rows": 2567,
+      "version": "2026-09-29",
+      "report_created": "Tue Sep 29 13:06:48 EDT 2026",
+      "gzip_crc": "passed",
+      "parquet_sha256": "8213a5b60e75e842706c676fd00432cb6d9f16ea4d33747dcd9cebface64e456"
+    }
+  },
+  "clinical_validation_performed": false,
+  "patient_multiomics_fusion_performed": false,
+  "structure_name_matches_promoted_to_exact": 0,
+  "direct_binding_labels_from_CTD": 0,
+  "graph": {
+    "integrity": "ok",
+    "errors": [],
+    "tables": {
+      "source": 12,
+      "node": 8120,
+      "edge": 426922,
+      "citation": 66833,
+      "edge_source": 426922,
+      "identifier_mapping": 1659,
+      "measurement": 369408
+    },
+    "relations": {
+      "annotated_to_pathway:curated": 4293,
+      "chemical_disease_marker_mechanism:curated": 508,
+      "chemical_disease_therapeutic:curated": 486,
+      "chemical_gene_influence:curated": 51982,
+      "contains_nutrient:observed_composition": 369408,
+      "gene_disease_marker_mechanism:curated": 214,
+      "gene_disease_therapeutic:curated": 31
+    },
+    "unresolved_structure_nodes": 893,
+    "database_sha256": "7e9cc6412885ad81543b37f8928538267f49bfad8858e4f7a1e56dba75dc61d4",
+    "node_kinds": {
+      "chemical": 893,
+      "disease": 2,
+      "food": 5845,
+      "gene": 217,
+      "nutrient": 237,
+      "pathway": 926
+    },
+    "measurement_status": {
+      "derived": 355564,
+      "invalid_source_value": 10,
+      "measured": 11195,
+      "measured_zero": 2586,
+      "missing": 53
+    }
+  },
+  "ctd_all_files_audit": {
+    "schema_version": 1,
+    "created_at": "2026-10-01T07:27:17.151940+00:00",
+    "files": {
+      "CTD_Phenotype-Disease_biological_process_associations.csv.gz": {
+        "name": "CTD_Phenotype-Disease_biological_process_associations.csv.gz",
+        "sha256": "48bf4aa04ef408f6167661e7b80ad4fc476ec7d0daec099de9914d816a69e3ab",
+        "bytes": 51067254,
+        "rows": 2930099,
+        "fields": [
+          "GOName",
+          "GOID",
+          "DiseaseName",
+          "DiseaseID",
+          "InferenceChemicalQty",
+          "InferenceChemicalNames",
+          "InferenceGeneQty",
+          "InferenceGeneSymbols"
+        ],
+        "report_created": "Tue Sep 29 15:21:21 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_Phenotype-Disease_cellular_component_associations.csv.gz": {
+        "name": "CTD_Phenotype-Disease_cellular_component_associations.csv.gz",
+        "sha256": "a0b4d8ec3ecd5d796432f27ae0d322769656db9dadc0f6cf519c2ff4bad55e57",
+        "bytes": 3159611,
+        "rows": 177962,
+        "fields": [
+          "GOName",
+          "GOID",
+          "DiseaseName",
+          "DiseaseID",
+          "InferenceChemicalQty",
+          "InferenceChemicalNames",
+          "InferenceGeneQty",
+          "InferenceGeneSymbols"
+        ],
+        "report_created": "Tue Sep 29 15:23:06 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_Phenotype-Disease_molecular_function_associations.csv.gz": {
+        "name": "CTD_Phenotype-Disease_molecular_function_associations.csv.gz",
+        "sha256": "d5816cc5e796d30152728cb7d4a5aa53c84b0cc649d162facf6f7902b033dbf3",
+        "bytes": 5559009,
+        "rows": 318574,
+        "fields": [
+          "GOName",
+          "GOID",
+          "DiseaseName",
+          "DiseaseID",
+          "InferenceChemicalQty",
+          "InferenceChemicalNames",
+          "InferenceGeneQty",
+          "InferenceGeneSymbols"
+        ],
+        "report_created": "Tue Sep 29 15:23:26 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_anatomy.csv.gz": {
+        "name": "CTD_anatomy.csv.gz",
+        "sha256": "a9418ed9262159aca6f7d6b10296e8d4d7a58db38af126bf8c408ec60ded499d",
+        "bytes": 327802,
+        "rows": 1856,
+        "fields": [
+          "AnatomyName",
+          "AnatomyID",
+          "Definition",
+          "AltAnatomyIDs",
+          "ParentIDs",
+          "TreeNumbers",
+          "ParentTreeNumbers",
+          "Synonyms",
+          "ExternalSynonyms"
+        ],
+        "report_created": "Tue Sep 29 15:23:32 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_chem_conc.csv.gz": {
+        "name": "CTD_chem_conc.csv.gz",
+        "sha256": "3927e11062114109e5e8cd3a818b156e5e388c8cf91090e75781a31aaec6de6a",
+        "bytes": 267192,
+        "rows": 11305,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CASRN",
+          "Concentration",
+          "VivoVitro",
+          "ExposureRouteName",
+          "Organism",
+          "OrganismID",
+          "AnatomyTerms",
+          "DirectEvidence",
+          "DiseaseName",
+          "DiseaseID",
+          "Reference"
+        ],
+        "report_created": "Tue Sep 29 15:23:33 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_chem_gene_ixn_types.csv": {
+        "name": "CTD_chem_gene_ixn_types.csv",
+        "sha256": "acd7197e90f9186c07ddd2810682893bba2624407f90b6d73880c91223616afb",
+        "bytes": 4730,
+        "rows": 54,
+        "fields": [
+          "TypeName",
+          "Code",
+          "Description",
+          "ParentCode"
+        ],
+        "report_created": "Mon Feb 12 14:09:00 EST 2024",
+        "csv_schema_width": "passed",
+        "gzip_crc": "not_applicable",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_chem_gene_ixns.csv.gz": {
+        "sha256": "84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a",
+        "bytes": 43366575,
+        "rows": 3171202,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "GeneSymbol",
+          "GeneID",
+          "GeneForms",
+          "Organism",
+          "OrganismID",
+          "Interaction",
+          "InteractionActions",
+          "PubMedIDs"
+        ],
+        "report_created": "Tue Sep 29 13:22:17 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_chem_go_enriched.csv.gz": {
+        "name": "CTD_chem_go_enriched.csv.gz",
+        "sha256": "caff5b28ad41159918883a7e9f454a44dda05668e5822e2d28a2ba670753a6f6",
+        "bytes": 144925672,
+        "rows": 6513267,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "Ontology",
+          "GOTermName",
+          "GOTermID",
+          "HighestGOLevel",
+          "PValue",
+          "CorrectedPValue",
+          "TargetMatchQty",
+          "TargetTotalQty",
+          "BackgroundMatchQty",
+          "BackgroundTotalQty"
+        ],
+        "report_created": "Tue Sep 29 13:10:49 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_chem_pathways_enriched.csv.gz": {
+        "name": "CTD_chem_pathways_enriched.csv.gz",
+        "sha256": "d63eb8952ffd12aa3e6f7c9a47b7a9c54a08bb0425ff06ef385314d6671040e0",
+        "bytes": 41605017,
+        "rows": 1709866,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "PathwayName",
+          "PathwayID",
+          "PValue",
+          "CorrectedPValue",
+          "TargetMatchQty",
+          "TargetTotalQty",
+          "BackgroundMatchQty",
+          "BackgroundTotalQty"
+        ],
+        "report_created": "Tue Sep 29 13:14:51 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_chemicals.csv.gz": {
+        "sha256": "765ac006d7f12d2e79c3ec92061960292f3cec575c4242825f3003d68b441f7e",
+        "bytes": 10537824,
+        "rows": 179669,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "PubChemCID",
+          "PubChemSID",
+          "DTXSID",
+          "InChIKey",
+          "Definition",
+          "ParentIDs",
+          "TreeNumbers",
+          "ParentTreeNumbers",
+          "MESHSynonyms",
+          "CTDCuratedSynonyms"
+        ],
+        "report_created": "Tue Sep 29 13:07:01 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_chemicals_diseases.csv.gz": {
+        "name": "CTD_chemicals_diseases.csv.gz",
+        "sha256": "95fdff4ae428f8802903d9c9fc16e97a01548c0ba2dd84d710cefdb2b3621dfe",
+        "bytes": 163603578,
+        "rows": 9903450,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "DiseaseName",
+          "DiseaseID",
+          "DirectEvidence",
+          "InferenceGeneSymbol",
+          "InferenceScore",
+          "OmimIDs",
+          "PubMedIDs"
+        ],
+        "report_created": "Tue Sep 29 13:17:31 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_curated_chemicals_diseases.csv.gz": {
+        "sha256": "bf0d0807ce3192d8618a937bfbf126b7216df1ed9af2108ba9fda8aa99c5483a",
+        "bytes": 2196651,
+        "rows": 109737,
+        "fields": [
+          "ChemicalName",
+          "ChemicalID",
+          "CasRN",
+          "DiseaseName",
+          "DiseaseID",
+          "DirectEvidence",
+          "PubMedIDs"
+        ],
+        "report_created": "Tue Sep 29 13:21:42 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_curated_genes_diseases.csv.gz": {
+        "sha256": "a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa",
+        "bytes": 569524,
+        "rows": 34315,
+        "fields": [
+          "GeneSymbol",
+          "GeneID",
+          "DiseaseName",
+          "DiseaseID",
+          "DirectEvidence",
+          "OmimIDs",
+          "PubMedIDs"
+        ],
+        "report_created": "Tue Sep 29 13:24:49 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_diseases.csv.gz": {
+        "sha256": "3312a1645132e6869de9becd3b5da197db3f996a4623ace3bd653dcc230327ed",
+        "bytes": 1799805,
+        "rows": 13323,
+        "fields": [
+          "DiseaseName",
+          "DiseaseID",
+          "AltDiseaseIDs",
+          "Definition",
+          "ParentIDs",
+          "TreeNumbers",
+          "ParentTreeNumbers",
+          "Synonyms",
+          "SlimMappings"
+        ],
+        "report_created": "Tue Sep 29 13:07:12 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_diseases_pathways.csv.gz": {
+        "name": "CTD_diseases_pathways.csv.gz",
+        "sha256": "e6107236dae6c0c5fe1a79859f3aa0d953b9f8cb49b8b02443f7e556d20dd15d",
+        "bytes": 6399053,
+        "rows": 617186,
+        "fields": [
+          "DiseaseName",
+          "DiseaseID",
+          "PathwayName",
+          "PathwayID",
+          "InferenceGeneSymbol"
+        ],
+        "report_created": "Tue Sep 29 13:15:52 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_exposure_events.csv.gz": {
+        "name": "CTD_exposure_events.csv.gz",
+        "sha256": "e16a7a3be8b15ddee389fcd807000e7f3fcdc8a925e4870896cafc541e920388",
+        "bytes": 4807671,
+        "rows": 248595,
+        "fields": [
+          "exposurestressorname",
+          "exposurestressorid",
+          "stressorsourcecategory",
+          "stressorsourcedetails",
+          "numberofstressorsamples",
+          "stressornotes",
+          "numberofreceptors",
+          "receptors",
+          "receptornotes",
+          "smokingstatus",
+          "age",
+          "ageunitsofmeasurement",
+          "agequalifier",
+          "sex",
+          "race",
+          "methods",
+          "detectionlimit",
+          "detectionlimituom",
+          "detectionfrequency",
+          "medium",
+          "exposuremarker",
+          "exposuremarkerid",
+          "markerlevel",
+          "markerunitsofmeasurement",
+          "markermeasurementstatistic",
+          "assaynotes",
+          "studycountries",
+          "stateorprovince",
+          "citytownregionarea",
+          "exposureeventnotes",
+          "outcomerelationship",
+          "diseasename",
+          "diseaseid",
+          "phenotypename",
+          "phenotypeid",
+          "phenotypeactiondegreetype",
+          "anatomy",
+          "exposureoutcomenotes",
+          "reference",
+          "associatedstudytitles",
+          "enrollmentstartyear",
+          "enrollmentendyear",
+          "studyfactors",
+          "_trailing"
+        ],
+        "report_created": "Tue Sep 29 15:15:27 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_exposure_studies.csv.gz": {
+        "name": "CTD_exposure_studies.csv.gz",
+        "sha256": "07f53bfbf3ce77dafbe06fb05e8e2b087961c10b53f442b3c01d63ea00bcd481",
+        "bytes": 584189,
+        "rows": 3769,
+        "fields": [
+          "reference",
+          "studyfactors",
+          "exposurestressors",
+          "receptors",
+          "studycountries",
+          "mediums",
+          "exposuremarkers",
+          "diseases",
+          "phenotypes",
+          "authorsummary"
+        ],
+        "report_created": "Tue Sep 29 15:15:38 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_genes.csv.gz": {
+        "name": "CTD_genes.csv.gz",
+        "sha256": "a4be49762256126009c6b0118445ebbc96961ede5a2a0435455704efe4e10d07",
+        "bytes": 122852967,
+        "rows": 645817,
+        "fields": [
+          "GeneSymbol",
+          "GeneName",
+          "GeneID",
+          "AltGeneIDs",
+          "Synonyms",
+          "BioGRIDIDs",
+          "PharmGKBIDs",
+          "UniProtIDs"
+        ],
+        "report_created": "Tue Sep 29 13:08:06 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      },
+      "CTD_genes_pathways.csv.gz": {
+        "sha256": "34734b2c1a0cbf9402d93279574dee3d87a42e321e1abb11767972c7a587b45b",
+        "bytes": 1095186,
+        "rows": 135792,
+        "fields": [
+          "GeneSymbol",
+          "GeneID",
+          "PathwayName",
+          "PathwayID"
+        ],
+        "report_created": "Tue Sep 29 13:16:00 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_pathways.csv.gz": {
+        "sha256": "775cf8e2467174f7b58e93f850a8d45d29ce6f3d6b8a26cca868771a3525cca1",
+        "bytes": 42885,
+        "rows": 2567,
+        "fields": [
+          "PathwayName",
+          "PathwayID"
+        ],
+        "report_created": "Tue Sep 29 13:06:48 EDT 2026",
+        "gzip_crc": "passed",
+        "csv_schema_width": "passed",
+        "validation": "prior_complete_ingestion_with_current_source_hash_verified"
+      },
+      "CTD_pheno_term_ixns.csv.gz": {
+        "name": "CTD_pheno_term_ixns.csv.gz",
+        "sha256": "296cb987dcc91b8eda97ca4a582e999cc5607fdf84966280b09aae2462f072e2",
+        "bytes": 24344877,
+        "rows": 481106,
+        "fields": [
+          "chemicalname",
+          "chemicalid",
+          "casrn",
+          "phenotypename",
+          "phenotypeid",
+          "comentionedterms",
+          "organism",
+          "organismid",
+          "interaction",
+          "interactionactions",
+          "anatomyterms",
+          "inferencegenesymbols",
+          "pubmedids",
+          "_trailing"
+        ],
+        "report_created": "Tue Sep 29 15:18:11 EDT 2026",
+        "csv_schema_width": "passed",
+        "gzip_crc": "passed",
+        "validation": "complete_stream_to_eof"
+      }
+    },
+    "errors": [],
+    "excluded_incomplete_files": "*.crdownload are not read",
+    "expected_files": 21,
+    "validated_files": 21,
+    "complete": true
+  },
+  "tests": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_sha256": "2fb2179799b8b6336aac511a93eb3c1403aa0f409155adf90a20899ccb7089e1",
+    "passed": 32
+  },
+  "drugprot": {
+    "real_corpus_evaluation_recorded": false,
+    "qwen_inference_recorded": false
+  }
+}

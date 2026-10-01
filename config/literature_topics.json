@@ -1,0 +1,8 @@
+{
+  "HTN": "(hypertension[MeSH Terms] OR blood pressure[Title/Abstract]) AND (DNA methylation[Title/Abstract] OR epigenetic[Title/Abstract] OR nutrigenomics[Title/Abstract] OR nutritional genomics[Title/Abstract])",
+  "DASH": "(Dietary Approaches to Stop Hypertension[Title/Abstract] OR DASH diet[Title/Abstract]) AND (hypertension[MeSH Terms] OR blood pressure[Title/Abstract])",
+  "omega3": "(Fatty Acids, Omega-3[MeSH Terms] OR omega-3[Title/Abstract] OR eicosapentaenoic acid[Title/Abstract] OR docosahexaenoic acid[Title/Abstract]) AND (hypertension[MeSH Terms] OR blood pressure[Title/Abstract])",
+  "vitD": "(Vitamin D[MeSH Terms] OR cholecalciferol[Title/Abstract] OR ergocalciferol[Title/Abstract] OR calcitriol[Title/Abstract]) AND (hypertension[MeSH Terms] OR blood pressure[Title/Abstract])",
+  "caffeine": "(Caffeine[MeSH Terms] OR caffeine[Title/Abstract]) AND (hypertension[MeSH Terms] OR blood pressure[Title/Abstract])",
+  "cocoa_flavanol": "(cocoa[Title/Abstract] OR cacao[Title/Abstract] OR flavanol*[Title/Abstract]) AND (hypertension[MeSH Terms] OR blood pressure[Title/Abstract])"
+}

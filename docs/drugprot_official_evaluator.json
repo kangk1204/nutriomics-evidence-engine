@@ -1,0 +1,277 @@
+{
+  "status": "actual_rule_official_execution_completed_with_reported_parity_difference",
+  "checked_utc": "2026-10-01T09:51:23.657064+00:00",
+  "official_evaluator": {
+    "url": "https://github.com/tonifuc3m/drugprot-evaluation-library",
+    "commit": "6b939554de38dbb69c462cc0d45c1cb17c3eaf57",
+    "license": "MIT",
+    "files": {
+      "src/main.py": {
+        "git_blob_sha256": "23618a0c83c2916db2115c0cbf7c1084bc149dd04c48fadae6f4fddff5fc4b96",
+        "working_tree_sha256": "f0d880057e5af61f39d46e281e7a2ee495ae8b5a151371c574f8cd05b9fd8be3"
+      },
+      "src/utils.py": {
+        "git_blob_sha256": "fd6cc42a35005720f22b890a4fdeed54bea2dd8396e36edad2eccf1140e9ae1b",
+        "working_tree_sha256": "80fac5fad66a142cf3acc221fcfe14d386c7fb1824cc6529dd7dcd44c5f2c143"
+      },
+      "src/compute_metrics.py": {
+        "git_blob_sha256": "c15fdccc6d96435813b32ce6eeda91a3ac16bb4b3a5bb1eff9425fe62c9e8ac3",
+        "working_tree_sha256": "15fac2eb2e13c8372798232381fc5afb4c3946bdada4f85cc1cdcfdb64874a74"
+      },
+      "LICENSE": {
+        "git_blob_sha256": "94f14b3e1c664e01efb64cccc1fafe647ba35ba7849bdc5d9849a10fedf0813c",
+        "working_tree_sha256": "d61adf414dfad19af228a4e5244092193355287d6ededc8d3c36094be04e0985"
+      },
+      "README.md": {
+        "git_blob_sha256": "d6ae8808bd59934a42fc822948ce12bf006c2c0f00f18a2e528ff5b958833af9",
+        "working_tree_sha256": "60dc7b92815770eed2a3107342f361b123fc28900122fd291192a70da566fc14"
+      },
+      "requirements.txt": {
+        "git_blob_sha256": "edce0dff6a598f9ad2322cccf7c7ca338c91a7e4e7a365cbcf21521bf3c19717",
+        "working_tree_sha256": "e26e98c03583deea3b5468d6ed2669c426e4178f98ef410d0a83d9665fe94e9e"
+      }
+    }
+  },
+  "official_commit_date": "2022-01-04T12:52:10+01:00",
+  "license_copyright": "MIT; Copyright (c) 2021 Antonio Miranda-Escalada; preserve license notice on redistribution",
+  "official_readme_environment": "Python 3.8; requirements.txt pinned numpy1.20.2/pandas1.2.4/scikit-learn0.24.2",
+  "actual_rule_evaluation": {
+    "started_utc": "2026-10-01T09:48:56.675694+00:00",
+    "official_source": {
+      "url": "https://github.com/tonifuc3m/drugprot-evaluation-library",
+      "commit": "6b939554de38dbb69c462cc0d45c1cb17c3eaf57",
+      "license": "MIT",
+      "files": {
+        "src/main.py": {
+          "git_blob_sha256": "23618a0c83c2916db2115c0cbf7c1084bc149dd04c48fadae6f4fddff5fc4b96",
+          "working_tree_sha256": "f0d880057e5af61f39d46e281e7a2ee495ae8b5a151371c574f8cd05b9fd8be3"
+        },
+        "src/utils.py": {
+          "git_blob_sha256": "fd6cc42a35005720f22b890a4fdeed54bea2dd8396e36edad2eccf1140e9ae1b",
+          "working_tree_sha256": "80fac5fad66a142cf3acc221fcfe14d386c7fb1824cc6529dd7dcd44c5f2c143"
+        },
+        "src/compute_metrics.py": {
+          "git_blob_sha256": "c15fdccc6d96435813b32ce6eeda91a3ac16bb4b3a5bb1eff9425fe62c9e8ac3",
+          "working_tree_sha256": "15fac2eb2e13c8372798232381fc5afb4c3946bdada4f85cc1cdcfdb64874a74"
+        },
+        "LICENSE": {
+          "git_blob_sha256": "94f14b3e1c664e01efb64cccc1fafe647ba35ba7849bdc5d9849a10fedf0813c",
+          "working_tree_sha256": "d61adf414dfad19af228a4e5244092193355287d6ededc8d3c36094be04e0985"
+        },
+        "README.md": {
+          "git_blob_sha256": "d6ae8808bd59934a42fc822948ce12bf006c2c0f00f18a2e528ff5b958833af9",
+          "working_tree_sha256": "60dc7b92815770eed2a3107342f361b123fc28900122fd291192a70da566fc14"
+        },
+        "requirements.txt": {
+          "git_blob_sha256": "edce0dff6a598f9ad2322cccf7c7ca338c91a7e4e7a365cbcf21521bf3c19717",
+          "working_tree_sha256": "e26e98c03583deea3b5468d6ed2669c426e4178f98ef410d0a83d9665fe94e9e"
+        }
+      }
+    },
+    "input_files": {
+      "abstracts": {
+        "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_abstracts.tsv",
+        "sha256": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8"
+      },
+      "entities": {
+        "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_entities.tsv",
+        "sha256": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e"
+      },
+      "gold": {
+        "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_relations.tsv",
+        "sha256": "6df63c08a7e1ae50d9bf32a2c91eeec641e9b879cfd3b1a4cec15b0b2781403d"
+      },
+      "predictions": {
+        "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\rule_baseline\\relations.tsv",
+        "sha256": "695f70179cf98b4e4a1e86451b306af85c445585472ce94cfde8dbafe76cf473"
+      }
+    },
+    "immutable_copy_sha256": {
+      "abstracts": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8",
+      "entities": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e",
+      "gold": "6df63c08a7e1ae50d9bf32a2c91eeec641e9b879cfd3b1a4cec15b0b2781403d",
+      "predictions": "695f70179cf98b4e4a1e86451b306af85c445585472ce94cfde8dbafe76cf473"
+    },
+    "pmids_sha256": "5fd99bb8738d371c4946b7d909e3bb8f465f3100edfcb2171f59ccad4b4b19ae",
+    "strict_custom": {
+      "documents": 750,
+      "entities": 18858,
+      "gold_relations": 3761,
+      "predicted_relations": 143,
+      "micro": {
+        "tp": 80,
+        "fp": 63,
+        "fn": 3681,
+        "precision": 0.5594405594405595,
+        "recall": 0.02127093858016485,
+        "f1": 0.04098360655737705
+      },
+      "scope": "strict exact tuples with native, directed gold entity IDs"
+    },
+    "wrapper_sha256": "bf4bbbcc3d3585653cb80a1e167602b8b989b2a94d1690613d76307005e48946",
+    "environment": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\.venv\\Scripts\\python.exe",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1"
+    },
+    "gold_mentions_used": true,
+    "evaluation_scope": "development 750 relation extraction, not NER",
+    "source_caveat": "Upstream format_relations advances pos0 by idx (len(combs)-1); preserve this behavior",
+    "exit_code": 0,
+    "elapsed_seconds": 146.40599999998813,
+    "status": "completed",
+    "command": [
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\.venv\\Scripts\\python.exe",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\scripts\\score_official_drugprot.py",
+      "--_driver",
+      "--library",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\reference_drugprot_eval",
+      "--abstracts",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\official_rule_eval_v1\\abstracts.tsv",
+      "--entities",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\official_rule_eval_v1\\entities.tsv",
+      "--gold",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\official_rule_eval_v1\\gold.tsv",
+      "--predictions",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\official_rule_eval_v1\\predictions.tsv",
+      "--output",
+      "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\official_rule_eval_v1"
+    ],
+    "original_inputs_unchanged": true,
+    "immutable_copies_unchanged": true,
+    "official_source_unchanged": true,
+    "official_stdout_micro_rounded_3dp": {
+      "precision": 0.559,
+      "recall": 0.021,
+      "f1": 0.041
+    },
+    "official_same_matrix_full_precision": {
+      "micro": {
+        "tp": 80,
+        "fp": 63,
+        "fn": 3678,
+        "precision": 0.5594405594405595,
+        "recall": 0.021287919105907396,
+        "f1": 0.041015124327095615
+      },
+      "upstream_metric_returned_none": true,
+      "matrix_shape": [
+        13,
+        116887
+      ],
+      "capture_method": "post-call observation of the unchanged official matrices; no index repair"
+    },
+    "comparison": {
+      "exact_parity": false,
+      "custom_minus_official": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": -1.6980525742546493e-05,
+        "f1": -3.151776971856146e-05
+      },
+      "no_upstream_patches": true
+    },
+    "completed_utc": "2026-10-01T09:51:23.657064+00:00",
+    "output_sha256": {
+      "stdout.txt": "4554d815360be2a002439e87d253aa73c4e43afd3d8154939de4c98d35f2274a",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "official_exact_metrics.json": "4735885b4fe0d8a0bd1d3b5be47c812e3f520b46d7465f53c0c80b3d82905501"
+    }
+  },
+  "actual_rule_evaluation_report_sha256": "436c1fce4579d70ac0bdb628afe970358eb133c41ba8e343db7a9d3ce33f8d99",
+  "index_collision_audit": {
+    "derivation": "Independent index replay of unchanged upstream document order, native entity order and pos0 += len(combinations)-1; no evaluator repair",
+    "total_pair_combinations": 116887,
+    "nonempty_documents": 708,
+    "gold_exact_tuples": 3761,
+    "unique_upstream_gold_matrix_slots": 3758,
+    "lost_gold_count": 3,
+    "collisions": [
+      {
+        "relation": "INHIBITOR",
+        "slot": 93282,
+        "gold_tuples": [
+          {
+            "pmid": "23506741",
+            "relation": "INHIBITOR",
+            "chemical_id": "T11",
+            "gene_id": "T27"
+          },
+          {
+            "pmid": "23511016",
+            "relation": "INHIBITOR",
+            "chemical_id": "T1",
+            "gene_id": "T9"
+          }
+        ]
+      },
+      {
+        "relation": "INHIBITOR",
+        "slot": 73778,
+        "gold_tuples": [
+          {
+            "pmid": "23164921",
+            "relation": "INHIBITOR",
+            "chemical_id": "T11",
+            "gene_id": "T20"
+          },
+          {
+            "pmid": "23172777",
+            "relation": "INHIBITOR",
+            "chemical_id": "T1",
+            "gene_id": "T6"
+          }
+        ]
+      },
+      {
+        "relation": "INHIBITOR",
+        "slot": 55696,
+        "gold_tuples": [
+          {
+            "pmid": "17594192",
+            "relation": "INHIBITOR",
+            "chemical_id": "T1",
+            "gene_id": "T16"
+          },
+          {
+            "pmid": "17593236",
+            "relation": "INHIBITOR",
+            "chemical_id": "T5",
+            "gene_id": "T10"
+          }
+        ]
+      }
+    ]
+  },
+  "index_collision_audit_sha256": "d3503d8de0838b16b437cdc67d66d7749442f551438c2d53a363d82b078d8453",
+  "verification": {
+    "meaningful_local_checks": 7,
+    "passed": 7,
+    "test_cases": [
+      "native750 counts and TP80/FP63/FN3681",
+      "duplicate tuple rejection",
+      "unexpected PMID rejection",
+      "native input hash mismatch rejection",
+      "pinned source and unambiguous stdout parsing",
+      "native original files unchanged",
+      "two-document upstream boundary collision reproducer"
+    ]
+  },
+  "qwen_official_evaluation": {
+    "status": "pending_full750_merged_inference_completion",
+    "result": null,
+    "expected_wrapper_command": "python scripts/score_official_drugprot.py --predictions <completed-relations.tsv> --custom-metrics <completed-metrics.json> --output data/drugprot/official_qwen_eval_v1"
+  },
+  "interpretation": "Official pipeline scores are preserved and separately identified. Strict exact tuples preserve PMID identity. Three official gold-matrix collisions explain the actual rule recall/F1 discrepancy; no official source patch or inference changes.",
+  "source_urls": [
+    "https://github.com/tonifuc3m/drugprot-evaluation-library",
+    "https://github.com/tonifuc3m/drugprot-evaluation-library/blob/6b939554de38dbb69c462cc0d45c1cb17c3eaf57/src/utils.py",
+    "https://github.com/tonifuc3m/drugprot-evaluation-library/blob/6b939554de38dbb69c462cc0d45c1cb17c3eaf57/LICENSE",
+    "https://zenodo.org/records/5119892"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "retrieved_utc": "2026-10-01T08:24:30.163105+00:00",
+  "config_sha256": "18f1743cf5f809f076481daade099a949be1177ccfa94b8c4681fe7164f780e6",
+  "configured_annotations": 4,
+  "complete_annotations": 4,
+  "downloaded_source_files": 7,
+  "failures": [
+    {
+      "annotation_id": "21-CFR:101.74",
+      "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-E/section-101.74",
+      "error": "Official HTML source is missing its expected claim/qualifying text",
+      "rejected_response_file": "21-CFR_101.74_0_0.html.rejected",
+      "rejected_response_sha256": "193b1c919fa4edc28299beb4764273928f154ba851c06a33e405cf7a9877328c",
+      "http_status": 200
+    }
+  ],
+  "annotations_sha256": "05aea91e806356810bd671276c088b4602c798c027188fa107b41d6f50e20e1b",
+  "rights": "Official regulatory source; retain attribution and any embedded third-party terms",
+  "conditions_policy": "Full original source controls; summarized use conditions are not exhaustive",
+  "qualified_claim_policy": "Enforcement discretion is not FDA approval of a qualified claim and is not a measured health effect"
+}

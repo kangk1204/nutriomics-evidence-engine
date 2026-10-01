@@ -1,0 +1,22 @@
+{
+  "documents": 1198,
+  "qwen_eligible_documents": 202,
+  "explicit_empty_abstention_documents": 996,
+  "rule_relations": 4,
+  "dictionary_ids": {
+    "CHEMICAL": 893,
+    "GENE": 217
+  },
+  "mention_counts": {
+    "CHEMICAL": 4055,
+    "GENE": 810
+  },
+  "ambiguity_mention_count": 36,
+  "documents_with_same_sentence_candidate_pairs": 150,
+  "gold_available": false,
+  "food_domain_precision": null,
+  "ner_accuracy": null,
+  "clinical_relations_extracted": false,
+  "binding_affinity_labels": 0,
+  "scope": "Scoped lexical chemical-gene candidates in six-query PubMed corpus; rule output requires expert review; no clinical efficacy or validated NER claim"
+}

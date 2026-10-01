@@ -1,0 +1,53 @@
+{
+  "imported_at": "2026-10-01T10:31:16.373587+00:00",
+  "importer_source_sha256": "599ce0a34a038ac685cc2f69449dc8ca6b80f15c5183fa78c7380985da70c156",
+  "provider_report_generated_at": "2026-10-01T10:03:33.464405+00:00",
+  "source_report_sha256": "023fe5e1e187dd31049f508344697da0db470735388acbe6de4605348a5785a2",
+  "source_report_path": "literature_service\\runtime\\reports\\02410eff582343e59818008de87b77e9\\snapshot.json",
+  "source_report_counts": {
+    "abstract_only": 272,
+    "approved_relations": 0,
+    "changed_papers": 0,
+    "failed_runs": 1,
+    "full_text": 325,
+    "full_text_rate": 0.5443886097152428,
+    "new_papers": 597,
+    "papers_in_report": 597,
+    "papers_total": 597,
+    "relation_candidates": 1465,
+    "retracted": 0,
+    "review_decisions": 0,
+    "summarized_papers": 597
+  },
+  "papers": 597,
+  "imported_current_assertions": 1465,
+  "approved_assertions": 0,
+  "skipped_stale_assertions": 0,
+  "rules_versions": [
+    "rules-sha256:c20123d32695fb090df435ece134e7bbf121fc3a2b0500f5f6d7dd56ab3bbd70"
+  ],
+  "dictionary_versions": [
+    "hgnc-sha256:91d0ad20c34f26fb12c8cce3f80a65a6fc694f3a508040b19f6bfa29ae0d889e|nutri-topics-2026-10-01-v1|entities-sha256:6c60b64ef8cf142f22f898a48dab967de89acd741f3bef0fb57bbfe0e2089778"
+  ],
+  "scientific_accuracy": {
+    "f1": null,
+    "note": "수동 검토한 정답셋의 평가 전에는 추출 정확도를 산출하지 않습니다.",
+    "precision": null,
+    "recall": null,
+    "status": "not_evaluated"
+  },
+  "source_namespaces_automatically_merged": false,
+  "overlap": {
+    "original_collection": 1198,
+    "prototype_collection": 597,
+    "shared_pmids": 91,
+    "prototype_only_pmids": 506,
+    "union_unique_pmids": 1704
+  },
+  "deployment_receipt_sha256": "627c123725b4e4462900e8b45443b2a22d02b201defde45b11f9b22b4b285141",
+  "prototype_code_reused": "source-preserved integrations/literature_service; consumes its versioned report schema",
+  "same_pmid_not_independent_evidence": true,
+  "CTD_graph_modified": false,
+  "source_period_note": "Service selection follows its dated query; heterogeneous PubMed record dates are preserved, including updated book chapters",
+  "snapshot_database_sha256": "596fa0d69bcba782cae502c59ca2529a2f5b45af276fce5493ef293aec0fe0d3"
+}

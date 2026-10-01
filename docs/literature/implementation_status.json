@@ -1,0 +1,12 @@
+{
+  "status": "actual_local_preparation_complete; eligible202 Qwen inference pending",
+  "documents": 1198,
+  "eligible": 202,
+  "abstentions": 996,
+  "rule_candidate_relations": 4,
+  "preparation_lock_sha256": "864d5f18a7c8eeceafae356300fbd22fbb4eeb1544deaf5e707cdc1511e12be4",
+  "documents_sha256": "41696af7bbc0976706f48ed801681d2728bb675509a6db51f26c03062b76229c",
+  "partial_v1_retained": "data/literature_ctd_v1 has no lock; superseded after source-synonym audit and hash-helper correction",
+  "unit_tests": "16 passed including extraction/native span/Unicode JSONL regressions",
+  "gold_food_precision_claimed": false
+}

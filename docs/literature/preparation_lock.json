@@ -1,0 +1,20 @@
+{
+  "prepared_utc": "2026-10-01T09:06:51.793267+00:00",
+  "articles_sha256": "44a493eda64ea16984eb86517c3fa5f59fede89d0097f67f495de083c81d662d",
+  "pubmed_source_manifest_sha256": "793c90f57e880efa0c8d071f6271c3bd33bc221143bc0c5fdc32b3540ff5eb04",
+  "module_sha256": "a176083572d1fd630f3bbbf5fa46e21f41ad840be97906d34bf6560f6b16165b",
+  "expected_documents": 1198,
+  "policy": "Scoped lexical chemical-gene candidates in six-query PubMed corpus; rule output requires expert review; no clinical efficacy or validated NER claim",
+  "gene_alias_policy": "Canonical CTD symbol (case-sensitive) and gene name only; unreviewed source synonyms retained/excluded; clinical terms blocked",
+  "files": {
+    "documents.jsonl": "41696af7bbc0976706f48ed801681d2728bb675509a6db51f26c03062b76229c",
+    "dictionary.json": "846e76320b9e49c60fb579f5abc8f6f9fec41cf2b201079e4c9ed935a5463a95",
+    "dictionary_exclusions.json": "cf74cd10f1ef317907c0465435853804a024e94f4e118e3948eeaae78296e4f2",
+    "rule_relations.json": "b18fd5b7ea8e336f9824ebfde2345f335f7f419de32ec99f7b2b841f434a3f10",
+    "rule_relations.tsv": "4990147cf07a1dbe68d4c6419ccfb0a735c32cb7ee5bb99a065df6e75ddae348",
+    "eligibility_ledger.json": "639b725e4912ff256b479a097a1d018b934b82cc65633b6c9bc6d56176b730e0",
+    "preparation_summary.json": "bf68a9c43dbbe7e5b3cd6e18d58e97c92f60b57bdba38575caf4932d6c4f6297"
+  },
+  "source_rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+  "pubmed_abstract_rights": "Preserve publisher/original abstract rights; public retrieval does not establish blanket CC0 redistribution"
+}

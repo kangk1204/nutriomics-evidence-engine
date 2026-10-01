@@ -1,0 +1,49 @@
+{
+  "integrity": "ok",
+  "errors": [],
+  "tables": {
+    "source": 16,
+    "node": 8611,
+    "edge": 429554,
+    "citation": 66833,
+    "edge_source": 429554,
+    "identifier_mapping": 1683,
+    "measurement": 372036
+  },
+  "relations": {
+    "annotated_to_pathway:curated": 4293,
+    "chemical_disease_marker_mechanism:curated": 508,
+    "chemical_disease_therapeutic:curated": 486,
+    "chemical_gene_influence:curated": 51982,
+    "contains_analytical_flavonoid:observed_composition": 2628,
+    "contains_nutrient:observed_composition": 369408,
+    "gene_disease_marker_mechanism:curated": 214,
+    "gene_disease_therapeutic:curated": 31,
+    "source_identifier_cross_reference:curated": 4
+  },
+  "unresolved_structure_nodes": 908,
+  "food_panel": {
+    "compounds": 12,
+    "composition_rows": 2628,
+    "ctd_identifier_crossrefs": 4,
+    "source_specific_food_ids": 476
+  },
+  "regulatory_annotations": 4,
+  "cross_database_food_deduplication": "Source-specific food IDs retained; no automatic name merge",
+  "FDA_conditions_are_efficacy_measurements": false,
+  "structure_coverage": {
+    "chemical_nodes": 908,
+    "chemical_nodes_with_full_structure": 12,
+    "chemical_nodes_without_full_structure": 896,
+    "cross_database_exact_structure_mappings": 0
+  },
+  "unresolved_structure_nodes_definition": "Legacy count lacking an exact_structure mapping; use structure_coverage for own molecular structure availability",
+  "metadata_url_correction": {
+    "source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+    "old_url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/Flav/Flav_R03-3.zip",
+    "correct_url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Flav/Flav_R03-3.accdb",
+    "utc": "2026-10-01T09:26:49.922059+00:00",
+    "raw_sha256_unchanged": "012d43e48fbd9c028d5d9920090b96f233e50831d0ddb6de4349bdb20be95785",
+    "audit_scope": "Metadata only; prior full integrity_check passed, no structural/measurement changes"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-01",
+  "scope": "Source-checked regulatory labeling annotations; no molecular binding label, individual efficacy estimate or clinical recommendation",
+  "annotations": [
+    {
+      "id": "FDA-QHC:2016-Q-3770",
+      "claim_type": "qualified_health_claim_enforcement_discretion",
+      "announcement_date": "2022-01-10",
+      "substances": ["elemental magnesium"],
+      "disease_scope": ["hypertension"],
+      "evidence_strength": "inconsistent and inconclusive",
+      "regulatory_summary": "FDA permits conditional risk-reduction wording under enforcement discretion; this is not an authorized claim meeting significant scientific agreement.",
+      "use_conditions": [
+        "At least 84 mg elemental magnesium per reference amount customarily consumed (RACC).",
+        "Dietary supplements must supply no more than 350 mg/day magnesium when used as labeled.",
+        "Conventional foods must meet the low-sodium criterion; general health-claim rules and other letter factors apply.",
+        "Qualifying language must communicate the weak and conflicting evidence."
+      ],
+      "conditions_summary_is_exhaustive": false,
+      "source_locators": ["Letter sections IV.A-IV.D and conclusions"],
+      "sources": [
+        {"kind":"html","url":"https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-magnesium-and-reduced-risk-high-blood-pressure","required_text":["magnesium","inconsistent and inconclusive"]},
+        {"kind":"pdf","url":"https://www.fda.gov/media/155304/download"}
+      ]
+    },
+    {
+      "id": "FDA-QHC:2014-Q-1146",
+      "claim_type": "qualified_health_claim_enforcement_discretion",
+      "announcement_date": "2019-06-19",
+      "substances": ["EPA and DHA combined"],
+      "disease_scope": ["hypertension","coronary heart disease through blood-pressure reduction"],
+      "evidence_strength": "inconsistent and inconclusive",
+      "regulatory_summary": "Combined EPA+DHA risk-reduction wording is conditional and below the significant-scientific-agreement threshold.",
+      "use_conditions": [
+        "At least 0.8 g combined EPA+DHA per serving of conventional food or dietary supplement.",
+        "The combined quantity per serving must be declared as described in the letter.",
+        "Dietary supplements bearing the claim must provide no more than 5 g/day combined EPA+DHA when used as labeled.",
+        "Qualifying evidence language, general labeling requirements and other letter nutrient factors apply."
+      ],
+      "conditions_summary_is_exhaustive": false,
+      "source_locators": ["Letter section I.C safety, section IV.C minimum amount, conclusions"],
+      "sources": [
+        {"kind":"html","url":"https://www.fda.gov/food/hfp-constituent-updates/fda-announces-new-qualified-health-claims-epa-and-dha-omega-3-consumption-and-risk-hypertension-and","required_text":["EPA","DHA","inconsistent and inconclusive","0.8"]},
+        {"kind":"pdf","url":"https://www.fda.gov/media/128043/download"}
+      ]
+    },
+    {
+      "id": "FDA-QHC:2019-Q-0806",
+      "claim_type": "qualified_health_claim_enforcement_discretion",
+      "announcement_date": "2023-02-03",
+      "letter_date": "2023-02-01",
+      "substances": ["cocoa flavanols in high-flavanol cocoa powder"],
+      "disease_scope": ["cardiovascular disease"],
+      "excluded_disease_claims": ["hypertension"],
+      "evidence_strength": "very limited scientific evidence",
+      "regulatory_summary": "This qualified claim concerns cardiovascular risk, and applies to high-flavanol cocoa powder or qualifying foods containing it.",
+      "use_conditions": [
+        "Powder must contain at least 4% naturally conserved cocoa flavanols and at least 200 mg flavanols per RACC.",
+        "Foods containing the powder require at least one cocoa-powder RACC as an ingredient per food RACC, plus other letter conditions.",
+        "Eligible foods must meet low-fat, low-saturated-fat and low-cholesterol definitions and applicable other factors.",
+        "Regular cocoa powder and chocolate are outside this claim; qualifying language is required."
+      ],
+      "conditions_summary_is_exhaustive": false,
+      "source_locators": ["Letter section IV.A-IV.E and conclusions"],
+      "sources": [
+        {"kind":"html","url":"https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-cocoa-flavanols-high-flavanol-cocoa-powder-and-reduced-risk","required_text":["very limited","cardiovascular disease","regular cocoa powder","4%"]},
+        {"kind":"pdf","url":"https://www.fda.gov/media/165090/download"}
+      ]
+    },
+    {
+      "id": "21-CFR:101.74",
+      "claim_type": "authorized_health_claim_regulation",
+      "citation": "21 CFR 101.74",
+      "substances": ["dietary sodium reduction"],
+      "disease_scope": ["hypertension"],
+      "evidence_strength": "authorized health-claim regulation",
+      "regulatory_summary": "Qualifying low-sodium foods may bear conditional hypertension risk-reduction labeling.",
+      "use_conditions": [
+        "All applicable 21 CFR 101.14 requirements apply, and the food must meet 21 CFR 101.61 low-sodium nutrient criteria.",
+        "Wording must express possible risk reduction, name sodium and high blood pressure, and acknowledge multiple risk factors.",
+        "The label may not quantify a degree of risk reduction; additional physician wording applies if pressure thresholds are defined."
+      ],
+      "conditions_summary_is_exhaustive": false,
+      "source_locators": ["21 CFR 101.74(c), (d)(7)"],
+      "sources": [
+        {"kind":"html","url":"https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-E/section-101.74","required_text":["Health claims: sodium and hypertension","low sodium","101.61"],"fallback_sources":[{"kind":"xml","url":"https://www.ecfr.gov/api/versioner/v1/full/2026-09-24/title-21.xml?part=101&section=101.74","snapshot_date":"2026-09-24","required_text":["Health claims: sodium and hypertension","low sodium","101.61"]}]}
+      ]
+    }
+  ]
+}
