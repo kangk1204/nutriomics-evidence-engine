@@ -1,24 +1,13 @@
 {
-  "asof_utc": "2026-10-01T09:47:22.822232+00:00",
-  "status": "running_unscored_snapshot",
-  "documents": 324,
+  "status": "completed750_with_recorded_errors",
+  "asof_utc": "2026-10-01T11:06:51.443268+00:00",
+  "documents": 750,
   "target_documents": 750,
-  "source_documents": [
-    {
-      "file": "artifacts/qwen_drugprot_dev/responses.jsonl",
-      "sha256_at_read": "036ced7a5d95b69b92c3889d97123bff71118392c7349a5fe055913682eea72f",
-      "complete_last_LF": true,
-      "records": 276
-    },
-    {
-      "file": "data/drugprot_qwen_continuation_v1/residual_responses.jsonl",
-      "sha256_at_read": "8874c33cd584548a5ddb54d106cd61384ec3455aa2eced38bfa176788cc051df",
-      "complete_last_LF": true,
-      "records": 48
-    }
-  ],
-  "score_artifacts_read": false,
-  "relation_performance": null,
+  "generated_documents": 726,
+  "generation_error_documents": 24,
+  "qwen_f1": 0.0,
+  "primary_summary_sha256": "ed2b522832a66ac360b60ec04a2dac666c70c95d2b324b2635e0d5d0c9dae701",
+  "accuracy_validated": false,
   "execution_batches": [
     4,
     8

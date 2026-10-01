@@ -1,0 +1,11 @@
+{
+  "expected_documents": 750,
+  "response_documents": 750,
+  "duplicate_pmids": 0,
+  "unexpected_pmids": 0,
+  "missing_pmids": 0,
+  "original_documents": 276,
+  "continuation_documents": 474,
+  "original_artifacts_unchanged": true,
+  "ordered_pmids_sha256": "7e381880f31038e8eb0d368717ae0c6ec6965fca8f5227391c26d24cb9b970d9"
+}

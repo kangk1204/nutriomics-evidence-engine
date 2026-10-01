@@ -1,5 +1,5 @@
 {
-  "status": "actual_local_preparation_complete; eligible202 Qwen inference pending",
+  "status": "actual_literature_inference_complete",
   "documents": 1198,
   "eligible": 202,
   "abstentions": 996,
@@ -8,5 +8,12 @@
   "documents_sha256": "41696af7bbc0976706f48ed801681d2728bb675509a6db51f26c03062b76229c",
   "partial_v1_retained": "data/literature_ctd_v1 has no lock; superseded after source-synonym audit and hash-helper correction",
   "unit_tests": "16 passed including extraction/native span/Unicode JSONL regressions",
-  "gold_food_precision_claimed": false
+  "gold_food_precision_claimed": false,
+  "completed_utc": "2026-10-01T11:34:02.287031+00:00",
+  "eligible_documents": 202,
+  "total_response_records": 1198,
+  "accepted_extracted_candidate_rows": 0,
+  "food_domain_precision": null,
+  "gold_available": false,
+  "inference_summary_sha256": "34c08a08f949c5db7f09a980a7e3550643e364ed893a213e86381472d53bc177"
 }

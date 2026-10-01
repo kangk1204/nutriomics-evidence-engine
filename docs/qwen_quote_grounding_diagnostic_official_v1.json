@@ -1,0 +1,148 @@
+{
+  "started_utc": "2026-10-01T11:26:44.289285+00:00",
+  "official_source": {
+    "url": "https://github.com/tonifuc3m/drugprot-evaluation-library",
+    "commit": "6b939554de38dbb69c462cc0d45c1cb17c3eaf57",
+    "license": "MIT",
+    "files": {
+      "src/main.py": {
+        "git_blob_sha256": "23618a0c83c2916db2115c0cbf7c1084bc149dd04c48fadae6f4fddff5fc4b96",
+        "working_tree_sha256": "f0d880057e5af61f39d46e281e7a2ee495ae8b5a151371c574f8cd05b9fd8be3"
+      },
+      "src/utils.py": {
+        "git_blob_sha256": "fd6cc42a35005720f22b890a4fdeed54bea2dd8396e36edad2eccf1140e9ae1b",
+        "working_tree_sha256": "80fac5fad66a142cf3acc221fcfe14d386c7fb1824cc6529dd7dcd44c5f2c143"
+      },
+      "src/compute_metrics.py": {
+        "git_blob_sha256": "c15fdccc6d96435813b32ce6eeda91a3ac16bb4b3a5bb1eff9425fe62c9e8ac3",
+        "working_tree_sha256": "15fac2eb2e13c8372798232381fc5afb4c3946bdada4f85cc1cdcfdb64874a74"
+      },
+      "LICENSE": {
+        "git_blob_sha256": "94f14b3e1c664e01efb64cccc1fafe647ba35ba7849bdc5d9849a10fedf0813c",
+        "working_tree_sha256": "d61adf414dfad19af228a4e5244092193355287d6ededc8d3c36094be04e0985"
+      },
+      "README.md": {
+        "git_blob_sha256": "d6ae8808bd59934a42fc822948ce12bf006c2c0f00f18a2e528ff5b958833af9",
+        "working_tree_sha256": "60dc7b92815770eed2a3107342f361b123fc28900122fd291192a70da566fc14"
+      },
+      "requirements.txt": {
+        "git_blob_sha256": "edce0dff6a598f9ad2322cccf7c7ca338c91a7e4e7a365cbcf21521bf3c19717",
+        "working_tree_sha256": "e26e98c03583deea3b5468d6ed2669c426e4178f98ef410d0a83d9665fe94e9e"
+      }
+    }
+  },
+  "input_files": {
+    "abstracts": {
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_abstracts.tsv",
+      "sha256": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8"
+    },
+    "entities": {
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_entities.tsv",
+      "sha256": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e"
+    },
+    "gold": {
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\drugprot\\development\\drugprot_development_relations.tsv",
+      "sha256": "6df63c08a7e1ae50d9bf32a2c91eeec641e9b879cfd3b1a4cec15b0b2781403d"
+    },
+    "predictions": {
+      "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\relations.tsv",
+      "sha256": "fc1f8a722099f875062752049420bbb6d80a77c4c7150cfe3f3f2fb1802359f4"
+    }
+  },
+  "immutable_copy_sha256": {
+    "abstracts": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8",
+    "entities": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e",
+    "gold": "6df63c08a7e1ae50d9bf32a2c91eeec641e9b879cfd3b1a4cec15b0b2781403d",
+    "predictions": "fc1f8a722099f875062752049420bbb6d80a77c4c7150cfe3f3f2fb1802359f4"
+  },
+  "pmids_sha256": "5fd99bb8738d371c4946b7d909e3bb8f465f3100edfcb2171f59ccad4b4b19ae",
+  "strict_custom": {
+    "documents": 750,
+    "entities": 18858,
+    "gold_relations": 3761,
+    "predicted_relations": 150,
+    "micro": {
+      "tp": 43,
+      "fp": 107,
+      "fn": 3718,
+      "precision": 0.2866666666666667,
+      "recall": 0.011433129486838606,
+      "f1": 0.021989261058552798
+    },
+    "scope": "strict exact tuples with native, directed gold entity IDs"
+  },
+  "wrapper_sha256": "bf4bbbcc3d3585653cb80a1e167602b8b989b2a94d1690613d76307005e48946",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\.venv\\Scripts\\python.exe",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "gold_mentions_used": true,
+  "evaluation_scope": "development 750 relation extraction, not NER",
+  "source_caveat": "Upstream format_relations advances pos0 by idx (len(combs)-1); preserve this behavior",
+  "exit_code": 0,
+  "elapsed_seconds": 155.26499999998487,
+  "status": "completed",
+  "command": [
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\.venv\\Scripts\\python.exe",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\scripts\\score_official_drugprot.py",
+    "--_driver",
+    "--library",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\reference_drugprot_eval",
+    "--abstracts",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\official_evaluation\\abstracts.tsv",
+    "--entities",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\official_evaluation\\entities.tsv",
+    "--gold",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\official_evaluation\\gold.tsv",
+    "--predictions",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\official_evaluation\\predictions.tsv",
+    "--output",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\data\\quote_grounding_diagnostic_v1\\official_evaluation"
+  ],
+  "original_inputs_unchanged": true,
+  "immutable_copies_unchanged": true,
+  "official_source_unchanged": true,
+  "official_stdout_micro_rounded_3dp": {
+    "precision": 0.287,
+    "recall": 0.011,
+    "f1": 0.022
+  },
+  "official_same_matrix_full_precision": {
+    "micro": {
+      "tp": 43,
+      "fp": 107,
+      "fn": 3715,
+      "precision": 0.2866666666666667,
+      "recall": 0.011442256519425226,
+      "f1": 0.022006141248720572
+    },
+    "upstream_metric_returned_none": true,
+    "matrix_shape": [
+      13,
+      116887
+    ],
+    "capture_method": "post-call observation of the unchanged official matrices; no index repair"
+  },
+  "comparison": {
+    "exact_parity": false,
+    "custom_minus_official": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": -9.127032586620301e-06,
+      "f1": -1.6880190167774256e-05
+    },
+    "no_upstream_patches": true
+  },
+  "completed_utc": "2026-10-01T11:29:20.135707+00:00",
+  "output_sha256": {
+    "stdout.txt": "c857d747944fe730dc09cf6381b8cb4557e98a67ca6be0e9711e78518e597f06",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "official_exact_metrics.json": "b81fa83474b5857b7df33bf74fb5e03b1de085b0fa3826f997a5358029de7b2a"
+  }
+}

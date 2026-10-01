@@ -1,0 +1,38 @@
+{
+  "documents": 1198,
+  "eligible_documents": 202,
+  "response_status_counts": {
+    "no_comention_abstention": 996,
+    "generation_error": 8,
+    "generated": 194
+  },
+  "accepted_relation_rows": 0,
+  "rejected_relation_rows": 266,
+  "rejection_reason_counts": {
+    "invalid_json_or_schema": 39,
+    "invalid_evidence_span": 254,
+    "unknown_or_wrong_entity_types": 86,
+    "unsupported_relation": 2,
+    "evidence_does_not_contain_both_mentions": 12
+  },
+  "gold_available": false,
+  "food_precision": null,
+  "ner_accuracy": null,
+  "semantic_entailment_validated": false,
+  "clinical_efficacy_relations": 0,
+  "experimental_binding_labels": 0,
+  "interpretation": "Span-validated extracted candidates; dictionary mention and scientific entailment require expert review; public PubMed may be in pretraining",
+  "completed_utc": "2026-10-01T11:34:02.287031+00:00",
+  "elapsed_this_invocation_seconds": 1125.6495785979787,
+  "inference_lock_sha256": "55951974db9404a6207bc00361d12da377373d21e23aa12e2c91d864dde26978",
+  "responses_sha256": "1f77473db47265de9dcd170bd8d66bc2050867e29d83dd32e2263a136459230c",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "transformers": "5.18.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "output_limit_documents": 0
+}

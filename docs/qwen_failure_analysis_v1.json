@@ -1,0 +1,162 @@
+{
+  "scope": "Raw-frozen-response diagnostics; gold relations not opened or used",
+  "documents": 750,
+  "response_status_counts": {
+    "generated": 726,
+    "generation_error": 24
+  },
+  "original_strict_rejection_reason_counts": {
+    "unknown_or_wrong_entity_types": 448,
+    "invalid_evidence_span": 1676,
+    "evidence_does_not_contain_both_mentions": 100,
+    "unsupported_relation": 49,
+    "negation_requires_manual_review": 1
+  },
+  "original_strict_error_documents": 156,
+  "JSON_failures": [
+    {
+      "response_status": "generated",
+      "decoder_error": "Extra data",
+      "documents": 116
+    },
+    {
+      "response_status": "generated",
+      "decoder_error": "Expecting property name enclosed in double quotes",
+      "documents": 2
+    },
+    {
+      "response_status": "generated",
+      "decoder_error": "Unterminated string starting at",
+      "documents": 10
+    },
+    {
+      "response_status": "generated",
+      "decoder_error": "Expecting ',' delimiter",
+      "documents": 1
+    },
+    {
+      "response_status": "generated",
+      "decoder_error": "Expecting value",
+      "documents": 1
+    },
+    {
+      "response_status": "generation_error",
+      "decoder_error": "Expecting value",
+      "documents": 24
+    }
+  ],
+  "extra_data_suffix_classification_only": {
+    "trailing_markdown_closing_fence": 110,
+    "trailing_literal_backslash_n": 6
+  },
+  "valid_JSON_wrong_top_schema": {
+    "wrong_top_level_keys": 2
+  },
+  "JSON_and_generation_counts_overlap": "All24 empty generation-error replies are included in the original156 JSON/top-schema failures; do not add them as disjoint counts.",
+  "generation_errors": [
+    {
+      "kind": "CUDA_out_of_memory",
+      "documents": 8,
+      "error_message_sha256": "8292c2f9488969554edd284184fb9ee31eef748d3e305e7faff9a5424877dde2",
+      "pmids": [
+        "1612232",
+        "1590750",
+        "20531964",
+        "9876137",
+        "1738111",
+        "17216302",
+        "22874922",
+        "10510456"
+      ],
+      "requested_allocation": "1.54 GiB",
+      "GPU_total_capacity": "15.48 GiB",
+      "GPU_free_memory": "1.00 GiB",
+      "pytorch_allocated": "10.70 GiB",
+      "pytorch_reserved_unallocated": "2.88 GiB",
+      "prompt_token_min": 1179,
+      "prompt_token_max": 5455
+    },
+    {
+      "kind": "CUDA_out_of_memory",
+      "documents": 8,
+      "error_message_sha256": "bb14f67a9f5cdf0e550517045270a86d656dd83b93d2efb9f8125f6491a9cffd",
+      "pmids": [
+        "23578607",
+        "1279186",
+        "23384997",
+        "2569356",
+        "12086935",
+        "11775064",
+        "23512754",
+        "23385325"
+      ],
+      "requested_allocation": "1.43 GiB",
+      "GPU_total_capacity": "15.48 GiB",
+      "GPU_free_memory": "720.62 MiB",
+      "pytorch_allocated": "11.36 GiB",
+      "pytorch_reserved_unallocated": "2.51 GiB",
+      "prompt_token_min": 1715,
+      "prompt_token_max": 5057
+    },
+    {
+      "kind": "CUDA_out_of_memory",
+      "documents": 8,
+      "error_message_sha256": "38057091d3d3e2fbd2c8c83a1356af4ddb97cc293704b6fdb8d927dc2c61e87b",
+      "pmids": [
+        "23600432",
+        "16618126",
+        "3735252",
+        "23352910",
+        "22749842",
+        "23530595",
+        "11034389",
+        "23358194"
+      ],
+      "requested_allocation": "1.34 GiB",
+      "GPU_total_capacity": "15.48 GiB",
+      "GPU_free_memory": "1.27 GiB",
+      "pytorch_allocated": "10.63 GiB",
+      "pytorch_reserved_unallocated": "2.68 GiB",
+      "prompt_token_min": 1122,
+      "prompt_token_max": 4758
+    }
+  ],
+  "generated_output_limit_documents": 12,
+  "generated_output_limit_pmids": [
+    "19149483",
+    "11392054",
+    "12636181",
+    "10800083",
+    "20185318",
+    "23102509",
+    "10742288",
+    "23583806",
+    "18973551",
+    "16206183",
+    "12181285",
+    "23643745"
+  ],
+  "relation_rows_in_valid_top_schema_responses": 1782,
+  "invalid_evidence_span_rows": 1676,
+  "invalid_span_offset_classification": {
+    "in_bounds_but_source_slice_differs_from_quote": 1676,
+    "supplied_span_length_differs_from_quote_length": 1641
+  },
+  "invalid_span_exact_quote_occurrence_classification": {
+    "unique_exact_occurrence": 1430,
+    "multiple_exact_occurrences": 134,
+    "no_exact_occurrence": 112
+  },
+  "invalid_span_unique_exact_quote_contains_both_correct_native_arguments": 164,
+  "invalid_span_native_entity_errors": {
+    "native_argument_type_or_direction_wrong": 417
+  },
+  "invalid_span_provided_offsets_matching_entity_boundaries": {
+    "end_equals_native_arg1_end": 48,
+    "start_equals_native_arg1_start": 110,
+    "start_equals_native_arg2_start": 34,
+    "end_equals_native_arg2_end": 23
+  },
+  "interpretation": "Numeric-offset/quotation inconsistency is observed. Exact quotation alone does not establish the asserted relation label, entailment, causality or binding.",
+  "no_JSON_or_quote_repair": true
+}

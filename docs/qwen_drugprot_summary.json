@@ -1,0 +1,87 @@
+{
+  "documents": 750,
+  "response_status_counts": {
+    "generated": 726,
+    "generation_error": 24
+  },
+  "rejection_reason_counts": {
+    "unknown_or_wrong_entity_types": 448,
+    "invalid_evidence_span": 1676,
+    "invalid_json_or_top_level_schema": 156,
+    "evidence_does_not_contain_both_mentions": 100,
+    "unsupported_relation": 49,
+    "negation_requires_manual_review": 1
+  },
+  "accepted_relations": 5,
+  "rejected_relation_rows": 1777,
+  "json_or_top_schema_error_documents": 156,
+  "qwen_micro": {
+    "tp": 0,
+    "fp": 5,
+    "fn": 3761,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "rule_micro": {
+    "tp": 80,
+    "fp": 63,
+    "fn": 3681,
+    "precision": 0.5594405594405595,
+    "recall": 0.02127093858016485,
+    "f1": 0.04098360655737705
+  },
+  "gold_mentions_used": true,
+  "semantic_entailment_validated": false,
+  "scope": "held development relation extraction with provided gold mentions; no NER/food-domain/external-pretraining independence claim",
+  "offset_policy": "exact original substring and offsets; no automatic offset repair; negation flagged/rejected",
+  "official_evaluator": "https://github.com/tonifuc3m/drugprot-evaluation-library",
+  "completed_utc": "2026-10-01T11:06:51.443268+00:00",
+  "elapsed_this_invocation_seconds": 5551.793739881017,
+  "responses_sha256": "a567677b8fa4c6e8f14e699c71d900c0c1ea2a45f77a56bc78731f50b378c4b8",
+  "coverage_audit": {
+    "expected_documents": 750,
+    "response_documents": 750,
+    "duplicate_pmids": 0,
+    "unexpected_pmids": 0,
+    "missing_pmids": 0,
+    "original_documents": 276,
+    "continuation_documents": 474,
+    "original_artifacts_unchanged": true,
+    "ordered_pmids_sha256": "7e381880f31038e8eb0d368717ae0c6ec6965fca8f5227391c26d24cb9b970d9"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+cu130",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "transformers": "5.18.0",
+    "bitsandbytes": "0.50.2"
+  },
+  "generated_output_limit_documents": 12,
+  "continuation_lock_sha256": "0069f74c1c0d9806703afb783aa6182c92b523b2cbf9fa5d0e3b6be496be6b30",
+  "operational_amendment_sha256": "19aa5f490d5e19891eb295ab8446458f27603133c3b18c5f9190303ef9ab587d",
+  "execution_protocols": [
+    {
+      "protocol": "original",
+      "batch_size": 4,
+      "document_count": 276,
+      "script_sha256": "72237daba8ee50d00011742c56e07488a7c866038ebbfdba896bc39a80622911",
+      "inference_lock_sha256": "b94f54c276b7d0677d3fda3c3a1df859198fcf78adfed15baae79167d38fe2d1",
+      "responses_sha256": "036ced7a5d95b69b92c3889d97123bff71118392c7349a5fe055913682eea72f",
+      "seed": 42
+    },
+    {
+      "protocol": "continuation",
+      "batch_size": 8,
+      "document_count": 474,
+      "script_sha256": "4cb83ac467a36d203a1afeb85c75bc68e7652b39287db037a08d0525c01b25b9",
+      "inference_lock_sha256": "0069f74c1c0d9806703afb783aa6182c92b523b2cbf9fa5d0e3b6be496be6b30",
+      "responses_sha256": "59a62fc1e842c841780405122bd78087b7a29d2a435b0ddcbab240c125a5f2f8",
+      "seed": 42,
+      "per_batch_reseed": false
+    }
+  ],
+  "operational_interpretation": "One full750 cohort scored after an unscored throughput amendment; mixed batch4/batch8 execution, no output parity or score-based tuning claim",
+  "contamination_note": "Public DrugProt/PubMed may occur in pretraining; no guarantee of unseen pretraining documents"
+}

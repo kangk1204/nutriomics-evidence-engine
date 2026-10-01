@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-10-01T11:26:23.109735+00:00",
+  "policy_version": "exact-unique-quotation-native-entities-posthoc-v1",
+  "input_sha256": {
+    "data\\drugprot\\development\\drugprot_development_abstracts.tsv": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8",
+    "data\\drugprot\\development\\drugprot_development_entities.tsv": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e",
+    "data\\drugprot_qwen_continuation_v1\\merged_responses.jsonl": "a567677b8fa4c6e8f14e699c71d900c0c1ea2a45f77a56bc78731f50b378c4b8",
+    "data\\drugprot_qwen_continuation_v1\\inference_summary.json": "ed2b522832a66ac360b60ec04a2dac666c70c95d2b324b2635e0d5d0c9dae701",
+    "data\\drugprot_qwen_continuation_v1\\validation_reports.json": "461874dfe3e8f455c3ca1caef0c80f611e3982bf452403086ecd63bb30ba8005",
+    "data\\drugprot_qwen_continuation_v1\\continuation_lock.json": "0069f74c1c0d9806703afb783aa6182c92b523b2cbf9fa5d0e3b6be496be6b30",
+    "data\\drugprot_qwen_continuation_v1\\qwen_relations.tsv": "aba3ab07a2a8e75fdffb5df0f55ab7cfafc9181e8817d8ccbace81ad92b1b554",
+    "data\\drugprot_qwen_continuation_v1\\qwen_metrics.json": "b0c054e4d09cf7bc90ef4b9a866d80aaf005da4cdb7092f32b72f0214bd6ad7c",
+    "src\\nutriomics_evidence\\extraction.py": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+    "src\\nutriomics_evidence\\literature.py": "a176083572d1fd630f3bbbf5fa46e21f41ad840be97906d34bf6560f6b16165b",
+    "scripts\\run_qwen.py": "72237daba8ee50d00011742c56e07488a7c866038ebbfdba896bc39a80622911",
+    "scripts\\run_literature_qwen.py": "12e5f415144e176c99f42b48e3a665664138c4651fde1638d29a20f6705edaa0"
+  },
+  "ordered_PMIDs_sha256": "7e381880f31038e8eb0d368717ae0c6ec6965fca8f5227391c26d24cb9b970d9",
+  "documents": 750,
+  "coverage": {
+    "missing": 0,
+    "duplicate": 0,
+    "unexpected": 0
+  },
+  "parser_sha256": "ad9b9167d5a7029b2e44c3f8c23daae97d15fda79c67c5994577cf4048339ed5",
+  "script_sha256": "3c255eb24353944c272ebb921a0171998154c16a39d533b9fc7bdd2f1919da89",
+  "relations_sha256": "fc1f8a722099f875062752049420bbb6d80a77c4c7150cfe3f3f2fb1802359f4",
+  "gold_relations_opened_for_grounding": false,
+  "parameters_selected_using_gold": false,
+  "evaluation_status": "Post-hoc development-set diagnostic after original strict results were exposed",
+  "original_strict_inference_not_changed": true,
+  "policy": "Complete literal quote, unique globally, both native entity spans; unchanged strict gate; no JSON/whitespace/ID/label repair",
+  "semantic_entailment_validated": false,
+  "generation_schema_evaluated": false,
+  "API_grounding_evaluated": false,
+  "grounding_lock_sha256": "e7f84122adef96b1484336dd7db4d09f45a7802b17bafe4bafbd2cec3c7ffaaf",
+  "accepted_relations": 150,
+  "accepted_with_reconstructed_offsets": 145,
+  "rejected_relation_rows": 1628,
+  "rejection_reason_counts": {
+    "unknown_or_wrong_entity_types": 446,
+    "evidence_does_not_contain_both_mentions": 1268,
+    "ambiguous_exact_quote": 178,
+    "quote_not_exact_source_substring": 112,
+    "unsupported_relation": 49,
+    "negation_requires_manual_review": 15
+  },
+  "document_error_counts": {
+    "invalid_JSON_or_top_level_schema": 136,
+    "generation_error_abstention": 24
+  },
+  "original_strict_micro": {
+    "tp": 0,
+    "fp": 5,
+    "fn": 3761,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "posthoc_diagnostic_strict_micro": {
+    "tp": 43,
+    "fp": 107,
+    "fn": 3718,
+    "precision": 0.2866666666666667,
+    "recall": 0.011433129486838606,
+    "f1": 0.021989261058552798
+  },
+  "rule_frozen_micro": {
+    "tp": 80,
+    "fp": 63,
+    "fn": 3681,
+    "precision": 0.5594405594405595,
+    "recall": 0.02127093858016485,
+    "f1": 0.04098360655737705
+  },
+  "gold_sha256_scoring_only": "6df63c08a7e1ae50d9bf32a2c91eeec641e9b879cfd3b1a4cec15b0b2781403d",
+  "official_evaluation": {
+    "status": "completed_separate_execution_after_prediction_lock",
+    "run_after_prediction_lock": true,
+    "source_commit": "6b939554de38dbb69c462cc0d45c1cb17c3eaf57",
+    "wrapper_report_sha256": "bd421b585f6132bcd8219254e10714927dcb367074a7295d5d2d678e4b11270d",
+    "official_metrics_sha256": "b81fa83474b5857b7df33bf74fb5e03b1de085b0fa3826f997a5358029de7b2a",
+    "original_upstream_indexing_unchanged": true,
+    "official_same_matrix_micro": {
+      "tp": 43,
+      "fp": 107,
+      "fn": 3715,
+      "precision": 0.2866666666666667,
+      "recall": 0.011442256519425226,
+      "f1": 0.022006141248720572
+    },
+    "strict_exact_tuple_micro": {
+      "tp": 43,
+      "fp": 107,
+      "fn": 3718,
+      "precision": 0.2866666666666667,
+      "recall": 0.011433129486838606,
+      "f1": 0.021989261058552798
+    },
+    "comparison": {
+      "exact_parity": false,
+      "custom_minus_official": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": -9.127032586620301e-06,
+        "f1": -1.6880190167774256e-05
+      },
+      "no_upstream_patches": true
+    },
+    "input_copy_and_source_immutability_verified": true,
+    "elapsed_seconds": 155.26499999998487,
+    "initial_diagnostic_receipt_sha256": "85dd85ced92984316f59129b64a2c114ae4f396107d2b898c5a9b9b536af6540"
+  },
+  "full750_denominator": true,
+  "original_inputs_unchanged": true,
+  "binding_affinity": null,
+  "expert_approved_relation_count": null,
+  "food_domain_accuracy": null,
+  "semantic_accuracy": null,
+  "interpretation": "Text grounding diagnostic only; fixed exact-quote recovery is not a new untouched test, tuned model, food-domain validation, validated schema, deployed API test or confirmed binding."
+}

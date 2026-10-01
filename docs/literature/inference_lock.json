@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "commit": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "model_lock_sha256": "97cc2ea88e75a551d2d15cbb74257981e499c2e6094805bb5a02940f3d89a361",
+  "preparation_lock_sha256": "864d5f18a7c8eeceafae356300fbd22fbb4eeb1544deaf5e707cdc1511e12be4",
+  "documents_sha256": "41696af7bbc0976706f48ed801681d2728bb675509a6db51f26c03062b76229c",
+  "prompt_sha256": "3cf55cffdb6698de2732fa49a5a0c6196be652778e4e4a306ac9df9dbd8a3c19",
+  "script_sha256": "12e5f415144e176c99f42b48e3a665664138c4651fde1638d29a20f6705edaa0",
+  "helper_script_sha256": "72237daba8ee50d00011742c56e07488a7c866038ebbfdba896bc39a80622911",
+  "literature_module_sha256": "a176083572d1fd630f3bbbf5fa46e21f41ad840be97906d34bf6560f6b16165b",
+  "extraction_module_sha256": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+  "batch_size": 8,
+  "max_new_tokens": 1024,
+  "max_input_tokens": 8192,
+  "seed": 42,
+  "do_sample": false,
+  "quantization": "bitsandbytes NF4 4bit double quantization, BF16 computation",
+  "documents": 1198,
+  "eligible_documents": 202,
+  "selection": "All frozen1198 documents retained; infer only dictionary chemical-gene document co-mentions; others explicit empty abstentions",
+  "gold_available": false,
+  "batch_policy": "prespecified operational throughput setting; no gold-metric selection"
+}

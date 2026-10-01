@@ -1,0 +1,40 @@
+{
+  "frozen_input_sha256": {
+    "data\\drugprot\\development\\drugprot_development_abstracts.tsv": "dc9a9deb6c4e37bc67380b888718689f3f11edc4e09de838891674d6565d89b8",
+    "data\\drugprot\\development\\drugprot_development_entities.tsv": "212c88668c611edf067ae39f052494febbb8dcb2fc81af8160507a4a176c667e",
+    "data\\drugprot_qwen_continuation_v1\\merged_responses.jsonl": "a567677b8fa4c6e8f14e699c71d900c0c1ea2a45f77a56bc78731f50b378c4b8",
+    "data\\drugprot_qwen_continuation_v1\\inference_summary.json": "ed2b522832a66ac360b60ec04a2dac666c70c95d2b324b2635e0d5d0c9dae701",
+    "data\\drugprot_qwen_continuation_v1\\validation_reports.json": "461874dfe3e8f455c3ca1caef0c80f611e3982bf452403086ecd63bb30ba8005",
+    "data\\drugprot_qwen_continuation_v1\\continuation_lock.json": "0069f74c1c0d9806703afb783aa6182c92b523b2cbf9fa5d0e3b6be496be6b30",
+    "data\\drugprot_qwen_continuation_v1\\qwen_relations.tsv": "aba3ab07a2a8e75fdffb5df0f55ab7cfafc9181e8817d8ccbace81ad92b1b554",
+    "data\\drugprot_qwen_continuation_v1\\qwen_metrics.json": "b0c054e4d09cf7bc90ef4b9a866d80aaf005da4cdb7092f32b72f0214bd6ad7c",
+    "src\\nutriomics_evidence\\extraction.py": "76ca452bc17d9b6f3bbebbc9a05bfea834fb275a10de183ecef573ac1caf34b5",
+    "src\\nutriomics_evidence\\literature.py": "a176083572d1fd630f3bbbf5fa46e21f41ad840be97906d34bf6560f6b16165b",
+    "scripts\\run_qwen.py": "72237daba8ee50d00011742c56e07488a7c866038ebbfdba896bc39a80622911",
+    "scripts\\run_literature_qwen.py": "12e5f415144e176c99f42b48e3a665664138c4651fde1638d29a20f6705edaa0"
+  },
+  "diagnostic_receipt_sha256": "85dd85ced92984316f59129b64a2c114ae4f396107d2b898c5a9b9b536af6540",
+  "original_JSON_failure_documents": 156,
+  "original_generated_JSON_or_top_schema_failure_documents": 132,
+  "generation_error_overlap_documents": 24,
+  "posthoc_additional_duplicate_JSON_key_abstention_documents": 4,
+  "duplicate_JSON_key_pmids": [
+    "10640321",
+    "20104269",
+    "9399012",
+    "12217700",
+    "23362135"
+  ],
+  "reason": "Original json.loads retains the last duplicate object key. Independent diagnostic rejects ambiguity, without selecting an object or repairing JSON.",
+  "posthoc_generated_JSON_or_top_schema_failure_documents": 136,
+  "gold_relations_used_for_this_detail_analysis": false,
+  "parameters_selected_using_scores": false,
+  "duplicate_JSON_key_documents": 5,
+  "duplicate_JSON_key_already_original_JSON_error_documents": 1,
+  "duplicate_JSON_key_new_abstention_pmids": [
+    "12217700",
+    "20104269",
+    "23362135",
+    "9399012"
+  ]
+}
