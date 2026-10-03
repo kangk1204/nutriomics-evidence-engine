@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-03T06:23:55.864937+00:00",
+  "source_sha256": "e968f90e900c7833d5e6eceae282d0ca3b75201448bccaf4df6b09cc410f7d76",
+  "parser": {
+    "raw_counts": {
+      "raw_rows": 3243660,
+      "nonempty_endpoint_values": 3246509,
+      "no_affinity_endpoint": 2979,
+      "rejected_nonpositive_or_nonfinite": 262
+    },
+    "typed_endpoint_relation_counts": [
+      {
+        "endpoint": "EC50",
+        "relation": "<",
+        "rows": 11042
+      },
+      {
+        "endpoint": "EC50",
+        "relation": "=",
+        "rows": 216795
+      },
+      {
+        "endpoint": "EC50",
+        "relation": ">",
+        "rows": 42928
+      },
+      {
+        "endpoint": "IC50",
+        "relation": "<",
+        "rows": 188513
+      },
+      {
+        "endpoint": "IC50",
+        "relation": "=",
+        "rows": 1749813
+      },
+      {
+        "endpoint": "IC50",
+        "relation": ">",
+        "rows": 281991
+      },
+      {
+        "endpoint": "Kd",
+        "relation": "<",
+        "rows": 8731
+      },
+      {
+        "endpoint": "Kd",
+        "relation": "=",
+        "rows": 82481
+      },
+      {
+        "endpoint": "Kd",
+        "relation": ">",
+        "rows": 40286
+      },
+      {
+        "endpoint": "Ki",
+        "relation": "<",
+        "rows": 18749
+      },
+      {
+        "endpoint": "Ki",
+        "relation": "=",
+        "rows": 542684
+      },
+      {
+        "endpoint": "Ki",
+        "relation": ">",
+        "rows": 62234
+      }
+    ]
+  },
+  "typed_native_measurement_rows": 3246247,
+  "measured_dedup_assertions": 3171536,
+  "exact_positive_dedup_assertions": 2551272,
+  "unique_construct_preserved_compound_target_pairs": 2359030,
+  "source_ledger_rows": 3240419,
+  "eligibility_source_row_counts": {
+    "eligible_measured_assertion": 3244349,
+    "unresolved_protein_sequence": 1648,
+    "unverified_full_structure": 247,
+    "missing_source_or_assay": 3
+  },
+  "endpoint_relation_counts": [
+    {
+      "endpoint": "EC50",
+      "relation": "<",
+      "rows": 10439
+    },
+    {
+      "endpoint": "EC50",
+      "relation": "=",
+      "rows": 213426
+    },
+    {
+      "endpoint": "EC50",
+      "relation": ">",
+      "rows": 41458
+    },
+    {
+      "endpoint": "IC50",
+      "relation": "<",
+      "rows": 173186
+    },
+    {
+      "endpoint": "IC50",
+      "relation": "=",
+      "rows": 1723340
+    },
+    {
+      "endpoint": "IC50",
+      "relation": ">",
+      "rows": 271582
+    },
+    {
+      "endpoint": "Kd",
+      "relation": "<",
+      "rows": 7063
+    },
+    {
+      "endpoint": "Kd",
+      "relation": "=",
+      "rows": 80500
+    },
+    {
+      "endpoint": "Kd",
+      "relation": ">",
+      "rows": 39985
+    },
+    {
+      "endpoint": "Ki",
+      "relation": "<",
+      "rows": 17537
+    },
+    {
+      "endpoint": "Ki",
+      "relation": "=",
+      "rows": 534006
+    },
+    {
+      "endpoint": "Ki",
+      "relation": ">",
+      "rows": 59014
+    }
+  ],
+  "distinct_full_inchikey": 1353165,
+  "distinct_construct_preserved_targets": 14132,
+  "checks": {
+    "duplicate_measurement_id": 0,
+    "nonpositive_or_nonfinite": 0,
+    "unverified_structure_or_sequence": 0,
+    "invalid_endpoint_or_unit": 0,
+    "bad_exact_label": 0
+  },
+  "deduplication": "exact fullInChIKey; sorted complete chain sequences + species + native target construct name; DOI/PMID/patent alias closure; native assay IDs; endpoint/relation/nM/pH/temperature preserved",
+  "source_registry_not_a_training_benchmark": true,
+  "strict_Kd_model_rows_not_inherited": true,
+  "censored_labels_used_as_exact": false,
+  "untested_pairs_used_as_negative": false,
+  "all_smiles_independently_validated": false,
+  "unknown_cross_source_replicates_may_remain": true,
+  "all_assays_binding_not_assumed": true,
+  "independent_sources_proven_for_food_model": false,
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_assay_description.parquet",
+      "sha256": "4f1d3a7f574705810b7b35ffe9e4de79e25b85ad2d8837c3bdd5146fa61d4087",
+      "bytes": 9529372
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_label_rejections.parquet",
+      "sha256": "f3223bce661b6183c9517d91e904bc73b57df835ba8dcc40a05523d709770c45",
+      "bytes": 4990
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measured_source_records.parquet",
+      "sha256": "62413cc16e60c7ec9762cc62c0d9cbfc9e2e2e8ffaa917ba4e45d4d3859c3a8f",
+      "bytes": 247007513
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement.parquet",
+      "sha256": "f80a43c615bc77abb492a7c086617128ef0d37eb46269d05c8b596c174670f3f",
+      "bytes": 637133843
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement_candidates.parquet",
+      "sha256": "15cc589d763e14df703f83fbf92c3c530f1dbbd0256294a4fdd88f71fd7e37ed",
+      "bytes": 317869467
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_source_ledger.parquet",
+      "sha256": "87b5c43f93298ab619861ec5fba2a64067f85208cc3f9cff49fe21c44282b1a0",
+      "bytes": 15657868
+    }
+  ]
+}

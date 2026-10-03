@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-10-03T06:26:53.330100+00:00",
+  "complete_sql_checks": {
+    "food_duplicate_id": 0,
+    "food_duplicate_identity": 0,
+    "food_invalid_registry_type": 0,
+    "composition_negative_or_nonfinite": 0,
+    "composition_impossible_per100g_mass": 0,
+    "composition_empty_unit_or_basis": 0,
+    "composition_duplicate_source_row": 0,
+    "composition_orphan_food": 0,
+    "natural_product_duplicate_full_key": 0,
+    "natural_product_unverified_or_mixture": 0,
+    "ffq_duplicate_source_row": 0,
+    "ffq_orphan_person": 0,
+    "ffq_negative_frequency": 0,
+    "ffq_portion_or_absolute_intake_claim": 0,
+    "genotype_nonreference_claim": 0,
+    "genotype_orphan_reference_sample": 0,
+    "genotype_wrong_build_or_coordinate": 0,
+    "methylation_invalid_beta": 0,
+    "methylation_orphan_sample": 0,
+    "metabolomic_orphan_sample": 0,
+    "metabolomic_false_structure_identity": 0,
+    "food_standard_panel_bad_key": 0,
+    "food_standard_panel_unjustified_exposure_claim": 0,
+    "isoflavone_composition_total_promoted_single_analyte": 0,
+    "isoflavone_composition_orphan_food": 0,
+    "bindingdb_duplicate_measurement": 0,
+    "bindingdb_nonpositive_or_nonfinite": 0,
+    "bindingdb_unverified_structure_or_target": 0,
+    "bindingdb_censored_as_exact": 0,
+    "bindingdb_wrong_endpoint_or_unit": 0
+  },
+  "all_structural_checks_zero": true,
+  "queries": {
+    "food_duplicate_id": "SELECT count(*)-count(DISTINCT food_id) FROM food",
+    "food_duplicate_identity": "SELECT count(*)-count(DISTINCT identity_key) FROM food",
+    "food_invalid_registry_type": "SELECT count(*) FROM food WHERE data_type NOT IN ('branded_food','sr_legacy_food','foundation_food','survey_fndds_food')",
+    "composition_negative_or_nonfinite": "SELECT count(*) FROM food_composition WHERE amount<0 OR NOT isfinite(amount)",
+    "composition_impossible_per100g_mass": "SELECT count(*) FROM food_composition WHERE CASE upper(trim(unit))\n      WHEN 'G' THEN amount>100\n      WHEN 'MG' THEN amount>100000\n      WHEN 'UG' THEN amount>100000000\n      WHEN 'MCG' THEN amount>100000000\n      ELSE false END",
+    "composition_empty_unit_or_basis": "SELECT count(*) FROM food_composition WHERE unit IS NULL OR basis!='source100g'",
+    "composition_duplicate_source_row": "SELECT count(*)-count(DISTINCT source_row_id) FROM food_composition",
+    "composition_orphan_food": "SELECT count(*) FROM food_composition c ANTI JOIN food f USING(food_id)",
+    "natural_product_duplicate_full_key": "SELECT count(*)-count(DISTINCT full_inchikey) FROM natural_products",
+    "natural_product_unverified_or_mixture": "SELECT count(*) FROM natural_products WHERE NOT inchi_hash_verified OR NOT single_component",
+    "ffq_duplicate_source_row": "SELECT count(*)-count(DISTINCT source_row_id) FROM ffq_frequency",
+    "ffq_orphan_person": "SELECT count(*) FROM ffq_frequency f ANTI JOIN ffq_participant p USING(participant_id)",
+    "ffq_negative_frequency": "SELECT count(*) FROM ffq_frequency WHERE FFQ_FREQ<0",
+    "ffq_portion_or_absolute_intake_claim": "SELECT count(*) FROM ffq_frequency WHERE portion_size_available OR absolute_nutrient_intake_derived",
+    "genotype_nonreference_claim": "SELECT count(*) FROM genotype_reference_call WHERE NOT reference_context_only",
+    "genotype_orphan_reference_sample": "SELECT count(*) FROM genotype_reference_call g ANTI JOIN genotype_reference_sample p ON g.sample_id=p.sample",
+    "genotype_wrong_build_or_coordinate": "SELECT count(*) FROM genotype_reference_call WHERE build!='GRCh37' OR chromosome!='11' OR position<61560000 OR position>61750000",
+    "methylation_invalid_beta": "SELECT count(*) FROM methylation_abundance WHERE value_status='invalid_beta_range'",
+    "methylation_orphan_sample": "SELECT count(*) FROM methylation_abundance m ANTI JOIN methylation_sample s USING(study_id,sample_id)",
+    "metabolomic_orphan_sample": "SELECT count(*) FROM metabolomic_abundance m ANTI JOIN metabolomic_sample s USING(study_id,sample_id)",
+    "metabolomic_false_structure_identity": "SELECT count(*) FROM metabolomic_abundance WHERE identified_structure",
+    "food_standard_panel_bad_key": "SELECT count(*) FROM food_standard_analyte_panel WHERE compound_id!=recomputed_standard_full_inchikey",
+    "food_standard_panel_unjustified_exposure_claim": "SELECT count(*) FROM food_standard_analyte_panel WHERE native_free_oral_ligand_exposure_verified",
+    "isoflavone_composition_total_promoted_single_analyte": "SELECT count(*) FROM usda_isoflavone_composition WHERE Nutr_No='713'",
+    "isoflavone_composition_orphan_food": "SELECT count(*) FROM usda_isoflavone_composition c ANTI JOIN usda_isoflavone_food f USING(NDB_No)",
+    "bindingdb_duplicate_measurement": "SELECT count(*)-count(DISTINCT measurement_id) FROM bindingdb_measurement",
+    "bindingdb_nonpositive_or_nonfinite": "SELECT count(*) FROM bindingdb_measurement WHERE value_nm<=0 OR NOT isfinite(value_nm)",
+    "bindingdb_unverified_structure_or_target": "SELECT count(*) FROM bindingdb_measurement WHERE NOT inchi_hash_verified OR NOT protein_sequences_valid",
+    "bindingdb_censored_as_exact": "SELECT count(*) FROM bindingdb_measurement WHERE exact_positive!=(relation='=')",
+    "bindingdb_wrong_endpoint_or_unit": "SELECT count(*) FROM bindingdb_measurement WHERE endpoint NOT IN ('Kd','Ki','IC50','EC50') OR unit!='nM'"
+  },
+  "row_counts": {
+    "food": 463172,
+    "food_records": 2101270,
+    "food_composition": 7186264,
+    "food_composition_rejections": 2963,
+    "natural_products": 724254,
+    "natural_product_occurrence": 658847,
+    "chemical_gene_interaction": 3171202,
+    "ffq_frequency": 2114367,
+    "ffq_participant": 20470,
+    "genotype_reference_call": 13288728,
+    "genotype_reference_sample": 2504,
+    "methylation_abundance": 29732724,
+    "methylation_sample": 148,
+    "metabolomic_abundance": 1052370,
+    "metabolomic_sample": 90,
+    "source_registry": 74,
+    "food_standard_analyte_panel": 33,
+    "usda_isoflavone_food": 560,
+    "usda_isoflavone_native_measurement": 2429,
+    "usda_isoflavone_analyte_definition": 7,
+    "usda_isoflavone_composition": 1885,
+    "bindingdb_measured_source_records": 3246247,
+    "bindingdb_measurement_candidates": 3246247,
+    "bindingdb_measurement": 3171536,
+    "bindingdb_source_ledger": 3240419,
+    "bindingdb_assay_description": 224448,
+    "bindingdb_label_rejections": 262
+  },
+  "production_db_modified": false,
+  "same_person_multimodal_fusion": false,
+  "known_limits": [
+    "Food baseline uses exact native source IDs; branded-product identities dedup GTIN/market within new FDC source",
+    "FDC supplier/source errors exceeding 100g mass per100g are retained only in rejection ledger",
+    "COCONUT source InChI hash verified, all source SMILES not independently recomputed",
+    "FooDB source membership and LOTUS organism occurrence not verified edible-food occurrence",
+    "Genotypes are reference participants; methylation, NHANES, ST001257 participants are different cohorts",
+    "ST001257 analytical features lack confirmed compound identities",
+    "FFQ daily frequency has no portion size; no absolute nutrient amounts derived",
+    "BindingDB source assertion registry preserves Ki/Kd/IC50/EC50/censoring separately; not all endpoints imply physical binding; strict Kd benchmark separate"
+  ],
+  "code_sha256": {
+    "acquire_public_expansion.py": "1533f64d15790844374ea17546294bb15d35c1ab6e7f0a7e1a7a602a69ee5315",
+    "acquire_reference_genotypes.py": "bbecdcc6e08a00889ab7de4d8d8abea3dfd408c51d40cad51edd6785a96e5286",
+    "audit_public_expansion.py": "712edd1fc279be850dc23d6c0467f4bedf82337f55d7be6c4a650c41ad718df2",
+    "correct_food_mass_units.py": "01fac6cdf7da17dc003750f2d66c1ea7f184aac17aff0eb828f14878858c7e54",
+    "public_expansion.py": "dcceaf8f9e1c35e935a11cc060a95a12d659d6d541b498c93ddb0d4ae65d92e8",
+    "public_expansion_receipt.py": "ab6c7862ff9f03fa06dfd5844c2bf2d8940e7be1532097ff64afd0c3d9a489ba",
+    "register_food_analyte_panel.py": "29e88e9549bd4fe27f2d76c8904cb63e7a3db4c50a225f585b81e7705e2f13c8",
+    "register_public_modalities.py": "4cc550ea02ccad7900152bb791d8baf795c11af317e3b1ac180990603999bcda",
+    "stage_bindingdb_endpoints.py": "d83802e1b602c6fb14d0b60e8940c4517f4c44663115622533b2d6f85712b759"
+  },
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/baseline_food_ids.parquet",
+      "sha256": "e89f883281440d31eeb9c4ef7e08f45fa52beb27d86c42e8da943ba4dbcc0461",
+      "bytes": 742316
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_assay_description.parquet",
+      "sha256": "4f1d3a7f574705810b7b35ffe9e4de79e25b85ad2d8837c3bdd5146fa61d4087",
+      "bytes": 9529372
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_label_rejections.parquet",
+      "sha256": "f3223bce661b6183c9517d91e904bc73b57df835ba8dcc40a05523d709770c45",
+      "bytes": 4990
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measured_source_records.parquet",
+      "sha256": "62413cc16e60c7ec9762cc62c0d9cbfc9e2e2e8ffaa917ba4e45d4d3859c3a8f",
+      "bytes": 247007513
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement.parquet",
+      "sha256": "f80a43c615bc77abb492a7c086617128ef0d37eb46269d05c8b596c174670f3f",
+      "bytes": 637133843
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement_candidates.parquet",
+      "sha256": "15cc589d763e14df703f83fbf92c3c530f1dbbd0256294a4fdd88f71fd7e37ed",
+      "bytes": 317869467
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_source_ledger.parquet",
+      "sha256": "87b5c43f93298ab619861ec5fba2a64067f85208cc3f9cff49fe21c44282b1a0",
+      "bytes": 15657868
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/chemical_gene_interaction.parquet",
+      "sha256": "cc88ae53e8b4037f0bc2f20f1e75362b046204574c4f25ae328a52d93727df37",
+      "bytes": 111371417
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/expansion.duckdb",
+      "sha256": "91ac8845e1addd2b94191af48116ecd1cf6762c7343b6070a85229bd6207d033",
+      "bytes": 274432
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/expansion_lookup.sqlite",
+      "sha256": "c64cd6bf4216560bb45441b41c5a9615b4ad803c15f0f0e6dcd9562d30cb5dfe",
+      "bytes": 104509440
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/ffq_frequency.parquet",
+      "sha256": "cb26aca206c8ceaa0a0a23e5c333706fc13692d0b487f9ba8c4505fe0a188998",
+      "bytes": 15214492
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/ffq_participant.parquet",
+      "sha256": "77c29aba483df7712181e215062a94e3d0d3c5dccd51042417c57668b28967e3",
+      "bytes": 794221
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food.parquet",
+      "sha256": "5dbaa31d0a05a2b1555d06bbbd11e241b3457ae55a49f43a010ca618a8eb4c3b",
+      "bytes": 16425434
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition.parquet",
+      "sha256": "cf6502544145fde28c4139f78aaa668fb083a57ad9dafb7fe58cf036ff7e3428",
+      "bytes": 53733222
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition_before_mass_qc.parquet",
+      "sha256": "2d40113ad9ff4337744061b82bade548e926d74923283a47e1ccf75b453a5b20",
+      "bytes": 53751043
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition_rejections.parquet",
+      "sha256": "e0041745f9781eeb4a10d694c4c315541c260b448f2c48279274b4ac8c5ffbca",
+      "bytes": 33509
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_records.parquet",
+      "sha256": "43a6c325584998f6d82486c5d85da15d69f75d28fcd3fa10fa67c2cfad00d770",
+      "bytes": 71329064
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_standard_analyte_panel.parquet",
+      "sha256": "31bac37e37b3a6e7cc2fe7249fa0a9921bfb8140da62ca3942f783b43eca0f31",
+      "bytes": 24127
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_call.parquet",
+      "sha256": "f116b83ee8362ce535c9f2d47a183afb7bd158b73b942833f85478fa30157f45",
+      "bytes": 4490203
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_sample.parquet",
+      "sha256": "632e0ebb97c8e68a80670026f2f0f695b9d550b609525ea9fdf5202ac0b552c8",
+      "bytes": 19944
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/metabolomic_abundance.parquet",
+      "sha256": "d9020ca1201aa7d19f9acc9c35a20f4c85663b371bfdeba160977e5c85ba52f7",
+      "bytes": 11645295
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/metabolomic_sample.parquet",
+      "sha256": "1831099903c22efd2d982feba114812897c8bf441e08da113399937a072a001f",
+      "bytes": 8310
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/methylation_abundance.parquet",
+      "sha256": "b9bc74faf7a41050da21c31f10d4f99cfbd7ed072a3a955a411c4416ce1e8d56",
+      "bytes": 288059962
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/methylation_sample.parquet",
+      "sha256": "7f288a5998ebdd445b15e08638f7e59e9d113719c74c28cfc9b0b3476c4754a2",
+      "bytes": 4960
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/natural_product_occurrence.parquet",
+      "sha256": "99a3127da6afe8dc919e516cbf13eb266e7059a2cb8dbf9881afe5f64bc808e9",
+      "bytes": 14072283
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/natural_product_records.parquet",
+      "sha256": "44fd276955e5b8f1cae6a30dba8527745d9f08f9887c0037de2e54bc810a5c1c",
+      "bytes": 203683190
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/natural_products.parquet",
+      "sha256": "2239659b29464502b7a75e1be5ecae8f8094d8308c8847ace08aefbbea9d4ca5",
+      "bytes": 110109821
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_BPQ_C.parquet",
+      "sha256": "11a1198e3009541a3b5f870a50c51841e4f2e51a5ae1c67578238b564411a99a",
+      "bytes": 99920
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_BPQ_D.parquet",
+      "sha256": "5c5d64af135fba36a7d692dd367029b3c81ae5d44d4141c1fb23f874a9227940",
+      "bytes": 65876
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_BPX_C.parquet",
+      "sha256": "66cc683c6be1d6561649e933eec8f9a398058a49f5e1efb34c0863170e692a36",
+      "bytes": 189417
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_BPX_D.parquet",
+      "sha256": "0273fb830e4a742c38dfb5782ee7bb009facea149f543dce53a87c4c885e7cc4",
+      "bytes": 179579
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_DEMO_C.parquet",
+      "sha256": "d8be929ce7684bf4106dda35ef931ed053678383074824f0638a0d3408228c1a",
+      "bytes": 342080
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_DEMO_D.parquet",
+      "sha256": "3fbcea7149bf71964a3f970b3803d89aa87b97ad0650e402e0c2aa029002f218",
+      "bytes": 345910
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FFQDC_C.parquet",
+      "sha256": "c4c09fa7c5b12fa83dda8b61d7185ea5952a273b468bb3601249987634cfea5f",
+      "bytes": 1495261
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FFQDC_D.parquet",
+      "sha256": "3f41b8636395e4dfef0e18b5bcf53a0e045d6eec8d785b239a59d4f0b346f08e",
+      "bytes": 1398690
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FFQRAW_C.parquet",
+      "sha256": "4a6a2a1099b10eaeaed614f17ffa5bc7dfdcb9f3907ae5be63ac0e85b36ea531",
+      "bytes": 869147
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FFQRAW_D.parquet",
+      "sha256": "0be1daeeeb9def2d5f8d0ba56a23abf34f478e485c26050cb678683165351378",
+      "bytes": 817739
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FOODLK_C.parquet",
+      "sha256": "00ba534425fbfafbd988f4ca1ebb8b3d5be502b9a82da5ab4fe0cf4ecb08c34c",
+      "bytes": 5896
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_FOODLK_D.parquet",
+      "sha256": "00ba534425fbfafbd988f4ca1ebb8b3d5be502b9a82da5ab4fe0cf4ecb08c34c",
+      "bytes": 5896
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_VARLK_C.parquet",
+      "sha256": "3ea9ed6e4de9dbfd5a27170f9fad612be9f6e4aa88f08032ed4b0302417b6ed7",
+      "bytes": 4843
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/nhanes_native_VARLK_D.parquet",
+      "sha256": "3ea9ed6e4de9dbfd5a27170f9fad612be9f6e4aa88f08032ed4b0302417b6ed7",
+      "bytes": 4843
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/source_registry.parquet",
+      "sha256": "773acdafe90858dd4aa65a5e87ff6e4954b5cd83a96134d0468d66dc13d55347",
+      "bytes": 15236
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_analyte_definition.parquet",
+      "sha256": "e63d27aa8251cf66e1fe90cefc5c44d2dcab727e927daa91bf5b9df0c905dedb",
+      "bytes": 2274
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_composition.parquet",
+      "sha256": "f6f3b050b692587a1f018895585a4e1a01b85e9cf239f89866acbe54edba4830",
+      "bytes": 25947
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_food.parquet",
+      "sha256": "2895b5278e998182a92a25d71f17a92a188c5d36b2b7e678ea1eb29a069d88f4",
+      "bytes": 17294
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_native_measurement.parquet",
+      "sha256": "9a5705cac69d494a066c27cac6f4251142030c03753335ed69df2b900dc2f8e0",
+      "bytes": 45453
+    }
+  ]
+}

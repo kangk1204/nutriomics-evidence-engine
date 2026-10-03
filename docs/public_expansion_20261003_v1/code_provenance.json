@@ -1,0 +1,33 @@
+{
+  "actual_remote_executed_code_sha256": {
+    "acquire_public_expansion.py": "1533f64d15790844374ea17546294bb15d35c1ab6e7f0a7e1a7a602a69ee5315",
+    "acquire_reference_genotypes.py": "bbecdcc6e08a00889ab7de4d8d8abea3dfd408c51d40cad51edd6785a96e5286",
+    "audit_public_expansion.py": "712edd1fc279be850dc23d6c0467f4bedf82337f55d7be6c4a650c41ad718df2",
+    "correct_food_mass_units.py": "01fac6cdf7da17dc003750f2d66c1ea7f184aac17aff0eb828f14878858c7e54",
+    "public_expansion.py": "dcceaf8f9e1c35e935a11cc060a95a12d659d6d541b498c93ddb0d4ae65d92e8",
+    "public_expansion_receipt.py": "ab6c7862ff9f03fa06dfd5844c2bf2d8940e7be1532097ff64afd0c3d9a489ba",
+    "register_food_analyte_panel.py": "29e88e9549bd4fe27f2d76c8904cb63e7a3db4c50a225f585b81e7705e2f13c8",
+    "register_public_modalities.py": "4cc550ea02ccad7900152bb791d8baf795c11af317e3b1ac180990603999bcda",
+    "stage_bindingdb_endpoints.py": "d83802e1b602c6fb14d0b60e8940c4517f4c44663115622533b2d6f85712b759"
+  },
+  "preserved_executed_acquirer": {
+    "path": "executed_code/acquire_public_expansion.py",
+    "sha256": "1533f64d15790844374ea17546294bb15d35c1ab6e7f0a7e1a7a602a69ee5315"
+  },
+  "current_package_acquirer_sha256": "c10a83a3a8ef96c012c80b45b057c86fbc393749537cddc84d3a6d8f51dec09e",
+  "acquirer_change_after_execution": "removed one unreachable expression and closed XPT header file handle with a context manager; source URLs, bytes, archive validation, SHA and ETL unchanged",
+  "local_transport_or_cli_helpers_not_used_as_remote_ETL": [
+    "scripts/transfer_public_expansion.py",
+    "scripts/stage_public_expansion.py"
+  ],
+  "notes": "Core ETL, genotype fetch, modality registration, food mass correction, BindingDB endpoint parser, standard-analyte registration and audit match exact remote frozen SHA.",
+  "external_atlas_imported_source_sha256": {
+    "metabolomics.py": "b140c24fff97f45b92b9bd9b409da0c45e02d33a4e74516baa818df0a82711ea",
+    "provenance.py": "a55a3605d2d0544c884104199e58fefb765f237b5cd17a8e2a4b3f8c2f5c77c3"
+  },
+  "external_atlas_source_root": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-intervention-atlas/src/nutriomics_atlas",
+  "additional_runtime_versions": {
+    "pysam": "0.24.1",
+    "scipy": "1.18.1"
+  }
+}

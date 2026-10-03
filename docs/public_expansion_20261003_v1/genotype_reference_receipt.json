@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-10-03T05:40:56.977207+00:00",
+  "population": "public IGSR/1000 Genomes phase3 reference; not dietary intervention participants",
+  "build": "GRCh37",
+  "region": "11:61560000-61750000",
+  "same_person_omics_linkage": false,
+  "full_chromosome_download": false,
+  "sources": [
+    {
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+      "sha256": "c90c12a81c28502dfa0d2402ef24b39a7384a9b59482feb35f9226d151b148be",
+      "bytes": 133030
+    },
+    {
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel",
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/integrated_call_samples_v3.20130502.ALL.panel",
+      "sha256": "b4023dc6ee2d62ee89c8d4d347db4d348e65518d66d346574cdae7a4bbd76858",
+      "bytes": 55156
+    }
+  ],
+  "vcf_remote_metadata": {
+    "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz",
+    "Content-Length": "734583405",
+    "ETag": "\"2bc8da6d-5bda9614b49c0\"",
+    "Last-Modified": "Tue, 16 Mar 2021 15:54:23 GMT"
+  },
+  "status": "complete",
+  "variants": 5307,
+  "vcf_samples": 2504,
+  "panel_samples": 2504,
+  "genotype_calls": 13288728,
+  "subset_sha256": "f1bb56996181bd9d65ce172d3d3da5a96e447ace9241cfb08fbfda659aa6306e",
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_call.parquet",
+      "sha256": "f116b83ee8362ce535c9f2d47a183afb7bd158b73b942833f85478fa30157f45",
+      "bytes": 4490203
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_sample.parquet",
+      "sha256": "632e0ebb97c8e68a80670026f2f0f695b9d550b609525ea9fdf5202ac0b552c8",
+      "bytes": 19944
+    }
+  ],
+  "finished_utc": "2026-10-03T05:42:21.376979+00:00"
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "protocol_id": "food_compound_extension_acceptance_20261003_v1",
+  "frozen_utc": "2026-10-03T08:04:36.601855+00:00",
+  "metrics": {
+    "eligible_unique_food_compounds": 263,
+    "measured_food_occurrence_rows": 12920,
+    "qualitative_food_occurrence_rows": 0,
+    "valid_foods": 633,
+    "strict_quantitative_unique_food_compounds": 263,
+    "strict_qualitative_unique_food_compounds": 0,
+    "strict_qualitative_only_unique_food_compounds": 0,
+    "broader_standard_structure_concepts": 4630,
+    "broader_positive_numeric_standard_keys": 2563,
+    "broader_qualitative_only_standard_keys": 2067
+  },
+  "required_target": 2000,
+  "target_passed": false,
+  "audit_passed": true,
+  "audit_checks": {
+    "strict": {
+      "duplicate_strict_full_keys": 0,
+      "milk_assignments_counted": 0,
+      "unspecified_standard_stereo_counted": 0,
+      "missing_source_analyte_identity_counted": 0,
+      "eligible_rows_partition_difference": 0,
+      "broader_database_changed": 0
+    },
+    "broader": {
+      "duplicate_native_content_id": 0,
+      "duplicate_native_food_id": 0,
+      "duplicate_eligible_content_id": 0,
+      "source_row_partition_difference": 0,
+      "noncompound_namespace_counted": 0,
+      "unresolved_food_counted": 0,
+      "positive_tier_without_positive_value": 0,
+      "qualitative_tier_with_numeric_value": 0,
+      "taxonomy_or_uncited_groups_counted": 0,
+      "noneligible_tier_counted": 0,
+      "duplicate_full_structure": 0,
+      "bad_full_key_or_smiles_or_mixture": 0,
+      "predicted_occurrences_counted": 0,
+      "unpaired_duke_edible_part": 0,
+      "impossible_mass_counted": 0,
+      "eligible_orphan_food": 0,
+      "eligible_orphan_standard": 0,
+      "native_exposure_falsely_resolved": 0
+    }
+  },
+  "metric_unit": "Source-reported single-analyte occurrence with original analyteID+exact chemical name matching its full-key-verified standard representation. Positive numeric and amount-free identified presence with specific publication are counted separately then unioned. Unresolved milk assignments, class/species totals, unspecified stereo and method ambiguities are excluded",
+  "count_sql": "SELECT count(DISTINCT full_inchikey) FROM read_parquet('/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_verified_food_compounds.parquet') WHERE starts_with(strict_status,'strict_')",
+  "physical_database_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension.duckdb",
+  "physical_database_sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8",
+  "strict_serving_parquet": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_verified_food_compounds.parquet",
+  "strict_outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_occurrence_audit.parquet",
+      "sha256": "df8f589839b8c4866ed9b3713e211e6f5b18c0e2f6b201b56d4c5910ee83a133",
+      "bytes": 4554433
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_verified_food_compounds.parquet",
+      "sha256": "18d037eecd37b11599de3866f1d6be5179b0ee95a7a52d31ddcc3418184b8d7b",
+      "bytes": 66939
+    }
+  ],
+  "source_license": {
+    "data": "CC-BY-NC-4.0",
+    "data_url": "https://foodb.ca/compliance",
+    "terms_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "code_in_author_repository": "MIT",
+    "code_license_file_sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+    "project_raw_git_commit_allowed": false,
+    "noncommercial_research_reuse_allowed": true,
+    "commercial_permission_required": true
+  },
+  "source_links": {
+    "repository": "https://github.com/SWi1/FooDB_polyphenol_analysis",
+    "commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+    "paper_doi": "10.1016/j.tjnut.2024.08.010",
+    "author_verification": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=410641"
+  },
+  "source_files": [
+    {
+      "name": "Compound.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Compound.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "727abb16c4598f9e1aeca3e9fc15819a598d1ad5",
+      "sha256": "2489c7651d6b4c84ab9176587012b7dd30c19c3722988d4975c876e5ead08f18",
+      "bytes": 5177304,
+      "full_bzip2_eof_decoded_bytes": 51240971,
+      "status": "complete"
+    },
+    {
+      "name": "Content.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Content.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "1904c7d67f88452e4f3861c73ffd0595b0e74b6f",
+      "sha256": "caf385a8cc3e8e9b9c15df25b2e0a0875efae2461bce277b524fdc677b4b744d",
+      "bytes": 22720186,
+      "full_bzip2_eof_decoded_bytes": 779793109,
+      "status": "complete"
+    },
+    {
+      "name": "Food.csv",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Food.csv",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2974ffffbfa8f315c16db11b65e7b0fa9bdc637f",
+      "sha256": "91b4a9cfa8b1f250df66a79dacbac5c3d12ce2b7fecc9c58dbeb62f162d50dcb",
+      "bytes": 885915,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_dictionary.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "f744d9b179cbac9d0c07c9b641d59f8031b1b36c",
+      "sha256": "be06c54fe340899b9507b15ebbf1a6a5c96b35e8e5892bb152175fb6372422e1",
+      "bytes": 6016,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_README.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2f3863e874ee984fc8284d2823f363b9dc7119f6",
+      "sha256": "d7fcee452281387f8836be7c36c0d3a140b1dcd29f49cd569e5e142dbad939fd",
+      "bytes": 7255,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "edible_part_rules.Rmd",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/Estimation/E3A_Polyphenol_Estimation_Duke_Filtering.Rmd",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "b8b7ba0f2d9ffaaf203c67fcdc47f14684d1ed1b",
+      "sha256": "fa872dd559ebe339dd96d37e09acd85a53af1ffd09afcc892776d673f239f87a",
+      "bytes": 5185,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_code_LICENSE",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/LICENSE",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "fdfb1d093e9d4143bd42f71079b38a1ca91097c1",
+      "sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+      "bytes": 1078,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    }
+  ],
+  "broader_receipt_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\docs\\food_compound_extension_20261003_v1\\extension_receipt.json",
+  "broader_receipt_sha256": "6227b239c55f5f859e9800ded5fb916034b5d75b0162cbe70036fdc2725b0267",
+  "strict_receipt_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\docs\\food_compound_extension_20261003_v1\\strict_receipt_v2.json",
+  "strict_receipt_sha256": "2f19575e1a608eb3c88140645ce6f876f0c777ba030a2f1fdd85a7358783fdb9",
+  "allrow_audit_sha256": "a4c7ce762ed6aae2e57887a311a1d03ae79e3f9d35f3905e2956592486bc031a",
+  "previous_frozen_database_unchanged": true,
+  "immutable_33_dti_panel_extended": false,
+  "mapping_limitations": [
+    "This conservative exact-name guard can exclude valid synonym-linked analytes; it is not an estimate of all food chemistry",
+    "Original chemical names support source analyte identity after native CompoundID and exact structure verification; names alone never create new structures",
+    "Missing amount does not exclude presence-only records with specific source evidence; blank amount plus only a database/taxonomy assignment is excluded",
+    "Native free-ligand exposure, dose, analytical stereoisomer resolution and health efficacy remain unestablished",
+    "The broader4630 standardized representations remain separate; they do not automatically pass the strict2000 verified-single-compound target"
+  ],
+  "source_rejection_categories": [
+    {
+      "strict_status": "assayed_analyte_name_not_exact_standard_identity",
+      "rows": 103635,
+      "unique_full_keys": 848
+    },
+    {
+      "strict_status": "element_total_not_resolved_molecular_form",
+      "rows": 79371,
+      "unique_full_keys": 57
+    },
+    {
+      "strict_status": "generic_class_or_lipid_species_assignment",
+      "rows": 40803,
+      "unique_full_keys": 480
+    },
+    {
+      "strict_status": "milk_assay_to_structure_mapping_unresolved",
+      "rows": 10297,
+      "unique_full_keys": 1402
+    },
+    {
+      "strict_status": "native_form_or_method_ambiguous",
+      "rows": 814,
+      "unique_full_keys": 38
+    },
+    {
+      "strict_status": "original_assayed_analyte_id_or_name_missing",
+      "rows": 25974,
+      "unique_full_keys": 982
+    },
+    {
+      "strict_status": "qualitative_database_assignment_without_specific_source",
+      "rows": 949,
+      "unique_full_keys": 380
+    },
+    {
+      "strict_status": "standard_stereochemistry_unspecified",
+      "rows": 70861,
+      "unique_full_keys": 1255
+    },
+    {
+      "strict_status": "strict_positive_source_named_single_analyte",
+      "rows": 12920,
+      "unique_full_keys": 263
+    }
+  ],
+  "test_result": "4 passed",
+  "owned_code_sha256": {
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\scripts\\food_compound_extension.py": "46e13875f9609e278d47b3932b323ef875cfd40376cb07052787b560bae73645",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\src\\nutriomics_evidence\\food_compound_extension.py": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\tests\\test_food_compound_extension.py": "8df11c8e4064df550ea67b89ab390509ab07b980e316069f8a3239f3867c712f"
+  },
+  "supersedes_historical_broader_acceptance_flag": true,
+  "historical_receipt_name": "extension_receipt.json",
+  "historical_true_flag_not_final_acceptance": true,
+  "erratum_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\docs\\food_compound_extension_20261003_v1\\ERRATUM.md",
+  "erratum_sha256": "c110dd0bd364abf5e3a8e084a39c7214aa0ba1c401ae5abd6e6f185b30f3b878",
+  "strict_protocol_id": "food_compound_extension_source_analyte_audit_v2",
+  "strict_v1_superseded_receipt_sha256": "4328528a190221b1a715ca3938f07558c8391f49a8d5e4ab06751b2e17eeeb84",
+  "supersedes_strict_v1_generic_vitamin_d_assignment": true,
+  "correction": "Exclude original DTU nutrient0023 generic Vitamin D total: exact source-name equality cannot resolve native D2/D3 molecular identity. Earlier strict264 snapshot remains unchanged.",
+  "environment_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\docs\\food_compound_extension_20261003_v1\\environment.json",
+  "environment_sha256": "51469a01462e0cb57e7866c7a7f83796bc0a54b764b9408a7f4c226a941c6816"
+}

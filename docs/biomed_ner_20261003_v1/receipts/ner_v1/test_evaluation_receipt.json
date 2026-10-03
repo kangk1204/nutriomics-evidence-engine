@@ -1,0 +1,10 @@
+{
+  "native_gold_interpreted_after_predictions_closed": true,
+  "native_test_sha256": "30d7a4f571ca8ed22a044528063ba5d0388d666d8b8b329733d6927e5fb30764",
+  "predictions_sha256": "ab8aba116513658853e19d89759c2bc70f781436e2963ffd62d9adf44d09c35b",
+  "selected_model_sha256": "16b4c517cc3adaa654e2f7cfc2315939c5e93f5d7ad2d5b8d3fa3dc48e456971",
+  "selected_epoch": 3,
+  "test_prediction_passes": 1,
+  "test_used_for_selection": false,
+  "official_PMID_mapping_available": false
+}

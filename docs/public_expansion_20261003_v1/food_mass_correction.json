@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "corrected_utc": "2026-10-03T06:07:54.777895+00:00",
+  "pre_qc_rows": 7189227,
+  "eligible_rows": 7186264,
+  "rejected_rows": 2963,
+  "rejected_by_unit": {
+    "MG": 528,
+    "UG": 4,
+    "G": 2431
+  },
+  "rejection_reason": "mass_exceeds100g_basis",
+  "pre_qc_artifact": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition_before_mass_qc.parquet",
+    "sha256": "2d40113ad9ff4337744061b82bade548e926d74923283a47e1ccf75b453a5b20"
+  },
+  "corrected_artifact": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition.parquet",
+    "sha256": "cf6502544145fde28c4139f78aaa668fb083a57ad9dafb7fe58cf036ff7e3428"
+  },
+  "rejection_artifact": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_composition_rejections.parquet",
+    "sha256": "e0041745f9781eeb4a10d694c4c315541c260b448f2c48279274b4ac8c5ffbca"
+  },
+  "single_analyte_export": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/fdc_single_analyte_positive.csv",
+    "sha256": "0cd219f96d9b7f88b6c3410d0dfec005085abb09099ce6c678743c0197ca8d29",
+    "rows": 2863,
+    "native_analyte_counts": [
+      [
+        "1057",
+        "Caffeine",
+        "MG",
+        850,
+        850,
+        10000.0
+      ],
+      [
+        "1058",
+        "Theobromine",
+        "MG",
+        506,
+        506,
+        2634.0
+      ],
+      [
+        "1111",
+        "Vitamin D2 (ergocalciferol)",
+        "UG",
+        54,
+        54,
+        31.9
+      ],
+      [
+        "1112",
+        "Vitamin D3 (cholecalciferol)",
+        "UG",
+        1453,
+        1453,
+        1000.0
+      ]
+    ]
+  },
+  "provenance": {
+    "source_id": "usda_fdc_202604",
+    "source_zip_sha256": "c33d91e5c44ddbcd71ed6038714fb648b26089b3f91fabfa3be63d96d5763a01",
+    "source_url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_csv_2026-04-30.zip",
+    "native_basis": "source100g",
+    "mass_bound_applied": true,
+    "structure_assigned_from_nutrient_name": false,
+    "labels_and_analytical_measurements_kept_separate": true
+  },
+  "combined_D2_D3_nutrients_exported": false,
+  "chemical_structure_identity_claimed": false
+}

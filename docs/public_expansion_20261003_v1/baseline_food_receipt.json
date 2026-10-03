@@ -1,0 +1,8 @@
+{
+  "source_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-evidence-engine/artifacts/hypertension.sqlite",
+  "source_sha256": "d46ac4ad8eecb624f3a593ba2974edd00eb37e3ff1a858d2dcad9cf1e80d0dce",
+  "source_food_count": 6321,
+  "snapshot_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/baseline_food_snapshot.sqlite",
+  "snapshot_sha256": "cee838a783dde52960046280fc2941abb078d509916ba59c418f73f3280270ba",
+  "count_unit": "actual current graph food nodes; exact IDs exported read-only; no production mutation"
+}

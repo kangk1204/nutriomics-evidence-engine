@@ -1,0 +1,9 @@
+# CPU execution: Python3.12.14. External atlas source is separately versioned.
+duckdb==1.5.6
+pyarrow==25.0.1
+pandas==3.0.6
+numpy==2.5.3
+rdkit==2026.3.6
+requests==2.34.2
+pysam==0.24.1
+scipy==1.18.1

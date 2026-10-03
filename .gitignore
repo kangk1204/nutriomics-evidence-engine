@@ -22,3 +22,4 @@ cache/
 *.log
 
 .pytest*/
+docs/biomed_ner_20261003_v1/receipts/ner_v1/test_predictions.jsonl

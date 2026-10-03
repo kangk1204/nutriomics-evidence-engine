@@ -1,0 +1,18 @@
+{
+  "checks_passed": true,
+  "native_test_sentences": 5038,
+  "selected_epoch": 3,
+  "fixed_predictions_recalculated": {
+    "precision": 0.8157695223654283,
+    "recall": 0.850592885375494,
+    "f1": 0.8328173374613004,
+    "true_positive_spans": 5380,
+    "false_positive_spans": 1215,
+    "false_negative_spans": 945
+  },
+  "model_sha256": "16b4c517cc3adaa654e2f7cfc2315939c5e93f5d7ad2d5b8d3fa3dc48e456971",
+  "prediction_sha256": "ab8aba116513658853e19d89759c2bc70f781436e2963ffd62d9adf44d09c35b",
+  "source_sha256": "30d7a4f571ca8ed22a044528063ba5d0388d666d8b8b329733d6927e5fb30764",
+  "no_new_model_prediction_or_tuning": true,
+  "article_independence_or_pretraining_overlap_established": false
+}

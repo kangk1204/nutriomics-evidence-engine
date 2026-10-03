@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "protocol_id": "food_compound_extension_source_analyte_audit_v2",
+  "frozen_utc": "2026-10-03T08:04:36.601855+00:00",
+  "strict_unique_food_compounds_union": 263,
+  "strict_positive_unique_food_compounds": 263,
+  "strict_positive_food_occurrence_rows": 12920,
+  "strict_qualitative_unique_food_compounds": 0,
+  "strict_qualitative_food_occurrence_rows": 0,
+  "strict_qualitative_only_unique_food_compounds": 0,
+  "strict_quantitative_qualitative_overlap_keys": 0,
+  "strict_valid_foods": 633,
+  "count_unit": "Source-reported single-analyte occurrence with original analyteID+exact chemical name matching its full-key-verified standard representation. Positive numeric and amount-free identified presence with specific publication are counted separately then unioned. Unresolved milk assignments, class/species totals, unspecified stereo and method ambiguities are excluded",
+  "broader_standard_concept_count": 4630,
+  "positive_numeric_standard_keys": 2563,
+  "milk_assigned_positive_keys": 1402,
+  "positive_nonmilk_keys_before_strict_guards": 1294,
+  "milk_positive_keys_with_nonmilk_evidence": 133,
+  "strict_target_2000_passed": false,
+  "original_assay_mapping_for_milk_available": false,
+  "all_uncertain_milk_species_rows_excluded": true,
+  "checks": {
+    "duplicate_strict_full_keys": 0,
+    "milk_assignments_counted": 0,
+    "unspecified_standard_stereo_counted": 0,
+    "missing_source_analyte_identity_counted": 0,
+    "eligible_rows_partition_difference": 0,
+    "broader_database_changed": 0
+  },
+  "audit_passed": true,
+  "rejection_categories": [
+    {
+      "strict_status": "assayed_analyte_name_not_exact_standard_identity",
+      "rows": 103635,
+      "unique_full_keys": 848
+    },
+    {
+      "strict_status": "element_total_not_resolved_molecular_form",
+      "rows": 79371,
+      "unique_full_keys": 57
+    },
+    {
+      "strict_status": "generic_class_or_lipid_species_assignment",
+      "rows": 40803,
+      "unique_full_keys": 480
+    },
+    {
+      "strict_status": "milk_assay_to_structure_mapping_unresolved",
+      "rows": 10297,
+      "unique_full_keys": 1402
+    },
+    {
+      "strict_status": "native_form_or_method_ambiguous",
+      "rows": 814,
+      "unique_full_keys": 38
+    },
+    {
+      "strict_status": "original_assayed_analyte_id_or_name_missing",
+      "rows": 25974,
+      "unique_full_keys": 982
+    },
+    {
+      "strict_status": "qualitative_database_assignment_without_specific_source",
+      "rows": 949,
+      "unique_full_keys": 380
+    },
+    {
+      "strict_status": "standard_stereochemistry_unspecified",
+      "rows": 70861,
+      "unique_full_keys": 1255
+    },
+    {
+      "strict_status": "strict_positive_source_named_single_analyte",
+      "rows": 12920,
+      "unique_full_keys": 263
+    }
+  ],
+  "source_database_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension.duckdb",
+  "source_database_sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8",
+  "broader_receipt_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/extension_receipt.json",
+  "broader_receipt_sha256": "6227b239c55f5f859e9800ded5fb916034b5d75b0162cbe70036fdc2725b0267",
+  "source_license": {
+    "data": "CC-BY-NC-4.0",
+    "data_url": "https://foodb.ca/compliance",
+    "terms_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "code_in_author_repository": "MIT",
+    "code_license_file_sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+    "project_raw_git_commit_allowed": false,
+    "noncommercial_research_reuse_allowed": true,
+    "commercial_permission_required": true
+  },
+  "source_links": {
+    "repository": "https://github.com/SWi1/FooDB_polyphenol_analysis",
+    "paper": "10.1016/j.tjnut.2024.08.010",
+    "milk_primary": "https://pubmed.ncbi.nlm.nih.gov/30994344/"
+  },
+  "limitations": [
+    "This conservative exact-name guard can exclude valid synonym-linked analytes; it is not an estimate of all food chemistry",
+    "Original chemical names support source analyte identity after native CompoundID and exact structure verification; names alone never create new structures",
+    "Missing amount does not exclude presence-only records with specific source evidence; blank amount plus only a database/taxonomy assignment is excluded",
+    "Native free-ligand exposure, dose, analytical stereoisomer resolution and health efficacy remain unestablished",
+    "The broader4630 standardized representations remain separate; they do not automatically pass the strict2000 verified-single-compound target"
+  ],
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_occurrence_audit.parquet",
+      "sha256": "df8f589839b8c4866ed9b3713e211e6f5b18c0e2f6b201b56d4c5910ee83a133",
+      "bytes": 4554433
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/strict_v2/strict_verified_food_compounds.parquet",
+      "sha256": "18d037eecd37b11599de3866f1d6be5179b0ee95a7a52d31ddcc3418184b8d7b",
+      "bytes": 66939
+    }
+  ],
+  "executed_code_sha256": {
+    "food_compound_extension.py": "46e13875f9609e278d47b3932b323ef875cfd40376cb07052787b560bae73645",
+    "food_compound_extension_module.py": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722"
+  },
+  "superseded_strict_v1_receipt_sha256": "4328528a190221b1a715ca3938f07558c8391f49a8d5e4ab06751b2e17eeeb84",
+  "correction": "Exclude original DTU nutrient0023 generic Vitamin D total: exact source-name equality cannot resolve native D2/D3 molecular identity. Earlier strict264 snapshot remains unchanged."
+}

@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "registered_utc": "2026-10-03T06:26:17.816568+00:00",
+  "standard_full_structures": 33,
+  "standard_food_chemical_concept_definition": "source official positive food analyte + independently normalized unique PubChem standard concept; aglycone/stereo/native ligand limitations retained",
+  "native_free_exposure_count": 0,
+  "already_counted_in_existing_baseline_not_a_new33_claim": true,
+  "verified_2000_milestone_met": false,
+  "isoflavone_foods": 560,
+  "isoflavone_native_measurements": 2429,
+  "isoflavone_analyte_definitions": 7,
+  "isoflavone_single_analyte_measurements": 1885,
+  "inputs": [
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\reports\\food_panel_expanded_20261003_v4\\verified_food_compounds.csv",
+      "name": "verified_food_compounds_v4.csv",
+      "sha256": "40c1cdfe748039863c133d1cec65f39c7a26689598208c7fa0516cb24de4996d",
+      "bytes": 17365
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\reports\\food_panel_expanded_20261003_v4\\audit.json",
+      "name": "panel_v4_audit.json",
+      "sha256": "51350349eb8d970f2af55ccf37776107ae88d74847cc8bc289a77871affaa181",
+      "bytes": 11229
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\Isoflav_R2-1.accdb",
+      "name": "Isoflav_R2-1.accdb",
+      "sha256": "6b56a73dfcd23512664afc97ed8a6efd994d6828b465341f8b18740512d942d6",
+      "bytes": 2269184
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\Isoflav_R2-1.pdf",
+      "name": "Isoflav_R2-1.pdf",
+      "sha256": "3a4650d4011e89317e94ce644b323add23ff029b62d5f9466c548f05071d98d1",
+      "bytes": 385785
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\tables\\FOOD_DES.csv",
+      "name": "isoflavone_FOOD_DES.csv",
+      "sha256": "eeb3858ad3cbcb03d236b6597cf847de06008d8b3dc2efd49133505eea7157b7",
+      "bytes": 29102
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\tables\\ISFL_DAT.csv",
+      "name": "isoflavone_ISFL_DAT.csv",
+      "sha256": "dcf4e4dcfbefccacf423468c5c451cf1faf441c3e0e440d7de73dc55285f6168",
+      "bytes": 109896
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\tables\\NUTR_DEF.csv",
+      "name": "isoflavone_NUTR_DEF.csv",
+      "sha256": "50cfcd293b124343bb69d2d983414e79f7c4fd14742c2b45301093854cdd5742",
+      "bytes": 162
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_128861_properties.json",
+      "name": "pubchem_cid_128861_properties.json",
+      "sha256": "b5835482a5cef14337dab19112d336e6b52d1f997e769d6d78e9e4621d015741",
+      "bytes": 325,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/128861"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_441774_properties.json",
+      "name": "pubchem_cid_441774_properties.json",
+      "sha256": "b6f316fab308d65374e029d75d08a20ebca0df60e50100050375a5efbfffce0a",
+      "bytes": 337,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/441774"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_128853_properties.json",
+      "name": "pubchem_cid_128853_properties.json",
+      "sha256": "78b5359e546862bcb2739a208c0f449c0c011639d93a65f0af7d645dd02c9a6a",
+      "bytes": 331,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/128853"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_159287_properties.json",
+      "name": "pubchem_cid_159287_properties.json",
+      "sha256": "708cc06f736e422eb2fe7a1f88b07608ba52492501cb2ae0e9a1da31a8db1dce",
+      "bytes": 338,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/159287"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_440832_properties.json",
+      "name": "pubchem_cid_440832_properties.json",
+      "sha256": "1cf808a06491810464cbb1bce036de5845db9170825bd38bd39e441a90e8c55f",
+      "bytes": 318,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/440832"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_441773_properties.json",
+      "name": "pubchem_cid_441773_properties.json",
+      "sha256": "f16683b0ec9b28a7cc81de79925b3a3fd24ae32077386321def3c087b95d901b",
+      "bytes": 332,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/441773"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_9064_properties.json",
+      "name": "pubchem_cid_9064_properties.json",
+      "sha256": "3f81f3ce4fd92f8fec287ab3e251180a149f79badb87fa7116fc63debc8cdd80",
+      "bytes": 350,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/9064"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_72277_properties.json",
+      "name": "pubchem_cid_72277_properties.json",
+      "sha256": "348d76b052fc6a81de4ee3963ff6a4863240489fc986d1dd4797a39d33c020a9",
+      "bytes": 356,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/72277"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_72276_properties.json",
+      "name": "pubchem_cid_72276_properties.json",
+      "sha256": "49f69c761a142ccbfa65226f19ff071f60e9bb7e53b3da0700f1207e1beabe35",
+      "bytes": 350,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/72276"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_107905_properties.json",
+      "name": "pubchem_cid_107905_properties.json",
+      "sha256": "0f9609902a8c48668de2f83e6509c5cb3d616b8044f2cc65c8ccae9eb9dfa1f6",
+      "bytes": 410,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/107905"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_65064_properties.json",
+      "name": "pubchem_cid_65064_properties.json",
+      "sha256": "ede588e752e057219a97962d9ce6259bd3b5f99f16fe1b30eb0e5087c1e8afc7",
+      "bytes": 415,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/65064"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_135403798_properties.json",
+      "name": "pubchem_cid_135403798_properties.json",
+      "sha256": "139a48554b8763c998e939fcf85707de49d8f2bbde0aaa0398b5d779148fa5b8",
+      "bytes": 441,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/135403798"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_440735_properties.json",
+      "name": "pubchem_cid_440735_properties.json",
+      "sha256": "c285be9ee59eceea0237bd9eb38492a5d9d36e5d6d8f6a851902d94045970cb1",
+      "bytes": 346,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/440735"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_72281_properties.json",
+      "name": "pubchem_cid_72281_properties.json",
+      "sha256": "59e8862914505f4221d6bfaf070013621d2877e24586f9984c06dda467a031ea",
+      "bytes": 353,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/72281"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_439246_properties.json",
+      "name": "pubchem_cid_439246_properties.json",
+      "sha256": "93bf067667a9cfc4d9089f8f18b61913278704953ee780c86ef86da65b1aad8f",
+      "bytes": 339,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/439246"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5280443_properties.json",
+      "name": "pubchem_cid_5280443_properties.json",
+      "sha256": "245f47e764953820de398172224fdba5bc69b23eada9d27eda6786d62c3561b2",
+      "bytes": 320,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280443"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5280445_properties.json",
+      "name": "pubchem_cid_5280445_properties.json",
+      "sha256": "89ece7013a72146c20b57863f5c99963a1ab28399d7734d532d891888b4caa63",
+      "bytes": 327,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5281654_properties.json",
+      "name": "pubchem_cid_5281654_properties.json",
+      "sha256": "3debcd18bf48062d25f7c3cc15bb37952e41a7ae8b225551ffb720f6eb5b715b",
+      "bytes": 340,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281654"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5280863_properties.json",
+      "name": "pubchem_cid_5280863_properties.json",
+      "sha256": "781aafbf39cc5ae364bb6b24d5b0fec14f6794f349e8aebb2b7b7af47e309335",
+      "bytes": 326,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280863"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5281672_properties.json",
+      "name": "pubchem_cid_5281672_properties.json",
+      "sha256": "a4c086a17e6d2abd79f3c119bebab7b063f7b4da7d36a1c89c8b2c3919199fb2",
+      "bytes": 339,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281672"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_5280343_properties.json",
+      "name": "pubchem_cid_5280343_properties.json",
+      "sha256": "f1830b16fcaba9605bcbfb709f3750944350e72a9671974eae306caac51e62d7",
+      "bytes": 333,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280343"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_21146795_properties.json",
+      "name": "pubchem_cid_21146795_properties.json",
+      "sha256": "aeb637d956ac98a66d6bf0a3f39be91bf63194032924b1bfcc9a2312b2b15aed",
+      "bytes": 546,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/21146795"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\food_panel_expanded_20261003_v1\\cid_65084_properties.json",
+      "name": "pubchem_cid_65084_properties.json",
+      "sha256": "eac369243e69501e98ea7593b92e8ac59b920cfb1c7111509b9f5cdf40d7576c",
+      "bytes": 357,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/65084"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\fdc_single_analytes_20261003_v1\\cid_2519_properties.json",
+      "name": "pubchem_cid_2519_properties.json",
+      "sha256": "100119222f512bd56bfbf8df5b7ce7da6574ec95cf73a4b72fce96fb0b371159",
+      "bytes": 289,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\fdc_single_analytes_20261003_v1\\cid_5429_properties.json",
+      "name": "pubchem_cid_5429_properties.json",
+      "sha256": "2deb05fc9d007235a948cc936bd54d3059b454d7a7bb7ea4f1366895a6b8ad25",
+      "bytes": 282,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5429"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\fdc_single_analytes_20261003_v1\\cid_5280793_properties.json",
+      "name": "pubchem_cid_5280793_properties.json",
+      "sha256": "979469d49efba6829ffa42e169373645d50e6822eb1df505656effa20275161b",
+      "bytes": 480,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280793"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\fdc_single_analytes_20261003_v1\\cid_5280795_properties.json",
+      "name": "pubchem_cid_5280795_properties.json",
+      "sha256": "bb232c93cf8b456f495c9dd196156ec0302f295f2d247df5000259f7f6b69607",
+      "bytes": 458,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280795"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5281708_properties.json",
+      "name": "pubchem_cid_5281708_properties.json",
+      "sha256": "0e6b3367ed2923d059586740d8b65927faf3d8fe4c620669541b245b441e40d5",
+      "bytes": 313,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281708"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5280961_properties.json",
+      "name": "pubchem_cid_5280961_properties.json",
+      "sha256": "0e817dee81c5090812828285eaee0271527c66017646eb3552f16271bdf0fb9d",
+      "bytes": 318,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280961"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5317750_properties.json",
+      "name": "pubchem_cid_5317750_properties.json",
+      "sha256": "016dcac95f536b8d20c11e99504dbbf2e04c1bded9c3db15eba02b1a9943342c",
+      "bytes": 329,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5317750"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5280373_properties.json",
+      "name": "pubchem_cid_5280373_properties.json",
+      "sha256": "7e8386fa5cb4ae41b4e5996457435fa367299dc542bd639197d8976187eeecef",
+      "bytes": 319,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280373"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5280378_properties.json",
+      "name": "pubchem_cid_5280378_properties.json",
+      "sha256": "9405e5d14bc0a446d32b8f8af3f2693bc3496cec9425de4725ef6bbee22d7732",
+      "bytes": 314,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280378"
+    },
+    {
+      "source_path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-compound-target\\data\\usda_isoflavone_20261003\\cid_5281707_properties.json",
+      "name": "pubchem_cid_5281707_properties.json",
+      "sha256": "bc4d090ad342baf771acdc425a7c27a59b51dece3abc3c826cde98869ef18101",
+      "bytes": 319,
+      "source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281707"
+    }
+  ],
+  "food_identity_merged_with_FDC_by_name": false,
+  "source_foods_added_to_canonical_FDC_delta": false,
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_analyte_definition.parquet",
+      "sha256": "e63d27aa8251cf66e1fe90cefc5c44d2dcab727e927daa91bf5b9df0c905dedb"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_composition.parquet",
+      "sha256": "f6f3b050b692587a1f018895585a4e1a01b85e9cf239f89866acbe54edba4830"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_food.parquet",
+      "sha256": "2895b5278e998182a92a25d71f17a92a188c5d36b2b7e678ea1eb29a069d88f4"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/usda_isoflavone_native_measurement.parquet",
+      "sha256": "9a5705cac69d494a066c27cac6f4251142030c03753335ed69df2b900dc2f8e0"
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_standard_analyte_panel.parquet",
+      "sha256": "31bac37e37b3a6e7cc2fe7249fa0a9921bfb8140da62ca3942f783b43eca0f31"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "protocol_id": "food_compound_extension_20261003_v1",
+  "evidence_status": "broader_and_strict_v2_audits_completed; strict2000_target_unmet",
+  "receipt_transfer_completed": true,
+  "observed_broader_metrics": {
+    "eligible_unique_standard_structure_concepts": 4630,
+    "positive_numeric_standard_keys": 2563,
+    "qualitative_only_standard_keys": 2067,
+    "eligible_food_occurrence_rows": 345624,
+    "positive_food_occurrence_rows": 337004,
+    "qualitative_food_occurrence_rows": 8620,
+    "valid_foods": 822,
+    "native_content_rows": 5145532,
+    "rejected_content_rows": 4799908,
+    "predicted_hmdb_pathbank_rows_excluded": 3273562,
+    "milk_assigned_positive_keys": 1402,
+    "positive_keys_with_nonmilk_evidence": 1294,
+    "milk_and_nonmilk_positive_overlap_keys": 133
+  },
+  "broader_database_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension.duckdb",
+  "broader_database_sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8",
+  "broader_receipt_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/extension_receipt.json",
+  "broader_source_manifest_sha256": "051721415a081e70fd4e8dd87380c6e48d48dad27b243e980771ccd8ad17fdf2",
+  "broader_all_row_checks_passed": true,
+  "broader_all_row_check_count": 18,
+  "previous_frozen_database_unchanged": true,
+  "strict_unique_food_compounds_union": 263,
+  "strict_positive_unique_food_compounds": 263,
+  "strict_qualitative_unique_food_compounds": 0,
+  "strict_2000_target_verified": false,
+  "blocker": null,
+  "strict_command": "/home/keunsoo/projects/nutriomics-2026-final/.venv/bin/python /home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/strict_code/food_compound_extension.py --root /home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1 --phase strict-audit",
+  "test_result": "4 passed",
+  "source_audit": "SOURCE_AUDIT.md",
+  "owned_local_code_sha256": {
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\scripts\\food_compound_extension.py": "46e13875f9609e278d47b3932b323ef875cfd40376cb07052787b560bae73645",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\src\\nutriomics_evidence\\food_compound_extension.py": "598a8d65c0189efc3bab77ec5cf3b59019d0eaf0f3ac2af0b6c2c2513980f722",
+    "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-evidence-engine\\tests\\test_food_compound_extension.py": "8df11c8e4064df550ea67b89ab390509ab07b980e316069f8a3239f3867c712f"
+  },
+  "acceptance_receipt_sha256": "393d2fe240b93898e56a4af797740fcb10d34d4f712d12cfd52545dc146e0517"
+}

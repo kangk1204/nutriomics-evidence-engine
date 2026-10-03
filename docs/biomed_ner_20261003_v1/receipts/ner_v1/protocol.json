@@ -1,0 +1,47 @@
+{
+  "protocol_id": "bc2gm-biomedbert-20261003-v1",
+  "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "revision": "e1354b7a3a09615f6aba48dfad4b7a613eef7062",
+  "seed": 20261003,
+  "epochs": 5,
+  "learning_rate": 2e-05,
+  "batch": 4,
+  "gradient_accumulation": 4,
+  "max_wordpieces": 254,
+  "source_sha256": {
+    "train": "46e17f4e1509483b82c03f27d6f0214020f738fb71704356fb3445eb824ab38d",
+    "dev": "33a94577aa22f1e70ec9e02781a05baa4e1390e866d28bf2b344888e4e3d4103",
+    "test": "30d7a4f571ca8ed22a044528063ba5d0388d666d8b8b329733d6927e5fb30764"
+  },
+  "sentences": {
+    "train": 12488,
+    "dev": 2494,
+    "test": 5038
+  },
+  "duplicate_sentences_excluded": {
+    "train": 86,
+    "dev": 25,
+    "test": 0
+  },
+  "original_pmids_available": false,
+  "document_overlap_verifiable": false,
+  "pretraining_overlap_known": false,
+  "selection": "maximum development exact-span F1",
+  "evaluation_unit": "official-split sentence and exact gene span",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "code_sha256": "7a1c63064cd6224c50959147103f9f664de31a5587d3ad63b1f0a43d6232a5b8",
+  "evaluation_code_sha256": "84e34bc81516b3f4cdc9a2bed5e81e8dd55ea593ebdf1dfc42f9830fe3520d9a",
+  "chunking": "complete words, no overlap; checked coverage; reconstructed first-wordpiece labels across whole native sentences",
+  "training_chunks": 12488,
+  "development_chunks": 2495,
+  "training_words": 354857,
+  "runtime": {
+    "numpy": "2.4.6",
+    "transformers": "4.57.3",
+    "python": "3.11.15 | packaged by conda-forge | (main, Aug 11 2026, 10:26:29) [GCC 14.4.0]"
+  },
+  "precision": "CUDA bfloat16 autocast; FP32 optimizer parameters",
+  "VRAM_fraction_cap": 0.36,
+  "CPU_threads": 2
+}

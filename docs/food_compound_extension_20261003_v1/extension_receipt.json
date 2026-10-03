@@ -1,0 +1,2122 @@
+{
+  "schema_version": 1,
+  "protocol_id": "food_compound_extension_20261003_v1",
+  "frozen_utc": "2026-10-03T07:40:51.487100+00:00",
+  "metrics": {
+    "eligible_unique_food_compounds": 4630,
+    "measured_food_occurrence_rows": 337004,
+    "qualitative_food_occurrence_rows": 8620,
+    "eligible_food_occurrence_rows": 345624,
+    "valid_foods": 822,
+    "positive_numeric_unique_food_compounds": 2563,
+    "qualitative_only_unique_food_compounds": 2067,
+    "native_source_compounds": 70477,
+    "native_source_content_rows": 5145532,
+    "native_source_foods": 992,
+    "rejected_source_content_rows": 4799908,
+    "published_food_specific_part_pairs": 117,
+    "standard_unspecified_stereo": 1859,
+    "milk_species_assigned_occurrence_rows": 10297,
+    "milk_species_assigned_unique_standard_keys": 1402,
+    "unique_keys_with_nonmilk_evidence": 3579
+  },
+  "count_unit": "Distinct exact full InChIKey standardized single chemical structures with specific nonpredicted food occurrence; native analytical stereoisomer resolution is not claimed",
+  "count_sql": "SELECT count(DISTINCT full_inchikey) FROM food_compound_extension_standards WHERE standard_structure_verified AND single_component AND computed_inchi_key=full_inchikey AND computed_smiles_key=full_inchikey",
+  "meets_2000_verified_food_compound_target": true,
+  "physical_database_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension.duckdb",
+  "physical_database_sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8",
+  "audit_passed": true,
+  "all_row_checks": {
+    "duplicate_native_content_id": 0,
+    "duplicate_native_food_id": 0,
+    "duplicate_eligible_content_id": 0,
+    "source_row_partition_difference": 0,
+    "noncompound_namespace_counted": 0,
+    "unresolved_food_counted": 0,
+    "positive_tier_without_positive_value": 0,
+    "qualitative_tier_with_numeric_value": 0,
+    "taxonomy_or_uncited_groups_counted": 0,
+    "noneligible_tier_counted": 0,
+    "duplicate_full_structure": 0,
+    "bad_full_key_or_smiles_or_mixture": 0,
+    "predicted_occurrences_counted": 0,
+    "unpaired_duke_edible_part": 0,
+    "impossible_mass_counted": 0,
+    "eligible_orphan_food": 0,
+    "eligible_orphan_standard": 0,
+    "native_exposure_falsely_resolved": 0
+  },
+  "all_row_audit_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/allrow_audit.json",
+  "all_row_audit_sha256": "a4c7ce762ed6aae2e57887a311a1d03ae79e3f9d35f3905e2956592486bc031a",
+  "source_manifest_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/acquisition.json",
+  "source_manifest_sha256": "051721415a081e70fd4e8dd87380c6e48d48dad27b243e980771ccd8ad17fdf2",
+  "stage_receipt_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/receipt.json",
+  "stage_receipt_sha256": "4e8ca7101ef8794fa67505880daf33bc8c68fdd7f65ad7799993adf70340292c",
+  "sources": [
+    {
+      "name": "Compound.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Compound.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "727abb16c4598f9e1aeca3e9fc15819a598d1ad5",
+      "sha256": "2489c7651d6b4c84ab9176587012b7dd30c19c3722988d4975c876e5ead08f18",
+      "bytes": 5177304,
+      "full_bzip2_eof_decoded_bytes": 51240971,
+      "status": "complete"
+    },
+    {
+      "name": "Content.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Content.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "1904c7d67f88452e4f3861c73ffd0595b0e74b6f",
+      "sha256": "caf385a8cc3e8e9b9c15df25b2e0a0875efae2461bce277b524fdc677b4b744d",
+      "bytes": 22720186,
+      "full_bzip2_eof_decoded_bytes": 779793109,
+      "status": "complete"
+    },
+    {
+      "name": "Food.csv",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Food.csv",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2974ffffbfa8f315c16db11b65e7b0fa9bdc637f",
+      "sha256": "91b4a9cfa8b1f250df66a79dacbac5c3d12ce2b7fecc9c58dbeb62f162d50dcb",
+      "bytes": 885915,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_dictionary.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "f744d9b179cbac9d0c07c9b641d59f8031b1b36c",
+      "sha256": "be06c54fe340899b9507b15ebbf1a6a5c96b35e8e5892bb152175fb6372422e1",
+      "bytes": 6016,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_README.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2f3863e874ee984fc8284d2823f363b9dc7119f6",
+      "sha256": "d7fcee452281387f8836be7c36c0d3a140b1dcd29f49cd569e5e142dbad939fd",
+      "bytes": 7255,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "edible_part_rules.Rmd",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/Estimation/E3A_Polyphenol_Estimation_Duke_Filtering.Rmd",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "b8b7ba0f2d9ffaaf203c67fcdc47f14684d1ed1b",
+      "sha256": "fa872dd559ebe339dd96d37e09acd85a53af1ffd09afcc892776d673f239f87a",
+      "bytes": 5185,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_code_LICENSE",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/LICENSE",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "fdfb1d093e9d4143bd42f71079b38a1ca91097c1",
+      "sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+      "bytes": 1078,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    }
+  ],
+  "source_repository": "https://github.com/SWi1/FooDB_polyphenol_analysis",
+  "source_repository_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+  "source_version": "September2022 historical author-provided FooDB snapshot; not claimed as current2026 FooDB",
+  "source_paper_doi": "10.1016/j.tjnut.2024.08.010",
+  "source_author_verification_url": "https://www.ars.usda.gov/research/publications/publication/?seqNo115=410641",
+  "licenses": {
+    "data": "CC-BY-NC-4.0",
+    "data_url": "https://foodb.ca/compliance",
+    "terms_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "code_in_author_repository": "MIT",
+    "code_license_file_sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+    "project_raw_git_commit_allowed": false,
+    "noncommercial_research_reuse_allowed": true,
+    "commercial_permission_required": true
+  },
+  "eligibility_definition": "Exact native food ID and Compound namespace ID joined to source standard structure; observed/nonpredicted food composition or specific published record; DUKE only exact foodID/part pairs from published dietary study curation; qualitative database/primary paper occurrence distinct from positive numeric records",
+  "source_group_counts": [
+    [
+      "USDA",
+      "DATABASE",
+      241249,
+      98
+    ],
+    [
+      "DTU",
+      "DATABASE",
+      74779,
+      96
+    ],
+    [
+      "30994344",
+      "ARTICLE",
+      10297,
+      1402
+    ],
+    [
+      "DUKE",
+      "DATABASE",
+      7502,
+      2031
+    ],
+    [
+      "PHENOL EXPLORER",
+      "DATABASE",
+      3736,
+      438
+    ],
+    [
+      "28965405",
+      "ARTICLE",
+      380,
+      305
+    ],
+    [
+      "Dimitris N. Georgilopoulos and Annie N. Gallois. Aroma compounds of fresh blackberries (Rubus laciniata L.) Zeitschrift fur Lebensmittel-Untersuchung und Forschung, 1987, 184(5), 374-380. https://link.springer.com/content/pdf/10.1007/BF01126660.pdf",
+      "ARTICLE",
+      338,
+      167
+    ],
+    [
+      "Dimitris N. Georgilopoulos and Annie N. Gallois. Volatile flavour compounds in heated blackberry juices. Z LebensmUnters Forsch (1987) 185:299-306",
+      "ARTICLE",
+      302,
+      151
+    ],
+    [
+      "Patricia Cava-Montesinos, M. Luisa Cervera Agust\u2019n Pastor Miguel de la Guardia. 2005. Room temperature acid sonication ICP-MS multielemental analysis of milk.Analytica Chimica Acta Volume 531, Issue 1, Pages 111-123",
+      "TEXTBOOK",
+      300,
+      27
+    ],
+    [
+      "29642378",
+      "ARTICLE",
+      246,
+      41
+    ],
+    [
+      "12463694",
+      "ARTICLE",
+      183,
+      32
+    ],
+    [
+      "16840607",
+      "ARTICLE",
+      168,
+      7
+    ],
+    [
+      "18778075",
+      "ARTICLE",
+      157,
+      28
+    ],
+    [
+      "29565828",
+      "ARTICLE",
+      156,
+      112
+    ],
+    [
+      "Ron G. Buttery, Donald J. Stern, and Louisa C. Ling. Studies on Flavor Volatiles of Some Sweet Corn Products. J. Agrie. Food Chem. 1994, 42, 791-795",
+      "ARTICLE",
+      152,
+      38
+    ],
+    [
+      "12744680",
+      "ARTICLE",
+      149,
+      57
+    ],
+    [
+      "11556330",
+      "ARTICLE",
+      124,
+      96
+    ],
+    [
+      "M. Ferrand et al. Determination of fatty acid profile in cow's milk using mid-infrared spectrometry: Interest of applying a variable selection by genetic algorithms before a PLS regression. Chemometrics and Intelligent Laboratory Systems 106 (2011) 183?189",
+      "TEXTBOOK",
+      118,
+      25
+    ],
+    [
+      "23438684",
+      "ARTICLE",
+      106,
+      64
+    ],
+    [
+      "Ron G. Buttery and Louisa C. Ling. Volatile Flavor Components of Com Tortillas and Related Products. J. Agrie. Food Chem. 1995, 43, 1878-1882",
+      "ARTICLE",
+      102,
+      43
+    ],
+    [
+      "Brigitta Gaspardo et al. Determination of volatile fractions in raw milk and ripened cheese by means of GC-MS. Results of a survey performed in the marginal area between Italy and Slovenia. Italian Jounal of Animal Science Vol 8, 377-390, 2009",
+      "TEXTBOOK",
+      102,
+      26
+    ],
+    [
+      "9718493",
+      "ARTICLE",
+      100,
+      5
+    ],
+    [
+      "28306241",
+      "ARTICLE",
+      99,
+      59
+    ],
+    [
+      "Glesni MacLeod and Jennifer M. Ames. Volatile components of celery and celeriac. Phytochemistry. 28(7) pp, 1817-1824, 1989",
+      "ARTICLE",
+      91,
+      54
+    ],
+    [
+      "11913692",
+      "ARTICLE",
+      90,
+      45
+    ],
+    [
+      "10995351",
+      "ARTICLE",
+      88,
+      44
+    ],
+    [
+      "28342601",
+      "ARTICLE",
+      88,
+      70
+    ],
+    [
+      "Gary R. Takeoka, Ron G. Buttery, and Robert A. Flath. Volatile Constituents of Asian Pear (Pyrus serotina). J. Agrie. Food Chem. 1992, 40, 1925-1929",
+      "ARTICLE",
+      87,
+      85
+    ],
+    [
+      "Tressl, R., Bahri, D., Holzer, M. & Kossa, T. (1977b) Formation of flavor components in asparagus. 2. Formation of flavor components in cooked asparagus. Journal of Agricultural and Food Chemistry 25, 459-463 https://pubs.acs.org/doi/abs/10.1021/jf60211a048",
+      "ARTICLE",
+      87,
+      85
+    ],
+    [
+      "29291809",
+      "ARTICLE",
+      87,
+      52
+    ],
+    [
+      "Bernalte, M. J., Hernandez, M. T., Vidal-Aragon, M. C. & Sabio, E. (1999) Physical, chemical, flavor and sensory characteristics of two sweet cherry varieties grown in 'Valle del Jerte' (Spain). Journal of Food Quality, 22, 403-416",
+      "ARTICLE",
+      86,
+      43
+    ],
+    [
+      "20338431",
+      "ARTICLE",
+      82,
+      37
+    ],
+    [
+      "3271892",
+      "ARTICLE",
+      81,
+      53
+    ],
+    [
+      "Timo Hirvi and Erkki Honkanen. The arome of blueberries. J. Sci. Food Agric. 1983, 34, 992-998. DOI: 10.1002/jsfa.2740340916",
+      "ARTICLE",
+      76,
+      48
+    ],
+    [
+      "21371950",
+      "ARTICLE",
+      76,
+      18
+    ],
+    [
+      "M.J. Abarghuei, Y. Rouzbehan, A.Z.M Salem, M.J. Zamiri. Nitrogen balance, blood metabolites and milk fatty acid composition of dairy cows fed pomegranate-peel extract. Livestock Science (2014) 164:72-80   doi: 10.1016/j.livsci.2014.03.021",
+      "TEXTBOOK",
+      74,
+      10
+    ],
+    [
+      "A. Escarpa and M. C. Gonzalez. Evaluation of High-Performance Liquid Chromatography for Determination of Phenolic Compounds in Pear Horticultural Cultivars. Chromatographia Vol. 51, No. 1/2, January 2000, 37-43",
+      "ARTICLE",
+      72,
+      10
+    ],
+    [
+      "1779072",
+      "ARTICLE",
+      72,
+      53
+    ],
+    [
+      "Bashar Amer, Caroline Nebel, Hanne C. Bertram, Grith Mortensen, Kjeld Hermansen, Trine K. Dalsgaard. Novel method for quantification of individual free fatty acids in milk using an in-solution derivatisation approach and gas chromatography- mass spectrometry. International Dairy Journal 32 (2013) 199-203",
+      "TEXTBOOK",
+      66,
+      7
+    ],
+    [
+      "Ron G. Buttery, Dan G. Guadagni, Louisa C. Ling, Richard M. Seifert, and Werner Lipton. Additional volatile components of cabbage, broccoli, and cauliflower. J. Agric. Food Chem., 1976, 24 (4), pp 829-832",
+      "ARTICLE",
+      65,
+      53
+    ],
+    [
+      "Ron G. Buttery and Louisa C. Ling. Additional Studies on Flavor Components of Corn Tortilla Chips. J. Agric. Food Chem. 1998, 46, 2764-2769",
+      "ARTICLE",
+      63,
+      62
+    ],
+    [
+      "Mans Boelens, Pieter J. de Valois, Henk J. Wobben, and Arne van der Gen. Volatile Flavor Compounds from Onion. J. Agric. FOOD Chem., 1971, 19(5), 984-991",
+      "ARTICLE",
+      62,
+      44
+    ],
+    [
+      "L. Valettea X. Fernandez, S. Poulain, A.-M. Loiseau, L. Lizzani-Cuvelier, R. Levieil, L. Restier. Volatile constituents from Romanesco cauliflower. Food Chemistry 80 (2003) 353-358",
+      "ARTICLE",
+      58,
+      57
+    ],
+    [
+      "18565930",
+      "ARTICLE",
+      56,
+      7
+    ],
+    [
+      "Robert A. Flath, Ralph R. Forrey, Janie O. John, and Bock G. Chan. Volatile components of corn silk (Zea mays L.): possible Heliothis zea (Boddie) attractants. J. Agric. Food Chem., 1978, 26 (6), pp 1290-1293. DOI: 10.1021/jf60220a012",
+      "ARTICLE",
+      53,
+      52
+    ],
+    [
+      "Robert A. Flath, and Juan M. Takahashi. Volatile constituents of prickly pear (Opuntia ficus indica Mill., de Castilla variety). J. Agric. Food Chem., 1978, 26 (4), pp 835-837. DOI: 10.1021/jf60218a053",
+      "ARTICLE",
+      53,
+      53
+    ],
+    [
+      "Carlos Macku, and Takayuki Shibamoto. Headspace volatile compounds formed from heated corn oil and corn oil with glycine. J. Agric. Food Chem., 1991, 39 (7), pp 1265-1269. DOI: 10.1021/jf00007a014",
+      "ARTICLE",
+      52,
+      50
+    ],
+    [
+      "Park, Y. W; Ju\u2021rez, Manuela ; Ramos, M.; Haenlein, G. F. W.. Physico-chemical characteristics of goat and sheep milk. Small Ruminant Res.(2007) 68:88-113   doi: 10.1016/j.smallrumres.2006.09.013",
+      "TEXTBOOK",
+      51,
+      27
+    ],
+    [
+      "Robert A. Flath, Dale Robert. Black, Dante G. Guadagni, William H. McFadden, and Thomas H. Schultz. Identification and Organoleptic Evaluation of Compounds in Delicious Apple Essence. J. Agric. Food Chem., 1967, 15 (1), pp 29-35. DOI: 10.1021/jf60149a032",
+      "ARTICLE",
+      51,
+      50
+    ],
+    [
+      "12381134",
+      "ARTICLE",
+      50,
+      50
+    ],
+    [
+      "20541211",
+      "ARTICLE",
+      48,
+      4
+    ],
+    [
+      "23040012",
+      "ARTICLE",
+      48,
+      3
+    ],
+    [
+      "J. P. Mattheis, D. A. Buchanan, and J. K. Fellman Volatile Constituents of Bing Sweet Cherry Fruit following Controlled Atmosphere Storage. J. Agric. Food Chem. 1997, 45, 212-216",
+      "ARTICLE",
+      47,
+      47
+    ],
+    [
+      "15986496",
+      "ARTICLE",
+      46,
+      46
+    ],
+    [
+      "26686724",
+      "ARTICLE",
+      44,
+      27
+    ],
+    [
+      "22098372",
+      "ARTICLE",
+      42,
+      15
+    ],
+    [
+      "Kurt J. Boudonck, Matthew W. Mitchell, Jacob Wulff, John A. Ryals. Characterization of the biochemical variability of bovine milk using metabolomics. Metabolomics (2009) 5:375-386   doi: 10.1007/s11306-009-0160-8",
+      "TEXTBOOK",
+      41,
+      21
+    ],
+    [
+      "17071511",
+      "ARTICLE",
+      41,
+      17
+    ],
+    [
+      "12926889",
+      "ARTICLE",
+      39,
+      36
+    ],
+    [
+      "Dilek Tanrioven and Aziz Eksi. Phenolic compounds in pear juice from different cultivars. Food Chemistry. 2005, 93(1), 89-93",
+      "ARTICLE",
+      39,
+      6
+    ],
+    [
+      "Harvey J. Gold, Charles W. Wilson III The Volatile Flavor Substances of Celery. Journal of Food Science. 1963, 28(4), 484-488",
+      "ARTICLE",
+      38,
+      37
+    ],
+    [
+      "26083035",
+      "ARTICLE",
+      36,
+      35
+    ],
+    [
+      "S.Hakkinen, M. Heinonen, S. Karenlampi, H. Mykkanen, J. Ruuskanen, R. Torronen. Screening of selected flavonoids and phenolic acids in 19 berries. Food Research International 32 (1999) 345-353. https://www.sciencedirect.com/science/article/pii/S0963996999000952",
+      "ARTICLE",
+      35,
+      9
+    ],
+    [
+      "R. J. Horvat, S. D. Senter, E. D. Dekazos. GLC-MS Analysis of Volatile Constituents in Rabbiteye Blueberries. Journal of Food Science 1983, 48(1) 278-279",
+      "ARTICLE",
+      35,
+      35
+    ],
+    [
+      "Ron G. Buttery, Richard M. Seifert, Dante G. Guadagni, Dale R. Black, and Louisa. Ling. Characterization of some volatile constituents of carrots. J. Agric. Food Chem., 1968, 16 (6), pp 1009-1015 DOI: 10.1021/jf60160a012",
+      "ARTICLE",
+      34,
+      28
+    ],
+    [
+      "Semaghiul Birghila, Simona Dobrinas, Gabriela Stanciu and Alina Soceanu. Determination of major and minor elements in milk through ICP-AES. Environmental Engineering and Management Journal. November/December 2008, Vol.7, No.6, 805-808",
+      "TEXTBOOK",
+      34,
+      12
+    ],
+    [
+      "22081685",
+      "ARTICLE",
+      34,
+      12
+    ],
+    [
+      "11312849",
+      "ARTICLE",
+      34,
+      16
+    ],
+    [
+      "Sellappan S, Akoh CC, Krewer G. Phenolic Compounds and Antioxidant Capacity of Georgia-Grown Blueberries and Blackberries. 2002. J. Agric. Food Chem. 2002, 50, 2432-2438",
+      "ARTICLE",
+      33,
+      10
+    ],
+    [
+      "Ancheng Zhou and Roger F. McFeeters. Volatile Compounds in Cucumbers Fermented in Low-Salt Conditions. J. Agric. Food Chem. 1998, 46, 2117-2122. J. Agric. Food Chem. 1998, 46, 2117-2122",
+      "ARTICLE",
+      33,
+      33
+    ],
+    [
+      "Christian Chervin, Jim Speirs, Brian Loveys, Brian D Patterson. Influence of low oxygen storage on aroma compounds of whole pears and crushed pear flesh. Postharvest Biology and Technology 19 (2000) 279-285",
+      "ARTICLE",
+      32,
+      32
+    ],
+    [
+      "17896814",
+      "ARTICLE",
+      32,
+      12
+    ],
+    [
+      "Harper, W. J., Gould, I. A. and Hankinson, C. L. 1961. Observations on the free volatile acids in milk. J. Dairy Sci. 44, 1764-1765",
+      "TEXTBOOK",
+      32,
+      4
+    ],
+    [
+      "18412364",
+      "ARTICLE",
+      32,
+      6
+    ],
+    [
+      "29570652",
+      "ARTICLE",
+      32,
+      22
+    ],
+    [
+      "17579428",
+      "ARTICLE",
+      31,
+      16
+    ],
+    [
+      "14168161",
+      "ARTICLE",
+      30,
+      19
+    ],
+    [
+      "Varming, C., Jensen, K., Moller, S., Brockhoff, P. B., Christiansen, T., Edelenbos, M., et al. (2004). Eating quality of raw carrots -- correlations between flavour compounds, sensory profiling analysis and consumer liking test. Food Quality and Preference, 15, 531-540",
+      "ARTICLE",
+      29,
+      26
+    ],
+    [
+      "David M. Alabran, Howard R. Moskowitz, and Ahmed F. Mabrouk. Carrot-Root Oil Components and Their Dimensional Characterization of Aroma. J. Agr. Food Chem. 1975, 23(2), 229-232. DOI: 10.1021/jf60198a031",
+      "ARTICLE",
+      29,
+      27
+    ],
+    [
+      "Ron G. Buttery et al. Additional Volatile Components of Cabbage, Broccoli, and Cauliflower. J. Agric. Food Chem., 24(4), 1976 829-832",
+      "ARTICLE",
+      28,
+      28
+    ],
+    [
+      "Jian Tang, Yuangang Zhang, Thomas G. Hartman, Robert T. Rosen, and Chi Tang Ho. Free and glycosidically bound volatile compounds in fresh celery (Apium graveolens L.). J. Agric. Food Chem. 1990, 38, 10, 1937-1940",
+      "ARTICLE",
+      28,
+      28
+    ],
+    [
+      "27999311",
+      "ARTICLE",
+      28,
+      15
+    ],
+    [
+      "29197344",
+      "ARTICLE",
+      28,
+      15
+    ],
+    [
+      "Fredy A. Van Wassenhove, Patrick J. Dirinck, Niceas M. Schamp, and Georges A. Vulsteke. Effect of Nitrogen Fertilizer on Celery Volatiles. J. Agric. Food Chem. 38(1), 220-226, 1990",
+      "ARTICLE",
+      27,
+      26
+    ],
+    [
+      "Z. Dobrza_ski, R. Ko_acz, H. G\u2014recka, K. Chojnacka, A. Bartkowiak. 2005. The Content of Microelements and Trace Elements in Raw Milk from Cows in the Silesian Region. Pol. J. Environ. Stud. 14(5):685\u0420689",
+      "TEXTBOOK",
+      26,
+      13
+    ],
+    [
+      "28219465",
+      "ARTICLE",
+      26,
+      18
+    ],
+    [
+      "9818410",
+      "ARTICLE",
+      26,
+      7
+    ],
+    [
+      "James P. Mattheis, David A. Buchanan and John K. Fellman. Volatile Compounds Emitted by Sweet Cherries (Prunus avium Cv. Bing) during Fruit Development and Ripening. J. Agrie. FoodChem. 1992, 40, 471-474",
+      "ARTICLE",
+      26,
+      26
+    ],
+    [
+      "Kurt J. Boudonck, Matthew W. Mitchell, Jacob Wulff and John A. Ryals. Characterization of the biochemical variability of bovine milk using metabolomics. Metabolomics (2009) 5:375?386",
+      "TEXTBOOK",
+      25,
+      13
+    ],
+    [
+      "Saskia M.Van Ruth, Jacques P.Roozen, Jan L.Cozijnsen. Volatile compounds of rehydrated French beans, bell peppers and leeks. Part 1. Flavour release in the mouth and in three mouth model systems. Food Chemistry 53 (1995) 15-22. DOI: 10.1016/0308-8146(95)95780-A",
+      "ARTICLE",
+      25,
+      25
+    ],
+    [
+      "D. E. Heinz and W. C. Jennings. Volatile components of Bartlett Pear. V. Journal of Food Sci., 1966, 31(1), 69-80",
+      "ARTICLE",
+      25,
+      25
+    ],
+    [
+      "27664616",
+      "ARTICLE",
+      25,
+      25
+    ],
+    [
+      "20855010",
+      "ARTICLE",
+      24,
+      19
+    ],
+    [
+      "International Dairy Journal; Volume 14, Issue 7, July 2004, Pages 563-570",
+      "TEXTBOOK",
+      24,
+      6
+    ],
+    [
+      "TN Prabha, PV Salimath, MV Patwardhan. Primary metabolites and organic acid metabolism in apple (Malus sylvestris) fruit callus culture. J. Sci. Food Agric. 1990, 51(3). DOI: 10.1002/jsfa.2740510310",
+      "ARTICLE",
+      23,
+      23
+    ],
+    [
+      "David M. Alabran, and Ahmed F. Mabrouk. Carrot flavor. Sugars and free nitrogenous compounds in fresh carrots. J. Agric. Food Chem., 1973, 21 (2), pp 205-208 DOI: 10.1021/jf60186a020",
+      "ARTICLE",
+      23,
+      23
+    ],
+    [
+      "Dimitris N. Georgilopoulos and Annie N. Gallois. Aroma compounds of fresh blackberries (Rubus laciniata L.) Zeitschrift f\u00c3\u0192\u00c6\u2019\u00c3\u201a\u00c2\u00bcr Lebensmittel-Untersuchung und Forschung, 1987, 184(5), 374-380. https://link.springer.com/content/pdf/10.1007/BF01126660.pdf",
+      "ARTICLE",
+      22,
+      11
+    ],
+    [
+      "31154743",
+      "ARTICLE",
+      22,
+      8
+    ],
+    [
+      "Peter Hradsky, and Milan Kovac. Novel flavour components identified in the steam distillate of onion (Ailium cepa L.). Z. Lebensm Unters Forsch (1992) 195:459-462",
+      "ARTICLE",
+      22,
+      21
+    ],
+    [
+      "Alexander J. MacLeod, Glesni MacLeod, G. Subramanian. Volatile aroma constituents of celery. Phytochemistry, 27(2), pp. 373-375,1988",
+      "ARTICLE",
+      21,
+      20
+    ],
+    [
+      "Heikki Kallio and Lea Salorinne. Comparison of Onion Varieties by Headspace Gas Chromatography-Mass Spectrometry. J. Agric. Food Chem. 1990, 38, 1560-1564",
+      "ARTICLE",
+      21,
+      21
+    ],
+    [
+      "676525",
+      "ARTICLE",
+      21,
+      21
+    ],
+    [
+      "512140",
+      "ARTICLE",
+      20,
+      3
+    ],
+    [
+      "16899705",
+      "ARTICLE",
+      20,
+      10
+    ],
+    [
+      "20494161",
+      "ARTICLE",
+      20,
+      2
+    ],
+    [
+      "18522410",
+      "ARTICLE",
+      20,
+      15
+    ],
+    [
+      "19679050",
+      "ARTICLE",
+      20,
+      10
+    ],
+    [
+      "Lugemwa, F. N., Lwande, W., Bentley, M. D., Mendel, M. J., and Alford, A. R. (1989). Volatiles of wild blueberry, Vaccinium angustifolium: possible attractants for the blueberry maggot fruit fly, Rhagoletis mendax. J. Agric. Food Chem. 37, 232-233. doi: 10.1021/jf00085a053",
+      "ARTICLE",
+      19,
+      19
+    ],
+    [
+      "17180431",
+      "ARTICLE",
+      19,
+      10
+    ],
+    [
+      "Charles F. Forney and Michael A. Jordan. Induction of Volatile Compounds in Broccoli by Postharvest Hot-Water Dips. J. Agric. Food Chem. 1998, 46, 5295-5301",
+      "ARTICLE",
+      18,
+      15
+    ],
+    [
+      "F. Vallejo, F. Tomas-Barberan, C. Garcia-Viguera. Glucosinolates and vitamin C content in edible parts of broccoli florets after domestic cooking. Eur Food Res Technol (2002) 215:310-316",
+      "ARTICLE",
+      18,
+      12
+    ],
+    [
+      "16448186",
+      "ARTICLE",
+      18,
+      18
+    ],
+    [
+      "17177502",
+      "ARTICLE",
+      18,
+      2
+    ],
+    [
+      "Z. Dobrza\u2013ski et al. The Content of Microelements and Trace Elements in Raw Milk from Cows in the Silesian Region. Polish Journal of Environmental Studies Vol. 14, No 5 (2005), 685-689",
+      "TEXTBOOK",
+      18,
+      9
+    ],
+    [
+      "25599412",
+      "ARTICLE",
+      18,
+      9
+    ],
+    [
+      "17852390",
+      "ARTICLE",
+      18,
+      5
+    ],
+    [
+      "International Dairy Journal; Volume 15, Issue 5, May 2005, Pages 521-526",
+      "TEXTBOOK",
+      18,
+      3
+    ],
+    [
+      "11132867",
+      "ARTICLE",
+      18,
+      4
+    ],
+    [
+      "16713696",
+      "ARTICLE",
+      17,
+      17
+    ],
+    [
+      "Thomas R. Kemp, Dean E. Knavel, and Leonard P. Stoltz. Identification of some volatile compounds from cucumber. J. Agric. Food Chem., 1974, 22 (4), pp 717-718. DOI: 10.1021/jf60194a006",
+      "ARTICLE",
+      17,
+      17
+    ],
+    [
+      "D. D. Archbold, T. R. Hamilton-Kemp, M. M. Barth, and B. E. Langlois. Identifying Natural Volatile Compounds That Control Gray Mold (Botrytis cinerea) during Postharvest Storage of Strawberry, Blackberry, and Grape. J. Agric. Food Chem. 1997, 45, 4032-4037",
+      "ARTICLE",
+      17,
+      5
+    ],
+    [
+      "P. B. Andrade, A. R. F. Carvalho, R. M. Seabra, and M. A. Ferreira. A Previous Study of Phenolic Profiles of Quince, Pear, and Apple Purees by HPLC Diode Array Detection for the Evaluation of Quince Puree Genuineness. J. Agric. Food Chem., 1998, 46 (3), pp 968-972. DOI: 10.1021/jf970571j",
+      "ARTICLE",
+      16,
+      8
+    ],
+    [
+      "M. H. Brodnitz, C. L. Pollock, and P. P. Vallon. Flavor Components of Onion Oil. J. Agric. Food Chem. 1969, 17(4), 760-763",
+      "ARTICLE",
+      16,
+      16
+    ],
+    [
+      "15963940",
+      "ARTICLE",
+      16,
+      9
+    ],
+    [
+      "Shin Tsen, Jinyi Siew, Eunice Lau, Farzana A qah Bte Roslee, Hui Chan, Wai Loke  Cow\u0425s milk as a dietary source of equol and phenolic antioxidants: di erential distribution in the milk aqueous and lipid fractions. Dairy Sci. & Technol. (2014) 94:625\u0420632. DOI 10.1007/s13594-014-0183-4",
+      "TEXTBOOK",
+      16,
+      2
+    ],
+    [
+      "C. W. Wilson Relative Recovery and Identification of Carbonyl Compounds from Celery Essential Oil. Journal of Food Science 35, 766-768, 1970",
+      "ARTICLE",
+      16,
+      15
+    ],
+    [
+      "6539345",
+      "ARTICLE",
+      16,
+      8
+    ],
+    [
+      "26775950",
+      "ARTICLE",
+      16,
+      4
+    ],
+    [
+      "Kader, F., Rove, B., Girardin, M., and Metche, M. (1996). Fractionation and identification of the phenolic compounds of highbush blueberries (Vaccinium corymbosum, L.). Food Chem. 55, 35-40",
+      "ARTICLE",
+      15,
+      15
+    ],
+    [
+      "12617582",
+      "ARTICLE",
+      15,
+      15
+    ],
+    [
+      "27236769",
+      "ARTICLE",
+      14,
+      8
+    ],
+    [
+      "12720387",
+      "ARTICLE",
+      14,
+      14
+    ],
+    [
+      "23931703",
+      "ARTICLE",
+      14,
+      4
+    ],
+    [
+      "TH. Parliament, MG. Kolor and IY. Maing. Identification of major volatile components of cooked beets. J. FOOD SCI. 42(6), 1592-1593, (1977). DOI: 10.1111/j.1365-2621.1977.tb08434.x",
+      "ARTICLE",
+      13,
+      13
+    ],
+    [
+      "J. F. Carson and Francis F. Wong. The Volatile Flavor Components of Onions. J. Agric. Food Chem. 1961, 9(2), 140-143",
+      "ARTICLE",
+      13,
+      13
+    ],
+    [
+      "Robert G Schaller, Wilfried H Schnitzler. Nitrogen nutrition and flavour compounds of carrots (Daucus carota L) cultivated in Mitscherlich pots. J Sci Food Agric 80:49-56 (2000)",
+      "ARTICLE",
+      12,
+      11
+    ],
+    [
+      "Karen Sones, Robert K. Heaney, G. Roger Fenwick. Glucosinolates in Brassica vegetables. Analysis of Twenty-seven Cauliflower Cultivars (Brassica oleracea L. var. botrytis subvar. cauliflora DC) J. Sci. Food Agric. 1984,35,762-766",
+      "ARTICLE",
+      12,
+      12
+    ],
+    [
+      "25108860",
+      "ARTICLE",
+      12,
+      6
+    ],
+    [
+      "Julliana Isabelle Simionato, Juliana Carla Garcia, Geraldo Tadeu dos Santos, Cla\u0001udio Celestino Oliveira, Jesui Vergilio Visentainera and Nilson Evela\u0001zio de Souza. Validation of the Determination of Fatty Acids in Milk by Gas Chromatography. J. Braz. Chem. Soc., Vol. 21, No. 3, 520-524, 2010.",
+      "TEXTBOOK",
+      12,
+      9
+    ],
+    [
+      "9416471",
+      "ARTICLE",
+      12,
+      8
+    ],
+    [
+      "NRC. 1989. Recommended Dietary Allowances.  10th ed. Natl. Acad. Press, Washington, DC.",
+      "TEXTBOOK",
+      12,
+      6
+    ],
+    [
+      "7196410",
+      "ARTICLE",
+      12,
+      6
+    ],
+    [
+      "DG. Criossby. The Organic Constituents of Food. I. Lettuce. J. Food Sci. 1963, 28(3):347-355",
+      "ARTICLE",
+      11,
+      11
+    ],
+    [
+      "L. Gao, and G. Mazza. Characterization, Quantitation, and Distribution of Anthocyanins and Colorless Phenolics in Sweet Cherries. J. Agric. Food Chem., 1995, 43 (2), pp 343-346",
+      "ARTICLE",
+      10,
+      10
+    ],
+    [
+      "5409465",
+      "ARTICLE",
+      10,
+      5
+    ],
+    [
+      "Marie Farines, Serge Cocallemen, Jacques Soulier. Triterpene alcohols, 4-methylsterols and 4-desmethylsterols of eggplant seed oil: A new phytosterol. Lipids. 1988 Apr;23(4):349-54. doi: 10.1007/BF02537347",
+      "ARTICLE",
+      10,
+      9
+    ],
+    [
+      "15373411",
+      "ARTICLE",
+      10,
+      10
+    ],
+    [
+      "Chotyakul N, Pateiro-Moure M, Saraiva JA, Torres JA, P\u040brez-Lamela C. 2014. Simultaneous HPLC\u0420DAD quantification of vitamins A and E content in raw, pasteurized, and UHT cow\u0425s milk and their changes during storage. European Food Research and Technology. 238(4):535\u0420547",
+      "TEXTBOOK",
+      10,
+      3
+    ],
+    [
+      "1453218",
+      "ARTICLE",
+      10,
+      4
+    ],
+    [
+      "19362217",
+      "ARTICLE",
+      10,
+      1
+    ],
+    [
+      "F. W. Knapp. Some Characteristics of Eggplant and Avocado Poiyphenolases. J. Food Science. 30(6), 930-936, 1965",
+      "ARTICLE",
+      10,
+      5
+    ],
+    [
+      "11242448",
+      "ARTICLE",
+      8,
+      4
+    ],
+    [
+      "7613766",
+      "ARTICLE",
+      8,
+      2
+    ],
+    [
+      "17558655",
+      "ARTICLE",
+      8,
+      4
+    ],
+    [
+      "2760296",
+      "ARTICLE",
+      8,
+      4
+    ],
+    [
+      "International Dairy Journal: Volume 14, Issue 7, July 2004, Pages 571-579",
+      "TEXTBOOK",
+      8,
+      4
+    ],
+    [
+      "17954740",
+      "ARTICLE",
+      8,
+      3
+    ],
+    [
+      "Valentina Usenik, Jerneja Fabcic, Franci Stampar. Sugars, organic acids, phenolic composition and antioxidant activity of sweet cherry (Prunus avium L.) Food Chemistry 107 (2008) 185-192",
+      "ARTICLE",
+      8,
+      8
+    ],
+    [
+      "Adrian J. Parr, Annie Ng, and Keith W. Waldron Ester-Linked Phenolic Components of Carrot Cell Walls. J. Agric. Food Chem., 1997, 45 (7), pp 2468-2471 DOI: 10.1021/jf960982k",
+      "ARTICLE",
+      8,
+      8
+    ],
+    [
+      "16045895",
+      "ARTICLE",
+      8,
+      4
+    ],
+    [
+      "1880195",
+      "ARTICLE",
+      8,
+      2
+    ],
+    [
+      "Catrienus De Jong Herman T. Badings. Determination of free fatty acids in milk and cheese procedures for extraction, clean up, and capillary gas chromatographic analysis. Journal of High Resolution Chromatography Volume 13, Issue 2, 1990",
+      "TEXTBOOK",
+      8,
+      4
+    ],
+    [
+      "12797757",
+      "ARTICLE",
+      7,
+      5
+    ],
+    [
+      "22397579",
+      "ARTICLE",
+      7,
+      7
+    ],
+    [
+      "LF. Flora and RC. Wiley. Flora and Wiley., 2007. Sweet corn aroma, chemical components and relative importance in the overall flavor response. J. Food Sci. (1974), 39, 770-773",
+      "ARTICLE",
+      7,
+      7
+    ],
+    [
+      "19074160",
+      "ARTICLE",
+      7,
+      6
+    ],
+    [
+      "23677441",
+      "ARTICLE",
+      7,
+      7
+    ],
+    [
+      "Pirjo H. Mattila, Vieno I. Piironen, Esko J. Uusi-Rauva, and Pekka E. Koivistoinen. 1995. Contents of Cholecalciferol, Ergocalciferol, and Their 25-Hydroxylated Metabolites in Milk Products and Raw Meat and Liver As Determined by HPLC. J. Agric. Food Chem. 43 (9), pp 2394\u04202399",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "12811748",
+      "ARTICLE",
+      6,
+      3
+    ],
+    [
+      "17683729",
+      "ARTICLE",
+      6,
+      1
+    ],
+    [
+      "Graeme A. King, Kate G. Henderson, Erin M. O'Donoghue, Wilhelmina Martin, Ross E. Lill. Flavour and Metabolic Changes in Asparagus During Storage. Scientia Horticulturae, 36 (1988) 183-190",
+      "ARTICLE",
+      6,
+      2
+    ],
+    [
+      "Sola-Larra\u2013aga C., Navarro-Blasco I. 2009. Chemometric analysis of minerals and trace elements in raw cow milk from the community of Navarra, Spain. Volume 112, Issue 1, Pages 189-196",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "7372888",
+      "ARTICLE",
+      6,
+      1
+    ],
+    [
+      "6788913",
+      "ARTICLE",
+      6,
+      2
+    ],
+    [
+      "16448171",
+      "ARTICLE",
+      6,
+      6
+    ],
+    [
+      "Esperanza Troyano, Mar Villamiel, Agustin Olano, Jesus Sanz, and Isabel Martinez-Castro. Monosaccharides and myo-Inositol in Commercial Milks. J. Agric. Food Chem., 1996, 44 (3), pp 815\u0420817",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "S. R. Wild and K. C. Jones. STUDIES ON THE POLYNUCLEAR AROMATIC HYDROCARBON CONTENT OF CARROTS (DAUCUS CAROTA). Chemosphere, 23(2), 243-251, 1991",
+      "ARTICLE",
+      6,
+      3
+    ],
+    [
+      "F. Vallejo, FA. Tomas-Barberan, C. Garcia-Viguera. Phenolic compound contents in edible parts of broccoli inflorescences after domestic cooking. J Sci Food Agric 2003, 83:1511-1516",
+      "ARTICLE",
+      6,
+      6
+    ],
+    [
+      "16666434",
+      "ARTICLE",
+      6,
+      6
+    ],
+    [
+      "Fernando Vallejo, F A Tomas-Barberan, C Garcia-Viguera. Potential bioactive compounds in health promotion from broccoli cultivars grown in Spain. J Sci Food Agric, 2002, 82(11):1293-1297",
+      "ARTICLE",
+      6,
+      6
+    ],
+    [
+      "17576638",
+      "ARTICLE",
+      6,
+      2
+    ],
+    [
+      "16772583",
+      "ARTICLE",
+      6,
+      3
+    ],
+    [
+      "Characterization of the biochemical variability of bovine milk using metabolomics",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "3361685",
+      "ARTICLE",
+      6,
+      1
+    ],
+    [
+      "A. PECHOV\u0437 et al. Contents of Zn, Cu, Mn and Se in Milk in Relation to their Concentrations in Blood, Milk Yield and Stage of Lactation in Dairy Cattle. Acta Vet. Brno 2008, 77: 523-531",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "Charles F. Forney, James P. Mattheis, and Rodney K. Austin. Volatile Compounds Produced by Broccoli under Anaerobic Conditions. J. Agric. Food Chem., 1991, 39 (12), pp 2257-2259",
+      "ARTICLE",
+      6,
+      6
+    ],
+    [
+      "3381593",
+      "ARTICLE",
+      6,
+      5
+    ],
+    [
+      "Park, Y. W; Ju\u2021rez, Manuela ; Ramos, M.; Haenlein, G. F. W. Physico-chemical characteristics of goat and sheep milk. Small Ruminant Res.(2007) 68:88-113   doi: 10.1016/j.smallrumres.2006.09.013",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "Tommaso R.I. Cataldi, Massimiliano Angelotti, Giuliana Bianco. Determination of mono- and disaccharides in milk and milk products by high-performance anion-exchange chromatography with pulsed amperometric detection. Analytica Chimica Acta 485 (2003) 43\u042049",
+      "TEXTBOOK",
+      6,
+      3
+    ],
+    [
+      "Nina Biland_i_, Bo_ica Solomun Kolanovi_, Ivana Varenina, Giampiero Scortichini, Loredana Annunziata, Matko Brstilo, Nevenka Rudan. Veterinary drug residues determination in raw milk in Croatia. Food Control. Volume 22, Issue 12, December 2011, Pages 1941-1948",
+      "TEXTBOOK",
+      5,
+      3
+    ],
+    [
+      "U. Kidmose, S.L. Hansen, L.P. Christensen, M. Edelenbos, E. Larsen, R. Norbaek Effects of genotype, root size, storage, and processing on bioactive compounds in organically grown carrots (Daucus carota L.) Journal of Food Science, 69 (2004), pp. S388-S394",
+      "ARTICLE",
+      5,
+      5
+    ],
+    [
+      "25745209",
+      "ARTICLE",
+      5,
+      5
+    ],
+    [
+      "7616307",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "13018287",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "20132956",
+      "ARTICLE",
+      4,
+      1
+    ],
+    [
+      "19841222",
+      "ARTICLE",
+      4,
+      1
+    ],
+    [
+      "1151503",
+      "ARTICLE",
+      4,
+      1
+    ],
+    [
+      "11754544",
+      "ARTICLE",
+      4,
+      1
+    ],
+    [
+      "9891269",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "18967184",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "1897275",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "1333471",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "Int. Dairy Journal 4 (1994) 161-172",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "_. ZAMBERLIN et al.: Mineral elements in milk and dairy products, Mljekarstvo 62 (2), 111-125",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "RAJAN SHARMA YUDHISHTHIR S RAJPUT POONAM GAURAV DOGRA SUDHIR K TOMAR.  Estimation of sugars in milk by HPLC and its application in detection of adulteration of milk with soymilk. International Journal of Dairy Technology, 2009, 62(4):514-519",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "18214159",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "31009997",
+      "ARTICLE",
+      4,
+      4
+    ],
+    [
+      "8201052",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "11286410",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "7962859",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "9718497",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "15084094",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "25588978",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "G.K. Murthy, U. Rhea, J.T.Peeler. Rubidium and Lead Content of Market Milk. Journal of Dairy Science. 50(5), May 1967, p. 651-654",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "16174368",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "Oste R, Jagerstad M, Anderson I: Vitamins in milk and milk products. In Fox PF (ed):\u0424\u0424Advanced Dairy Chemistry: Lactose, Water, Salts and Vitamins,\u0425\u0425vol 3, 2nd ed. London: Chapman & Hall, pp 347\u0420402, 1997",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "Carbohydrate Polymers 37 (1998) 225-229",
+      "TEXTBOOK",
+      4,
+      2
+    ],
+    [
+      "12741556",
+      "ARTICLE",
+      4,
+      2
+    ],
+    [
+      "Cristina Juan, Juan Carlos Molt\u2014, Jordi Ma\u2013es, Guillermina Font. Determination of macrolide and lincosamide antibiotics by pressurised liquid extraction and liquid chromatography-tandem mass spectrometry in meat and milk. Volume 21, Issue 12, Supplement, December 2010, Pages 1703-1709",
+      "TEXTBOOK",
+      3,
+      2
+    ],
+    [
+      "10564019",
+      "ARTICLE",
+      3,
+      3
+    ],
+    [
+      "11539353",
+      "ARTICLE",
+      3,
+      3
+    ],
+    [
+      "11032478",
+      "ARTICLE",
+      3,
+      3
+    ],
+    [
+      "Keiko Azuma, Akio Ohyama, Katsunari Ippoushi, Takashi Ichiyanagi, Atsuko Takeuchi, Takeo Saito and Hiroyuki Fukuoka. Structures and Antioxidant Activity of Anthocyanins in Many Accessions of Eggplant and Its Related Species. J. Agric. Food Chem., 2008, 56 (21), pp 10154-10159. DOI: 10.1021/jf801322m",
+      "ARTICLE",
+      3,
+      3
+    ],
+    [
+      "I.Souchon, F.X.Pierre, V.Athes-Dutour, M.Marin Pervaporation as a deodorization process applied to food industry effluents: recovery and valorisation of aroma compounds from cauliflower blanching water. Desalination 148 (2002) 79-85",
+      "ARTICLE",
+      3,
+      3
+    ],
+    [
+      "8445160",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "Graulet B: Improving the level of vitamins in milk. In Griffiths MW (ed):\u0424\u0424Improving the Safety and Quality of Milk: Improving Quality in Milk Products,\u0425\u0425vol. 2. Boca Raton, FL: CRC Press, pp 229\u0420251, 2010.",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "16725427",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "HURLEY W. L.: Lactation Biology. Minerals and Vitamins. Ed. by Univ. Urbana. Illinois USA, 1997.",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "Johan E. Hoff. Determination of N-Acetylglucosamine-1-Phosphate and N-Acetylglucosamine in Milk. June 1963, Volume 46, Issue 6, Pages 573\u0420574",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "11242449",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "7576162",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "14518934",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "16535224",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "12667199",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "8192226",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "Zhang, D. and Hamauzu, Y. (2004) Phenolic Compounds and Their Antioxidant Properties in Different Tissues of Carrots (Daucus carota L.). Journal of Food, Agriculture and Environment (JFAE), 2, 95-100",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "3944656",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "Tanmoy Rana et al. Contribution of arsenic from agricultural food chain to cow milk in highly arsenic prone zone in Nadia District of West Bengal in India.The Internet Journal of Veterinary Medicine Vol 4(2)",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "International Dairy Journal 16 (2006) 1334-1340",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "2400468",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "27052539",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "3563481",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "6279806",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "William M. Randle. Quantifying Onion Flavor Compounds Responding to Sulfur Fertility-Sulfur Increases Levels of Alk(en)yl Cysteine Sulfoxides and Biosynthetic Intermediates. J. AM E R. SO C. HORT. SCI. 120(6):1075-1081. 1995",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "12146486",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "6668379",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "9787493",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "14765807",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "25087032",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "7086539",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "12108223",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "15905430",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "2365882",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "7096723",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "3663578",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "3530717",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "23497994",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "10768504",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "Underwood, E.J. Trace elements in human and animal nutrition. Academic Press, New York, NY. p. 436 (1977).",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "25771043",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "Faulkner, A., Chaiybutr, N., Peaker, M., Carrick, D. I. and Kuhn, N. J. Metabolic significance of milk glucose. J. Dairy Res. 1981, 48, 51-56",
+      "TEXTBOOK",
+      2,
+      1
+    ],
+    [
+      "Dateo, G.P., Clap R.C., MacKay, D.A.M., Hewitt, E.J., and Hasselstrom, T. Identification of the volatile sulfur components of cooked cabbage and the nature of the precursors in the fresh vegetables. Food Res. 1957, 22:440",
+      "ARTICLE",
+      2,
+      2
+    ],
+    [
+      "10231985",
+      "ARTICLE",
+      2,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-242",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Miller, H. G.; Ikawa, M.; Peirce, L. C. 1991: Caffeic acid identified as an inhibitory compound in asparagus root filtrate. Hortscience 26: 1525-1527.",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-244",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-978",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-977",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-976",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-972",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "3765856",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-966",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-236",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-240",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Sunny Y. Szeto, and Marilyn J. Brown. Gas-Liquid Chromatographic Methods for the Determination of Disulfoton, Phorate, Oxydemeton-methyl, and Their Toxic Metabolites in Asparagus Tissue and Soil. J. Agric. Food Chem., 1982, 30 (6), pp 1082-1086",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-246",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-243",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Jinhui YANG, Nan ZHENG, Jiaqi WANG and Yongxin YANG. Comparative milk fatty acid analysis of different dairy species. International Journal of Dairy Technology (2018) 71(2) p.544-550. doi: 10.1111/1471-0307.12443",
+      "TEXTBOOK",
+      1,
+      1
+    ],
+    [
+      "26950031",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Fernando Vallejo, F A Tomas-Barberan, C Garcia\u043d\u2030\u040a_Viguera. Potential bioactive compounds in health promotion from broccoli cultivars grown in Spain. J Sci Food Agric, 2002, 82(11):1293-1297",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-247",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-245",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-239",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Mohamed Hassas Roudsari, Alice Signoret, Jean Crouzet. Eggplant polyphenol oxidase: Purification, characterisation and properties. Food Chemistry, 7(3), November 1981, 227-238",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "E. Williams and C.T. Redemann. Identification of Metabolites of Zectran Insecticide in Broccoli. Plant Metabolism of Insecticides. 12(5), Sept-Oct. 1964.",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "6547459",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-968",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "Ajay P. Singh, Devanand Luthria b, Ted Wilson, Nicholi Vorsa, Vartika Singh, Gary S. Banuelos, Sajeemas Pasakdee. Polyphenols content and antioxidant capacity of eggplant pulp. Food Chemistry 114 (2009) 955-961",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "15826037",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "19640966",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "22397579; USDA (con)",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "22397579; USDA(con)",
+      "ARTICLE",
+      1,
+      1
+    ],
+    [
+      "USDA",
+      "ARTICLE",
+      1,
+      1
+    ]
+  ],
+  "evidence_tier_counts": [
+    [
+      "eligible_positive_curated_edible_part",
+      3497,
+      572
+    ],
+    [
+      "eligible_positive_food_composition",
+      319765,
+      555
+    ],
+    [
+      "eligible_positive_published_food_record",
+      13742,
+      1768
+    ],
+    [
+      "eligible_qualitative_curated_edible_part",
+      4005,
+      1810
+    ],
+    [
+      "eligible_qualitative_published_food_record",
+      4615,
+      1654
+    ]
+  ],
+  "rejections": {
+    "nutrient_namespace_not_single_compound": 138032,
+    "unresolved_food_record": 34047,
+    "duke_part_not_in_published_food_specific_curation": 23610,
+    "impossible_mass_per100g": 85,
+    "predicted_not_observed_food": 3273562,
+    "unverified_or_mixture_or_aggregate_structure": 381446,
+    "no_positive_occurrence_value": 176463,
+    "missing_specific_observed_food_evidence": 772663
+  },
+  "native_units": [
+    [
+      "mg/100g",
+      272920
+    ],
+    [
+      "mg/100 g",
+      38226
+    ],
+    [
+      "uM",
+      12645
+    ],
+    [
+      null,
+      8528
+    ],
+    [
+      "IU",
+      6498
+    ],
+    [
+      "RE",
+      4381
+    ],
+    [
+      "NE",
+      897
+    ],
+    [
+      "\u03b1-TE",
+      686
+    ],
+    [
+      "ppb",
+      152
+    ],
+    [
+      "mg/kg",
+      141
+    ],
+    [
+      "NULL",
+      92
+    ],
+    [
+      "mg/kg fresh weight",
+      91
+    ],
+    [
+      "IU/100 g",
+      80
+    ],
+    [
+      "mg/100 g fresh weight",
+      56
+    ],
+    [
+      "mg/l",
+      39
+    ],
+    [
+      "mg/100 g freshweight",
+      33
+    ],
+    [
+      "mg/100 g of dry matter",
+      32
+    ],
+    [
+      "umol/g dry weight",
+      28
+    ],
+    [
+      "mg/kg fresh sample",
+      26
+    ],
+    [
+      "ug/L",
+      17
+    ],
+    [
+      "umol/g Fresh weight",
+      16
+    ],
+    [
+      "mg/kg puree",
+      15
+    ],
+    [
+      "mg/g dry weight",
+      6
+    ],
+    [
+      "ug/kg dry weight",
+      6
+    ],
+    [
+      "g/kg fresh weight",
+      4
+    ],
+    [
+      "mg/100 g dry weight",
+      4
+    ],
+    [
+      "ug/g fresh weight",
+      3
+    ],
+    [
+      "ug/ 100g fresh weight",
+      1
+    ],
+    [
+      "ug/kg fresh weight",
+      1
+    ]
+  ],
+  "mapping_limitations": [
+    "Keys verify standardized chemical representations, not resolved native food stereoisomers",
+    "Milk PMID30994344 groups296 measured metabolites/species corresponding to1447 possible unique structures; source values can be molecular-species assignments",
+    "Original units/preparation/food parts/source citations retained; no dose or common participant linkage inferred",
+    "Full-key agreement verifies the source standard representation; it does not prove every native food exposure is stereochemically or positionally resolved",
+    "Positive numeric source rows can refer to molecular-species assignments and censored ranges; this receipt counts source composition records rather than new independent measurements",
+    "Qualitative occurrence is retained only with specific published food records or exact author-curated edible-part pairs; amounts are not inferred",
+    "No automatic extension of the immutable33-compound DTI evaluation panel; this coverage database has not been evaluated as an independent DTI food panel"
+  ],
+  "previous_frozen_database_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/expansion.duckdb",
+  "previous_frozen_database_sha256": "91ac8845e1addd2b94191af48116ecd1cf6762c7343b6070a85229bd6207d033",
+  "previous_frozen_database_expected_sha256": "91ac8845e1addd2b94191af48116ecd1cf6762c7343b6070a85229bd6207d033",
+  "previous_frozen_database_unchanged": true,
+  "outputs": [
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension.duckdb",
+      "sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8",
+      "bytes": 150220800
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_curated_parts.parquet",
+      "sha256": "662bebef3416be1d4bddb1fd7eba676c45d603f71d7fe8a9a40ca03fceb82985",
+      "bytes": 2425
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_eligible_occurrences.parquet",
+      "sha256": "92b6c110dc38b89de44160d319371c9565bbe9db77b74af02827145a5d3b185d",
+      "bytes": 5328118
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_native_content.parquet",
+      "sha256": "9caaa262a22c8e4502dd4645f7e277d1a24ec42dae817eb8881bd373a7d0f063",
+      "bytes": 8827179
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_native_food.parquet",
+      "sha256": "c0f60b9545a5c70ff69b4c6bca2c966eee4a24451dd41912c3c140fbfe8cb7a8",
+      "bytes": 284435
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_rejection_ledger.parquet",
+      "sha256": "e5bf301d15219a2998cdf4cbf4daa37c913abbc8e5fd0de81f50b41881161757",
+      "bytes": 3839240
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_source_ledger.parquet",
+      "sha256": "f94819a9c8175da2a4574452551ca4133426d23da64e3bfa2753c8b4bce574aa",
+      "bytes": 15942
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_standards.parquet",
+      "sha256": "6375b4f14233f6ba277b18240a7f718341922512c1764fdb5f0a701f3b475bee",
+      "bytes": 525974
+    },
+    {
+      "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/food_compound_extension_v1/derived/food_compound_extension_structure_records.parquet",
+      "sha256": "707eb3aa8f500e50d3c0afe7aec3a72660d9dc77ba76c9f2ce3d90abffac1213",
+      "bytes": 12938085
+    }
+  ],
+  "finalization_code_sha256": {
+    "food_compound_extension.py": "5a9609db7e4eccef5084898517c9003e505b047cf4549d77befd57859ce94e63",
+    "food_compound_extension_module.py": "5ca95a9732a04da263d5df74941c4476b07d8c175a8244f8f5dd33f1adf7aa89"
+  }
+}

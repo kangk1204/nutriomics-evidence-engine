@@ -1,0 +1,14 @@
+{
+  "precision": 0.8157695223654283,
+  "recall": 0.850592885375494,
+  "f1": 0.8328173374613004,
+  "true_positive_spans": 5380,
+  "false_positive_spans": 1215,
+  "false_negative_spans": 945,
+  "protocol_id": "bc2gm-biomedbert-20261003-v1",
+  "model_sha256": "16b4c517cc3adaa654e2f7cfc2315939c5e93f5d7ad2d5b8d3fa3dc48e456971",
+  "predictions_sha256": "ab8aba116513658853e19d89759c2bc70f781436e2963ffd62d9adf44d09c35b",
+  "sentences": 5038,
+  "document_independence_unverified": true,
+  "test_used_for_selection": false
+}

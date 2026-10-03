@@ -1,0 +1,34 @@
+{
+  "original_sentences": {
+    "train": 12574,
+    "dev": 2519,
+    "test": 5038
+  },
+  "unique_lowercase_sentence_texts": {
+    "train": 12497,
+    "dev": 2502,
+    "test": 5015
+  },
+  "within_split_duplicate_sentences": {
+    "train": 77,
+    "dev": 17,
+    "test": 23
+  },
+  "original_cross_split_intersections": {
+    "train_dev": 12,
+    "train_test": 34,
+    "dev_test": 15
+  },
+  "normalization": "lowercase space-joined native tokens; does not detect paraphrases or article/pretraining overlap",
+  "excluded_sentences": {
+    "train": 86,
+    "dev": 25,
+    "test": 0
+  },
+  "retained_sentences": {
+    "train": 12488,
+    "dev": 2494,
+    "test": 5038
+  },
+  "within_test_duplicates_retained_not_independent_documents": true
+}

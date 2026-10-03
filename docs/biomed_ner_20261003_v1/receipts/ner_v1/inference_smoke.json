@@ -1,0 +1,75 @@
+{
+  "device": "cpu",
+  "CPU_threads": 2,
+  "model_sha256": "16b4c517cc3adaa654e2f7cfc2315939c5e93f5d7ad2d5b8d3fa3dc48e456971",
+  "adapter_sha256": "06a26c236d68610dddbe9e302027d3d6d6e5cc7cc633e1e003475c1d2a1c872f",
+  "software_offset_smoke_only_not_accuracy_validation": true,
+  "cases": [
+    {
+      "input": "unicode_short",
+      "source_text": "α: This source mentions ACE and AGT, together with tumor necrosis factor.",
+      "source_sha256": "e4fa03e93f693aad79dfb2332660c20a445db900f67b51499a05153fd4adbe87",
+      "characters": 73,
+      "mentions": [
+        {
+          "start": 24,
+          "end": 27,
+          "text": "ACE",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "AGT",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        },
+        {
+          "start": 51,
+          "end": 72,
+          "text": "tumor necrosis factor",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        }
+      ],
+      "offsets_match_source": true
+    },
+    {
+      "input": "long_source",
+      "source_text": "A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. A neutral source sentence is included for coverage. α: This source mentions ACE and AGT, together with tumor necrosis factor.",
+      "source_sha256": "df804c5b28c3b25c6800d4bd1afcadfa74ea3c41a0ffaf810dd742240b8d8f31",
+      "characters": 4233,
+      "mentions": [
+        {
+          "start": 4184,
+          "end": 4187,
+          "text": "ACE",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        },
+        {
+          "start": 4192,
+          "end": 4195,
+          "text": "AGT",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        },
+        {
+          "start": 4211,
+          "end": 4232,
+          "text": "tumor necrosis factor",
+          "type": "GENE",
+          "offset_unit": "Unicode codepoints",
+          "origin": "BC2GM-finetuned BiomedBERT prediction"
+        }
+      ],
+      "offsets_match_source": true
+    }
+  ]
+}

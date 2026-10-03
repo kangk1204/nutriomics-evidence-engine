@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "acquired_utc": "2026-10-03T07:21:16.853059+00:00",
+  "source_version": "FooDB Sept2022 mirror documented by original study authors",
+  "redistributor": "Wilson et al. USDA ARS WHNRC/Texas A&M; DOI10.1016/j.tjnut.2024.08.010",
+  "upstream_origin": "https://foodb.ca/downloads",
+  "mirror_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+  "raw_redistribution_allowed": false,
+  "research_analysis_authorized": true,
+  "license_note": "Repository MIT applies to code; upstream FooDB terms/provider terms retained separately. NC academic use; raw and derived records private until redistribution review; no raw Git commit",
+  "sources": [
+    {
+      "name": "Compound.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Compound.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "727abb16c4598f9e1aeca3e9fc15819a598d1ad5",
+      "sha256": "2489c7651d6b4c84ab9176587012b7dd30c19c3722988d4975c876e5ead08f18",
+      "bytes": 5177304,
+      "full_bzip2_eof_decoded_bytes": 51240971,
+      "status": "complete"
+    },
+    {
+      "name": "Content.csv.bz2",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Content.csv.bz2",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "1904c7d67f88452e4f3861c73ffd0595b0e74b6f",
+      "sha256": "caf385a8cc3e8e9b9c15df25b2e0a0875efae2461bce277b524fdc677b4b744d",
+      "bytes": 22720186,
+      "full_bzip2_eof_decoded_bytes": 779793109,
+      "status": "complete"
+    },
+    {
+      "name": "Food.csv",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/Food.csv",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2974ffffbfa8f315c16db11b65e7b0fa9bdc637f",
+      "sha256": "91b4a9cfa8b1f250df66a79dacbac5c3d12ce2b7fecc9c58dbeb62f162d50dcb",
+      "bytes": 885915,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_dictionary.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/FooDB/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "f744d9b179cbac9d0c07c9b641d59f8031b1b36c",
+      "sha256": "be06c54fe340899b9507b15ebbf1a6a5c96b35e8e5892bb152175fb6372422e1",
+      "bytes": 6016,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_README.md",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/README.md",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "2f3863e874ee984fc8284d2823f363b9dc7119f6",
+      "sha256": "d7fcee452281387f8836be7c36c0d3a140b1dcd29f49cd569e5e142dbad939fd",
+      "bytes": 7255,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "edible_part_rules.Rmd",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/Estimation/E3A_Polyphenol_Estimation_Duke_Filtering.Rmd",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "b8b7ba0f2d9ffaaf203c67fcdc47f14684d1ed1b",
+      "sha256": "fa872dd559ebe339dd96d37e09acd85a53af1ffd09afcc892776d673f239f87a",
+      "bytes": 5185,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    },
+    {
+      "name": "source_code_LICENSE",
+      "source_url": "https://raw.githubusercontent.com/SWi1/FooDB_polyphenol_analysis/3d2bcf9523911fabc8a07c731226ac87a2af262e/LICENSE",
+      "source_commit": "3d2bcf9523911fabc8a07c731226ac87a2af262e",
+      "git_blob_sha1": "fdfb1d093e9d4143bd42f71079b38a1ca91097c1",
+      "sha256": "867ac5ccd0e79bb61a7ee42f474f2c66015d03d47d2f099a18d5a5b56f3d28be",
+      "bytes": 1078,
+      "full_bzip2_eof_decoded_bytes": null,
+      "status": "complete"
+    }
+  ]
+}

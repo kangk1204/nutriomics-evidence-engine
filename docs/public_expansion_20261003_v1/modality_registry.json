@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "registered_utc": "2026-10-03T05:49:24.072458+00:00",
+  "patient_multiomics_fusion_performed": false,
+  "individual_modality_sources_are_different_people": true,
+  "modalities": {
+    "epigenomics": {
+      "type": "epigenomics",
+      "source_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-htn-methylation/data/prepared/matrices.npz",
+      "source_sha256": "8353873c44e88186debcc13ede15fc8896c7232716ffc77fa5bcb2701bf5402e",
+      "sample_counts": {
+        "GSE193795": 132,
+        "GSE42774": 16
+      },
+      "measurement_rows": 29732724,
+      "finite_values": 29704532,
+      "invalid_beta_range": 0,
+      "raw_idat_reprocessed": false,
+      "cohort_linkage_to_other_modalities": false
+    },
+    "metabolomics": {
+      "type": "metabolomics",
+      "source_inputs": [
+        {
+          "name": "untargeted.tsv",
+          "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\untargeted.tsv",
+          "sha256": "e457f183ca726506f68acba696235417c1bf79c9aff893a97e8e23e1412d03c9",
+          "bytes": 4076615,
+          "source_url": "https://www.metabolomicsworkbench.org/rest/study/analysis_id/AN002086/untarg_data"
+        },
+        {
+          "name": "factors.json",
+          "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\factors.json",
+          "sha256": "6b2535a651e4ae7c032417253f2623161af00d958ea8aac108c745de43310837",
+          "bytes": 20317,
+          "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/factors"
+        },
+        {
+          "name": "analysis.json",
+          "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\analysis.json",
+          "sha256": "a7ad7e9ea08c240aeb5b9e77749e43edf521ddafef189331b9836288812d88b1",
+          "bytes": 534,
+          "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/analysis"
+        },
+        {
+          "name": "mwtab.txt",
+          "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\mwtab.txt",
+          "sha256": "bb74f07d15e695291a0dcb69bae823f57a69aef539e9e5c4ebf2f1035b47d6e5",
+          "bytes": 20223,
+          "source_url": "https://www.metabolomicsworkbench.org/data/study_textformat_view.php?ANALYSIS_ID=AN002086&MODE=d&STUDY_ID=ST001257"
+        }
+      ],
+      "people": 19,
+      "human_measurements": 76,
+      "food_preparations": 14,
+      "analytical_features": 11693,
+      "finite_values": 147905,
+      "missing_values": 904465,
+      "measurement_rows": 1052370,
+      "identified_compounds": 0,
+      "cohort_linkage_to_other_modalities": false,
+      "period_or_sequence_available": false
+    },
+    "genomics": {
+      "schema_version": 1,
+      "started_utc": "2026-10-03T05:40:56.977207+00:00",
+      "population": "public IGSR/1000 Genomes phase3 reference; not dietary intervention participants",
+      "build": "GRCh37",
+      "region": "11:61560000-61750000",
+      "same_person_omics_linkage": false,
+      "full_chromosome_download": false,
+      "sources": [
+        {
+          "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+          "sha256": "c90c12a81c28502dfa0d2402ef24b39a7384a9b59482feb35f9226d151b148be",
+          "bytes": 133030
+        },
+        {
+          "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel",
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/integrated_call_samples_v3.20130502.ALL.panel",
+          "sha256": "b4023dc6ee2d62ee89c8d4d347db4d348e65518d66d346574cdae7a4bbd76858",
+          "bytes": 55156
+        }
+      ],
+      "vcf_remote_metadata": {
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz",
+        "Content-Length": "734583405",
+        "ETag": "\"2bc8da6d-5bda9614b49c0\"",
+        "Last-Modified": "Tue, 16 Mar 2021 15:54:23 GMT"
+      },
+      "status": "complete",
+      "variants": 5307,
+      "vcf_samples": 2504,
+      "panel_samples": 2504,
+      "genotype_calls": 13288728,
+      "subset_sha256": "f1bb56996181bd9d65ce172d3d3da5a96e447ace9241cfb08fbfda659aa6306e",
+      "outputs": [
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_call.parquet",
+          "sha256": "f116b83ee8362ce535c9f2d47a183afb7bd158b73b942833f85478fa30157f45",
+          "bytes": 4490203
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_sample.parquet",
+          "sha256": "632e0ebb97c8e68a80670026f2f0f695b9d550b609525ea9fdf5202ac0b552c8",
+          "bytes": 19944
+        }
+      ],
+      "finished_utc": "2026-10-03T05:42:21.376979+00:00"
+    },
+    "ffq": {
+      "cycles": [
+        {
+          "cycle": "2003-2004",
+          "demographic_people": 10122,
+          "ffq_people": 6467,
+          "frequency_rows": 1095246,
+          "positive_ffq_weight_people": 5956,
+          "ffq_with_observed_bp_people": 5431
+        },
+        {
+          "cycle": "2005-2006",
+          "demographic_people": 10348,
+          "ffq_people": 6011,
+          "frequency_rows": 1019121,
+          "positive_ffq_weight_people": 5549,
+          "ffq_with_observed_bp_people": 5019
+        }
+      ],
+      "participant_mapping": "cycle+SEQN within same NHANES cycle only",
+      "weights": "native WTS_FFQ for FFQ; WTMEC2YR/WTINT2YR retained; SDMVPSU+SDMVSTRA retained; no pooled or survey-inference analysis performed",
+      "bp_label": "arithmetic mean of positive observed BPXSY1-4/BPXDI1-4; observed>=140/90 separate from BPQ020 diagnosis; not clinical repeated-visit diagnosis",
+      "portion_size_available": false,
+      "absolute_nutrient_intake_derived": false,
+      "paired_omics_claim": false
+    }
+  },
+  "query_row_counts": {
+    "methylation_abundance": 29732724,
+    "methylation_sample": 148,
+    "metabolomic_abundance": 1052370,
+    "metabolomic_sample": 90,
+    "genotype_reference_call": 13288728,
+    "genotype_reference_sample": 2504,
+    "ffq_frequency": 2114367,
+    "ffq_participant": 20470
+  }
+}

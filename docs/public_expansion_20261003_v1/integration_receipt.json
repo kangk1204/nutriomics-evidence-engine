@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-03T06:27:58.079134+00:00",
+  "root": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003",
+  "serving_database": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/expansion.duckdb",
+    "sha256": "91ac8845e1addd2b94191af48116ecd1cf6762c7343b6070a85229bd6207d033",
+    "readonly": true
+  },
+  "summary": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/summary.json",
+    "sha256": "50ea86b1cf46f94dd9e2f199d08a9c522af807a61d51696e83395d9afe554b6c"
+  },
+  "allrow_audit": {
+    "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/allrow_audit.json",
+    "sha256": "d42506b4c074bb3c18306a1b5c5f92858d446779f165e8860a6c665fbe5ccbd2",
+    "passed": true
+  },
+  "baseline": {
+    "source_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-evidence-engine/artifacts/hypertension.sqlite",
+    "source_sha256": "d46ac4ad8eecb624f3a593ba2974edd00eb37e3ff1a858d2dcad9cf1e80d0dce",
+    "source_food_count": 6321,
+    "snapshot_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/baseline_food_snapshot.sqlite",
+    "snapshot_sha256": "cee838a783dde52960046280fc2941abb078d509916ba59c418f73f3280270ba",
+    "count_unit": "actual current graph food nodes; exact IDs exported read-only; no production mutation"
+  },
+  "metrics": {
+    "standardized_records": {
+      "value": 7186264,
+      "unit": "eligible FDC nutrient records; one source-row ID; not sum of heterogeneous modalities",
+      "sql": "SELECT count(*) FROM food_composition"
+    },
+    "canonical_food": {
+      "value": 463172,
+      "unit": "GTIN/market product or native nonbranded food identity",
+      "sql": "SELECT count(*) FROM food"
+    },
+    "native_food": {
+      "value": 2101270,
+      "unit": "native FDC versioned food IDs including laboratory records",
+      "sql": "SELECT count(*) FROM food_records"
+    },
+    "natural_structures": {
+      "value": 724254,
+      "unit": "verified source InChI full-key distinct, single-component natural structures",
+      "sql": "SELECT count(*) FROM natural_products"
+    },
+    "measured_interaction_assertions": {
+      "value": 3171536,
+      "unit": "deduplicated measured Ki/Kd/IC50/EC50 assertions with source/assay/conditions/construct; censoring retained",
+      "sql": "SELECT count(*) FROM bindingdb_measurement"
+    },
+    "exact_measured_interaction_assertions": {
+      "value": 2551272,
+      "unit": "same measured assertions with exact positive numeric label only",
+      "sql": "SELECT count(*) FROM bindingdb_measurement WHERE exact_positive"
+    },
+    "binding_affinity_assertions": {
+      "value": 738105,
+      "unit": "measured Kd/Ki source assertions; separate from IC50/EC50",
+      "sql": "SELECT count(*) FROM bindingdb_measurement WHERE endpoint IN ('Kd','Ki')"
+    },
+    "unique_compound_target_pairs": {
+      "value": 2359030,
+      "unit": "distinct exact full-key and native construct/species/all-chain target identity",
+      "sql": "SELECT count(DISTINCT full_inchikey||':'||target_id) FROM bindingdb_measurement"
+    },
+    "ctd_response_records": {
+      "value": 3171202,
+      "unit": "native curated chemical/gene response records; not binding measurements",
+      "sql": "SELECT count(*) FROM chemical_gene_interaction"
+    },
+    "ffq_frequency": {
+      "value": 2114367,
+      "unit": "cycle/SEQN/native variable/food daily-frequency records; portions absent",
+      "sql": "SELECT count(*) FROM ffq_frequency"
+    },
+    "ffq_people": {
+      "value": 12478,
+      "unit": "actual respondents with at least one FFQ frequency; not all DEMO participants",
+      "sql": "SELECT count(*) FROM ffq_participant WHERE has_ffq_frequency"
+    },
+    "ffq_demographic_people": {
+      "value": 20470,
+      "unit": "DEMO participants with cycle+SEQN linkage; has_ffq_frequency differentiates respondents",
+      "sql": "SELECT count(*) FROM ffq_participant"
+    },
+    "genotype_calls": {
+      "value": 13288728,
+      "unit": "reference-only GT records, sample/GRCh37 locus/alleles; no diet-cohort linkage",
+      "sql": "SELECT count(*) FROM genotype_reference_call"
+    },
+    "genotype_people": {
+      "value": 2504,
+      "unit": "IGSR reference individuals",
+      "sql": "SELECT count(*) FROM genotype_reference_sample"
+    },
+    "methylation_cells": {
+      "value": 29732724,
+      "unit": "CpG/sample beta cells including explicit missing values",
+      "sql": "SELECT count(*) FROM methylation_abundance"
+    },
+    "methylation_observed": {
+      "value": 29704532,
+      "unit": "finite processed beta in [0,1]",
+      "sql": "SELECT count(*) FROM methylation_abundance WHERE value_status='observed_source_processed'"
+    },
+    "methylation_samples": {
+      "value": 148,
+      "unit": "132 primary and 16 exploratory external samples",
+      "sql": "SELECT count(*) FROM methylation_sample"
+    },
+    "metabolomic_cells": {
+      "value": 1052370,
+      "unit": "anonymous analytical-feature/sample log2 abundance cells; missing cells retained",
+      "sql": "SELECT count(*) FROM metabolomic_abundance"
+    },
+    "metabolomic_finite": {
+      "value": 147905,
+      "unit": "finite depositor log2 abundances; no second log transform",
+      "sql": "SELECT count(*) FROM metabolomic_abundance WHERE isfinite(abundance)"
+    },
+    "metabolomic_samples": {
+      "value": 90,
+      "unit": "76 human urine and 14 food-preparation samples; 19 humans",
+      "sql": "SELECT count(*) FROM metabolomic_sample"
+    },
+    "food_mass_rejections": {
+      "value": 2963,
+      "unit": "physically impossible source100g mass records; preserved but excluded from serving",
+      "sql": "SELECT count(*) FROM food_composition_rejections"
+    },
+    "bindingdb_label_rejections": {
+      "value": 262,
+      "unit": "nonpositive/nonfinite/malformed endpoint labels; excluded from measured registry",
+      "sql": "SELECT count(*) FROM bindingdb_label_rejections"
+    },
+    "added_food": {
+      "value": 457377,
+      "unit": "new canonical FDC native food IDs relative to exact frozen food-ID snapshot; baseline other namespaces retained separately",
+      "sql": "SELECT count(*) FROM food f ANTI JOIN read_parquet(baseline_food_ids.parquet) b ON f.food_id=b.id"
+    },
+    "verified_food_single_compounds": {
+      "count": 0,
+      "target": 2000,
+      "status": "not_met",
+      "reason": "FooDB bulk403; COCONUT FooDB membership and LOTUS organism occurrence do not establish edible part/measured food occurrence",
+      "unit": "new full-structure compound identities with confirmed edible-food occurrence; source-membership flag not accepted"
+    }
+  },
+  "native_vs_dedup": {
+    "food": {
+      "source_records": 2101270,
+      "canonical_product_or_food_identities": 463172,
+      "composition_records": 7186264,
+      "food_type_counts": {
+        "sr_legacy_food": 7793,
+        "branded_food": 449478,
+        "foundation_food": 469,
+        "survey_fndds_food": 5432
+      },
+      "food_registry_eligible_types": [
+        "branded_food",
+        "sr_legacy_food",
+        "foundation_food",
+        "survey_fndds_food"
+      ],
+      "lab_sample_types_counted_as_food_entities": false,
+      "deduplication": "branded GTIN padded14+market, latest publication; nonbranded nativeFDCID; no name-only entity merge",
+      "delta": {
+        "baseline_reported_food_records": 5845,
+        "baseline_ids_available": true,
+        "exact_added_source_records": 2095475,
+        "exact_added_canonical_food": 457377,
+        "baseline_actual_food_records": 6321,
+        "baseline_sha256": "cee838a783dde52960046280fc2941abb078d509916ba59c418f73f3280270ba",
+        "delta_unit": "new FDC source IDs relative to frozen existing graph; food identity dedup within new source separately"
+      },
+      "checks": {
+        "duplicate_food_id": 0,
+        "duplicate_identity_key": 0,
+        "composition_orphan_food": 0,
+        "invalid_amount_or_unit_native_rows": 10,
+        "physically_impossible_mass_rows_rejected": 2963
+      },
+      "composition_rejected_mass_records": 2963,
+      "mass_policy": "source100g: mass <=100g,100000mg,100000000ug; no mass inference for IU/activity units; overlapping nutrients never summed",
+      "mass_correction_receipt": {
+        "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/food_mass_correction.json",
+        "sha256": "70bd736feef7beb23f238504e0fe64f96971ccea474c48c97e69a6e15acd7e3a"
+      }
+    },
+    "natural_products": {
+      "native_records": 738794,
+      "distinct_verified_full_inchikey_single_structures": 724254,
+      "inchi_hash_verified_records": 738794,
+      "single_component_records": 734547,
+      "food_database_membership_records": 63341,
+      "verification": "source standardInChI produces identical fullInChIKey; full stereo key retained; disconnectedSMILES excluded; source natural-product annotation retained",
+      "experimental_food_occurrence_proven_by_collection_membership": false,
+      "all_smiles_recomputed_and_stereochemistry_validated": false
+    },
+    "bindingdb": {
+      "schema_version": 1,
+      "generated_utc": "2026-10-03T06:23:55.864937+00:00",
+      "source_sha256": "e968f90e900c7833d5e6eceae282d0ca3b75201448bccaf4df6b09cc410f7d76",
+      "parser": {
+        "raw_counts": {
+          "raw_rows": 3243660,
+          "nonempty_endpoint_values": 3246509,
+          "no_affinity_endpoint": 2979,
+          "rejected_nonpositive_or_nonfinite": 262
+        },
+        "typed_endpoint_relation_counts": [
+          {
+            "endpoint": "EC50",
+            "relation": "<",
+            "rows": 11042
+          },
+          {
+            "endpoint": "EC50",
+            "relation": "=",
+            "rows": 216795
+          },
+          {
+            "endpoint": "EC50",
+            "relation": ">",
+            "rows": 42928
+          },
+          {
+            "endpoint": "IC50",
+            "relation": "<",
+            "rows": 188513
+          },
+          {
+            "endpoint": "IC50",
+            "relation": "=",
+            "rows": 1749813
+          },
+          {
+            "endpoint": "IC50",
+            "relation": ">",
+            "rows": 281991
+          },
+          {
+            "endpoint": "Kd",
+            "relation": "<",
+            "rows": 8731
+          },
+          {
+            "endpoint": "Kd",
+            "relation": "=",
+            "rows": 82481
+          },
+          {
+            "endpoint": "Kd",
+            "relation": ">",
+            "rows": 40286
+          },
+          {
+            "endpoint": "Ki",
+            "relation": "<",
+            "rows": 18749
+          },
+          {
+            "endpoint": "Ki",
+            "relation": "=",
+            "rows": 542684
+          },
+          {
+            "endpoint": "Ki",
+            "relation": ">",
+            "rows": 62234
+          }
+        ]
+      },
+      "typed_native_measurement_rows": 3246247,
+      "measured_dedup_assertions": 3171536,
+      "exact_positive_dedup_assertions": 2551272,
+      "unique_construct_preserved_compound_target_pairs": 2359030,
+      "source_ledger_rows": 3240419,
+      "eligibility_source_row_counts": {
+        "eligible_measured_assertion": 3244349,
+        "unresolved_protein_sequence": 1648,
+        "unverified_full_structure": 247,
+        "missing_source_or_assay": 3
+      },
+      "endpoint_relation_counts": [
+        {
+          "endpoint": "EC50",
+          "relation": "<",
+          "rows": 10439
+        },
+        {
+          "endpoint": "EC50",
+          "relation": "=",
+          "rows": 213426
+        },
+        {
+          "endpoint": "EC50",
+          "relation": ">",
+          "rows": 41458
+        },
+        {
+          "endpoint": "IC50",
+          "relation": "<",
+          "rows": 173186
+        },
+        {
+          "endpoint": "IC50",
+          "relation": "=",
+          "rows": 1723340
+        },
+        {
+          "endpoint": "IC50",
+          "relation": ">",
+          "rows": 271582
+        },
+        {
+          "endpoint": "Kd",
+          "relation": "<",
+          "rows": 7063
+        },
+        {
+          "endpoint": "Kd",
+          "relation": "=",
+          "rows": 80500
+        },
+        {
+          "endpoint": "Kd",
+          "relation": ">",
+          "rows": 39985
+        },
+        {
+          "endpoint": "Ki",
+          "relation": "<",
+          "rows": 17537
+        },
+        {
+          "endpoint": "Ki",
+          "relation": "=",
+          "rows": 534006
+        },
+        {
+          "endpoint": "Ki",
+          "relation": ">",
+          "rows": 59014
+        }
+      ],
+      "distinct_full_inchikey": 1353165,
+      "distinct_construct_preserved_targets": 14132,
+      "checks": {
+        "duplicate_measurement_id": 0,
+        "nonpositive_or_nonfinite": 0,
+        "unverified_structure_or_sequence": 0,
+        "invalid_endpoint_or_unit": 0,
+        "bad_exact_label": 0
+      },
+      "deduplication": "exact fullInChIKey; sorted complete chain sequences + species + native target construct name; DOI/PMID/patent alias closure; native assay IDs; endpoint/relation/nM/pH/temperature preserved",
+      "source_registry_not_a_training_benchmark": true,
+      "strict_Kd_model_rows_not_inherited": true,
+      "censored_labels_used_as_exact": false,
+      "untested_pairs_used_as_negative": false,
+      "all_smiles_independently_validated": false,
+      "unknown_cross_source_replicates_may_remain": true,
+      "all_assays_binding_not_assumed": true,
+      "independent_sources_proven_for_food_model": false,
+      "outputs": [
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_assay_description.parquet",
+          "sha256": "4f1d3a7f574705810b7b35ffe9e4de79e25b85ad2d8837c3bdd5146fa61d4087",
+          "bytes": 9529372
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_label_rejections.parquet",
+          "sha256": "f3223bce661b6183c9517d91e904bc73b57df835ba8dcc40a05523d709770c45",
+          "bytes": 4990
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measured_source_records.parquet",
+          "sha256": "62413cc16e60c7ec9762cc62c0d9cbfc9e2e2e8ffaa917ba4e45d4d3859c3a8f",
+          "bytes": 247007513
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement.parquet",
+          "sha256": "f80a43c615bc77abb492a7c086617128ef0d37eb46269d05c8b596c174670f3f",
+          "bytes": 637133843
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_measurement_candidates.parquet",
+          "sha256": "15cc589d763e14df703f83fbf92c3c530f1dbbd0256294a4fdd88f71fd7e37ed",
+          "bytes": 317869467
+        },
+        {
+          "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_source_ledger.parquet",
+          "sha256": "87b5c43f93298ab619861ec5fba2a64067f85208cc3f9cff49fe21c44282b1a0",
+          "bytes": 15657868
+        }
+      ],
+      "audit_path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/bindingdb_endpoint_audit.json",
+      "audit_sha256": "212a86bc2b7a5fbbf2a453e31fe45a4bc7241d9191cdfb4ad06cbf5cb9ba3fc7"
+    }
+  },
+  "modalities": {
+    "schema_version": 1,
+    "registered_utc": "2026-10-03T05:49:24.072458+00:00",
+    "patient_multiomics_fusion_performed": false,
+    "individual_modality_sources_are_different_people": true,
+    "modalities": {
+      "epigenomics": {
+        "type": "epigenomics",
+        "source_path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-htn-methylation/data/prepared/matrices.npz",
+        "source_sha256": "8353873c44e88186debcc13ede15fc8896c7232716ffc77fa5bcb2701bf5402e",
+        "sample_counts": {
+          "GSE193795": 132,
+          "GSE42774": 16
+        },
+        "measurement_rows": 29732724,
+        "finite_values": 29704532,
+        "invalid_beta_range": 0,
+        "raw_idat_reprocessed": false,
+        "cohort_linkage_to_other_modalities": false
+      },
+      "metabolomics": {
+        "type": "metabolomics",
+        "source_inputs": [
+          {
+            "name": "untargeted.tsv",
+            "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\untargeted.tsv",
+            "sha256": "e457f183ca726506f68acba696235417c1bf79c9aff893a97e8e23e1412d03c9",
+            "bytes": 4076615,
+            "source_url": "https://www.metabolomicsworkbench.org/rest/study/analysis_id/AN002086/untarg_data"
+          },
+          {
+            "name": "factors.json",
+            "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\factors.json",
+            "sha256": "6b2535a651e4ae7c032417253f2623161af00d958ea8aac108c745de43310837",
+            "bytes": 20317,
+            "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/factors"
+          },
+          {
+            "name": "analysis.json",
+            "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\analysis.json",
+            "sha256": "a7ad7e9ea08c240aeb5b9e77749e43edf521ddafef189331b9836288812d88b1",
+            "bytes": 534,
+            "source_url": "https://www.metabolomicsworkbench.org/rest/study/study_id/ST001257/analysis"
+          },
+          {
+            "name": "mwtab.txt",
+            "path": "C:\\Projects\\00_NutriGenomics_auto\\final_2026\\repos\\nutriomics-intervention-atlas\\artifacts\\raw\\ST001257\\mwtab.txt",
+            "sha256": "bb74f07d15e695291a0dcb69bae823f57a69aef539e9e5c4ebf2f1035b47d6e5",
+            "bytes": 20223,
+            "source_url": "https://www.metabolomicsworkbench.org/data/study_textformat_view.php?ANALYSIS_ID=AN002086&MODE=d&STUDY_ID=ST001257"
+          }
+        ],
+        "people": 19,
+        "human_measurements": 76,
+        "food_preparations": 14,
+        "analytical_features": 11693,
+        "finite_values": 147905,
+        "missing_values": 904465,
+        "measurement_rows": 1052370,
+        "identified_compounds": 0,
+        "cohort_linkage_to_other_modalities": false,
+        "period_or_sequence_available": false
+      },
+      "genomics": {
+        "schema_version": 1,
+        "started_utc": "2026-10-03T05:40:56.977207+00:00",
+        "population": "public IGSR/1000 Genomes phase3 reference; not dietary intervention participants",
+        "build": "GRCh37",
+        "region": "11:61560000-61750000",
+        "same_person_omics_linkage": false,
+        "full_chromosome_download": false,
+        "sources": [
+          {
+            "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+            "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz.tbi",
+            "sha256": "c90c12a81c28502dfa0d2402ef24b39a7384a9b59482feb35f9226d151b148be",
+            "bytes": 133030
+          },
+          {
+            "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel",
+            "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/raw/integrated_call_samples_v3.20130502.ALL.panel",
+            "sha256": "b4023dc6ee2d62ee89c8d4d347db4d348e65518d66d346574cdae7a4bbd76858",
+            "bytes": 55156
+          }
+        ],
+        "vcf_remote_metadata": {
+          "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz",
+          "Content-Length": "734583405",
+          "ETag": "\"2bc8da6d-5bda9614b49c0\"",
+          "Last-Modified": "Tue, 16 Mar 2021 15:54:23 GMT"
+        },
+        "status": "complete",
+        "variants": 5307,
+        "vcf_samples": 2504,
+        "panel_samples": 2504,
+        "genotype_calls": 13288728,
+        "subset_sha256": "f1bb56996181bd9d65ce172d3d3da5a96e447ace9241cfb08fbfda659aa6306e",
+        "outputs": [
+          {
+            "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_call.parquet",
+            "sha256": "f116b83ee8362ce535c9f2d47a183afb7bd158b73b942833f85478fa30157f45",
+            "bytes": 4490203
+          },
+          {
+            "path": "/home/keunsoo/projects/nutriomics-2026-final/expansion_20261003/derived/genotype_reference_sample.parquet",
+            "sha256": "632e0ebb97c8e68a80670026f2f0f695b9d550b609525ea9fdf5202ac0b552c8",
+            "bytes": 19944
+          }
+        ],
+        "finished_utc": "2026-10-03T05:42:21.376979+00:00"
+      },
+      "ffq": {
+        "cycles": [
+          {
+            "cycle": "2003-2004",
+            "demographic_people": 10122,
+            "ffq_people": 6467,
+            "frequency_rows": 1095246,
+            "positive_ffq_weight_people": 5956,
+            "ffq_with_observed_bp_people": 5431
+          },
+          {
+            "cycle": "2005-2006",
+            "demographic_people": 10348,
+            "ffq_people": 6011,
+            "frequency_rows": 1019121,
+            "positive_ffq_weight_people": 5549,
+            "ffq_with_observed_bp_people": 5019
+          }
+        ],
+        "participant_mapping": "cycle+SEQN within same NHANES cycle only",
+        "weights": "native WTS_FFQ for FFQ; WTMEC2YR/WTINT2YR retained; SDMVPSU+SDMVSTRA retained; no pooled or survey-inference analysis performed",
+        "bp_label": "arithmetic mean of positive observed BPXSY1-4/BPXDI1-4; observed>=140/90 separate from BPQ020 diagnosis; not clinical repeated-visit diagnosis",
+        "portion_size_available": false,
+        "absolute_nutrient_intake_derived": false,
+        "paired_omics_claim": false
+      }
+    },
+    "query_row_counts": {
+      "methylation_abundance": 29732724,
+      "methylation_sample": 148,
+      "metabolomic_abundance": 1052370,
+      "metabolomic_sample": 90,
+      "genotype_reference_call": 13288728,
+      "genotype_reference_sample": 2504,
+      "ffq_frequency": 2114367,
+      "ffq_participant": 20470
+    }
+  },
+  "same_person_multiomics_claim": false,
+  "production_modified": false,
+  "raw_access_failures": {
+    "foodb": "official bulk403, no bypass or invented occurrence proof",
+    "bindingdb_202609": "official historical archive404; no original historical SHA/independence proof"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+    "packages": {
+      "duckdb": "1.5.6",
+      "pyarrow": "25.0.1",
+      "pandas": "3.0.6",
+      "numpy": "2.5.3",
+      "rdkit": "2026.3.6",
+      "requests": "2.34.2"
+    }
+  },
+  "milestone_judgments": {
+    "standardized_1m": true,
+    "added_food_90k": true,
+    "natural_structures_400k": true,
+    "measured_assertions_1_68m": true,
+    "verified_food_single_compounds_2000": false,
+    "same_person_multiomics": false
+  }
+}
