@@ -1,0 +1,161 @@
+{
+  "micro": {
+    "tp": 1003,
+    "fp": 2847,
+    "fn": 2758,
+    "precision": 0.26051948051948054,
+    "recall": 0.2666843924488168,
+    "f1": 0.2635658914728683
+  },
+  "by_relation": {
+    "ACTIVATOR": {
+      "tp": 8,
+      "fp": 26,
+      "fn": 238,
+      "precision": 0.23529411764705882,
+      "recall": 0.032520325203252036,
+      "f1": 0.05714285714285714
+    },
+    "AGONIST": {
+      "tp": 9,
+      "fp": 20,
+      "fn": 122,
+      "precision": 0.3103448275862069,
+      "recall": 0.06870229007633588,
+      "f1": 0.1125
+    },
+    "AGONIST-ACTIVATOR": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "AGONIST-INHIBITOR": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "ANTAGONIST": {
+      "tp": 42,
+      "fp": 123,
+      "fn": 176,
+      "precision": 0.2545454545454545,
+      "recall": 0.1926605504587156,
+      "f1": 0.21932114882506526
+    },
+    "DIRECT-REGULATOR": {
+      "tp": 105,
+      "fp": 339,
+      "fn": 353,
+      "precision": 0.23648648648648649,
+      "recall": 0.2292576419213974,
+      "f1": 0.2328159645232816
+    },
+    "INDIRECT-DOWNREGULATOR": {
+      "tp": 29,
+      "fp": 50,
+      "fn": 303,
+      "precision": 0.3670886075949367,
+      "recall": 0.08734939759036145,
+      "f1": 0.1411192214111922
+    },
+    "INDIRECT-UPREGULATOR": {
+      "tp": 24,
+      "fp": 64,
+      "fn": 278,
+      "precision": 0.2727272727272727,
+      "recall": 0.07947019867549669,
+      "f1": 0.12307692307692308
+    },
+    "INHIBITOR": {
+      "tp": 769,
+      "fp": 2201,
+      "fn": 381,
+      "precision": 0.25892255892255894,
+      "recall": 0.668695652173913,
+      "f1": 0.37330097087378644
+    },
+    "PART-OF": {
+      "tp": 2,
+      "fp": 6,
+      "fn": 255,
+      "precision": 0.25,
+      "recall": 0.007782101167315175,
+      "f1": 0.015094339622641511
+    },
+    "PRODUCT-OF": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 158,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "SUBSTRATE": {
+      "tp": 15,
+      "fp": 18,
+      "fn": 479,
+      "precision": 0.45454545454545453,
+      "recall": 0.030364372469635626,
+      "f1": 0.05692599620493358
+    },
+    "SUBSTRATE_PRODUCT-OF": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "gold_mentions_used": true,
+  "corpus_documents": 750,
+  "scope": "exact relation tuples; compare official evaluator before submission",
+  "official_evaluator": "https://github.com/tonifuc3m/drugprot-evaluation-library",
+  "protocol": {
+    "created_utc": "2026-10-03T02:47:40.779605+00:00",
+    "seed": 20261003,
+    "train_documents": 3500,
+    "evaluation_documents": 750,
+    "development_previously_examined": true,
+    "model": "TF-IDF word 1/2-grams + one-vs-rest logistic SGD",
+    "max_candidate_span": 800,
+    "threshold_candidates": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "threshold_fit_scope": "20% document holdout of official training only",
+    "gold_mentions_used": true,
+    "NER_or_food_accuracy_evaluated": false,
+    "archive_sha256": "679ca89698ca471a7fedc9af95acc8722c127c04eba19660fead406b5b9b52c9",
+    "train_input_sha256": {
+      "drugprot_training_abstracts.tsv": "d98e670748cbeb0afcd057e5bfc68125da287201b072e41e28d8fe5f8ef3a248",
+      "drugprot_training_relations.tsv": "97e7b3ca2b9fdc8bc762d459a1e64cbd6e94850e5b8f2cd1e57229a8833f08e3",
+      "drugprot_training_entities.tsv": "38e4bebac46815f9dc17af3792792ca077f348acdefee3545a5a95540d161786"
+    },
+    "source": "https://zenodo.org/records/5119892",
+    "license": "Original corpus metadata/rights retained; raw archive and text not redistributed"
+  },
+  "selected_threshold": 0.05,
+  "train_candidates": 394395,
+  "evaluation_candidates": 81412,
+  "evaluation_gold_relations": 3761,
+  "gold_relations_outside_candidates": 0,
+  "previous_baselines_preserved": true,
+  "gold_relations_in_features": false,
+  "model_version": "supervised-lexical-v1",
+  "final_result_scope": "Post-hoc public development comparator; not food-domain or NER accuracy",
+  "script_sha256": "d447dfd62e778dd3fc04c8bc3879413601b7db373f17b4907fe4f5c9e1b82c71",
+  "prediction_tsv_sha256": "5d7c95bfc5763eb1c806fe7a76899d56d5cc5602ebbde041424794ec1814b6c1",
+  "model_sha256": "840209287701a487912b6a278ccf19ce04ab1acd8664db5369ab957db4850766"
+}

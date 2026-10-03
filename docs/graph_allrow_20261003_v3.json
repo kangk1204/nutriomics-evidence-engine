@@ -1,0 +1,754 @@
+{
+  "generated_utc": "2026-10-03T03:06:05.542066+00:00",
+  "path": "/home/keunsoo/projects/nutriomics-2026-final/nutriomics-evidence-engine/artifacts/hypertension.sqlite",
+  "counts": {
+    "source": 16,
+    "node": 8611,
+    "edge": 429554,
+    "citation": 66833,
+    "measurement": 372036,
+    "identifier_mapping": 1683
+  },
+  "all_row_checks": {
+    "orphan_edge_nodes": 0,
+    "edges_without_source": 0,
+    "orphan_citations": 0,
+    "measurement_missing_unit": 0,
+    "measurement_missing_basis": 0,
+    "negative_measurement_amount": 0,
+    "measurement_orphan_source_or_nodes": 0,
+    "invalid_pmid_syntax": 0
+  },
+  "scope": "Full selected graph rows in one read-only transaction; not the separate large operational DB",
+  "sources": [
+    {
+      "id": "CTD-PubChem-food-crossrefs:e5c169334ba26351",
+      "source": "ctd_identity_links.csv",
+      "sha256": "e5c169334ba263513e0420536936f4aaa3fc54cb700ddcb2641f3ab804a40509",
+      "url": "https://ctdbase.org/downloads/",
+      "version": "2026-10-01 research snapshot",
+      "rights": null,
+      "edge_count": 4,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:3312a1645132e6869de9becd3b5da197db3f996a4623ace3bd653dcc230327ed",
+      "source": "CTD",
+      "sha256": "3312a1645132e6869de9becd3b5da197db3f996a4623ace3bd653dcc230327ed",
+      "url": "https://ctdbase.org/reports/CTD_diseases.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:34734b2c1a0cbf9402d93279574dee3d87a42e321e1abb11767972c7a587b45b",
+      "source": "CTD",
+      "sha256": "34734b2c1a0cbf9402d93279574dee3d87a42e321e1abb11767972c7a587b45b",
+      "url": "https://ctdbase.org/reports/CTD_genes_pathways.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 4293,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:765ac006d7f12d2e79c3ec92061960292f3cec575c4242825f3003d68b441f7e",
+      "source": "CTD",
+      "sha256": "765ac006d7f12d2e79c3ec92061960292f3cec575c4242825f3003d68b441f7e",
+      "url": "https://ctdbase.org/reports/CTD_chemicals.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 1029
+    },
+    {
+      "id": "CTD:775cf8e2467174f7b58e93f850a8d45d29ce6f3d6b8a26cca868771a3525cca1",
+      "source": "CTD",
+      "sha256": "775cf8e2467174f7b58e93f850a8d45d29ce6f3d6b8a26cca868771a3525cca1",
+      "url": "https://ctdbase.org/reports/CTD_pathways.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a",
+      "source": "CTD",
+      "sha256": "84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a",
+      "url": "https://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 51982,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa",
+      "source": "CTD",
+      "sha256": "a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa",
+      "url": "https://ctdbase.org/reports/CTD_curated_genes_diseases.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 245,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "CTD:bf0d0807ce3192d8618a937bfbf126b7216df1ed9af2108ba9fda8aa99c5483a",
+      "source": "CTD",
+      "sha256": "bf0d0807ce3192d8618a937bfbf126b7216df1ed9af2108ba9fda8aa99c5483a",
+      "url": "https://ctdbase.org/reports/CTD_curated_chemicals_diseases.csv.gz",
+      "version": "2026-09-29",
+      "rights": "CTD source terms: citation, source hyperlinks, use notification and periodic access; not a redistribution permission determination",
+      "edge_count": 994,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "FDA-eCFR-conditions:05aea91e80635681",
+      "source": "regulatory_annotations.json",
+      "sha256": "05aea91e806356810bd671276c088b4602c798c027188fa107b41d6f50e20e1b",
+      "url": "https://www.fda.gov/food/",
+      "version": "2026-10-01 research snapshot",
+      "rights": null,
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 0
+    },
+    {
+      "id": "K-FIND:7bec659eb9a70fe5bc619c11eb930dfd1fd6667071ebd39121be2535afaf0713",
+      "source": "K-FIND",
+      "sha256": "7bec659eb9a70fe5bc619c11eb930dfd1fd6667071ebd39121be2535afaf0713",
+      "url": "https://www.data.go.kr/data/15100065/standard.do",
+      "version": "2026-01-13",
+      "rights": "Source-specific reuse conditions unresolved; private research",
+      "edge_count": 936,
+      "measurement_count": 936,
+      "mapping_count": 0
+    },
+    {
+      "id": "K-FIND:d642e91d3f6bf92b9904bc680b126eb052b30ad52fc5834e1cbe983b329879f5",
+      "source": "K-FIND",
+      "sha256": "d642e91d3f6bf92b9904bc680b126eb052b30ad52fc5834e1cbe983b329879f5",
+      "url": "https://www.data.go.kr/data/15100070/standard.do",
+      "version": "2026-04-29",
+      "rights": "Source-specific reuse conditions unresolved; private research",
+      "edge_count": 264,
+      "measurement_count": 264,
+      "mapping_count": 0
+    },
+    {
+      "id": "PubChem-food-panel:ee8e8457bf164d89",
+      "source": "verified_compounds.csv",
+      "sha256": "ee8e8457bf164d894c9f0e2ff03b91f16b60ea2d4de3ba0db61628d312f11fe3",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "version": "2026-10-01 research snapshot",
+      "rights": null,
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 24
+    },
+    {
+      "id": "USDA-FDC:186e988ec542e913f51ef62b86a47758e8cdd0d1dc3889e7b055581f3c09c77a",
+      "source": "USDA-FDC",
+      "sha256": "186e988ec542e913f51ef62b86a47758e8cdd0d1dc3889e7b055581f3c09c77a",
+      "url": "https://fdc.nal.usda.gov/",
+      "version": null,
+      "rights": "CC0/public domain source; retain attribution and exact preparation",
+      "edge_count": 15193,
+      "measurement_count": 15193,
+      "mapping_count": 0
+    },
+    {
+      "id": "USDA-FDC:dfb06ae7ddc397ccd570b91c14b75438ab2ba39f64f22d321f61d4a52a77f3eb",
+      "source": "USDA-FDC",
+      "sha256": "dfb06ae7ddc397ccd570b91c14b75438ab2ba39f64f22d321f61d4a52a77f3eb",
+      "url": "https://fdc.nal.usda.gov/",
+      "version": null,
+      "rights": "CC0/public domain source; retain attribution and exact preparation",
+      "edge_count": 353015,
+      "measurement_count": 353015,
+      "mapping_count": 0
+    },
+    {
+      "id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "source": "food_composition.csv.gz",
+      "sha256": "012d43e48fbd9c028d5d9920090b96f233e50831d0ddb6de4349bdb20be95785",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Flav/Flav_R03-3.accdb",
+      "version": "2026-10-01 research snapshot",
+      "rights": null,
+      "edge_count": 2628,
+      "measurement_count": 2628,
+      "mapping_count": 0
+    },
+    {
+      "id": "reviewed-mappings:708f31cc8aadd66bc6b31720ebdcb41888e907e8f61b8191338f7608b25ded08",
+      "source": "reviewed-mappings",
+      "sha256": "708f31cc8aadd66bc6b31720ebdcb41888e907e8f61b8191338f7608b25ded08",
+      "url": "https://download.open.fda.gov/other/unii/other-unii-0001-of-0001.json.zip",
+      "version": "2026-09-30",
+      "rights": "Retain original source conditions; no name-only exact identity",
+      "edge_count": 0,
+      "measurement_count": 0,
+      "mapping_count": 630
+    }
+  ],
+  "structure_coverage": {
+    "chemical_nodes": 908,
+    "full_inchikey_present": 12,
+    "exact_structure_crossrefs": 0,
+    "without_full_inchikey": 896
+  },
+  "measurement_same_value_signature_groups": 0,
+  "signature_interpretation": "Potential repeated measurements, not automatically independent experiments or removable duplicates; inspect raw provenance",
+  "relations": [
+    {
+      "relation": "annotated_to_pathway",
+      "tier": "curated",
+      "n": 4293
+    },
+    {
+      "relation": "chemical_disease_marker_mechanism",
+      "tier": "curated",
+      "n": 508
+    },
+    {
+      "relation": "chemical_disease_therapeutic",
+      "tier": "curated",
+      "n": 486
+    },
+    {
+      "relation": "chemical_gene_influence",
+      "tier": "curated",
+      "n": 51982
+    },
+    {
+      "relation": "contains_analytical_flavonoid",
+      "tier": "observed_composition",
+      "n": 2628
+    },
+    {
+      "relation": "contains_nutrient",
+      "tier": "observed_composition",
+      "n": 369408
+    },
+    {
+      "relation": "gene_disease_marker_mechanism",
+      "tier": "curated",
+      "n": 214
+    },
+    {
+      "relation": "gene_disease_therapeutic",
+      "tier": "curated",
+      "n": 31
+    },
+    {
+      "relation": "source_identifier_cross_reference",
+      "tier": "curated",
+      "n": 4
+    }
+  ],
+  "traces": [
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:4615",
+      "gene_name": "MYD88",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "022ff1257ecb81684653751a59038af3b7d907344153f655153fb8bc79874ce9",
+      "disease_edge": "7a9765a56cc78ff898562122465b73b7e35408c531abaa12d520012f968f6a4c",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "022ff1257ecb81684653751a59038af3b7d907344153f655153fb8bc79874ce9",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:4615",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "decreases^reaction",
+              "increases^expression"
+            ],
+            "binding_label": false,
+            "gene_forms": "protein",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "epigallocatechin gallate inhibits the reaction [Paraquat results in increased expression of MYD88 protein]",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "27890776"
+          ]
+        },
+        {
+          "id": "7a9765a56cc78ff898562122465b73b7e35408c531abaa12d520012f968f6a4c",
+          "subject": "NCBIGene:4615",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_marker_mechanism",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "marker/mechanism",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "27292124"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    },
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:4780",
+      "gene_name": "NFE2L2",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "04ea4838f6fbcb2389e7bca513fc600d14b54034502ec26ce06d4b3e88aec6b4",
+      "disease_edge": "5556c337144f097efaf200a058df21f9fff2bdfd54258095531a00d253cbf18f",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "04ea4838f6fbcb2389e7bca513fc600d14b54034502ec26ce06d4b3e88aec6b4",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:4780",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "increases^expression"
+            ],
+            "binding_label": false,
+            "gene_forms": "protein",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "epigallocatechin gallate results in increased expression of NFE2L2 protein",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "16799064"
+          ]
+        },
+        {
+          "id": "5556c337144f097efaf200a058df21f9fff2bdfd54258095531a00d253cbf18f",
+          "subject": "NCBIGene:4780",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_marker_mechanism",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "marker/mechanism",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "32165127"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    },
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:5743",
+      "gene_name": "PTGS2",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "disease_edge": "572cf4b09a71de24675b055115f572fa688be5f1c998476e727416f32795a8e7",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:5743",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "increases^expression",
+              "increases^reaction"
+            ],
+            "binding_label": false,
+            "gene_forms": "protein",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "PLD1 protein promotes the reaction [epigallocatechin gallate results in increased expression of PTGS2 protein]",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "15210717"
+          ]
+        },
+        {
+          "id": "572cf4b09a71de24675b055115f572fa688be5f1c998476e727416f32795a8e7",
+          "subject": "NCBIGene:5743",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_marker_mechanism",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "marker/mechanism",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "14757778",
+            "15834289",
+            "20667508",
+            "22349312"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    },
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:5743",
+      "gene_name": "PTGS2",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "disease_edge": "e77d0d03a55ae24ae54f8ddcfb1ddc72ba7a51f8509b2ae1713e201a11da58d8",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:5743",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "increases^expression",
+              "increases^reaction"
+            ],
+            "binding_label": false,
+            "gene_forms": "protein",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "PLD1 protein promotes the reaction [epigallocatechin gallate results in increased expression of PTGS2 protein]",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "15210717"
+          ]
+        },
+        {
+          "id": "e77d0d03a55ae24ae54f8ddcfb1ddc72ba7a51f8509b2ae1713e201a11da58d8",
+          "subject": "NCBIGene:5743",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_therapeutic",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "therapeutic",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "14757778",
+            "15834289",
+            "20667508",
+            "22349312"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    },
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:5327",
+      "gene_name": "PLAT",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "0863579a70a650cd5db1e05224da0f3e4a116b441b78e137fcbe10c806a659fe",
+      "disease_edge": "dd1975b052b9c75e2894d53bc4c3a682094dea3f13eb6e6d45d98821b297cd6c",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "0863579a70a650cd5db1e05224da0f3e4a116b441b78e137fcbe10c806a659fe",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:5327",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "affects^cotreatment",
+              "decreases^expression"
+            ],
+            "binding_label": false,
+            "gene_forms": "mRNA",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "[Sulindac co-treated with epigallocatechin gallate] results in decreased expression of PLAT mRNA",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "12628509"
+          ]
+        },
+        {
+          "id": "dd1975b052b9c75e2894d53bc4c3a682094dea3f13eb6e6d45d98821b297cd6c",
+          "subject": "NCBIGene:5327",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_marker_mechanism",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "marker/mechanism",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "22352330"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    },
+    {
+      "food_id": "USDA-Flav-R03-3:99582",
+      "food_name": "Tea, white, brewed",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "compound_name": "(-)-Epigallocatechin 3-gallate",
+      "bridge_edge": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "gene_id": "NCBIGene:51083",
+      "gene_name": "GAL",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_source": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "gene_edge": "08731e933c1214998ee615cb4e0ebc982a5c76d272c34315bf4aa851d5302cf5",
+      "disease_edge": "b662218aeb685423a0b4012538e45d36adba75b81064cc3ae8cb7494e66828b6",
+      "taxon": "9606",
+      "steps": [
+        {
+          "id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+          "subject": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "object": "MESH:C045651",
+          "relation": "source_identifier_cross_reference",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "ctd_full_structure_available": false,
+            "exact_structure_identity_claimed": false,
+            "match_basis": "exact_pubchem_cid_ctd_key_absent"
+          },
+          "source_ids": [
+            "CTD-PubChem-food-crossrefs:e5c169334ba26351"
+          ],
+          "pmids": []
+        },
+        {
+          "id": "08731e933c1214998ee615cb4e0ebc982a5c76d272c34315bf4aa851d5302cf5",
+          "subject": "MESH:C045651",
+          "object": "NCBIGene:51083",
+          "relation": "chemical_gene_influence",
+          "tier": "curated",
+          "taxon": "9606",
+          "context": {
+            "actions": [
+              "affects^cotreatment",
+              "increases^expression"
+            ],
+            "binding_label": false,
+            "gene_forms": "mRNA",
+            "human_assay_does_not_imply_clinical_trial": true,
+            "interaction": "[potassium chromate(VI) co-treated with epigallocatechin gallate] results in increased expression of GAL mRNA",
+            "source": "CTD"
+          },
+          "source_ids": [
+            "CTD:84ed0fc7104fb886296157ea2da1690e9519ad8c8ba5450988936302c43fc82a"
+          ],
+          "pmids": [
+            "22079256"
+          ]
+        },
+        {
+          "id": "b662218aeb685423a0b4012538e45d36adba75b81064cc3ae8cb7494e66828b6",
+          "subject": "NCBIGene:51083",
+          "object": "MESH:D006973",
+          "relation": "gene_disease_marker_mechanism",
+          "tier": "curated",
+          "taxon": null,
+          "context": {
+            "direct_evidence": "marker/mechanism",
+            "source": "CTD",
+            "species": "not_encoded_in_disease_export"
+          },
+          "source_ids": [
+            "CTD:a236f0adc9a6965ae7a8cd507f7fef75d9bb48d0d2754c2337288fbfa3fd35aa"
+          ],
+          "pmids": [
+            "10818254"
+          ]
+        }
+      ],
+      "interpretation": "Measured food composition + source-reported identifier link + CTD molecular influence + curated gene-disease evidence. Not measured Kd, same-person multiomics, causation or food efficacy."
+    }
+  ],
+  "clinical_or_food_efficacy_model_validated": false,
+  "foreign_key_errors": [],
+  "source_missing_sha256": 0,
+  "source_missing_url": 0,
+  "regulatory_annotation_count": 4
+}

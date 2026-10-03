@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-03T02:47:40.779605+00:00",
+  "seed": 20261003,
+  "train_documents": 3500,
+  "evaluation_documents": 750,
+  "development_previously_examined": true,
+  "model": "TF-IDF word 1/2-grams + one-vs-rest logistic SGD",
+  "max_candidate_span": 800,
+  "threshold_candidates": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    0.9
+  ],
+  "threshold_fit_scope": "20% document holdout of official training only",
+  "gold_mentions_used": true,
+  "NER_or_food_accuracy_evaluated": false,
+  "archive_sha256": "679ca89698ca471a7fedc9af95acc8722c127c04eba19660fead406b5b9b52c9",
+  "train_input_sha256": {
+    "drugprot_training_abstracts.tsv": "d98e670748cbeb0afcd057e5bfc68125da287201b072e41e28d8fe5f8ef3a248",
+    "drugprot_training_relations.tsv": "97e7b3ca2b9fdc8bc762d459a1e64cbd6e94850e5b8f2cd1e57229a8833f08e3",
+    "drugprot_training_entities.tsv": "38e4bebac46815f9dc17af3792792ca077f348acdefee3545a5a95540d161786"
+  },
+  "source": "https://zenodo.org/records/5119892",
+  "license": "Original corpus metadata/rights retained; raw archive and text not redistributed"
+}
