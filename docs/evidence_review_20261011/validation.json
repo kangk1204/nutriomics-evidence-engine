@@ -1,0 +1,111 @@
+{
+  "runtime": "JavaScript V8 through functions.exec",
+  "schema_validator_scope": "supported keywords only, no external JSON-schema package",
+  "checks": [
+    {
+      "name": "supported JSON-schema keyword checks",
+      "passed": true
+    },
+    {
+      "name": "50 exact unique CpG IDs",
+      "passed": true
+    },
+    {
+      "name": "39 annotated and 11 unassigned",
+      "passed": true
+    },
+    {
+      "name": "22 native gene labels",
+      "passed": true
+    },
+    {
+      "name": "46 observed replication probes and 4 missing",
+      "passed": true
+    },
+    {
+      "name": "selection denominator remains15",
+      "passed": true
+    },
+    {
+      "name": "inventory quantity partition",
+      "passed": true
+    },
+    {
+      "name": "occurrence partition",
+      "passed": true
+    },
+    {
+      "name": "six traces share one composition measurement",
+      "passed": true
+    },
+    {
+      "name": "five genes and five compound-gene edges",
+      "passed": true
+    },
+    {
+      "name": "no native panel overlap in available six traces",
+      "passed": true
+    },
+    {
+      "name": "six source bridges never promoted to exact structure",
+      "passed": true
+    },
+    {
+      "name": "whole4630 linked/unverified counts remain unknown",
+      "passed": true
+    },
+    {
+      "name": "all records remain unqualified and unapplied",
+      "passed": true
+    },
+    {
+      "name": "cell study not labelled clinical RCT",
+      "passed": true
+    },
+    {
+      "name": "PTGS2 supported increase retained",
+      "passed": true
+    },
+    {
+      "name": "EGCG-specific Nrf2 primary record remains unverified",
+      "passed": true
+    },
+    {
+      "name": "nested/cotreatment caveats retained",
+      "passed": true
+    },
+    {
+      "name": "prediction separated from causal direction",
+      "passed": true
+    },
+    {
+      "name": "FISHGASTRO ambiguity and modality retained",
+      "passed": true
+    },
+    {
+      "name": "negative: reject undocumented qualification",
+      "passed": true
+    },
+    {
+      "name": "negative: reject missing dose field",
+      "passed": true
+    },
+    {
+      "name": "negative: reject invalid CpG ID",
+      "passed": true
+    },
+    {
+      "name": "negative: reject invented linked denominator",
+      "passed": true
+    },
+    {
+      "name": "negative: reject undocumented application",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "count": 25,
+  "scientific_validation_claim": false,
+  "local_tests_ran": false,
+  "model_reanalysis_ran": false
+}
