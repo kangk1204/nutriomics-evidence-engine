@@ -1,0 +1,1592 @@
+{
+  "execution_kind": "actual_frozen_document_subset",
+  "provenance": {
+    "panel": "original83p PDF50-51 current Library read; native annotation not refreshed",
+    "panel_library_file_id": "libfile_9da423931d988191b9c84fe7c9e71f14",
+    "graph_repository": "kangk1204/nutriomics-evidence-engine",
+    "graph_commit": "7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+    "graph_receipt_blob_sha1": "b06cc3dcafcbdf75a52a2d8b2ba7b88142fd7786",
+    "annotation_primary_manifest_available": false,
+    "original_serving_tables_available": false
+  },
+  "panel": [
+    {
+      "cpg": "cg05593715",
+      "native_genes": [],
+      "chromosome": "8",
+      "hg19_position": 95056896,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg21094739",
+      "native_genes": [
+        "ACE"
+      ],
+      "chromosome": "17",
+      "hg19_position": 61572645,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg12105450",
+      "native_genes": [
+        "CASP10"
+      ],
+      "chromosome": "2",
+      "hg19_position": 202048100,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg19015897",
+      "native_genes": [
+        "TMEM100"
+      ],
+      "chromosome": "17",
+      "hg19_position": 53798372,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg00096418",
+      "native_genes": [],
+      "chromosome": "16",
+      "hg19_position": 65910068,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg07588401",
+      "native_genes": [],
+      "chromosome": "8",
+      "hg19_position": 125951124,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg05210501",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27219344,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg08125291",
+      "native_genes": [],
+      "chromosome": "13",
+      "hg19_position": 44588186,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg12874792",
+      "native_genes": [
+        "RAD51L1"
+      ],
+      "chromosome": "14",
+      "hg19_position": 68831098,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg00970558",
+      "native_genes": [
+        "CLEC4GP1"
+      ],
+      "chromosome": "19",
+      "hg19_position": 7854469,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg14431443",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114846431,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg06374384",
+      "native_genes": [
+        "P4HA3"
+      ],
+      "chromosome": "11",
+      "hg19_position": 73978091,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg14375937",
+      "native_genes": [
+        "CYP26C1"
+      ],
+      "chromosome": "10",
+      "hg19_position": 94825667,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg13100600",
+      "native_genes": [
+        "AGRN"
+      ],
+      "chromosome": "1",
+      "hg19_position": 958351,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg20895669",
+      "native_genes": [
+        "MCF2L"
+      ],
+      "chromosome": "13",
+      "hg19_position": 113622539,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg10330839",
+      "native_genes": [
+        "LTBP4"
+      ],
+      "chromosome": "19",
+      "hg19_position": 41115766,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false
+    },
+    {
+      "cpg": "cg06013060",
+      "native_genes": [],
+      "chromosome": "10",
+      "hg19_position": 131813094,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg26757472",
+      "native_genes": [],
+      "chromosome": "16",
+      "hg19_position": 86387131,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg11219400",
+      "native_genes": [
+        "TRANK1"
+      ],
+      "chromosome": "3",
+      "hg19_position": 36949966,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg15255827",
+      "native_genes": [],
+      "chromosome": "18",
+      "hg19_position": 8707556,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg10724867",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27218867,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg15123730",
+      "native_genes": [],
+      "chromosome": "19",
+      "hg19_position": 13215387,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg00346208",
+      "native_genes": [
+        "VWA5B1"
+      ],
+      "chromosome": "1",
+      "hg19_position": 20669905,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false
+    },
+    {
+      "cpg": "cg16559598",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114846503,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg05929882",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847508,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg20544451",
+      "native_genes": [],
+      "chromosome": "10",
+      "hg19_position": 131813126,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false
+    },
+    {
+      "cpg": "cg08024029",
+      "native_genes": [
+        "VWA5B1"
+      ],
+      "chromosome": "1",
+      "hg19_position": 20669724,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg02483701",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27215610,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg06723337",
+      "native_genes": [],
+      "chromosome": "16",
+      "hg19_position": 87541476,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg06669276",
+      "native_genes": [
+        "HOXA11AS"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27228627,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg17052756",
+      "native_genes": [
+        "JAZF1"
+      ],
+      "chromosome": "7",
+      "hg19_position": 28143676,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg05378452",
+      "native_genes": [],
+      "chromosome": "17",
+      "hg19_position": 68037743,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg25666210",
+      "native_genes": [
+        "PTPRR"
+      ],
+      "chromosome": "12",
+      "hg19_position": 71148346,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg00418216",
+      "native_genes": [
+        "HOXA11AS"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27227847,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg27157482",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27215606,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg16177830",
+      "native_genes": [
+        "TNFRSF17"
+      ],
+      "chromosome": "16",
+      "hg19_position": 12059019,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg15864691",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27217606,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg17374433",
+      "native_genes": [
+        "CASC2"
+      ],
+      "chromosome": "10",
+      "hg19_position": 119876327,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg21090298",
+      "native_genes": [
+        "MCF2L"
+      ],
+      "chromosome": "13",
+      "hg19_position": 113622686,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg19290410",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847438,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg05769349",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847043,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg05555207",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847641,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg26709234",
+      "native_genes": [
+        "CDH13"
+      ],
+      "chromosome": "16",
+      "hg19_position": 82868296,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg12670347",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847578,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg10803714",
+      "native_genes": [
+        "ANTXR1"
+      ],
+      "chromosome": "2",
+      "hg19_position": 69399575,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg03843000",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114846968,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg06911121",
+      "native_genes": [
+        "TBX5"
+      ],
+      "chromosome": "12",
+      "hg19_position": 114847164,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg14935646",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27215464,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false
+    },
+    {
+      "cpg": "cg01447914",
+      "native_genes": [
+        "FERMT3"
+      ],
+      "chromosome": "11",
+      "hg19_position": 63974955,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    },
+    {
+      "cpg": "cg09636715",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "chromosome": "7",
+      "hg19_position": 27217057,
+      "genome_build": "hg19",
+      "source_annotation_verified": false,
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true
+    }
+  ],
+  "gene_mappings": [
+    {
+      "native_symbol": "ACE",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "CASP10",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "TMEM100",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "HOXA10",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "RAD51L1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "CLEC4GP1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "TBX5",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "P4HA3",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "CYP26C1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "AGRN",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "MCF2L",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "LTBP4",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "TRANK1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "VWA5B1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "HOXA11AS",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "JAZF1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "PTPRR",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "TNFRSF17",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "CASC2",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "CDH13",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "ANTXR1",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    },
+    {
+      "native_symbol": "FERMT3",
+      "canonical_id": null,
+      "taxon_id": 9606,
+      "status": "pending",
+      "source_snapshot_verified": false,
+      "source_sha256": null,
+      "source_release": null,
+      "source_url": "https://www.genenames.org/"
+    }
+  ],
+  "lookup_results": [
+    {
+      "cpg": "cg05593715",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg21094739",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg12105450",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg19015897",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg00096418",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg07588401",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg05210501",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg08125291",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg12874792",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg00970558",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg14431443",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg06374384",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg14375937",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg13100600",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg20895669",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg10330839",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg06013060",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg26757472",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg11219400",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg15255827",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg10724867",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg15123730",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg00346208",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg16559598",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg05929882",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg20544451",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg08024029",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg02483701",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg06723337",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg06669276",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg17052756",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg05378452",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg25666210",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg00418216",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg27157482",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg16177830",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg15864691",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg17374433",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg21090298",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg19290410",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg05769349",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg05555207",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg26709234",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg12670347",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg10803714",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg03843000",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg06911121",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg14935646",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg01447914",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    },
+    {
+      "cpg": "cg09636715",
+      "status": "not_queried",
+      "global_service_status": "home_timeout; download503",
+      "source": "EWAS_Catalog"
+    }
+  ],
+  "traces": [
+    {
+      "trace_id": "T1",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:4615",
+      "gene_symbol": "MYD88",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "022ff1257ecb81684653751a59038af3b7d907344153f655153fb8bc79874ce9",
+      "gene_disease_edge_id": "7a9765a56cc78ff898562122465b73b7e35408c531abaa12d520012f968f6a4c",
+      "compound_gene_pmids": [
+        "27890776"
+      ],
+      "gene_disease_pmids": [
+        "27292124"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D03",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": true,
+        "has_cotreatment": false,
+        "taxon_id": 9606,
+        "study_design": "unknown",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    },
+    {
+      "trace_id": "T2",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:4780",
+      "gene_symbol": "NFE2L2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "04ea4838f6fbcb2389e7bca513fc600d14b54034502ec26ce06d4b3e88aec6b4",
+      "gene_disease_edge_id": "5556c337144f097efaf200a058df21f9fff2bdfd54258095531a00d253cbf18f",
+      "compound_gene_pmids": [
+        "16799064"
+      ],
+      "gene_disease_pmids": [
+        "32165127"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D02",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": false,
+        "has_cotreatment": false,
+        "taxon_id": 9606,
+        "study_design": "in_vitro",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    },
+    {
+      "trace_id": "T3",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5743",
+      "gene_symbol": "PTGS2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "gene_disease_edge_id": "572cf4b09a71de24675b055115f572fa688be5f1c998476e727416f32795a8e7",
+      "compound_gene_pmids": [
+        "15210717"
+      ],
+      "gene_disease_pmids": [
+        "14757778",
+        "15834289",
+        "20667508",
+        "22349312"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D01",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": true,
+        "has_cotreatment": false,
+        "taxon_id": 9606,
+        "study_design": "in_vitro",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    },
+    {
+      "trace_id": "T4",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5743",
+      "gene_symbol": "PTGS2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "gene_disease_edge_id": "e77d0d03a55ae24ae54f8ddcfb1ddc72ba7a51f8509b2ae1713e201a11da58d8",
+      "compound_gene_pmids": [
+        "15210717"
+      ],
+      "gene_disease_pmids": [
+        "14757778",
+        "15834289",
+        "20667508",
+        "22349312"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D01",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": true,
+        "has_cotreatment": false,
+        "taxon_id": 9606,
+        "study_design": "in_vitro",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    },
+    {
+      "trace_id": "T5",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5327",
+      "gene_symbol": "PLAT",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0863579a70a650cd5db1e05224da0f3e4a116b441b78e137fcbe10c806a659fe",
+      "gene_disease_edge_id": "dd1975b052b9c75e2894d53bc4c3a682094dea3f13eb6e6d45d98821b297cd6c",
+      "compound_gene_pmids": [
+        "12628509"
+      ],
+      "gene_disease_pmids": [
+        "22352330"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D04",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": false,
+        "has_cotreatment": true,
+        "taxon_id": 9606,
+        "study_design": "unknown",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    },
+    {
+      "trace_id": "T6",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:51083",
+      "gene_symbol": "GAL",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "08731e933c1214998ee615cb4e0ebc982a5c76d272c34315bf4aa851d5302cf5",
+      "gene_disease_edge_id": "b662218aeb685423a0b4012538e45d36adba75b81064cc3ae8cb7494e66828b6",
+      "compound_gene_pmids": [
+        "22079256"
+      ],
+      "gene_disease_pmids": [
+        "10818254"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D05",
+      "clinical_chain_qualified": false,
+      "measurement_status": "measured",
+      "amount": 42.45,
+      "unit": "mg",
+      "basis": "source_100g",
+      "structure_identity_status": "source_reported_only",
+      "context": {
+        "has_nested_reaction": false,
+        "has_cotreatment": true,
+        "taxon_id": 9606,
+        "study_design": "unknown",
+        "species_compatibility_verified": false,
+        "tissue_compatibility_verified": false,
+        "context_source": "frozen CTD receipt; exact primary verification scoped in evidence.json"
+      }
+    }
+  ],
+  "evidence_records": [
+    {
+      "record_id": "M01",
+      "pmids": [],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": "GSE222595/source2023"
+    },
+    {
+      "record_id": "M02",
+      "pmids": [],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": "GSE222595/source2023"
+    },
+    {
+      "record_id": "M03",
+      "pmids": [],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": "GSE222595/source2023"
+    },
+    {
+      "record_id": "M04",
+      "pmids": [],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": "GSE222595/source2023"
+    },
+    {
+      "record_id": "R01",
+      "pmids": [
+        "26568774"
+      ],
+      "dose": "folic acid 400 ug/day + vitamin B12 500 ug/day; both arms D3 15 ug/day",
+      "duration": "2 years",
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "D01",
+      "pmids": [
+        "15210717"
+      ],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "D02",
+      "pmids": [
+        "16799064"
+      ],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "D03",
+      "pmids": [
+        "27890776"
+      ],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "D04",
+      "pmids": [
+        "12628509"
+      ],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "D05",
+      "pmids": [
+        "22079256"
+      ],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": null
+    },
+    {
+      "record_id": "P01",
+      "pmids": [],
+      "dose": null,
+      "duration": null,
+      "dose_response_design_verified": false,
+      "known_shared_source_group": "GSE222595/source2023"
+    }
+  ],
+  "catalogue": {
+    "declared_structures": 4630,
+    "complete_rows_available": false
+  },
+  "sources": [
+    {
+      "source_id": "FDC",
+      "licence": "CC0",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "HGNC",
+      "licence": "CC0",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "ChEBI",
+      "licence": "CC-BY-4.0 plus EMBL-EBI terms",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "Reactome",
+      "licence": "dataCC0; artworkCC-BY-4.0; codeApache2 with exceptions",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "FooDB_historical",
+      "licence": "receipt records CC-BY-NC-4.0; code MIT separate",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "CTD",
+      "licence": "conditional_source_terms; no current export approval",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "PubChem",
+      "licence": "source_contributor_specific",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "BindingDB_ChEMBL",
+      "licence": "BindingDB per-source verification pending; ChEMBLCC-BY-SA3.0 reported by parent",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "EWAS_Catalog",
+      "licence": "not_verified",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    },
+    {
+      "source_id": "Exposome_Explorer",
+      "licence": "not_verified",
+      "artifact_scope_verified": false,
+      "permission_status": "not_verified_for_this_dataset_export",
+      "attribution_complete": false
+    }
+  ]
+}
