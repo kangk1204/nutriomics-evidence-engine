@@ -1,0 +1,336 @@
+[
+  {
+    "id": "N01",
+    "poc_id": "P01",
+    "claim": {
+      "poc_id": "P01",
+      "clinical_chain_qualified": true
+    },
+    "expected_accepted": false,
+    "expected_reason": "unsupported:clinical_chain_qualified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N02",
+    "poc_id": "P02",
+    "claim": {
+      "poc_id": "P02",
+      "direction": "increase"
+    },
+    "expected_accepted": false,
+    "expected_reason": "direction_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N03",
+    "poc_id": "P02",
+    "claim": {
+      "poc_id": "P02",
+      "health_claim": "disease_prevention"
+    },
+    "expected_accepted": false,
+    "expected_reason": "disease_prevention_not_established_by_mechanistic_chain",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N04",
+    "poc_id": "P03",
+    "claim": {
+      "poc_id": "P03",
+      "molecular_kind": "exact_CpG_DNA_methylation"
+    },
+    "expected_accepted": false,
+    "expected_reason": "assay_type_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N05",
+    "poc_id": "P03",
+    "claim": {
+      "poc_id": "P03",
+      "molecular_kind": "RNA_expression",
+      "subject_n": 24
+    },
+    "expected_accepted": false,
+    "expected_reason": "subject_scope_or_n_unverified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N06",
+    "poc_id": "P03",
+    "claim": {
+      "poc_id": "P03",
+      "component_name": "hesperetin"
+    },
+    "expected_accepted": false,
+    "expected_reason": "different_native_component",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N07",
+    "poc_id": "P03",
+    "claim": {
+      "poc_id": "P03",
+      "health_claim": "fasting_microvascular_improvement"
+    },
+    "expected_accepted": false,
+    "expected_reason": "fasting_endpoint_not_significant",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N08",
+    "poc_id": "P04",
+    "claim": {
+      "poc_id": "P04",
+      "individual_hydroxytyrosol_dose": 7000
+    },
+    "expected_accepted": false,
+    "expected_reason": "hydroxytyrosol_unit_unreconciled",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N09",
+    "poc_id": "P05",
+    "claim": {
+      "poc_id": "P05",
+      "specific_cpg": "cg21094739"
+    },
+    "expected_accepted": false,
+    "expected_reason": "cpg_not_assayed",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N10",
+    "poc_id": "P05",
+    "claim": {
+      "poc_id": "P05",
+      "molecular_kind": "RNA_expression",
+      "subject_n": 214
+    },
+    "expected_accepted": false,
+    "expected_reason": "subject_scope_or_n_unverified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N11",
+    "poc_id": "P05",
+    "claim": {
+      "poc_id": "P05",
+      "cross_study_hypothesis": false
+    },
+    "expected_accepted": false,
+    "expected_reason": "bridge_scope_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N12",
+    "poc_id": "P06",
+    "claim": {
+      "poc_id": "P06",
+      "molecular_kind": "RNA_expression"
+    },
+    "expected_accepted": false,
+    "expected_reason": "assay_type_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N13",
+    "poc_id": "P06",
+    "claim": {
+      "poc_id": "P06",
+      "isolated_compound_causal_effect_proven": true
+    },
+    "expected_accepted": false,
+    "expected_reason": "unsupported:isolated_compound_causal_effect_proven",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N14",
+    "poc_id": "P07",
+    "claim": {
+      "poc_id": "P07",
+      "health_claim": "fracture_prevention_proven"
+    },
+    "expected_accepted": false,
+    "expected_reason": "fracture_ITT_CI_includes_one",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N15",
+    "poc_id": "P07",
+    "claim": {
+      "poc_id": "P07",
+      "specific_cpg": "cg05593715"
+    },
+    "expected_accepted": false,
+    "expected_reason": "cpg_not_assayed",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N16",
+    "poc_id": "P08",
+    "claim": {
+      "poc_id": "P08",
+      "molecular_kind": "exact_CpG_DNA_methylation",
+      "subject_n": 7447
+    },
+    "expected_accepted": false,
+    "expected_reason": "subject_scope_or_n_unverified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N17",
+    "poc_id": "P08",
+    "claim": {
+      "poc_id": "P08",
+      "health_source_DOI": "10.1056/NEJMoa1200303"
+    },
+    "expected_accepted": false,
+    "expected_reason": "use_corrected_2018_health_report",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N18",
+    "poc_id": "P08",
+    "claim": {
+      "poc_id": "P08",
+      "panel_exact_cpg_overlap_count": 2
+    },
+    "expected_accepted": false,
+    "expected_reason": "panel_overlap_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N19",
+    "poc_id": "P09",
+    "claim": {
+      "poc_id": "P09",
+      "specific_cpg": "cg21094739"
+    },
+    "expected_accepted": false,
+    "expected_reason": "cpg_not_assayed",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N20",
+    "poc_id": "P09",
+    "claim": {
+      "poc_id": "P09",
+      "food_preparation": "100g dry white tea leaves"
+    },
+    "expected_accepted": false,
+    "expected_reason": "different_food_preparation",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N21",
+    "poc_id": "P09",
+    "claim": {
+      "poc_id": "P09",
+      "health_claim": "disease_prevention"
+    },
+    "expected_accepted": false,
+    "expected_reason": "disease_prevention_not_established_by_mechanistic_chain",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N22",
+    "poc_id": "P10",
+    "claim": {
+      "poc_id": "P10",
+      "direction": "decrease"
+    },
+    "expected_accepted": false,
+    "expected_reason": "direction_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N23",
+    "poc_id": "P10",
+    "claim": {
+      "poc_id": "P10",
+      "molecular_kind": "RNA_expression"
+    },
+    "expected_accepted": false,
+    "expected_reason": "assay_type_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N24",
+    "poc_id": "P10",
+    "claim": {
+      "poc_id": "P10",
+      "cross_study_hypothesis": false
+    },
+    "expected_accepted": false,
+    "expected_reason": "bridge_scope_mismatch",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N25",
+    "poc_id": "P03",
+    "claim": {
+      "poc_id": "P03",
+      "canonical_gene_overlap": 0
+    },
+    "expected_accepted": false,
+    "expected_reason": "canonical_mapping_unavailable",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N26",
+    "poc_id": "P06",
+    "claim": {
+      "poc_id": "P06",
+      "gene_to_health_mediation_proven": true
+    },
+    "expected_accepted": false,
+    "expected_reason": "unsupported:gene_to_health_mediation_proven",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N27",
+    "poc_id": "P10",
+    "claim": {
+      "poc_id": "P10",
+      "raw_upstream_export": true
+    },
+    "expected_accepted": false,
+    "expected_reason": "raw_export_not_authorized",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N28",
+    "poc_id": "P01",
+    "claim": {
+      "poc_id": "P01",
+      "molecular_kind": "RNA_expression",
+      "subject_n": 65
+    },
+    "expected_accepted": false,
+    "expected_reason": "subject_scope_or_n_unverified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N29",
+    "poc_id": "P01",
+    "claim": {
+      "poc_id": "P01",
+      "food_preparation": "boiled mature broccoli"
+    },
+    "expected_accepted": false,
+    "expected_reason": "different_food_preparation",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  },
+  {
+    "id": "N30",
+    "poc_id": "P07",
+    "claim": {
+      "poc_id": "P07",
+      "full_causal_chain_verified": true
+    },
+    "expected_accepted": false,
+    "expected_reason": "unsupported:full_causal_chain_verified",
+    "fixture_scope": "synthetic unsafe-output counterexample; not new biological negative experiment"
+  }
+]
