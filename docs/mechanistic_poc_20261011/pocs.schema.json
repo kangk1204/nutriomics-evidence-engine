@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NutriOmics literature/data mechanistic POC packet",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "prepared_utc",
+    "plan_commit",
+    "sources",
+    "current_panel",
+    "cases",
+    "global_limits"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "nutriomics-mechanistic-poc-v1"
+    },
+    "prepared_utc": {
+      "type": "string"
+    },
+    "plan_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "kind",
+          "read_scope",
+          "export_scope"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "export_scope": {
+            "const": "new_factual_metadata_and_citation_only"
+          },
+          "raw_article_export_allowed": {
+            "const": false
+          },
+          "raw_data_export_allowed": {
+            "const": false
+          }
+        }
+      }
+    },
+    "current_panel": {
+      "type": "object",
+      "required": [
+        "count",
+        "rows",
+        "canonical_id_receipts_available"
+      ],
+      "properties": {
+        "count": {
+          "const": 50
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 50,
+          "maxItems": 50
+        },
+        "canonical_id_receipts_available": {
+          "const": false
+        }
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "category",
+          "category_reason",
+          "food",
+          "components",
+          "contexts",
+          "molecular",
+          "health",
+          "edges",
+          "panel_overlap",
+          "rights",
+          "gaps",
+          "negative_checks",
+          "clinical_chain_qualified",
+          "full_causal_chain_verified",
+          "cross_study_hypothesis"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^P[0-9]{2}$"
+          },
+          "category": {
+            "enum": [
+              "sufficient_evidence",
+              "partial_evidence",
+              "rejected_control"
+            ]
+          },
+          "molecular": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "kind",
+                "targets",
+                "direction",
+                "source_ids"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "RNA_expression",
+                    "protein_expression",
+                    "exact_CpG_DNA_methylation",
+                    "promoter_region_DNA_methylation",
+                    "global_DNA_methylation"
+                  ]
+                },
+                "targets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "direction": {
+                  "type": "string"
+                },
+                "source_ids": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "clinical_chain_qualified": {
+            "const": false
+          },
+          "full_causal_chain_verified": {
+            "const": false
+          },
+          "cross_study_hypothesis": {
+            "type": "boolean"
+          },
+          "gene_to_health_mediation_proven": {
+            "const": false
+          },
+          "raw_upstream_export": {
+            "const": false
+          },
+          "panel_overlap": {
+            "type": "object",
+            "required": [
+              "scope",
+              "selected_exact_cpg_ids",
+              "exact_cpg_hits",
+              "exact_cpg_overlap_count",
+              "canonical_gene_overlap"
+            ],
+            "properties": {
+              "canonical_gene_overlap": {
+                "type": "null"
+              },
+              "exact_cpg_overlap_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "global_limits": {
+      "type": "object",
+      "required": [
+        "full_causal_or_clinical_qualified_cases",
+        "full4630linked_structures",
+        "full4630unverified_structures"
+      ],
+      "properties": {
+        "full_causal_or_clinical_qualified_cases": {
+          "const": 0
+        },
+        "full4630linked_structures": {
+          "type": "null"
+        },
+        "full4630unverified_structures": {
+          "type": "null"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
