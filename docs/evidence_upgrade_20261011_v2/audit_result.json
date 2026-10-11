@@ -1,0 +1,1120 @@
+{
+  "schema_version": "standalone-evidence-audit-v1",
+  "execution_kind": "actual_frozen_document_subset",
+  "validation_scope": "document metadata/joins; source receipts supplied by caller; no source-byte rehashing, clinical qualification or export",
+  "input_provenance": {
+    "panel": "original83p PDF50-51 current Library read; native annotation not refreshed",
+    "panel_library_file_id": "libfile_9da423931d988191b9c84fe7c9e71f14",
+    "graph_repository": "kangk1204/nutriomics-evidence-engine",
+    "graph_commit": "7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+    "graph_receipt_blob_sha1": "b06cc3dcafcbdf75a52a2d8b2ba7b88142fd7786",
+    "annotation_primary_manifest_available": false,
+    "original_serving_tables_available": false
+  },
+  "metrics": {
+    "panel_cpgs": 50,
+    "native_annotated_cpgs": 39,
+    "native_unassigned_cpgs": 11,
+    "native_gene_labels": 22,
+    "canonical_verified_gene_mappings": 0,
+    "canonical_unresolved_gene_mappings": 22,
+    "reported_SNP_flagged_cpgs": 8,
+    "replication_missing_cpgs": 4,
+    "external_EWAS_hit_cpgs": 0,
+    "external_EWAS_no_hit_cpgs": 0,
+    "external_EWAS_not_queried_cpgs": 50,
+    "trace_count": 6,
+    "unique_trace_foods": 1,
+    "unique_trace_compounds": 1,
+    "unique_composition_measurements": 1,
+    "native_name_overlapping_traces": 0,
+    "canonical_overlapping_traces": null,
+    "nested_reaction_traces": 3,
+    "cotreatment_traces": 2,
+    "quantity_usable_traces": 6,
+    "distinct_reported_PMIDs": 6,
+    "independent_replication_count": null,
+    "dose_and_duration_present_records": 1,
+    "dose_response_experiment_verified_records": 0
+  },
+  "panel_report": [
+    {
+      "cpg": "cg00096418",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg00346208",
+      "native_genes": [
+        "VWA5B1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg00418216",
+      "native_genes": [
+        "HOXA11AS"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg00970558",
+      "native_genes": [
+        "CLEC4GP1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg01447914",
+      "native_genes": [
+        "FERMT3"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg02483701",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg03843000",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05210501",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05378452",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05555207",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05593715",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05769349",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg05929882",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg06013060",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg06374384",
+      "native_genes": [
+        "P4HA3"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg06669276",
+      "native_genes": [
+        "HOXA11AS"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg06723337",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg06911121",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg07588401",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg08024029",
+      "native_genes": [
+        "VWA5B1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg08125291",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg09636715",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg10330839",
+      "native_genes": [
+        "LTBP4"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg10724867",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg10803714",
+      "native_genes": [
+        "ANTXR1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg11219400",
+      "native_genes": [
+        "TRANK1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg12105450",
+      "native_genes": [
+        "CASP10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg12670347",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg12874792",
+      "native_genes": [
+        "RAD51L1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg13100600",
+      "native_genes": [
+        "AGRN"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg14375937",
+      "native_genes": [
+        "CYP26C1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg14431443",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg14935646",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg15123730",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg15255827",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg15864691",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg16177830",
+      "native_genes": [
+        "TNFRSF17"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg16559598",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg17052756",
+      "native_genes": [
+        "JAZF1"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": true,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg17374433",
+      "native_genes": [
+        "CASC2"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg19015897",
+      "native_genes": [
+        "TMEM100"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg19290410",
+      "native_genes": [
+        "TBX5"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg20544451",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": false,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg20895669",
+      "native_genes": [
+        "MCF2L"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg21090298",
+      "native_genes": [
+        "MCF2L"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg21094739",
+      "native_genes": [
+        "ACE"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg25666210",
+      "native_genes": [
+        "PTPRR"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg26709234",
+      "native_genes": [
+        "CDH13"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg26757472",
+      "native_genes": [],
+      "mapping_status": "unassigned",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "native_gene_annotation_missing",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    },
+    {
+      "cpg": "cg27157482",
+      "native_genes": [
+        "HOXA10"
+      ],
+      "mapping_status": "unresolved",
+      "reported_SNP_flag": false,
+      "cross_reactivity_status": "unverified",
+      "replication_observed": true,
+      "external_lookup_status": "not_queried",
+      "missing": [
+        "canonical_gene_mapping_unresolved",
+        "cross_reactivity_unverified",
+        "primary_annotation_manifest_unverified",
+        "external_EWAS_lookup_incomplete"
+      ]
+    }
+  ],
+  "trace_report": [
+    {
+      "trace_id": "T1",
+      "gene_id": "NCBIGene:4615",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "nested_reaction_not_flat_direction",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    },
+    {
+      "trace_id": "T2",
+      "gene_id": "NCBIGene:4780",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    },
+    {
+      "trace_id": "T3",
+      "gene_id": "NCBIGene:5743",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "nested_reaction_not_flat_direction",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    },
+    {
+      "trace_id": "T4",
+      "gene_id": "NCBIGene:5743",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "nested_reaction_not_flat_direction",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    },
+    {
+      "trace_id": "T5",
+      "gene_id": "NCBIGene:5327",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "joint_treatment_not_compound_alone",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    },
+    {
+      "trace_id": "T6",
+      "gene_id": "NCBIGene:51083",
+      "native_name_overlap": false,
+      "canonical_panel_overlap": null,
+      "native_identity": {
+        "matches": false,
+        "reason": "invalid_full_key"
+      },
+      "food_context": {
+        "matches": null,
+        "status": "food_context_receipts_unavailable"
+      },
+      "quantity": {
+        "usable_quantity": true,
+        "presence": true,
+        "reason": "native_value_unit_basis_retained"
+      },
+      "warnings": [
+        "food_context_receipts_unavailable",
+        "joint_treatment_not_compound_alone",
+        "not_human_intervention",
+        "human_taxon_not_patient_study",
+        "gene_health_species_unverified",
+        "tissue_compatibility_unverified",
+        "source_reported_bridge_not_native_identity"
+      ],
+      "clinical_chain_verified": false
+    }
+  ],
+  "known_shared_source_groups": [
+    {
+      "group": "GSE222595/source2023",
+      "record_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "P01"
+      ]
+    }
+  ],
+  "independence_status": "distinct_PMIDs_are_not_independent_replication; absent verified source/participant/assay clusters",
+  "catalogue_join": {
+    "declared_structures": 4630,
+    "scope": "not_a_complete_catalogue_join",
+    "linked_structures": null,
+    "unverified_structures": null
+  },
+  "export_readiness": [
+    {
+      "source_id": "FDC",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "HGNC",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "ChEBI",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "Reactome",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "FooDB_historical",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "CTD",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "PubChem",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "BindingDB_ChEMBL",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "EWAS_Catalog",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    },
+    {
+      "source_id": "Exposome_Explorer",
+      "ready": false,
+      "reason": "artifact_rights_unverified"
+    }
+  ],
+  "scientific_precision_recall": "not_evaluated; no independent real gold labels",
+  "api_application_status": "not_applied",
+  "model_rerun": false,
+  "actual_dataset_export": false
+}
