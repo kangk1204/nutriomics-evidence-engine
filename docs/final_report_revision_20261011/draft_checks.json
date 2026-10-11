@@ -1,0 +1,78 @@
+{
+  "runtime": "JavaScript V8 through functions.exec",
+  "scope": "Staged revision text/table numerical and reference consistency only; no DOCX/PDF/page/Library-byte/HTTP verification",
+  "checks": [
+    {
+      "name": "all15sections_unique",
+      "passed": true,
+      "evidence": "15preparedsections;actual94pageunmodified"
+    },
+    {
+      "name": "all8matrices_present",
+      "passed": true,
+      "evidence": "80rowsacross8matrixcategories"
+    },
+    {
+      "name": "all_matrix_cells_nonblank",
+      "passed": true,
+      "evidence": "Unknownsdisplay資料미확인;noinventedannualcells"
+    },
+    {
+      "name": "paragraph_source_ids_resolve",
+      "passed": true,
+      "evidence": "E01–E09"
+    },
+    {
+      "name": "matrix_cross_references_resolve",
+      "passed": true,
+      "evidence": "M1–M8"
+    },
+    {
+      "name": "five_year_no_calendar_or_amount_guess",
+      "passed": true,
+      "evidence": "Userstatedfiveyears;noassignedcalendaryears/annualbudget"
+    },
+    {
+      "name": "panel50_complete_unique",
+      "passed": true,
+      "evidence": "SourceCSV50rows"
+    },
+    {
+      "name": "39annotated11unassigned22native",
+      "passed": true,
+      "evidence": "39+11=50;22uniquegenesnotanotherrowcategory"
+    },
+    {
+      "name": "SNP8_replicationmissing4",
+      "passed": true,
+      "evidence": "Categoriesmayoverlap;nofreshprobeQC"
+    },
+    {
+      "name": "10POC_categories2_5_3",
+      "passed": true,
+      "evidence": "Faithfulcardevidenceclassification"
+    },
+    {
+      "name": "four_selected_exactCpGs_zero_hits",
+      "passed": true,
+      "evidence": "Fourselectedloci;notfourhits"
+    },
+    {
+      "name": "causal_clinical_and_report_completion_not_promoted",
+      "passed": true,
+      "evidence": "Causal0;actualreportnotedited/rendered"
+    }
+  ],
+  "passed": true,
+  "checks_count": 12,
+  "sections": 15,
+  "matrices": 8,
+  "matrix_rows": 80,
+  "figures_designed": 4,
+  "figures_rendered": 0,
+  "source_registry": 9,
+  "primary_POC_references": 14,
+  "actual_current94page_modified": false,
+  "actual_output_DOCX_or_PDF": false,
+  "consumer_local_Library_bytes_verified": false
+}
