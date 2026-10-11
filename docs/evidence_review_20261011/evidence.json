@@ -1,0 +1,1473 @@
+{
+  "schema_version": "nutriomics-document-evidence-handover-v1",
+  "recorded_utc": "2026-10-11T02:30:07Z",
+  "scope": {
+    "purpose": "Finite source-backed augmentation of existing 94-page review; not an AI adjudication/import packet",
+    "environment": "Mac execution environment unavailable; GitHub and Library read access verified",
+    "local_report_modified": false,
+    "api_files_modified": false,
+    "main_modified": false,
+    "api_application_status": "not_applied",
+    "api_owner_thread_id": "01a109e2-7d7f-7756-b0e5-0d022dc6f00f",
+    "submission_ready": false,
+    "new_training": false,
+    "new_cohort": false,
+    "new_bulk_download": false,
+    "new_schedule": false,
+    "new_credentials": false
+  },
+  "provenance": {
+    "analysis_engine": {
+      "repository": "kangk1204/nutriomics-evidence-engine",
+      "branch": "main",
+      "commit": "7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+      "main_comparison": "identical at read",
+      "graph_receipt_path": "docs/graph_allrow_20261003_v3.json",
+      "graph_blob_sha1": "b06cc3dcafcbdf75a52a2d8b2ba7b88142fd7786",
+      "graph_frozen_utc": "2026-10-03T03:06:05.542066+00:00"
+    },
+    "private_db": {
+      "repository": "kangk1204/NutriOmics_DB_c",
+      "branch": "main",
+      "commit": "9ca37db477b34ca8a54f986b006c69424dedb81e",
+      "main_comparison": "identical at read",
+      "relationship": "separate Django harness; not merged into research engine"
+    },
+    "panel": {
+      "library_file_id": "libfile_9da423931d988191b9c84fe7c9e71f14",
+      "filename": "디어젠_2026_최종보고서_강근수_비만메틸화_유전자해석본_20261003.pdf",
+      "pages": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "annotation_basis": "native GPL13534 hg19/build37 labels as printed; fresh HGNC alias validation not performed"
+    },
+    "food_inventory": {
+      "path": "docs/food_compound_extension_20261003_v1/extension_receipt.json",
+      "blob_sha1": "5e904ea38ce868d3f524c7b0791420fd9963e3a7",
+      "frozen_utc": "2026-10-03T07:40:51.487100+00:00",
+      "source_version": "September2022 historical author-provided FooDB snapshot; not claimed as current2026 FooDB",
+      "database_sha256": "5c32800b4906c0614e5fc51df44bf9cbef54f12dd24c45318f055dc41313d5e8"
+    },
+    "instructions": {
+      "remote_root_AGENTS": "404 in both verified repositories; not an assertion that all local instructions are absent",
+      "local_AGENTS_and_agents_skills": "inaccessible while Mac disconnected"
+    }
+  },
+  "denominators": {
+    "panel_cpgs": 50,
+    "panel_native_annotated_cpgs": 39,
+    "panel_native_gene_labels": 22,
+    "panel_unassigned_cpgs": 11,
+    "panel_replication_observed_cpgs": 46,
+    "available_graph_receipt_traces": 6,
+    "reviewed_receipt_traces": 6,
+    "trace_unique_foods": 1,
+    "trace_unique_compounds": 1,
+    "trace_unique_composition_measurements": 1,
+    "trace_unique_gene_symbols": 5,
+    "trace_unique_compound_gene_edges": 5,
+    "trace_panel_native_gene_overlap": 0,
+    "qualified_whole_food_clinical_chains_in_reviewed_traces": 0,
+    "food_inventory_structures": 4630,
+    "food_inventory_positive_numeric_linked_structures": 2563,
+    "food_inventory_qualitative_only_structures": 2067,
+    "food_inventory_measured_occurrence_rows": 337004,
+    "food_inventory_qualitative_occurrence_rows": 8620,
+    "food_inventory_total_occurrence_rows": 345624,
+    "current_4630_compound_to_actual_panel_linked_count": null,
+    "current_4630_compound_to_actual_panel_unverified_count": null,
+    "current_4630_link_audit_status": "not_computed; actual serving tables unavailable; six engine examples are a separate selected graph receipt, not a random sample or denominator of extension",
+    "private_db_RC6_qualified_chains_recorded": 0,
+    "private_db_RC6_replicated_chains_recorded": 0,
+    "private_db_RC6_verified_independent_benchmark_cases_recorded": 0,
+    "private_db_RC6_status_basis": "pinned README; frozen recorded state; no gate rerun",
+    "evidence_records": 11,
+    "evidence_records_are_independent_studies": false
+  },
+  "panel_rows": [
+    {
+      "cpg": "cg05593715",
+      "annotation": "미배정",
+      "chromosome": "8",
+      "hg19_position": 95056896,
+      "model_coefficient": 0.904,
+      "delta_beta_discovery_pp": 4.82,
+      "delta_beta_replication_pp": 2.36,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg21094739",
+      "annotation": "ACE / Body",
+      "chromosome": "17",
+      "hg19_position": 61572645,
+      "model_coefficient": 0.586,
+      "delta_beta_discovery_pp": 3.51,
+      "delta_beta_replication_pp": 3.32,
+      "selected_folds": 7,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg12105450",
+      "annotation": "CASP10 / 5'UTR",
+      "chromosome": "2",
+      "hg19_position": 202048100,
+      "model_coefficient": -0.454,
+      "delta_beta_discovery_pp": -8.62,
+      "delta_beta_replication_pp": -7.57,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg19015897",
+      "annotation": "TMEM100 / Body",
+      "chromosome": "17",
+      "hg19_position": 53798372,
+      "model_coefficient": 0.397,
+      "delta_beta_discovery_pp": 10.17,
+      "delta_beta_replication_pp": 8.47,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg00096418",
+      "annotation": "미배정",
+      "chromosome": "16",
+      "hg19_position": 65910068,
+      "model_coefficient": 0.391,
+      "delta_beta_discovery_pp": 8.16,
+      "delta_beta_replication_pp": 9.54,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg07588401",
+      "annotation": "미배정",
+      "chromosome": "8",
+      "hg19_position": 125951124,
+      "model_coefficient": 0.374,
+      "delta_beta_discovery_pp": 6.96,
+      "delta_beta_replication_pp": 3.42,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg05210501",
+      "annotation": "HOXA10 / 1stExon;5'UTR",
+      "chromosome": "7",
+      "hg19_position": 27219344,
+      "model_coefficient": 0.369,
+      "delta_beta_discovery_pp": 6.89,
+      "delta_beta_replication_pp": 4.31,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg08125291",
+      "annotation": "미배정",
+      "chromosome": "13",
+      "hg19_position": 44588186,
+      "model_coefficient": 0.351,
+      "delta_beta_discovery_pp": 8.95,
+      "delta_beta_replication_pp": 4.51,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg12874792",
+      "annotation": "RAD51L1 / Body",
+      "chromosome": "14",
+      "hg19_position": 68831098,
+      "model_coefficient": 0.282,
+      "delta_beta_discovery_pp": 8.22,
+      "delta_beta_replication_pp": 6.29,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg00970558",
+      "annotation": "CLEC4GP1 / Body",
+      "chromosome": "19",
+      "hg19_position": 7854469,
+      "model_coefficient": 0.275,
+      "delta_beta_discovery_pp": 8.6,
+      "delta_beta_replication_pp": 5.21,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg14431443",
+      "annotation": "TBX5 / TSS200",
+      "chromosome": "12",
+      "hg19_position": 114846431,
+      "model_coefficient": -0.27,
+      "delta_beta_discovery_pp": -8.87,
+      "delta_beta_replication_pp": -6.78,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg06374384",
+      "annotation": "P4HA3 / 3'UTR",
+      "chromosome": "11",
+      "hg19_position": 73978091,
+      "model_coefficient": 0.253,
+      "delta_beta_discovery_pp": 6.31,
+      "delta_beta_replication_pp": 3.55,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg14375937",
+      "annotation": "CYP26C1 / Body",
+      "chromosome": "10",
+      "hg19_position": 94825667,
+      "model_coefficient": 0.241,
+      "delta_beta_discovery_pp": 7.72,
+      "delta_beta_replication_pp": 13.54,
+      "selected_folds": 8,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg13100600",
+      "annotation": "AGRN / Body",
+      "chromosome": "1",
+      "hg19_position": 958351,
+      "model_coefficient": -0.236,
+      "delta_beta_discovery_pp": -7.87,
+      "delta_beta_replication_pp": -6.56,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg20895669",
+      "annotation": "MCF2L / TSS1500",
+      "chromosome": "13",
+      "hg19_position": 113622539,
+      "model_coefficient": -0.228,
+      "delta_beta_discovery_pp": -7.62,
+      "delta_beta_replication_pp": -5.15,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg10330839",
+      "annotation": "LTBP4 / Body",
+      "chromosome": "19",
+      "hg19_position": 41115766,
+      "model_coefficient": -0.227,
+      "delta_beta_discovery_pp": -6.45,
+      "delta_beta_replication_pp": null,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg06013060",
+      "annotation": "미배정",
+      "chromosome": "10",
+      "hg19_position": 131813094,
+      "model_coefficient": 0.186,
+      "delta_beta_discovery_pp": 10.01,
+      "delta_beta_replication_pp": 8.19,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg26757472",
+      "annotation": "미배정",
+      "chromosome": "16",
+      "hg19_position": 86387131,
+      "model_coefficient": -0.164,
+      "delta_beta_discovery_pp": -5.99,
+      "delta_beta_replication_pp": -5.81,
+      "selected_folds": 15,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg11219400",
+      "annotation": "TRANK1 / Body",
+      "chromosome": "3",
+      "hg19_position": 36949966,
+      "model_coefficient": -0.136,
+      "delta_beta_discovery_pp": -10.49,
+      "delta_beta_replication_pp": -7.21,
+      "selected_folds": 12,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg15255827",
+      "annotation": "미배정",
+      "chromosome": "18",
+      "hg19_position": 8707556,
+      "model_coefficient": -0.123,
+      "delta_beta_discovery_pp": -6.16,
+      "delta_beta_replication_pp": -6.09,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg10724867",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27218867,
+      "model_coefficient": 0.123,
+      "delta_beta_discovery_pp": 23.05,
+      "delta_beta_replication_pp": 24.93,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg15123730",
+      "annotation": "미배정",
+      "chromosome": "19",
+      "hg19_position": 13215387,
+      "model_coefficient": -0.119,
+      "delta_beta_discovery_pp": -10.75,
+      "delta_beta_replication_pp": -7.32,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg00346208",
+      "annotation": "VWA5B1 / Body",
+      "chromosome": "1",
+      "hg19_position": 20669905,
+      "model_coefficient": 0.117,
+      "delta_beta_discovery_pp": -18.71,
+      "delta_beta_replication_pp": null,
+      "selected_folds": 12,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg16559598",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114846503,
+      "model_coefficient": -0.117,
+      "delta_beta_discovery_pp": -16.14,
+      "delta_beta_replication_pp": -15.2,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg05929882",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847508,
+      "model_coefficient": 0.109,
+      "delta_beta_discovery_pp": -13.85,
+      "delta_beta_replication_pp": -14.81,
+      "selected_folds": 10,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg20544451",
+      "annotation": "미배정",
+      "chromosome": "10",
+      "hg19_position": 131813126,
+      "model_coefficient": 0.105,
+      "delta_beta_discovery_pp": 11.26,
+      "delta_beta_replication_pp": null,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg08024029",
+      "annotation": "VWA5B1 / Body",
+      "chromosome": "1",
+      "hg19_position": 20669724,
+      "model_coefficient": 0.089,
+      "delta_beta_discovery_pp": -9.81,
+      "delta_beta_replication_pp": -5.57,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg02483701",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27215610,
+      "model_coefficient": 0.088,
+      "delta_beta_discovery_pp": 19.34,
+      "delta_beta_replication_pp": 19.4,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg06723337",
+      "annotation": "미배정",
+      "chromosome": "16",
+      "hg19_position": 87541476,
+      "model_coefficient": -0.078,
+      "delta_beta_discovery_pp": -8.79,
+      "delta_beta_replication_pp": -5.7,
+      "selected_folds": 9,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg06669276",
+      "annotation": "HOXA11AS / Body",
+      "chromosome": "7",
+      "hg19_position": 27228627,
+      "model_coefficient": -0.069,
+      "delta_beta_discovery_pp": -10.58,
+      "delta_beta_replication_pp": -9.84,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg17052756",
+      "annotation": "JAZF1 / Body",
+      "chromosome": "7",
+      "hg19_position": 28143676,
+      "model_coefficient": 0.066,
+      "delta_beta_discovery_pp": 6.57,
+      "delta_beta_replication_pp": 7.87,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg05378452",
+      "annotation": "미배정",
+      "chromosome": "17",
+      "hg19_position": 68037743,
+      "model_coefficient": 0.055,
+      "delta_beta_discovery_pp": 10.22,
+      "delta_beta_replication_pp": 7.96,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg25666210",
+      "annotation": "PTPRR / 1stExon;Body;5'UTR",
+      "chromosome": "12",
+      "hg19_position": 71148346,
+      "model_coefficient": 0.049,
+      "delta_beta_discovery_pp": 12.83,
+      "delta_beta_replication_pp": 11.21,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg00418216",
+      "annotation": "HOXA11AS / Body",
+      "chromosome": "7",
+      "hg19_position": 27227847,
+      "model_coefficient": -0.047,
+      "delta_beta_discovery_pp": -18.39,
+      "delta_beta_replication_pp": -16.68,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg27157482",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27215606,
+      "model_coefficient": -0.045,
+      "delta_beta_discovery_pp": 23.21,
+      "delta_beta_replication_pp": 24.54,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg16177830",
+      "annotation": "TNFRSF17 / 1stExon;5'UTR",
+      "chromosome": "16",
+      "hg19_position": 12059019,
+      "model_coefficient": -0.041,
+      "delta_beta_discovery_pp": -11.83,
+      "delta_beta_replication_pp": -11.63,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg15864691",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27217606,
+      "model_coefficient": 0.034,
+      "delta_beta_discovery_pp": 23.79,
+      "delta_beta_replication_pp": 20.19,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg17374433",
+      "annotation": "CASC2 / Body",
+      "chromosome": "10",
+      "hg19_position": 119876327,
+      "model_coefficient": -0.031,
+      "delta_beta_discovery_pp": 11.24,
+      "delta_beta_replication_pp": 10.74,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg21090298",
+      "annotation": "MCF2L / TSS200",
+      "chromosome": "13",
+      "hg19_position": 113622686,
+      "model_coefficient": 0.024,
+      "delta_beta_discovery_pp": -5.66,
+      "delta_beta_replication_pp": -4.48,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg19290410",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847438,
+      "model_coefficient": -0.023,
+      "delta_beta_discovery_pp": -16.27,
+      "delta_beta_replication_pp": -16.13,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg05769349",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847043,
+      "model_coefficient": -0.023,
+      "delta_beta_discovery_pp": -13.5,
+      "delta_beta_replication_pp": -12.16,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg05555207",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847641,
+      "model_coefficient": 0.023,
+      "delta_beta_discovery_pp": -18.03,
+      "delta_beta_replication_pp": -15.55,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg26709234",
+      "annotation": "CDH13 / Body",
+      "chromosome": "16",
+      "hg19_position": 82868296,
+      "model_coefficient": -0.022,
+      "delta_beta_discovery_pp": 10.46,
+      "delta_beta_replication_pp": 9.2,
+      "selected_folds": 7,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg12670347",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847578,
+      "model_coefficient": 0.022,
+      "delta_beta_discovery_pp": -18.53,
+      "delta_beta_replication_pp": -16.55,
+      "selected_folds": 14,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg10803714",
+      "annotation": "ANTXR1 / Body;3'UTR",
+      "chromosome": "2",
+      "hg19_position": 69399575,
+      "model_coefficient": -0.019,
+      "delta_beta_discovery_pp": 6.34,
+      "delta_beta_replication_pp": 3.13,
+      "selected_folds": 13,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg03843000",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114846968,
+      "model_coefficient": 0.015,
+      "delta_beta_discovery_pp": -14.49,
+      "delta_beta_replication_pp": -10.56,
+      "selected_folds": 12,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg06911121",
+      "annotation": "TBX5 / TSS1500",
+      "chromosome": "12",
+      "hg19_position": 114847164,
+      "model_coefficient": -0.011,
+      "delta_beta_discovery_pp": -13.74,
+      "delta_beta_replication_pp": -16.13,
+      "selected_folds": 11,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg14935646",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27215464,
+      "model_coefficient": 0.008,
+      "delta_beta_discovery_pp": 19.15,
+      "delta_beta_replication_pp": null,
+      "selected_folds": 12,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg01447914",
+      "annotation": "FERMT3 / Body",
+      "chromosome": "11",
+      "hg19_position": 63974955,
+      "model_coefficient": -0.007,
+      "delta_beta_discovery_pp": -8.65,
+      "delta_beta_replication_pp": -6.33,
+      "selected_folds": 8,
+      "selection_denominator": 15
+    },
+    {
+      "cpg": "cg09636715",
+      "annotation": "HOXA10 / Body",
+      "chromosome": "7",
+      "hg19_position": 27217057,
+      "model_coefficient": -0.001,
+      "delta_beta_discovery_pp": 32.39,
+      "delta_beta_replication_pp": 22.15,
+      "selected_folds": 12,
+      "selection_denominator": 15
+    }
+  ],
+  "native_gene_labels": [
+    "ACE",
+    "CASP10",
+    "TMEM100",
+    "HOXA10",
+    "RAD51L1",
+    "CLEC4GP1",
+    "TBX5",
+    "P4HA3",
+    "CYP26C1",
+    "AGRN",
+    "MCF2L",
+    "LTBP4",
+    "TRANK1",
+    "VWA5B1",
+    "HOXA11AS",
+    "JAZF1",
+    "PTPRR",
+    "TNFRSF17",
+    "CASC2",
+    "CDH13",
+    "ANTXR1",
+    "FERMT3"
+  ],
+  "records": [
+    {
+      "record_id": "M01",
+      "chain_stage": "cpg_gene_annotation",
+      "evidence_class": "association",
+      "panel_cpgs": [
+        "cg21094739"
+      ],
+      "genes": [
+        "ACE"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": "10.1038/s41467-023-38439-z",
+        "pmid": null,
+        "url": "https://www.nature.com/articles/s41467-023-38439-z",
+        "access_scope": "publisher_html_abstract_results_only; exact supplement rows not fetched; later requests returned 429",
+        "locator": "Results: adipocyte methylation, TBX5 region, methylation-expression methods; original report pp48-52",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "subcutaneous adipocytes",
+        "design": "case_control_processed_methylation_classification",
+        "n": 96,
+        "n_unit": "48 discovery + 48 replication participants as report labels; raw person reconciliation not repeated",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "obesity_minus_control_positive",
+        "estimate": 3.51,
+        "unit": "methylation_percentage_points",
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "ACE Body position and report discovery/replication contrasts +3.51/+3.32 pp; classifier coefficient +0.586 is a conditional prediction weight.",
+      "not_supported": "ACE expression direction, ACE inhibition, dietary response, clinical hypertension or compound-mediated benefit.",
+      "negative_or_failure": "No source-specific ACE CpG-expression or food-compound edge was retrieved.",
+      "missing": [
+        "individual_covariate_adjustment",
+        "probe_cross_reactivity_review",
+        "compound_edge_ID",
+        "expression_at_exact_CpG"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "M02",
+      "chain_stage": "cpg_gene_annotation",
+      "evidence_class": "association",
+      "panel_cpgs": [
+        "cg14431443",
+        "cg16559598",
+        "cg05929882",
+        "cg19290410",
+        "cg05769349",
+        "cg05555207",
+        "cg12670347",
+        "cg03843000",
+        "cg06911121"
+      ],
+      "genes": [
+        "TBX5"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": "10.1038/s41467-023-38439-z",
+        "pmid": null,
+        "url": "https://www.nature.com/articles/s41467-023-38439-z",
+        "access_scope": "publisher_html_abstract_results_only; exact supplement rows not fetched; later requests returned 429",
+        "locator": "Results: adipocyte methylation, TBX5 region, methylation-expression methods; original report pp48-52",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "subcutaneous adipocytes",
+        "design": "extreme_obesity_EWAS",
+        "n": 190,
+        "n_unit": "SAT and VAT samples in primary paper; not 190 independent people",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "report_TBX5_9_CpGs_hypomethylated_in_obesity",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "Nine actual model CpGs annotated to TBX5; primary article describes a 17-site, 3187-bp TBX5 methylation region.",
+      "not_supported": "All nine exact probe effects independently source-verified, food-responsive sites, uniform expression change or clinical effect.",
+      "negative_or_failure": "Regional overlap does not validate every classifier feature; some coefficients have opposite signs despite consistent group contrasts.",
+      "missing": [
+        "exact_supplementary_probe_intersection",
+        "independent_nutritional_exposure"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "M03",
+      "chain_stage": "methylation_expression",
+      "evidence_class": "association",
+      "panel_cpgs": [
+        "cg06669276"
+      ],
+      "genes": [
+        "HOXA11",
+        "HOXA11-AS"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": "10.1038/s41467-023-38439-z",
+        "pmid": null,
+        "url": "https://www.nature.com/articles/s41467-023-38439-z",
+        "access_scope": "publisher_html_abstract_results_only; exact supplement rows not fetched; later requests returned 429",
+        "locator": "original report p52; ST7 rows4/15 as transcribed from primary supplement",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "combined subcutaneous and visceral adipocytes",
+        "design": "mixed_effects_methylation_expression_association",
+        "n": 89,
+        "n_unit": "paired methylation/RNA samples in replication cohort; exact gene-row effective n not supplied",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "positive",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": 3.14e-11,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "Report records HOXA11-AS q=3.14e-11 and HOXA11 q=2.98e-16 for exact cg06669276; native position label HOXA11AS is retained separately.",
+      "not_supported": "Causal regulation, nutrition intervention, independent replication of this project, health mediation.",
+      "negative_or_failure": "Source supplemental row not independently retrieved today; original RNA was not reanalysed by this task.",
+      "missing": [
+        "exact_primary_supplement_row",
+        "effect_size",
+        "CI",
+        "gene_row_effective_n",
+        "feature_family_checksum"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "M04",
+      "chain_stage": "methylation_expression",
+      "evidence_class": "association",
+      "panel_cpgs": [
+        "cg17052756"
+      ],
+      "genes": [
+        "JAZF1",
+        "HOXA13"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": "10.1038/s41467-023-38439-z",
+        "pmid": null,
+        "url": "https://www.nature.com/articles/s41467-023-38439-z",
+        "access_scope": "publisher_html_abstract_results_only; exact supplement rows not fetched; later requests returned 429",
+        "locator": "original report p52; ST9 rows53/77 as transcribed",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "combined adipocyte depots",
+        "design": "functional_mapping_then_expression_association",
+        "n": 89,
+        "n_unit": "paired samples; exact row effective n unavailable",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "positive",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": 0.0000592,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "Report records JAZF1 q=5.92e-5 and HOXA13 q=0.000669; functional target assignment differs from native body annotation.",
+      "not_supported": "Direct chromatin contact for every row, compound responsiveness, causation or independent model validation.",
+      "negative_or_failure": "Exact primary supplement unavailable in current access; no compound-to-current-CpG evidence retrieved.",
+      "missing": [
+        "exact_primary_supplement_row",
+        "effect_size",
+        "CI",
+        "exposure",
+        "feature_family_checksum"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "R01",
+      "chain_stage": "compound_methylation",
+      "evidence_class": "direct_experimental",
+      "panel_cpgs": [],
+      "genes": [
+        "DIRAS3",
+        "ARMC8",
+        "NODAL"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": "10.1186/s13148-015-0154-5",
+        "pmid": "26568774",
+        "url": "https://link.springer.com/article/10.1186/s13148-015-0154-5",
+        "access_scope": "publisher_html_abstract_results_discussion_methods; table cells not rendered",
+        "locator": "Abstract; Results between-group DMP/DMR; Methods selection/QC; Discussion tissue and D3 limitations",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "blood buffy-coat/leukocyte DNA",
+        "design": "randomized_double_blind_placebo_controlled_subset",
+        "n": 87,
+        "n_unit": "44 intervention + 43 placebo; selected from parent trial",
+        "dose": "folic acid 400 ug/day + vitamin B12 500 ug/day; both arms D3 15 ug/day",
+        "duration": "2 years"
+      },
+      "effect": {
+        "direction": "locus_specific_mixed",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "One between-arm DMP cg19380919 and six DMRs; within-arm 162 versus14 DMPs are distinct tests. HOX discussion concerns HOXB7/HOXA4.",
+      "not_supported": "The actual seven HOXA10 panel sites, individual folic acid/B12 effects, food serving amounts, adipocyte response, expression or health mediation.",
+      "negative_or_failure": "No significant single-position association with serum folate after BH correction; strict replication unavailable. Combined intervention and shared D3 prevent attribution from within-arm counts.",
+      "missing": [
+        "between_arm_effect_CI_for_exact_CpG",
+        "actual_panel_overlap",
+        "same_person_health_mediation"
+      ],
+      "primary_exact_record_verified": true,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "D01",
+      "chain_stage": "compound_gene_pathway",
+      "evidence_class": "direct_experimental",
+      "panel_cpgs": [],
+      "genes": [
+        "PTGS2",
+        "PLD1"
+      ],
+      "database_edge_ids": [
+        "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa"
+      ],
+      "source": {
+        "doi": "10.1074/jbc.M402085200",
+        "pmid": "15210717",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15210717/",
+        "access_scope": "primary_publication_abstract_only; publisher full text unavailable",
+        "locator": "Abstract, EGCG/PLD/PKC/p38/COX2 experiments",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens cell line; Rattus norvegicus primary cells",
+        "tissue": "U87 astrocytoma and primary rat astrocytes",
+        "design": "in_vitro_perturbation",
+        "n": null,
+        "n_unit": "experimental replicate count not reported in abstract",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "increases_PTGS2_protein_and_PGE2",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "EGCG stimulates PLD activity and PTGS2/COX2 expression; PLD/PKC/p38 interventions support a context-specific pathway.",
+      "not_supported": "Anti-inflammatory direction, food-dose response, blood-pressure benefit, direct binding, DNAm or human clinical efficacy.",
+      "negative_or_failure": "1-butanol suppresses response, 3-butanol does not; pathway inhibition matters. Direction must not be rewritten as a generic protective decrease.",
+      "missing": [
+        "dose",
+        "duration",
+        "replicate_n",
+        "effect_size",
+        "CI",
+        "FDR",
+        "whole_food_exposure"
+      ],
+      "primary_exact_record_verified": true,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "D02",
+      "chain_stage": "compound_gene_pathway",
+      "evidence_class": "unverified",
+      "panel_cpgs": [],
+      "genes": [
+        "NFE2L2"
+      ],
+      "database_edge_ids": [
+        "04ea4838f6fbcb2389e7bca513fc600d14b54034502ec26ce06d4b3e88aec6b4"
+      ],
+      "source": {
+        "doi": "10.1167/iovs.04-1369",
+        "pmid": "16799064",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16799064/",
+        "access_scope": "primary_publication_abstract_only; publisher full text unavailable",
+        "locator": "Abstract human RPE/flavonoid experiments; compound-specific Nrf2 figure not accessed",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens cells",
+        "tissue": "ARPE-19 and primary retinal pigment epithelial cells",
+        "design": "oxidative_stress_in_vitro_perturbation",
+        "n": null,
+        "n_unit": "replicate/donor n not reported",
+        "dose": "EGCG-specific concentration not extracted",
+        "duration": "24 h for EC50/LD50 survival assays; Nrf2 time not verified"
+      },
+      "effect": {
+        "direction": "CTD_reports_NFE2L2_increase; exact_EGCG_Nrf2_result_unverified",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "Abstract includes EGCG among protective flavonoids and reports Nrf2 induction for many flavonoids.",
+      "not_supported": "EGCG-specific effect size from pooled 80-100% protection range, exact Nrf2 induction verified from abstract, human dietary/clinical benefit.",
+      "negative_or_failure": "Group summary cannot identify every compound-specific gene effect.",
+      "missing": [
+        "EGCG_specific_Nrf2_figure",
+        "dose",
+        "n",
+        "effect_size",
+        "CI",
+        "FDR"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "D03",
+      "chain_stage": "compound_gene_pathway",
+      "evidence_class": "unverified",
+      "panel_cpgs": [],
+      "genes": [
+        "MYD88"
+      ],
+      "database_edge_ids": [
+        "022ff1257ecb81684653751a59038af3b7d907344153f655153fb8bc79874ce9"
+      ],
+      "source": {
+        "doi": null,
+        "pmid": "27890776",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27890776/",
+        "access_scope": "blocked_recaptcha_no_primary_text",
+        "locator": "frozen CTD context only",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "human taxon as CTD row; model/tissue unverified",
+        "tissue": null,
+        "design": null,
+        "n": null,
+        "n_unit": "unavailable",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "EGCG_inhibits_paraquat_induced_MYD88_increase_as_CTD_context",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "Frozen source row contains a nested paraquat-triggered response inhibited by EGCG.",
+      "not_supported": "EGCG alone increases MYD88; ordinary dietary exposure; same-person blood-pressure effect.",
+      "negative_or_failure": "The flattened action list includes both decreases-reaction and increases-expression, which belong to different parts of the nested relation.",
+      "missing": [
+        "primary_paper_text",
+        "DOI",
+        "model",
+        "tissue",
+        "n",
+        "dose",
+        "duration",
+        "statistics"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "D04",
+      "chain_stage": "compound_gene_pathway",
+      "evidence_class": "unverified",
+      "panel_cpgs": [],
+      "genes": [
+        "PLAT"
+      ],
+      "database_edge_ids": [
+        "0863579a70a650cd5db1e05224da0f3e4a116b441b78e137fcbe10c806a659fe"
+      ],
+      "source": {
+        "doi": null,
+        "pmid": "12628509",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12628509/",
+        "access_scope": "not_opened",
+        "locator": "frozen CTD co-treatment context",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "human taxon as CTD row; model unverified",
+        "tissue": null,
+        "design": "co_treatment_as_source_row",
+        "n": null,
+        "n_unit": "unavailable",
+        "dose": "sulindac + EGCG; doses unverified",
+        "duration": null
+      },
+      "effect": {
+        "direction": "decreases_PLAT_mRNA_under_joint_treatment",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "CTD reports a sulindac-and-EGCG joint treatment.",
+      "not_supported": "EGCG-only effect, white-tea efficacy or clinical health effect.",
+      "negative_or_failure": "Drug co-treatment prevents assigning the reported response to ordinary EGCG food intake.",
+      "missing": [
+        "primary_text",
+        "DOI",
+        "n",
+        "dose",
+        "duration",
+        "statistics"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "D05",
+      "chain_stage": "compound_gene_pathway",
+      "evidence_class": "unverified",
+      "panel_cpgs": [],
+      "genes": [
+        "GAL"
+      ],
+      "database_edge_ids": [
+        "08731e933c1214998ee615cb4e0ebc982a5c76d272c34315bf4aa851d5302cf5"
+      ],
+      "source": {
+        "doi": null,
+        "pmid": "22079256",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22079256/",
+        "access_scope": "not_opened",
+        "locator": "frozen CTD co-treatment context",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "human taxon as CTD row; model unverified",
+        "tissue": null,
+        "design": "co_treatment_as_source_row",
+        "n": null,
+        "n_unit": "unavailable",
+        "dose": "potassium chromate(VI) + EGCG; doses unverified",
+        "duration": null
+      },
+      "effect": {
+        "direction": "increases_GAL_mRNA_under_joint_treatment",
+        "estimate": null,
+        "unit": null,
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "CTD reports chromium(VI)-and-EGCG joint treatment.",
+      "not_supported": "A benign food-only intervention, EGCG-alone response or clinical benefit.",
+      "negative_or_failure": "Toxicant context must survive query projection; taxon9606 does not establish a patient trial.",
+      "missing": [
+        "primary_text",
+        "DOI",
+        "n",
+        "dose",
+        "duration",
+        "statistics"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    },
+    {
+      "record_id": "P01",
+      "chain_stage": "classifier_prediction",
+      "evidence_class": "computational_prediction",
+      "panel_cpgs": [
+        "cg21094739"
+      ],
+      "genes": [
+        "ACE"
+      ],
+      "database_edge_ids": [],
+      "source": {
+        "doi": null,
+        "pmid": null,
+        "url": "https://chatgpt.com/api/library/files/libfile_9da423931d988191b9c84fe7c9e71f14/download",
+        "access_scope": "original report pp48-50; model binary and per-person prediction files unavailable now",
+        "locator": "table2026-2 classifier coefficient for cg21094739",
+        "checked_utc": "2026-10-11T02:30:07Z"
+      },
+      "study": {
+        "species": "Homo sapiens",
+        "tissue": "subcutaneous adipocytes",
+        "design": "conditional_logistic_classifier_weight",
+        "n": 48,
+        "n_unit": "reported discovery participants",
+        "dose": null,
+        "duration": null
+      },
+      "effect": {
+        "direction": "positive_conditional_classifier_weight",
+        "estimate": 0.586,
+        "unit": "reported_model_coefficient",
+        "confidence_interval": null,
+        "fdr_q": null,
+        "feature_family_n": null,
+        "feature_family_sha256": null
+      },
+      "supported_scope": "The printed trained classifier gives cg21094739 a positive coefficient conditional on other selected features and its preprocessing; shares source participants with M01.",
+      "not_supported": "ACE expression increase, causal effect, intervention responsiveness, or a score for individual dietary/clinical response.",
+      "negative_or_failure": "Raw binary, preprocessing and row predictions not independently reverified in this pass; performance results not rerun.",
+      "missing": [
+        "model_binary_current_hash_check",
+        "preprocessing_assets",
+        "fresh_prediction_replay",
+        "clinical_calibration"
+      ],
+      "primary_exact_record_verified": false,
+      "chain_qualified": false
+    }
+  ],
+  "reviewed_traces": [
+    {
+      "trace_id": "T1",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:4615",
+      "gene_symbol": "MYD88",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "022ff1257ecb81684653751a59038af3b7d907344153f655153fb8bc79874ce9",
+      "gene_disease_edge_id": "7a9765a56cc78ff898562122465b73b7e35408c531abaa12d520012f968f6a4c",
+      "compound_gene_pmids": [
+        "27890776"
+      ],
+      "gene_disease_pmids": [
+        "27292124"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D03",
+      "clinical_chain_qualified": false
+    },
+    {
+      "trace_id": "T2",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:4780",
+      "gene_symbol": "NFE2L2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "04ea4838f6fbcb2389e7bca513fc600d14b54034502ec26ce06d4b3e88aec6b4",
+      "gene_disease_edge_id": "5556c337144f097efaf200a058df21f9fff2bdfd54258095531a00d253cbf18f",
+      "compound_gene_pmids": [
+        "16799064"
+      ],
+      "gene_disease_pmids": [
+        "32165127"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D02",
+      "clinical_chain_qualified": false
+    },
+    {
+      "trace_id": "T3",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5743",
+      "gene_symbol": "PTGS2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "gene_disease_edge_id": "572cf4b09a71de24675b055115f572fa688be5f1c998476e727416f32795a8e7",
+      "compound_gene_pmids": [
+        "15210717"
+      ],
+      "gene_disease_pmids": [
+        "14757778",
+        "15834289",
+        "20667508",
+        "22349312"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D01",
+      "clinical_chain_qualified": false
+    },
+    {
+      "trace_id": "T4",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5743",
+      "gene_symbol": "PTGS2",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0723f52570cf90977fa60dc7b6799ea1228f336791d7128beac98ca5f5f5bffa",
+      "gene_disease_edge_id": "e77d0d03a55ae24ae54f8ddcfb1ddc72ba7a51f8509b2ae1713e201a11da58d8",
+      "compound_gene_pmids": [
+        "15210717"
+      ],
+      "gene_disease_pmids": [
+        "14757778",
+        "15834289",
+        "20667508",
+        "22349312"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D01",
+      "clinical_chain_qualified": false
+    },
+    {
+      "trace_id": "T5",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:5327",
+      "gene_symbol": "PLAT",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "0863579a70a650cd5db1e05224da0f3e4a116b441b78e137fcbe10c806a659fe",
+      "gene_disease_edge_id": "dd1975b052b9c75e2894d53bc4c3a682094dea3f13eb6e6d45d98821b297cd6c",
+      "compound_gene_pmids": [
+        "12628509"
+      ],
+      "gene_disease_pmids": [
+        "22352330"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D04",
+      "clinical_chain_qualified": false
+    },
+    {
+      "trace_id": "T6",
+      "food_id": "USDA-Flav-R03-3:99582",
+      "compound_id": "InChIKey:WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "gene_id": "NCBIGene:51083",
+      "gene_symbol": "GAL",
+      "composition_measurement_id": "02e59fea3bed77bcf92ba0bb83f9e188c14a6334ffffe410e466921d55003959",
+      "composition_amount": 42.45,
+      "composition_unit": "mg",
+      "composition_basis": "source_100g",
+      "composition_source_id": "USDA-Flavonoids-R03-3:012d43e48fbd9c02",
+      "bridge_edge_id": "c840c5912df41db31e1f65d7de8f555a92ecd0158d1f024fa731b150b8cddcab",
+      "compound_gene_edge_id": "08731e933c1214998ee615cb4e0ebc982a5c76d272c34315bf4aa851d5302cf5",
+      "gene_disease_edge_id": "b662218aeb685423a0b4012538e45d36adba75b81064cc3ae8cb7494e66828b6",
+      "compound_gene_pmids": [
+        "22079256"
+      ],
+      "gene_disease_pmids": [
+        "10818254"
+      ],
+      "ctd_exact_structure_verified": false,
+      "binding_label": false,
+      "current_panel_native_gene_overlap": false,
+      "evidence_record_id": "D05",
+      "clinical_chain_qualified": false
+    }
+  ],
+  "fishgastro_constraints": {
+    "status": "preserved_historical_review_limits; not freshly reconciled",
+    "GEO_people": 28,
+    "conference_people": 31,
+    "denominator_reconciled": false,
+    "individual_clinical_crosswalk_available": false,
+    "nominal_gene_count": 1202,
+    "nominal_genes_fail_FDR": true,
+    "modality": "gene_expression_not_DNAm",
+    "EPA_DHA_individual_exposure_measured": false,
+    "current_primary_access": "GSE15284 landing page returned reCAPTCHA; conference source not resolved in this pass",
+    "source_PMIDs_DOIs": null,
+    "full_chain_verified": false
+  },
+  "before_after": [
+    {
+      "before": "Selected CpG gene names can appear to imply compound response.",
+      "after": "50 exact printed CpGs recovered; selected graph has zero native gene overlap among six available traces; full DB overlap remains unknown.",
+      "new_support": "annotation identities and finite trace overlap only"
+    },
+    {
+      "before": "Six food graph paths can appear to be six independent validations.",
+      "after": "Six paths share one food, one EGCG structure and one composition measurement; PTGS2 pathways reuse one compound-gene edge.",
+      "new_support": "trace dependence and actual denominator"
+    },
+    {
+      "before": "A CTD action list can appear to describe an unconditional compound effect.",
+      "after": "Nested paraquat reaction, sulindac co-treatment and chromium co-treatment retained; cannot promote to food-only benefit.",
+      "new_support": "correct context interpretation"
+    },
+    {
+      "before": "A tea-related molecule can appear uniformly anti-inflammatory.",
+      "after": "Primary PTGS2 abstract supports expression increase in a human tumour cell line and rat cells; human-cell taxonomy separated from clinical study design.",
+      "new_support": "context-specific direction; no food-health causality"
+    },
+    {
+      "before": "HOX nutritional context can appear to validate seven current HOXA10 sites.",
+      "after": "B-PROOF loci, combined supplementation and leukocyte tissue isolated from current adipocyte panel; exact overlap unavailable.",
+      "new_support": "direct intervention-to-methylation evidence at other loci only"
+    }
+  ],
+  "missing_evidence": [
+    {
+      "gap": "94-page current report bytes and existing ledgers",
+      "required": "Restore same Mac authorised environment; verify hashes/current ownership; read relevant local instructions before local application",
+      "action_status": "blocked_connection"
+    },
+    {
+      "gap": "all4630 actual links to current panel",
+      "required": "read-only original extension and serving DB; exact structure identity + gene/CpG/edge IDs + provenance; report counts and unmatched reasons",
+      "action_status": "blocked_source_tables"
+    },
+    {
+      "gap": "exact McAllan ST7/ST9/ST11 source rows",
+      "required": "small existing supplementary source file, hash and row-specific n/effect/CI; avoid redownloading datasets",
+      "action_status": "report_transcription_only"
+    },
+    {
+      "gap": "whole-chain exposure alignment",
+      "required": "exact chemical form, preparation/basis, food intake and bioavailable concentration, compatible tissue/species/dose/time and same outcome",
+      "action_status": "unverified_no_new_experiment"
+    },
+    {
+      "gap": "FISHGASTRO 31 versus28 and clinical linkage",
+      "required": "documented subject reconciliation and existing individual clinical crosswalk; full feature-family FDR context",
+      "action_status": "unresolved"
+    },
+    {
+      "gap": "independent validation and confounding",
+      "required": "prespecified independent data/splits and adjusted/probe QC; existing source cohort reuse is not independent evidence",
+      "action_status": "not_restarted"
+    },
+    {
+      "gap": "API application",
+      "required": "API owner review this documentation pack and existing strict contracts; it lacks qualification packet provenance and full feature hashes",
+      "action_status": "not_applied"
+    }
+  ]
+}
