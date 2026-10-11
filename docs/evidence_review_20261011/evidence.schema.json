@@ -1,0 +1,367 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nutriomics:document-evidence-handover:v1",
+  "title": "Documentation-only evidence curation pack; not a strict AI qualification import schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "recorded_utc",
+    "scope",
+    "provenance",
+    "denominators",
+    "panel_rows",
+    "native_gene_labels",
+    "records",
+    "reviewed_traces",
+    "fishgastro_constraints",
+    "before_after",
+    "missing_evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "nutriomics-document-evidence-handover-v1"
+    },
+    "recorded_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "api_application_status",
+        "local_report_modified",
+        "main_modified"
+      ],
+      "properties": {
+        "api_application_status": {
+          "const": "not_applied"
+        },
+        "local_report_modified": {
+          "const": false
+        },
+        "main_modified": {
+          "const": false
+        },
+        "submission_ready": {
+          "const": false
+        }
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "denominators": {
+      "type": "object",
+      "required": [
+        "current_4630_compound_to_actual_panel_linked_count",
+        "current_4630_compound_to_actual_panel_unverified_count"
+      ],
+      "properties": {
+        "current_4630_compound_to_actual_panel_linked_count": {
+          "type": "null"
+        },
+        "current_4630_compound_to_actual_panel_unverified_count": {
+          "type": "null"
+        }
+      }
+    },
+    "panel_rows": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": [
+          "cpg",
+          "annotation",
+          "model_coefficient",
+          "delta_beta_discovery_pp",
+          "delta_beta_replication_pp"
+        ],
+        "properties": {
+          "cpg": {
+            "type": "string",
+            "pattern": "^cg[0-9]{8}$"
+          },
+          "annotation": {
+            "type": "string"
+          },
+          "model_coefficient": {
+            "type": "number"
+          },
+          "delta_beta_discovery_pp": {
+            "type": "number"
+          },
+          "delta_beta_replication_pp": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "native_gene_labels": {
+      "type": "array",
+      "minItems": 22,
+      "maxItems": 22,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "chain_stage",
+          "evidence_class",
+          "panel_cpgs",
+          "genes",
+          "database_edge_ids",
+          "source",
+          "study",
+          "effect",
+          "supported_scope",
+          "not_supported",
+          "negative_or_failure",
+          "missing",
+          "primary_exact_record_verified",
+          "chain_qualified"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "chain_stage": {
+            "type": "string"
+          },
+          "evidence_class": {
+            "enum": [
+              "direct_experimental",
+              "association",
+              "computational_prediction",
+              "unverified"
+            ]
+          },
+          "panel_cpgs": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^cg[0-9]{8}$"
+            }
+          },
+          "genes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "database_edge_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "doi",
+              "pmid",
+              "url",
+              "access_scope",
+              "locator",
+              "checked_utc"
+            ],
+            "properties": {
+              "doi": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pmid": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[1-9][0-9]*$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "access_scope": {
+                "type": "string"
+              },
+              "locator": {
+                "type": "string"
+              },
+              "checked_utc": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "study": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "species",
+              "tissue",
+              "design",
+              "n",
+              "n_unit",
+              "dose",
+              "duration"
+            ],
+            "properties": {
+              "species": {
+                "type": "string"
+              },
+              "tissue": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "n": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "n_unit": {
+                "type": "string"
+              },
+              "dose": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "duration": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "effect": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "direction",
+              "estimate",
+              "unit",
+              "confidence_interval",
+              "fdr_q",
+              "feature_family_n",
+              "feature_family_sha256"
+            ],
+            "properties": {
+              "direction": {
+                "type": "string"
+              },
+              "estimate": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confidence_interval": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "fdr_q": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "feature_family_n": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "feature_family_sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            }
+          },
+          "supported_scope": {
+            "type": "string"
+          },
+          "not_supported": {
+            "type": "string"
+          },
+          "negative_or_failure": {
+            "type": "string"
+          },
+          "missing": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "primary_exact_record_verified": {
+            "type": "boolean"
+          },
+          "chain_qualified": {
+            "const": false
+          }
+        }
+      }
+    },
+    "reviewed_traces": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "fishgastro_constraints": {
+      "type": "object"
+    },
+    "before_after": {
+      "type": "array"
+    },
+    "missing_evidence": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Unknown measurements stay null with an explicit gap. Human cell taxonomy is not clinical design. Code/clinical/source qualification remain separate. The strict v2 DB import contract still applies independently."
+}
