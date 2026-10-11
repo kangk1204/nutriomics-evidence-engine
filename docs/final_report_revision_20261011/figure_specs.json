@@ -1,0 +1,396 @@
+[
+  {
+    "id": "F1",
+    "title": "5개년 공식 목표–연차 산출물–최종 인수 흐름",
+    "source_ids": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "matrix": "M1_annual_goal_trace",
+    "drawing_type": "five unassigned-year stages and evidence/acceptance lanes",
+    "labels": [
+      "1차년도(연도자료미확인)",
+      "2차년도(연도자료미확인)",
+      "3차년도(연도자료미확인)",
+      "4차년도(연도자료미확인)",
+      "5차년도(연도자료미확인)"
+    ],
+    "caption": "사업기간5년은사용자진술이며공식연도·연차목표·예산은자료미확인. 현재산출물을특정연차에배정하지않음.",
+    "rendered_in_report": false
+  },
+  {
+    "id": "F2",
+    "title": "전체 데이터 계보와 별도 분모",
+    "source_ids": [
+      "E04",
+      "E07"
+    ],
+    "matrix": "M3_database_denominators",
+    "drawing_type": "source→native preservation→mapping receipt→research/public partitions→evidence export",
+    "data": [
+      {
+        "id": "research_compounds",
+        "value": 4630,
+        "grain": "고유구조/성분receipt",
+        "status": "전체원행/키/releasehash미확인"
+      },
+      {
+        "id": "research_occurrences",
+        "value": 345624,
+        "grain": "음식–성분관계/발생행",
+        "status": "중복key/기여원/단위미확인"
+      },
+      {
+        "id": "research_foods",
+        "value": 822,
+        "grain": "동결eligible음식",
+        "status": "public와동일식품조인미확인"
+      },
+      {
+        "id": "public_foods",
+        "value": 13588,
+        "grain": "API전달publicfoodslabel",
+        "status": "원본버전/권리/정의consumer미확인"
+      },
+      {
+        "id": "public_reports",
+        "value": 1012333,
+        "grain": "API전달publicreportslabel",
+        "status": "report행grain/중복단위미확인"
+      },
+      {
+        "id": "public_entities",
+        "value": 13888,
+        "grain": "API전달publicentitieslabel",
+        "status": "canonical/native정의/매핑receipt미확인"
+      },
+      {
+        "id": "reference_exact_matches",
+        "value": 53,
+        "grain": "API전달공개허용reference일치",
+        "status": "전체linked/unverified수아님"
+      }
+    ],
+    "caption": "research/public분모를합산하지않음. 전체원행·버전·권리consumer재대조미완료. 데이터조인성공을임상효과로표시하지않음.",
+    "rendered_in_report": false
+  },
+  {
+    "id": "F3",
+    "title": "10POC edge·누락·반증 근거 지도",
+    "source_ids": [
+      "E05"
+    ],
+    "matrix": "M4_POC_edges",
+    "drawing_type": "ten rows by food/component/molecular/health edge; assay type and context preserved",
+    "data": [
+      {
+        "id": "P01",
+        "category": "partial_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "study_reported",
+            "source_ids": [
+              "S01"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "measured",
+            "source_ids": [
+              "S01"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "missing",
+            "source_ids": []
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P02",
+        "category": "rejected_control",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "measured_exposure",
+            "source_ids": [
+              "S02"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "negative_in_tested_context",
+            "source_ids": [
+              "S02"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "negative_in_tested_context",
+            "source_ids": [
+              "S02"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P03",
+        "category": "sufficient_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "quantified_trial_food",
+            "source_ids": [
+              "S03"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "measured",
+            "source_ids": [
+              "S03"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "parallel_same_trial_observations",
+            "source_ids": [
+              "S03",
+              "S04"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P04",
+        "category": "partial_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "measured_mixture; individual_unit_conflict",
+            "source_ids": [
+              "S05"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "food_mixture_measured",
+            "source_ids": [
+              "S05"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "unproven; parallel_metabolic_null",
+            "source_ids": [
+              "S05"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P05",
+        "category": "partial_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "mixture_reported",
+            "source_ids": [
+              "S06"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "separate_cohort_and_exvivo_assays",
+            "source_ids": [
+              "S06"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "missing_mediation",
+            "source_ids": []
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P06",
+        "category": "sufficient_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "batch_reported",
+            "source_ids": [
+              "S07"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "food_intervention_association",
+            "source_ids": [
+              "S07"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "parallel_same_trial_biomarkers",
+            "source_ids": [
+              "S07"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P07",
+        "category": "rejected_control",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "missing",
+            "source_ids": []
+          },
+          {
+            "kind": "component_molecular",
+            "status": "supplement_measured; food_transfer_unverified",
+            "source_ids": [
+              "S08"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "unsupported; parent_endpoint_null",
+            "source_ids": [
+              "S08",
+              "S09"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P08",
+        "category": "partial_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "diet_pattern_not_exact_compound",
+            "source_ids": [
+              "S10"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "diet_measured; compound_attribution_unverified",
+            "source_ids": [
+              "S10"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "cross_study_hypothesis",
+            "source_ids": [
+              "S10",
+              "S11"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P09",
+        "category": "partial_evidence",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "official_measured_composition",
+            "source_ids": [
+              "S12"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "purified_cellular_assay",
+            "source_ids": [
+              "S13"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "missing_human_outcome",
+            "source_ids": []
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      },
+      {
+        "id": "P10",
+        "category": "rejected_control",
+        "edges": [
+          {
+            "kind": "food_component",
+            "status": "official_measured_composition",
+            "source_ids": [
+              "S12"
+            ]
+          },
+          {
+            "kind": "component_molecular",
+            "status": "measured_opposite_to_generic_claim",
+            "source_ids": [
+              "S14"
+            ]
+          },
+          {
+            "kind": "molecular_health",
+            "status": "cellular_endpoint_only",
+            "source_ids": [
+              "S14"
+            ]
+          }
+        ],
+        "clinical_chain_qualified": false,
+        "full_causal_chain_verified": false
+      }
+    ],
+    "caption": "충분2/부분5/기각3은관찰표시근거분류. 완전인과·임상체인0. 선택exactCpG4와50패널교집합0.",
+    "rendered_in_report": false
+  },
+  {
+    "id": "F4",
+    "title": "소프트웨어 검증 범위와 과학·공식 인수 경계",
+    "source_ids": [
+      "E05",
+      "E06"
+    ],
+    "matrix": "M6_build_requirements",
+    "drawing_type": "overlapping test sets and separately labelled scientific/acceptance lanes",
+    "data": {
+      "owner_reported_tests": 118,
+      "owner_reported_packet_checks": 91,
+      "owner_reported_HTTP_checks": 88,
+      "owner_reported_API_and_UI_fixture_count_each": 30,
+      "scientific_full_causal_chains": 0,
+      "official_acceptance": "자료 미확인"
+    },
+    "caption": "118/91/88검사집합은중첩가능하여합산하지않음. 동일30fixture의API/UI검사. 브라우저예외0은확인실행범위. 원증빙consumer-local확인대기.",
+    "rendered_in_report": false
+  }
+]
