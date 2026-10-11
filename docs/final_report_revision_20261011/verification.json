@@ -1,0 +1,75 @@
+{
+  "verified_utc": "2026-10-11 13:32:19 UTC",
+  "staged_commit": "daf3d2ab1e753ce175374df3ee44d8034675725c",
+  "plan_commit": "00d2cf8c54948a8eb37e6f44a6c7dfa8067e4f56",
+  "saved_files": [
+    {
+      "path": "docs/final_report_revision_20261011/revision.json",
+      "git_blob_sha": "f50c30aa2330276f7576547ba7225eaa4cb7aad3",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/matrices.json",
+      "git_blob_sha": "948653401c702fa26e433380396a0a832ca0305c",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/evidence_index.json",
+      "git_blob_sha": "da91edb55a713bf0762453e1b4afc2d9aeedbcfa",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/planned_changes.json",
+      "git_blob_sha": "e2e6b87284fbf600942beea55dbd181875e23c6a",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/missing_requirements.csv",
+      "git_blob_sha": "e8c92eb7f23001529aef7042660cd5b8d67043e8",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/figure_specs.json",
+      "git_blob_sha": "f99b63d609a3fc4cfd254af26db820b123beb849",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/panel_review.csv",
+      "git_blob_sha": "d8a3fef3f4f7d6d53515a8e74a5d8d9a2af583e4",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/draft_checks.json",
+      "git_blob_sha": "e0d83d9a499b653eb263e9b121717f113c72e654",
+      "UTF8_content_identical": true
+    },
+    {
+      "path": "docs/final_report_revision_20261011/execution.json",
+      "git_blob_sha": "0c0a1076ef1636d01d5bb05c4508bd006e61c079",
+      "UTF8_content_identical": true
+    }
+  ],
+  "saved_source_and_matrix_crossreferences_resolve": true,
+  "recomputed_scope": {
+    "sections": 15,
+    "matrices": 8,
+    "matrix_rows": 80,
+    "source_registry": 9,
+    "primary_POC_references": 14,
+    "figures_designed": 4,
+    "figures_rendered": 0
+  },
+  "draft_consistency_checks": 12,
+  "draft_consistency_passed": true,
+  "verification_runtime": "JavaScript V8 through functions.exec",
+  "actual_current94page_report_changed": false,
+  "DOCX_PDF_generated": false,
+  "all_report_pages_visually_checked": false,
+  "current_report_SHA256": "자료 미확인",
+  "consumer_local_Library_materialization_verified": false,
+  "Library_deliverable_ID": "생성하지않음",
+  "only_nine_new_staging_files_since_plan": true,
+  "no_API_source_mutation": true,
+  "figure_testset_overlap_cardinality": "자료 미확인;do not draw proportional intersection areas",
+  "remaining_blocker": "No exposed Mac terminal/filesystem/rendering action and no verified current94pagefile; complete actual report work after original execution route is available"
+}
