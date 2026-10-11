@@ -1,0 +1,817 @@
+{
+  "M1_annual_goal_trace": [
+    {
+      "연차": "1차년도(연도 자료 미확인)",
+      "공식연도": "자료 미확인",
+      "공식목표": "자료 미확인",
+      "수행내용": "자료 미확인",
+      "정량성과": "자료 미확인",
+      "정성성과": "자료 미확인",
+      "근거파일": "자료 미확인",
+      "한계": "공식 연차계획·수행·평가 원본 미확인",
+      "최종요구충족상태": "미확인",
+      "연차별예산": "자료 미확인",
+      "자료연결": "E01;2025연차보고서는후보이며연차매핑미검증"
+    },
+    {
+      "연차": "2차년도(연도 자료 미확인)",
+      "공식연도": "자료 미확인",
+      "공식목표": "자료 미확인",
+      "수행내용": "자료 미확인",
+      "정량성과": "자료 미확인",
+      "정성성과": "자료 미확인",
+      "근거파일": "자료 미확인",
+      "한계": "공식 연차계획·수행·평가 원본 미확인",
+      "최종요구충족상태": "미확인",
+      "연차별예산": "자료 미확인",
+      "자료연결": "E01;2025연차보고서는후보이며연차매핑미검증"
+    },
+    {
+      "연차": "3차년도(연도 자료 미확인)",
+      "공식연도": "자료 미확인",
+      "공식목표": "자료 미확인",
+      "수행내용": "자료 미확인",
+      "정량성과": "자료 미확인",
+      "정성성과": "자료 미확인",
+      "근거파일": "자료 미확인",
+      "한계": "공식 연차계획·수행·평가 원본 미확인",
+      "최종요구충족상태": "미확인",
+      "연차별예산": "자료 미확인",
+      "자료연결": "E01;2025연차보고서는후보이며연차매핑미검증"
+    },
+    {
+      "연차": "4차년도(연도 자료 미확인)",
+      "공식연도": "자료 미확인",
+      "공식목표": "자료 미확인",
+      "수행내용": "자료 미확인",
+      "정량성과": "자료 미확인",
+      "정성성과": "자료 미확인",
+      "근거파일": "자료 미확인",
+      "한계": "공식 연차계획·수행·평가 원본 미확인",
+      "최종요구충족상태": "미확인",
+      "연차별예산": "자료 미확인",
+      "자료연결": "E01;2025연차보고서는후보이며연차매핑미검증"
+    },
+    {
+      "연차": "5차년도(연도 자료 미확인)",
+      "공식연도": "자료 미확인",
+      "공식목표": "자료 미확인",
+      "수행내용": "자료 미확인",
+      "정량성과": "자료 미확인",
+      "정성성과": "자료 미확인",
+      "근거파일": "자료 미확인",
+      "한계": "공식 연차계획·수행·평가 원본 미확인",
+      "최종요구충족상태": "미확인",
+      "연차별예산": "자료 미확인",
+      "자료연결": "E01;2025연차보고서는후보이며연차매핑미검증"
+    }
+  ],
+  "M2_claim_evidence": [
+    {
+      "id": "CL01",
+      "주장": "기간5년·총12억원",
+      "분모정의": "사용자진술;연도/연차금액미확인",
+      "근거": "E01",
+      "원본및버전": "원본 자료 미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "협약·집행·정산 검증 아님",
+      "확인상태": "사용자진술;공식/재무미확인"
+    },
+    {
+      "id": "CL02",
+      "주장": "research성분4,630",
+      "분모정의": "동결구조/성분receipt;전체원행미회수",
+      "근거": "E07;E04",
+      "원본및버전": "3072f3c14ed79f1d1d9c1d493e8e31c94df42474",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "전체구조/기전/임상검증아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL03",
+      "주장": "occurrence345,624",
+      "분모정의": "음식–성분관계/발생행",
+      "근거": "E07",
+      "원본및버전": "원본 자료 미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "독립실험·문헌·개인 수 아님",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL04",
+      "주장": "researchfood822",
+      "분모정의": "동결확장eligible음식",
+      "근거": "E07",
+      "원본및버전": "원본 자료 미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "public음식분모와합산금지",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL05",
+      "주장": "public13,588foods/1,012,333reports/13,888entities/reference53",
+      "분모정의": "서로다른publiclabel;원정의/버전미소비",
+      "근거": "E07;E06",
+      "원본및버전": "별도담당09:13보고/Library원증빙consumer미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "reference53≠전체4,630기전/건강검증",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL06",
+      "주장": "50 CpG 전체 유한감사",
+      "분모정의": "인쇄패널50",
+      "근거": "E04",
+      "원본및버전": "3072f3c14ed79f1d1d9c1d493e8e31c94df42474",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "전체EWAS외부검증아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL07",
+      "주장": "주석39/미배정11/native유전자22",
+      "분모정의": "39+11=50;22는unique심볼",
+      "근거": "E04;E05",
+      "원본및버전": "2ef3f456aaa13e230d687356edfb1d2ec03b0384",
+      "계산또는검사": "39+11=50;native22unique",
+      "허용해석및한계": "22를행수와더하지않음;canonical미확인",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL08",
+      "주장": "SNP표시8/재현누락4",
+      "분모정의": "50행중중첩가능범주",
+      "근거": "E04",
+      "원본및버전": "3072f3c14ed79f1d1d9c1d493e8e31c94df42474",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "새probeQC/독립재현통과아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL09",
+      "주장": "선택exactCpG4와패널50교집합0",
+      "분모정의": "선택된4 cgID만비교",
+      "근거": "E05",
+      "원본및버전": "2ef3f456aaa13e230d687356edfb1d2ec03b0384",
+      "계산또는검사": "4exactcg와50패널집합교집합",
+      "허용해석및한계": "4개겹침이아님;전체transcriptome/EWAS미비교",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL10",
+      "주장": "POC10:충분2/부분5/기각3",
+      "분모정의": "문헌표시근거10건/14출처",
+      "근거": "E05",
+      "원본및버전": "2ef3f456aaa13e230d687356edfb1d2ec03b0384",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "인과실증/독립임상등급아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL11",
+      "주장": "완전인과/임상체인0",
+      "분모정의": "10POC범위",
+      "근거": "E05",
+      "원본및버전": "2ef3f456aaa13e230d687356edfb1d2ec03b0384",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "음식효과전체부정아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL12",
+      "주장": "감사57/패킷91 V8QA",
+      "분모정의": "별도유한입력/fixture검사",
+      "근거": "E04;E05",
+      "원본및버전": "2ef3f456aaa13e230d687356edfb1d2ec03b0384",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "독립생물학적정답률아님",
+      "확인상태": "동결문서/패킷확인"
+    },
+    {
+      "id": "CL13",
+      "주장": "latest118tests/91packet/88HTTP",
+      "분모정의": "각검사집합중첩가능",
+      "근거": "E06",
+      "원본및버전": "별도담당09:13보고/Library원증빙consumer미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "합산해독립성과부풀리기금지",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL14",
+      "주장": "desktop10cases42edges/mobile10cases",
+      "분모정의": "해당UI실행범위",
+      "근거": "E06",
+      "원본및버전": "별도담당09:13보고/Library원증빙consumer미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "42독립기전실험아님",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL15",
+      "주장": "API/UI각30overclaimrejection/exception0",
+      "분모정의": "동일fixture/확인브라우저실행",
+      "근거": "E06",
+      "원본및버전": "별도담당09:13보고/Library원증빙consumer미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "60독립과학대조/전범위무결함아님",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    },
+    {
+      "id": "CL16",
+      "주장": "publicversion2/신규POC미배포",
+      "분모정의": "공개상태owner전달",
+      "근거": "E06",
+      "원본및버전": "별도담당09:13보고/Library원증빙consumer미확인",
+      "계산또는검사": "근거별범위참조",
+      "허용해석및한계": "로컬통합≠공개배포;deploy재시도금지",
+      "확인상태": "owner/parent보고;consumer원본미확인"
+    }
+  ],
+  "M3_database_denominators": [
+    {
+      "id": "research_compounds",
+      "수량": 4630,
+      "행단위": "고유구조/성분receipt",
+      "근거": "E07;E04",
+      "미확인사항": "전체원행/키/releasehash미확인",
+      "정규화중복원본보존권리원칙": "native형태/권리보존;개발예제로전체범위축소금지"
+    },
+    {
+      "id": "research_occurrences",
+      "수량": 345624,
+      "행단위": "음식–성분관계/발생행",
+      "근거": "E07",
+      "미확인사항": "중복key/기여원/단위미확인",
+      "정규화중복원본보존권리원칙": "독립assay/문헌/사람으로세지않음"
+    },
+    {
+      "id": "research_foods",
+      "수량": 822,
+      "행단위": "동결eligible음식",
+      "근거": "E07",
+      "미확인사항": "public와동일식품조인미확인",
+      "정규화중복원본보존권리원칙": "부위/조리/nativeID보존"
+    },
+    {
+      "id": "public_foods",
+      "수량": 13588,
+      "행단위": "API전달publicfoodslabel",
+      "근거": "E07;E06",
+      "미확인사항": "원본버전/권리/정의consumer미확인",
+      "정규화중복원본보존권리원칙": "research822와합산/동일시금지"
+    },
+    {
+      "id": "public_reports",
+      "수량": 1012333,
+      "행단위": "API전달publicreportslabel",
+      "근거": "E07;E06",
+      "미확인사항": "report행grain/중복단위미확인",
+      "정규화중복원본보존권리원칙": "occurrence345624와합산금지"
+    },
+    {
+      "id": "public_entities",
+      "수량": 13888,
+      "행단위": "API전달publicentitieslabel",
+      "근거": "E07;E06",
+      "미확인사항": "canonical/native정의/매핑receipt미확인",
+      "정규화중복원본보존권리원칙": "전체기전검증분모로사용금지"
+    },
+    {
+      "id": "reference_exact_matches",
+      "수량": 53,
+      "행단위": "API전달공개허용reference일치",
+      "근거": "E07;E06",
+      "미확인사항": "전체linked/unverified수아님",
+      "정규화중복원본보존권리원칙": "기전/현재CpG/임상효과입증수아님"
+    }
+  ],
+  "M4_POC_edges": [
+    {
+      "id": "P01",
+      "음식조리": "broccoli sprouts / standardized oral homogenate; not boiled mature broccoli",
+      "성분형태": "sulforaphane [study oral BSH-derived isothiocyanate]",
+      "측정": "RNA_expression:GSTM1/GSTP1/NQO1/HMOX1 increase",
+      "입증및관찰edge": "food_component=study_reported; component_molecular=measured; molecular_health=missing",
+      "누락반증": "No clinical protection endpoint; n/duration and exact exposure unavailable in original abstract; Later analogous human POC was negative; NRF2 target activation is not NFE2L2 RNA increase or DNAm",
+      "허용결론": "측정된부분edge/연구간가설;결측보존",
+      "범주": "partial_evidence",
+      "근거": "E05; S01",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P02",
+      "음식조리": "broccoli sprout homogenate / 200g homogenate equivalent111g commercial sprouts; oral3days",
+      "성분형태": "sulforaphane [BSH-associated SFN and plasma conjugates]",
+      "측정": "RNA_expression:NFE2L2/HMOX1/NQO1/GSTM1 no_significant_difference",
+      "입증및관찰edge": "food_component=measured_exposure; component_molecular=negative_in_tested_context; molecular_health=negative_in_tested_context",
+      "누락반증": "Small healthy-participant ozone model; not all respiratory patients or every SFN formulation; Null result is not proof of zero effect in all contexts; 15 completed visits but sputum figure n=14; exact per-gene analyzed n not extracted",
+      "허용결론": "특정맥락/방향/음식전이/건강주장기각;upstream사실보존",
+      "범주": "rejected_control",
+      "근거": "E05; S02",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P03",
+      "음식조리": "orange juice from concentrate supplied for trial / from concentrate;500mL/day split twice",
+      "성분형태": "hesperidin [native glycoside; not substituted with hesperetin aglycone]",
+      "측정": "RNA_expression:CCL26/CX3CR1/CXCL17 decrease; RNA_expression:NFKBIB increase",
+      "입증및관찰edge": "food_component=quantified_trial_food; component_molecular=measured; molecular_health=parallel_same_trial_observations",
+      "누락반증": "No gene-specific mediation analysis; No hard cardiovascular event endpoint; Whole3,422-gene differential set not joined to current panel; Per-gene CI/adjusted p not extracted",
+      "허용결론": "관찰표시근거충분;매개/완전인과/임상교정아님",
+      "범주": "sufficient_evidence",
+      "근거": "E05; S03; S04",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P04",
+      "음식조리": "CANOLIVA virgin olive oil / 40mL oil with60g white bread and vitaminA; matched low-phenol oil produced by extraction",
+      "성분형태": "olive phenolic mixture including hydroxytyrosol [mixture; not isolated hydroxytyrosol]",
+      "측정": "RNA_expression:PTGS2/IL1B/IL6/EGR1/JUN decrease",
+      "입증및관찰edge": "food_component=measured_mixture; individual_unit_conflict; component_molecular=food_mixture_measured; molecular_health=unproven; parallel_metabolic_null",
+      "누락반증": "Individual compound not isolated; Hydroxytyrosol amount/unit needs primary reconciliation; Four-hour RNA change is not chronic disease prevention",
+      "허용결론": "측정된부분edge/연구간가설;결측보존",
+      "범주": "partial_evidence",
+      "근거": "E05; S05",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P05",
+      "음식조리": "cocoa-containing cream product / 6units13g each/day supplying6g cocoa; isocaloric-diet run-in",
+      "성분형태": "cocoa polyphenol mixture [human cream versus separate cocoa-nib extract]",
+      "측정": "global_DNA_methylation: decrease; RNA_expression:DNMT1/DNMT3A/DNMT3B/MTHFR/MTRR decrease",
+      "입증및관찰edge": "food_component=mixture_reported; component_molecular=separate_cohort_and_exvivo_assays; molecular_health=missing_mediation",
+      "누락반증": "Title says randomized controlled trial, but analyzed human comparison uses two earlier run-in cohorts; Separate6donors are not214human expression subjects; No exact CpG/clinical health mediation; No isolated-epicatechin attribution",
+      "허용결론": "측정된부분edge/연구간가설;결측보존",
+      "범주": "partial_evidence",
+      "근거": "E05; S06",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P06",
+      "음식조리": "muffin containing ground flaxseed / baked muffin;25g flaxseed/day; controls matched energy/macronutrients/fiber with different flour/oil formulation",
+      "성분형태": "secoisolariciresinol diglucoside (SDG) [lignan precursor in flaxseed batch, followed by urinary lignan metabolites]",
+      "측정": "protein_expression:ERBB2 decrease",
+      "입증및관찰edge": "food_component=batch_reported; component_molecular=food_intervention_association; molecular_health=parallel_same_trial_biomarkers",
+      "누락반증": "Small presurgery cancer-patient trial; Whole food includes oil/fiber/other components; Within-arm percentages are not adjusted between-arm effect estimates; No recurrence/survival/healthy-person prevention endpoint; 32 randomized participants; exact per-IHC marker analyzable paired-biopsy n not extracted",
+      "허용결론": "관찰표시근거충분;매개/완전인과/임상교정아님",
+      "범주": "sufficient_evidence",
+      "근거": "E05; S07",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P07",
+      "음식조리": "folate-rich food candidate, not specified/tested in B-PROOF / 실제음식개입미확인",
+      "성분형태": "synthetic folic acid plus vitaminB12 [tablet combination; not interchangeable with natural food folate vitamers]",
+      "측정": "exact_CpG_DNA_methylation:DIRAS3 increase_in_treated_vs_decrease_in_control cg06191076; exact_CpG_DNA_methylation: not_extracted cg19380919",
+      "입증및관찰edge": "food_component=missing; component_molecular=supplement_measured; food_transfer_unverified; molecular_health=unsupported; parent_endpoint_null",
+      "누락반증": "Folic acid is not every natural folate species; Combination and sharedD3 cannot attribute single compound; HOXA4/HOXB7 findings are notHOXA10currentSATprobes; Parent trial overall fracture null; cancer adverse signal requires separate evaluation",
+      "허용결론": "특정맥락/방향/음식전이/건강주장기각;upstream사실보존",
+      "범주": "rejected_control",
+      "근거": "E05; S08; S09",
+      "패널정확CpG교집합": "0",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P08",
+      "음식조리": "Mediterranean diet supplemented with mixed nuts or extra-virgin olive oil / dietary pattern; not a single-food or isolated-fatty-acid treatment",
+      "성분형태": "unspecified PUFA mixture and EVOO phenolic/fatty-acid mixture [diet-pattern components; individual native molecule/dose not measured for the selected CpG edge]",
+      "측정": "exact_CpG_DNA_methylation:CPT1B/CHKB-CPT1B increase_in_MedDiet_nuts cg01081346; exact_CpG_DNA_methylation:GNAS/GNASAS decrease_in_MedDiet_EVOO cg17071192",
+      "입증및관찰edge": "food_component=diet_pattern_not_exact_compound; component_molecular=diet_measured; compound_attribution_unverified; molecular_health=cross_study_hypothesis",
+      "누락반증": "No participant-level outcome crosswalk/mediation for36; Individual compound dose unverified; Use corrected2018report, not retracted2013estimates; Current50CpGs contain neitherselectedsite",
+      "허용결론": "측정된부분edge/연구간가설;결측보존",
+      "범주": "partial_evidence",
+      "근거": "E05; S10; S11",
+      "패널정확CpG교집합": "0",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P09",
+      "음식조리": "Tea, white, brewed / USDA standardized1% infusion,1g dry leaf/100mL boiling water; brewingtime not standardized",
+      "성분형태": "(-)-epigallocatechin3-gallate [gallate ester retained; no glycoside/aglycone conversion]",
+      "측정": "promoter_region_DNA_methylation:CDKN2A/RARB/MGMT/MLH1 decrease; RNA_expression:CDKN2A/RARB/MGMT/MLH1 reexpression; protein_expression:RARB/MLH1 reexpression",
+      "입증및관찰edge": "food_component=official_measured_composition; component_molecular=purified_cellular_assay; molecular_health=missing_human_outcome",
+      "누락반증": "5-50uMculture is not inferred plasma exposure from42.45mg/100gtea; No exact currentpanelCpG assay; Structural full key alone does not prove native assay-lot equivalence; No clinical cancer benefit",
+      "허용결론": "측정된부분edge/연구간가설;결측보존",
+      "범주": "partial_evidence",
+      "근거": "E05; S12; S13",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    },
+    {
+      "id": "P10",
+      "음식조리": "Tea, white, brewed / official1% brewed infusion; separate purified cell treatment",
+      "성분형태": "(-)-epigallocatechin3-gallate [gallate ester]",
+      "측정": "protein_expression:PTGS2 increase",
+      "입증및관찰edge": "food_component=official_measured_composition; component_molecular=measured_opposite_to_generic_claim; molecular_health=cellular_endpoint_only",
+      "누락반증": "Culturedhumanline and ratcells are separate from oralhumanfood intervention; COX2 direction is tissue/context-specific; No disease-protection endpoint or directbindingKd",
+      "허용결론": "특정맥락/방향/음식전이/건강주장기각;upstream사실보존",
+      "범주": "rejected_control",
+      "근거": "E05; S12; S14",
+      "패널정확CpG교집합": "해당exactcg측정범위없음",
+      "canonical유전자교집합": "자료 미확인",
+      "인과임상체인": "입증안됨"
+    }
+  ],
+  "M5_model_validation": [
+    {
+      "id": "ML01",
+      "항목": "데이터/release/원파일해시",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML02",
+      "항목": "참가자·샘플·assay·반복분모",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML03",
+      "항목": "누락/탈락/제외기준",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML04",
+      "항목": "참가자단위train/valid/test분할",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML05",
+      "항목": "preprocessing/특징선택의훈련fold내적합",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML06",
+      "항목": "batch/cohort/tissue/연령/성별/BMI/세포조성교란",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML07",
+      "항목": "단순baseline/비교기준",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML08",
+      "항목": "평가metric/CI/다중검정FDR",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML09",
+      "항목": "독립기관/cohort/인구집단외부검증",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML10",
+      "항목": "실패/음성/qualification실패이력",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML11",
+      "항목": "환경/모델/데이터/코드버전",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    },
+    {
+      "id": "ML12",
+      "항목": "개인임상crosswalk/해석/사용제한",
+      "프로젝트실제증빙": "자료 미확인",
+      "필요근거": "기존모델카드/분할manifest/평가/로그원본대조",
+      "허용결론": "소프트웨어검사로모델과학성능·임상효과를대체하지않음",
+      "확인상태": "미확인",
+      "신규훈련": "수행하지않음"
+    }
+  ],
+  "M6_build_requirements": [
+    {
+      "id": "SW01",
+      "요구사항": "10POC통합",
+      "허용범위": "10case/14source;범주2/5/3;complete0",
+      "근거": "E05;E06",
+      "검사증거": "패킷91확인;앱118owner보고",
+      "남은확인": "consumer원증빙/통합파일확인",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW02",
+      "요구사항": "측정종류분리",
+      "허용범위": "RNA/protein/global/promoter/exactcg",
+      "근거": "E05",
+      "검사증거": "패킷확인",
+      "남은확인": "API/UI출력대조",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW03",
+      "요구사항": "식품/성분맥락",
+      "허용범위": "부위/조리/분자형태/단위",
+      "근거": "E05",
+      "검사증거": "패킷확인",
+      "남은확인": "카드/내보내기대조",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW04",
+      "요구사항": "관계/출처/누락표시",
+      "허용범위": "10카드·primary/missing/refuting",
+      "근거": "E05;E06",
+      "검사증거": "desktop10/42·mobile10owner보고",
+      "남은확인": "42edge의표시grain확인",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW05",
+      "요구사항": "API과도주장거부",
+      "허용범위": "기존30syntheticfixture",
+      "근거": "E05;E06",
+      "검사증거": "30owner보고",
+      "남은확인": "API로그수신",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW06",
+      "요구사항": "UI과도주장거부",
+      "허용범위": "동일30fixture",
+      "근거": "E05;E06",
+      "검사증거": "30owner보고",
+      "남은확인": "브라우저증빙수신",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW07",
+      "요구사항": "HTTP계약",
+      "허용범위": "기존경로/응답/오류",
+      "근거": "E06",
+      "검사증거": "88owner보고",
+      "남은확인": "전체요구-검사원본연결",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW08",
+      "요구사항": "브라우저",
+      "허용범위": "해당desktop/mobile실행",
+      "근거": "E06",
+      "검사증거": "예외0owner보고",
+      "남은확인": "관찰실행범위한정",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW09",
+      "요구사항": "내보내기/권리",
+      "허용범위": "승인metadata/raw권리분리",
+      "근거": "E04;E05;E06",
+      "검사증거": "metadata승인/미확인rawexport진단",
+      "남은확인": "현재format/권리receipt확인",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW10",
+      "요구사항": "재현성",
+      "허용범위": "코드/자료/환경/결과고정",
+      "근거": "E04;E05",
+      "검사증거": "유한V8저장후재실행확인",
+      "남은확인": "Node앱/원증빙hash별도",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW11",
+      "요구사항": "보안",
+      "허용범위": "기존권한/비밀제외/실행경계",
+      "근거": "E06",
+      "검사증거": "보안감사/침투검사자료미확인",
+      "남은확인": "기능검사와보안인증분리",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    },
+    {
+      "id": "SW12",
+      "요구사항": "공개배포",
+      "허용범위": "publicversion2;새POC미배포",
+      "근거": "E06",
+      "검사증거": "owner보고;재시도금지",
+      "남은확인": "로컬기능/배포상태분리",
+      "공식인수충족판정": "공식요구/인수기준 자료 미확인"
+    }
+  ],
+  "M7_handover_operations": [
+    {
+      "id": "OP01",
+      "항목": "운영/유지책임기관·담당자",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP02",
+      "항목": "인수목록/범위/최종버전",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP03",
+      "항목": "기술이전/실시권/IP권리",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP04",
+      "항목": "업데이트원천/주기/중단조건",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP05",
+      "항목": "운영/유지보수비계약/추정근거",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP06",
+      "항목": "backup/복구절차/시험",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP07",
+      "항목": "사용자권한/접근/사건기록",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP08",
+      "항목": "오류/취약점접수/수정책임",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP09",
+      "항목": "문서/실행환경/교육/인수증",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    },
+    {
+      "id": "OP10",
+      "항목": "자료/모델보존/폐기/반환",
+      "현재확인": "자료 미확인",
+      "근거": "공식운영/이전/인수계약·절차·기록 자료 미확인",
+      "허용서술": "제안/필요조건으로기재;5년운영실적/완료기술이전주장금지",
+      "책임자": "자료 미확인",
+      "최종완료상태": "미확인"
+    }
+  ],
+  "M8_budget_evidence": [
+    {
+      "id": "FIN01",
+      "항목": "총사업기간",
+      "표시값": "사용자진술5년",
+      "필요근거": "E01",
+      "한계": "공식시작/종료연도자료미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN02",
+      "항목": "총규모",
+      "표시값": "사용자진술총12억원",
+      "필요근거": "E01",
+      "한계": "협약/변경협약미확인;집행액아님",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN03",
+      "항목": "연차별계획예산",
+      "표시값": "자료 미확인",
+      "필요근거": "공식연차계획/협약",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN04",
+      "항목": "연차별실집행액",
+      "표시값": "자료 미확인",
+      "필요근거": "원장/집행명세/증빙",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN05",
+      "항목": "현금/현물/기관부담/정부재원분리",
+      "표시값": "자료 미확인",
+      "필요근거": "공식재원계획",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN06",
+      "항목": "항목별집행/불인정/잔액",
+      "표시값": "자료 미확인",
+      "필요근거": "정산표/증빙/감사",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN07",
+      "항목": "최종정산/반납/검토결과",
+      "표시값": "자료 미확인",
+      "필요근거": "공식정산/반납/검토서",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    },
+    {
+      "id": "FIN08",
+      "항목": "유지비/비용효율/ROI",
+      "표시값": "자료 미확인",
+      "필요근거": "계약/실측비용/사용성과",
+      "한계": "자료 미확인",
+      "검증상태": "공식/재무 미확인",
+      "추정연차별금액": "생성하지않음"
+    }
+  ]
+}
