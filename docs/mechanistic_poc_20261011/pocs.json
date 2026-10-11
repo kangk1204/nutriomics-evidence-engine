@@ -1,0 +1,2201 @@
+{
+  "schema_version": "nutriomics-mechanistic-poc-v1",
+  "prepared_utc": "2026-10-11 03:18:25 UTC",
+  "plan_commit": "10ac91a198bc70c84ae6c34563b71de61c910f3e",
+  "api_owner_thread": "01a109e2-7d7f-7756-b0e5-0d022dc6f00f",
+  "scope": "Ten literature/data mechanism POCs; API or UI implementation is owned by the separate API task and was not performed here.",
+  "category_definitions": {
+    "sufficient_evidence": "Documented food/component/molecular/health-observation edges sufficient for a faithful POC card. Full causal/clinical chain is not established.",
+    "partial_evidence": "Some measured edges; exact compound, person, tissue or health bridge unresolved.",
+    "rejected_control": "Specific proposed chain fails tested-context/direction/food-transfer/clinical-evidence expectations. This does not erase measured upstream facts or generalize null to all contexts."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "label": "Broccoli upper-airway RNA intervention",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19028145/",
+      "doi": "10.1016/j.clim.2008.10.007",
+      "pmid": "19028145",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract read; original methods/n and numerical folds not extracted",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S02",
+      "label": "Broccoli ozone-challenge negative POC",
+      "url": "https://link.springer.com/article/10.1186/s12931-016-0406-8",
+      "doi": "10.1186/s12931-016-0406-8",
+      "pmid": "27450419",
+      "kind": "primary_publication",
+      "read_scope": "Primary full methods/results/discussion and rights read",
+      "licence": "CC-BY-4.0",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S03",
+      "label": "Orange/hesperidin leukocyte transcriptomics",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026669",
+      "doi": "10.1371/journal.pone.0026669",
+      "pmid": "22110589",
+      "kind": "primary_publication",
+      "read_scope": "Primary full methods/results/discussion read; selected targets, not all supplementary rows",
+      "licence": "CC-BY; version not resolved",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S04",
+      "label": "Orange/hesperidin vascular crossover trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21068346/",
+      "doi": "10.3945/ajcn.110.004945",
+      "pmid": "21068346",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract read; effect size/CI unavailable",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S05",
+      "label": "Olive-phenol postprandial PBMC transcriptomics",
+      "url": "https://link.springer.com/article/10.1186/1471-2164-11-253",
+      "doi": "10.1186/1471-2164-11-253",
+      "pmid": null,
+      "kind": "primary_publication",
+      "read_scope": "Primary full methods/results/discussion and rights read; exact per-gene supplement not imported",
+      "licence": "CC-BY-2.0",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S06",
+      "label": "Cocoa global methylation and ex-vivo RNA",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0065744",
+      "doi": "10.1371/journal.pone.0065744",
+      "pmid": null,
+      "kind": "primary_publication",
+      "read_scope": "Primary methods/results read; two earlier-trial run-in cohorts distinguished",
+      "licence": "CC-BY; version not resolved",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S07",
+      "label": "Flaxseed pre-surgery tumor biomarker trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15897583/",
+      "doi": "10.1158/1078-0432.CCR-04-2326",
+      "pmid": "15897583",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract and indexed primary publisher methods; RNA not measured",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S08",
+      "label": "B-PROOF methylation substudy",
+      "url": "https://link.springer.com/article/10.1186/s13148-015-0154-5",
+      "doi": "10.1186/s13148-015-0154-5",
+      "pmid": "26568774",
+      "kind": "primary_publication",
+      "read_scope": "Primary methods/results read; selected exact CpGs and DMP-vs-DMR distinction",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S09",
+      "label": "B-PROOF fracture endpoint",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25411293/",
+      "doi": null,
+      "pmid": "25411293",
+      "kind": "primary_publication",
+      "read_scope": "Primary indexed abstract n/dose/ITT HR and conclusion; DOI not currently extracted",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S10",
+      "label": "PREDIMED-Navarra methylation substudy",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29295516/",
+      "doi": "10.3390/nu10010015",
+      "pmid": "29295516",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract/figure legends plus indexed primary full-results direction; full supplements not imported",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S11",
+      "label": "Corrected/re-published PREDIMED health trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+      "doi": "10.1056/NEJMoa1800389",
+      "pmid": "29897866",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract read including randomization departures and revised effect estimates",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S12",
+      "label": "USDA Flavonoid Release3.3 white-tea composition",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/Flav/Flav3.3.pdf",
+      "doi": null,
+      "pmid": null,
+      "kind": "official_composition_database",
+      "read_scope": "Official documentation and native99582 row parsed; no local full-dataset import or source-byte rehash",
+      "licence": "USDA federal source; artifact-specific upstream raw-data rights not assessed",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S13",
+      "label": "EGCG promoter demethylation in cancer cells",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14633667/",
+      "doi": null,
+      "pmid": "14633667",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract read; no DOI reported in retrieved record; n/CI unavailable",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    },
+    {
+      "id": "S14",
+      "label": "EGCG increases astrocyte COX2/PGE2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15210717/",
+      "doi": "10.1074/jbc.M402085200",
+      "pmid": "15210717",
+      "kind": "primary_publication",
+      "read_scope": "Primary abstract read; original n/dose/time/quantitative effects unavailable",
+      "licence": "not_verified",
+      "export_scope": "new_factual_metadata_and_citation_only",
+      "raw_article_export_allowed": false,
+      "raw_data_export_allowed": false
+    }
+  ],
+  "current_panel": {
+    "source": {
+      "library_file_id": "libfile_9da423931d988191b9c84fe7c9e71f14",
+      "filename": "디어젠_2026_최종보고서_강근수_비만메틸화_유전자해석본_20261003.pdf",
+      "pages": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "annotation_basis": "native GPL13534 hg19/build37 labels as printed; fresh HGNC alias validation not performed"
+    },
+    "count": 50,
+    "native_genes": [
+      "ACE",
+      "CASP10",
+      "TMEM100",
+      "HOXA10",
+      "RAD51L1",
+      "CLEC4GP1",
+      "TBX5",
+      "P4HA3",
+      "CYP26C1",
+      "AGRN",
+      "MCF2L",
+      "LTBP4",
+      "TRANK1",
+      "VWA5B1",
+      "HOXA11AS",
+      "JAZF1",
+      "PTPRR",
+      "TNFRSF17",
+      "CASC2",
+      "CDH13",
+      "ANTXR1",
+      "FERMT3"
+    ],
+    "rows": [
+      {
+        "cpg": "cg05593715",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg21094739",
+        "native_genes": [
+          "ACE"
+        ]
+      },
+      {
+        "cpg": "cg12105450",
+        "native_genes": [
+          "CASP10"
+        ]
+      },
+      {
+        "cpg": "cg19015897",
+        "native_genes": [
+          "TMEM100"
+        ]
+      },
+      {
+        "cpg": "cg00096418",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg07588401",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg05210501",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg08125291",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg12874792",
+        "native_genes": [
+          "RAD51L1"
+        ]
+      },
+      {
+        "cpg": "cg00970558",
+        "native_genes": [
+          "CLEC4GP1"
+        ]
+      },
+      {
+        "cpg": "cg14431443",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg06374384",
+        "native_genes": [
+          "P4HA3"
+        ]
+      },
+      {
+        "cpg": "cg14375937",
+        "native_genes": [
+          "CYP26C1"
+        ]
+      },
+      {
+        "cpg": "cg13100600",
+        "native_genes": [
+          "AGRN"
+        ]
+      },
+      {
+        "cpg": "cg20895669",
+        "native_genes": [
+          "MCF2L"
+        ]
+      },
+      {
+        "cpg": "cg10330839",
+        "native_genes": [
+          "LTBP4"
+        ]
+      },
+      {
+        "cpg": "cg06013060",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg26757472",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg11219400",
+        "native_genes": [
+          "TRANK1"
+        ]
+      },
+      {
+        "cpg": "cg15255827",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg10724867",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg15123730",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg00346208",
+        "native_genes": [
+          "VWA5B1"
+        ]
+      },
+      {
+        "cpg": "cg16559598",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg05929882",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg20544451",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg08024029",
+        "native_genes": [
+          "VWA5B1"
+        ]
+      },
+      {
+        "cpg": "cg02483701",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg06723337",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg06669276",
+        "native_genes": [
+          "HOXA11AS"
+        ]
+      },
+      {
+        "cpg": "cg17052756",
+        "native_genes": [
+          "JAZF1"
+        ]
+      },
+      {
+        "cpg": "cg05378452",
+        "native_genes": []
+      },
+      {
+        "cpg": "cg25666210",
+        "native_genes": [
+          "PTPRR"
+        ]
+      },
+      {
+        "cpg": "cg00418216",
+        "native_genes": [
+          "HOXA11AS"
+        ]
+      },
+      {
+        "cpg": "cg27157482",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg16177830",
+        "native_genes": [
+          "TNFRSF17"
+        ]
+      },
+      {
+        "cpg": "cg15864691",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg17374433",
+        "native_genes": [
+          "CASC2"
+        ]
+      },
+      {
+        "cpg": "cg21090298",
+        "native_genes": [
+          "MCF2L"
+        ]
+      },
+      {
+        "cpg": "cg19290410",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg05769349",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg05555207",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg26709234",
+        "native_genes": [
+          "CDH13"
+        ]
+      },
+      {
+        "cpg": "cg12670347",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg10803714",
+        "native_genes": [
+          "ANTXR1"
+        ]
+      },
+      {
+        "cpg": "cg03843000",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg06911121",
+        "native_genes": [
+          "TBX5"
+        ]
+      },
+      {
+        "cpg": "cg14935646",
+        "native_genes": [
+          "HOXA10"
+        ]
+      },
+      {
+        "cpg": "cg01447914",
+        "native_genes": [
+          "FERMT3"
+        ]
+      },
+      {
+        "cpg": "cg09636715",
+        "native_genes": [
+          "HOXA10"
+        ]
+      }
+    ],
+    "canonical_id_receipts_available": false
+  },
+  "cases": [
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P01",
+      "title": "브로콜리 새싹 → SFN → 상기도 방어 유전자 RNA",
+      "category": "partial_evidence",
+      "category_reason": "Food/component→RNA evidence; disease/airway-protection edge was not tested in this study",
+      "food": {
+        "native_id": "study:S01:BSH",
+        "identity": "broccoli sprouts",
+        "part": "sprouts",
+        "preparation": "standardized oral homogenate; not boiled mature broccoli"
+      },
+      "components": [
+        {
+          "native_name": "sulforaphane",
+          "form": "study oral BSH-derived isothiocyanate",
+          "amount": null,
+          "unit": null,
+          "basis": null,
+          "identity_status": "study_reported; exact structural/form receipt not imported"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "placebo-controlled dose escalation",
+          "n": {
+            "subjects": null
+          },
+          "dose": {
+            "highest_broccoli_sprouts_g": 200
+          },
+          "duration": {
+            "days": null
+          },
+          "tissue": "nasal lavage cells",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": "Abstract does not report exact sample count/duration; later S02 cites prior3-day schedule"
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "GSTM1",
+            "GSTP1",
+            "NQO1",
+            "HMOX1"
+          ],
+          "direction": "increase",
+          "source_ids": [
+            "S01"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "native_target_labels": [
+            "GSTM1",
+            "GSTP1",
+            "NQO1",
+            "HO-1"
+          ],
+          "dose_response_reported": true,
+          "individual_fold_or_CI_not_extracted": true
+        }
+      ],
+      "health": {
+        "endpoint": "airway oxidative/inflammatory disease protection",
+        "result": "not_measured",
+        "source_ids": [],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "study_reported",
+          "source_ids": [
+            "S01"
+          ],
+          "relation": "BSH delivered SFN; precise food-compound batch amount unavailable",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "measured",
+          "source_ids": [
+            "S01"
+          ],
+          "relation": "dose-dependent selected nasal RNA increase",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "missing",
+          "source_ids": [],
+          "relation": "no asthma/COPD prevention or airway outcome established",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "counter_sources": [
+        "S02"
+      ],
+      "gaps": [
+        "No clinical protection endpoint",
+        "n/duration and exact exposure unavailable in original abstract",
+        "Later analogous human POC was negative",
+        "NRF2 target activation is not NFE2L2 RNA increase or DNAm"
+      ],
+      "negative_checks": [
+        "Do not generalize to boiled broccoli or mature vegetables",
+        "Do not infer asthma prevention",
+        "Do not turn RNA induction into CpG demethylation"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P02",
+      "title": "브로콜리 새싹 → SFN 노출 증가, 유전자·기도염증 POC 음성",
+      "category": "rejected_control",
+      "category_reason": "Reject this tested preparation/dose as a demonstrated antioxidant-RNA/ozone-neutrophilia protective chain",
+      "food": {
+        "native_id": "study:S02:BSH",
+        "identity": "broccoli sprout homogenate",
+        "part": "sprouts",
+        "preparation": "200g homogenate equivalent111g commercial sprouts; oral3days"
+      },
+      "components": [
+        {
+          "native_name": "sulforaphane",
+          "form": "BSH-associated SFN and plasma conjugates",
+          "amount": 102,
+          "unit": "umol",
+          "basis": "per dose as reported by prior-preparation reference; current batch assay not supplied",
+          "identity_status": "reported dose; plasma exposure measured separately"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "randomized placebo-controlled crossover with alfalfa homogenate",
+          "n": {
+            "randomized": 16,
+            "completed": 15,
+            "sputum_neutrophil_endpoint": 14,
+            "RNA_analyzed": null
+          },
+          "dose": {
+            "homogenate_g_per_day": 200,
+            "ozone_ppm": 0.4,
+            "ozone_hours": 2
+          },
+          "duration": {
+            "days": 3,
+            "washout_min_days": 14
+          },
+          "tissue": "nasal epithelial cells, peripheral blood and induced sputum",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "NFE2L2",
+            "HMOX1",
+            "NQO1",
+            "GSTM1"
+          ],
+          "direction": "no_significant_difference",
+          "source_ids": [
+            "S02"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "native_target_labels": [
+            "NRF2",
+            "HO-1",
+            "NQO-1",
+            "GSTM-1"
+          ],
+          "plasma_SFN_increased_p": 0.001
+        }
+      ],
+      "health": {
+        "endpoint": "ozone-induced sputum neutrophilia",
+        "result": "no_significant_protection",
+        "source_ids": [
+          "S02"
+        ],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "measured_exposure",
+          "source_ids": [
+            "S02"
+          ],
+          "relation": "SFN/conjugates increased in plasma",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "negative_in_tested_context",
+          "source_ids": [
+            "S02"
+          ],
+          "relation": "no significant target-RNA difference",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "negative_in_tested_context",
+          "source_ids": [
+            "S02"
+          ],
+          "relation": "no reduction of sputum neutrophilia",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": false,
+      "counter_sources": [
+        "S01"
+      ],
+      "gaps": [
+        "Small healthy-participant ozone model; not all respiratory patients or every SFN formulation",
+        "Null result is not proof of zero effect in all contexts",
+        "15 completed visits but sputum figure n=14; exact per-gene analyzed n not extracted"
+      ],
+      "negative_checks": [
+        "Retain measured exposure despite downstream failure",
+        "Do not overwrite negative POC with positive S01",
+        "Do not generalize null to every broccoli preparation"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P03",
+      "title": "오렌지주스 → hesperidin → 백혈구 발현·혈관 생체지표",
+      "category": "sufficient_evidence",
+      "category_reason": "Identified food/component, human RNA substudy and vascular observations in the same registered intervention; sufficient documented-edge POC, no mediation proof",
+      "food": {
+        "native_id": "study:S03:orange_juice",
+        "identity": "orange juice from concentrate supplied for trial",
+        "part": "fruit juice",
+        "preparation": "from concentrate;500mL/day split twice"
+      },
+      "components": [
+        {
+          "native_name": "hesperidin",
+          "form": "native glycoside; not substituted with hesperetin aglycone",
+          "amount": 292,
+          "unit": "mg",
+          "basis": "nominal500mL trial juice/day",
+          "identity_status": "primary trial composition text; isolated comparator formulation separately described"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "randomized3-period crossover; juice arm open, capsule arms double-blind",
+          "n": {
+            "enrolled": 24,
+            "completed": 23,
+            "RNA_substudy": 10,
+            "RNA_selected_at_start": 12
+          },
+          "dose": {
+            "juice_mL_per_day": 500,
+            "hesperidin_nominal_mg_per_day": 292
+          },
+          "duration": {
+            "weeks_per_period": 4,
+            "washout_weeks": 3
+          },
+          "tissue": "fasted blood leukocytes; systemic BP and microvascular reactivity",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "CCL26",
+            "CX3CR1",
+            "CXCL17"
+          ],
+          "direction": "decrease",
+          "source_ids": [
+            "S03"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "selected_gene_direction_from_primary_discussion": true,
+          "per_gene_adjusted_p_not_extracted": true
+        },
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "NFKBIB"
+          ],
+          "direction": "increase",
+          "source_ids": [
+            "S03"
+          ],
+          "effect": null,
+          "confidence_interval": null
+        }
+      ],
+      "health": {
+        "endpoint": "diastolic BP and postprandial microvascular reactivity",
+        "result": "DBP lower; postprandial reactivity improved; fasting reactivity not significantly changed",
+        "source_ids": [
+          "S04"
+        ],
+        "effect": {
+          "DBP_p": 0.02,
+          "postprandial_reactivity_p_upper": 0.05,
+          "absolute_effect": null
+        },
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "quantified_trial_food",
+          "source_ids": [
+            "S03"
+          ],
+          "relation": "nominal native hesperidin in trial juice",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "measured",
+          "source_ids": [
+            "S03"
+          ],
+          "relation": "juice and hesperidin comparator regulated selected leukocyte genes",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "parallel_same_trial_observations",
+          "source_ids": [
+            "S03",
+            "S04"
+          ],
+          "relation": "RNA change and vascular endpoints were reported; selected-gene mediation not tested",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": false,
+      "participant_linkage": "sameNCT00983086 trial; RNA10subset versus parent24; individual mediation/crosswalk unverified",
+      "gaps": [
+        "No gene-specific mediation analysis",
+        "No hard cardiovascular event endpoint",
+        "Whole3,422-gene differential set not joined to current panel",
+        "Per-gene CI/adjusted p not extracted"
+      ],
+      "negative_checks": [
+        "Hesperidin must not be replaced by hesperetin without a distinct metabolism edge",
+        "10RNA subjects must not become24molecular subjects",
+        "Postprandial benefit must not overwrite fasting-null result"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": 10,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P04",
+      "title": "페놀 풍부 올리브유 → PBMC 염증 유전자 발현 감소",
+      "category": "partial_evidence",
+      "category_reason": "Human food-mixture→RNA edge measured; specific hydroxytyrosol attribution/dose and health benefit unresolved",
+      "food": {
+        "native_id": "study:S05:virgin_olive_oil",
+        "identity": "CANOLIVA virgin olive oil",
+        "part": "fruit oil",
+        "preparation": "40mL oil with60g white bread and vitaminA; matched low-phenol oil produced by extraction"
+      },
+      "components": [
+        {
+          "native_name": "olive phenolic mixture including hydroxytyrosol",
+          "form": "mixture; not isolated hydroxytyrosol",
+          "amount": 398,
+          "unit": "ppm_total_phenols",
+          "basis": "high-phenol oil; comparator70ppm",
+          "identity_status": "primary mixture verified; individual hydroxytyrosol unit conflict",
+          "individual_native_dose": null,
+          "unit_conflict": "text reports45.4umol/g hydroxytyrosol against398ppm total phenols; do not convert/assume typo"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "randomized sequential crossover,1week washout",
+          "n": {
+            "subjects": 20,
+            "men": 9,
+            "women": 11
+          },
+          "dose": {
+            "oil_mL": 40,
+            "total_phenols_ppm_high": 398,
+            "total_phenols_ppm_low": 70
+          },
+          "duration": {
+            "postmeal_hours": 4
+          },
+          "tissue": "PBMCs of metabolic-syndrome participants",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "PTGS2",
+            "IL1B",
+            "IL6",
+            "EGR1",
+            "JUN"
+          ],
+          "direction": "decrease",
+          "source_ids": [
+            "S05"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "per_gene_supplement_effects_not_imported": true,
+          "reported_microarray_method": "BH adjustment plus effect/nominal criteria; do not substitute all-selected q<.05"
+        }
+      ],
+      "health": {
+        "endpoint": "postprandial glucose/insulin/NEFA/TG/HDL iAUC",
+        "result": "no_significant_difference",
+        "source_ids": [
+          "S05"
+        ],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "measured_mixture; individual_unit_conflict",
+          "source_ids": [
+            "S05"
+          ],
+          "relation": "total phenol content differs; specific compound causal dose unknown",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "food_mixture_measured",
+          "source_ids": [
+            "S05"
+          ],
+          "relation": "selected pro-inflammatory RNA lower",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "unproven; parallel_metabolic_null",
+          "source_ids": [
+            "S05"
+          ],
+          "relation": "CVD benefit is proposed biology; measured metabolic endpoints did not differ",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "Individual compound not isolated",
+        "Hydroxytyrosol amount/unit needs primary reconciliation",
+        "Four-hour RNA change is not chronic disease prevention"
+      ],
+      "negative_checks": [
+        "Do not convert ppm mixture to a hydroxytyrosol dose",
+        "Do not call metabolic endpoints improved",
+        "Do not flatten olivePTGS2down and EGCGPTGS2up across tissues"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": 20,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P05",
+      "title": "코코아 크림 → 전역 DNAm, 별도 세포의 methylation-enzyme RNA",
+      "category": "partial_evidence",
+      "category_reason": "Food/globalDNAm cohort comparison and separate ex-vivo mechanistic assay; no exact CpG or same-person mediation",
+      "food": {
+        "native_id": "study:S06:cocoa_cream",
+        "identity": "cocoa-containing cream product",
+        "part": "cocoa ingredient in formulated food",
+        "preparation": "6units13g each/day supplying6g cocoa; isocaloric-diet run-in"
+      },
+      "components": [
+        {
+          "native_name": "cocoa polyphenol mixture",
+          "form": "human cream versus separate cocoa-nib extract",
+          "amount": null,
+          "unit": null,
+          "basis": "human individual-compound dose unavailable",
+          "identity_status": "mixture; ex-vivo extract reported catechin2.374mg/g and epicatechin5.638mg/g; not human-dose equivalents"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "comparison of run-in groups drawn from two prior trials; not a newly randomized214-person DNAm contrast",
+          "n": {
+            "human_total": 214,
+            "cocoa": 110,
+            "control": 104
+          },
+          "dose": {
+            "cocoa_g_per_day": 6
+          },
+          "duration": {
+            "weeks": 2
+          },
+          "tissue": "peripheral blood leukocyte DNA",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        },
+        {
+          "design": "ex-vivo vehicle-controlled PBMC exposure",
+          "n": {
+            "donors": 6,
+            "technical_triplicates": true
+          },
+          "dose": {
+            "extract_mg_per_L": [
+              25,
+              50
+            ]
+          },
+          "duration": {
+            "RNA_hours": [
+              3,
+              24
+            ],
+            "DNAm_hours": 72
+          },
+          "tissue": "cultured PBMCs from separate donors",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "global_DNA_methylation",
+          "targets": [],
+          "direction": "decrease",
+          "source_ids": [
+            "S06"
+          ],
+          "effect": {
+            "cocoa_percent5mC": 2.991,
+            "control_percent5mC": 3.909,
+            "p_upper": 0.001,
+            "error_term_type": "not resolved here",
+            "not_beta_or_pp_difference_at_any_CpG": true
+          },
+          "confidence_interval": null
+        },
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "DNMT1",
+            "DNMT3A",
+            "DNMT3B",
+            "MTHFR",
+            "MTRR"
+          ],
+          "direction": "decrease",
+          "source_ids": [
+            "S06"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "assay_context": "separate ex-vivo cells; exact gene-by-dose/time values not imported"
+        }
+      ],
+      "health": {
+        "endpoint": "cardiovascular disease risk/events",
+        "result": "risk-factor participants selected; no DNAm-mediated clinical benefit established",
+        "source_ids": [
+          "S06"
+        ],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "mixture_reported",
+          "source_ids": [
+            "S06"
+          ],
+          "relation": "human food mixture and ex-vivo extract are separate preparations",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "separate_cohort_and_exvivo_assays",
+          "source_ids": [
+            "S06"
+          ],
+          "relation": "global methylation difference; RNA mechanism in separate donor cells",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "missing_mediation",
+          "source_ids": [],
+          "relation": "global hypomethylation is not necessarily healthier and no exact-CpG disease mediation",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "Title says randomized controlled trial, but analyzed human comparison uses two earlier run-in cohorts",
+        "Separate6donors are not214human expression subjects",
+        "No exact CpG/clinical health mediation",
+        "No isolated-epicatechin attribution"
+      ],
+      "negative_checks": [
+        "Global5mC must not map to a specific50CpG",
+        "Technical triplicates must not inflate donor n",
+        "Do not treat global hypomethylation as universally beneficial"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": 6,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": 214
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P06",
+      "title": "아마씨 머핀 → SDG/lignan → ERBB2 단백질·종양 생체표지",
+      "category": "sufficient_evidence",
+      "category_reason": "Defined food batch/component metadata and protein/tumor biomarkers in one human intervention; no isolated-SDG mediation or survival proof",
+      "food": {
+        "native_id": "study:S07:flax_muffin",
+        "identity": "muffin containing ground flaxseed",
+        "part": "ground seeds",
+        "preparation": "baked muffin;25g flaxseed/day; controls matched energy/macronutrients/fiber with different flour/oil formulation"
+      },
+      "components": [
+        {
+          "native_name": "secoisolariciresinol diglucoside (SDG)",
+          "form": "lignan precursor in flaxseed batch, followed by urinary lignan metabolites",
+          "amount": 2,
+          "unit": "mg/g_seed",
+          "basis": "primary batch description;25g/day implies nominal50mg/day, not systemic native SDG",
+          "identity_status": "batch composition text; isolated compound causal effect not tested"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "randomized double-blind placebo-controlled presurgical trial",
+          "n": {
+            "flaxseed": 19,
+            "control": 13,
+            "total": 32,
+            "protein_analyzed": null
+          },
+          "dose": {
+            "flaxseed_g_per_day": 25,
+            "SDG_nominal_mg_per_day": 50
+          },
+          "duration": {
+            "mean_flax_days": 32.1,
+            "mean_control_days": 38.7
+          },
+          "tissue": "breast tumor biopsies at diagnosis and surgery;24h urine",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "protein_expression",
+          "targets": [
+            "ERBB2"
+          ],
+          "direction": "decrease",
+          "source_ids": [
+            "S07"
+          ],
+          "effect": {
+            "native_marker": "c-erbB2",
+            "within_flax_relative_change_percent": -71,
+            "p": 0.003
+          },
+          "confidence_interval": null,
+          "assay": "immunohistochemistry; not RNA or DNAm",
+          "between_arm_adjusted_effect_not_extracted": true
+        }
+      ],
+      "health": {
+        "endpoint": "tumor proliferation/apoptosis biomarkers",
+        "result": "Ki67 declined; apoptotic index increased",
+        "source_ids": [
+          "S07"
+        ],
+        "effect": {
+          "within_flax_Ki67_relative_change_percent": -34.2,
+          "Ki67_p": 0.001,
+          "apoptotic_relative_change_percent": 30.7,
+          "apoptotic_p": 0.007
+        },
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "batch_reported",
+          "source_ids": [
+            "S07"
+          ],
+          "relation": "SDG in seed batch; urinary lignan excretion increased",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "food_intervention_association",
+          "source_ids": [
+            "S07"
+          ],
+          "relation": "ERBB2 protein lower after flaxseed intervention; individual-component mechanism unisolated",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "parallel_same_trial_biomarkers",
+          "source_ids": [
+            "S07"
+          ],
+          "relation": "ERBB2/proliferation/apoptosis measured in trial, no gene-mediated survival endpoint",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": false,
+      "gaps": [
+        "Small presurgery cancer-patient trial",
+        "Whole food includes oil/fiber/other components",
+        "Within-arm percentages are not adjusted between-arm effect estimates",
+        "No recurrence/survival/healthy-person prevention endpoint",
+        "32 randomized participants; exact per-IHC marker analyzable paired-biopsy n not extracted"
+      ],
+      "negative_checks": [
+        "ERBB2 IHC must remain protein-expression",
+        "Seed SDG must not become urinary enterolactone or systemic SDG dose",
+        "Do not recommend treating/preventing breast cancer from biomarker shifts"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P07",
+      "title": "엽산 음식 가설과 B-PROOF 보충제 → DNAm·골절 예방 기각 대조",
+      "category": "rejected_control",
+      "category_reason": "Reject natural-food→currentHOXA10CpG→fracture-prevention claim; supplement DNA effects exist, fracture ITT result was not significant",
+      "food": {
+        "native_id": "hypothesis:folate_food",
+        "identity": "folate-rich food candidate, not specified/tested in B-PROOF",
+        "part": null,
+        "preparation": null
+      },
+      "components": [
+        {
+          "native_name": "synthetic folic acid plus vitaminB12",
+          "form": "tablet combination; not interchangeable with natural food folate vitamers",
+          "amount": null,
+          "unit": null,
+          "basis": "combination regimen in study contexts",
+          "identity_status": "supplement intervention verified; food-compound edge absent"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "randomized placebo-controlled selected methylation substudy",
+          "n": {
+            "treated": 44,
+            "placebo": 43,
+            "total": 87,
+            "ages": "65-75"
+          },
+          "dose": {
+            "folic_acid_ug_per_day": 400,
+            "B12_ug_per_day": 500,
+            "both_arms_D3_ug_per_day": 15
+          },
+          "duration": {
+            "years": 2
+          },
+          "tissue": "buffy-coat leukocyte DNA",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        },
+        {
+          "design": "parent randomized double-blind fracture trial",
+          "n": {
+            "subjects": 2919,
+            "ages": "65+"
+          },
+          "dose": {
+            "folic_acid_ug_per_day": 400,
+            "B12_ug_per_day": 500
+          },
+          "duration": {
+            "years": 2
+          },
+          "tissue": "clinical fracture endpoint",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "exact_CpG_DNA_methylation",
+          "targets": [
+            "DIRAS3"
+          ],
+          "direction": "increase_in_treated_vs_decrease_in_control",
+          "source_ids": [
+            "S08"
+          ],
+          "effect": {
+            "cpg": "cg06191076",
+            "treated_change_pp": 2.7,
+            "placebo_change_pp": -2.5,
+            "individual_DMP_BH_significance": false,
+            "DMR_evidence_separate": true
+          },
+          "confidence_interval": null,
+          "cpgs": [
+            "cg06191076"
+          ]
+        },
+        {
+          "kind": "exact_CpG_DNA_methylation",
+          "targets": [],
+          "direction": "not_extracted",
+          "source_ids": [
+            "S08"
+          ],
+          "effect": {
+            "cpg": "cg19380919",
+            "between_arm_single_DMP": "borderline BH-adjusted result; exact delta not extracted"
+          },
+          "confidence_interval": null,
+          "cpgs": [
+            "cg19380919"
+          ]
+        }
+      ],
+      "health": {
+        "endpoint": "osteoporotic fractures",
+        "result": "ITT no significant difference",
+        "source_ids": [
+          "S09"
+        ],
+        "effect": {
+          "hazard_ratio": 0.84,
+          "CI95": [
+            0.58,
+            1.21
+          ]
+        },
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "missing",
+          "source_ids": [],
+          "relation": "no actual folate-food preparation tested",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "supplement_measured; food_transfer_unverified",
+          "source_ids": [
+            "S08"
+          ],
+          "relation": "selected DNAm/DMR changes; natural food and currentHOXA10sites not tested",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "unsupported; parent_endpoint_null",
+          "source_ids": [
+            "S08",
+            "S09"
+          ],
+          "relation": "methylation substudy and parent fracture endpoint are not CpG mediation",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "Folic acid is not every natural folate species",
+        "Combination and sharedD3 cannot attribute single compound",
+        "HOXA4/HOXB7 findings are notHOXA10currentSATprobes",
+        "Parent trial overall fracture null; cancer adverse signal requires separate evaluation"
+      ],
+      "negative_checks": [
+        "Within-arm162DMPs must not become162between-armreplicated loci",
+        "Do not replaceDIRAS3/HOXA4withHOXA10",
+        "Do not call nonsignificantHR0.84fracture prevention"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [
+          "cg06191076",
+          "cg19380919"
+        ],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": 0,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": 87,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P08",
+      "title": "지중해식+견과/EVOO → 정확2CpG와 별도 심혈관 관찰",
+      "category": "partial_evidence",
+      "category_reason": "Diet-pattern CpGs and corrected parent-trial health outcomes; compound-specific and CpG-mediated health effects unproven",
+      "food": {
+        "native_id": "study:S10:MedDiet",
+        "identity": "Mediterranean diet supplemented with mixed nuts or extra-virgin olive oil",
+        "part": "multiple foods",
+        "preparation": "dietary pattern; not a single-food or isolated-fatty-acid treatment"
+      },
+      "components": [
+        {
+          "native_name": "unspecified PUFA mixture and EVOO phenolic/fatty-acid mixture",
+          "form": "diet-pattern components; individual native molecule/dose not measured for the selected CpG edge",
+          "amount": null,
+          "unit": null,
+          "basis": null,
+          "identity_status": "nut/PUFA intake association; no exact compound identity/isolated exposure"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "selected PREDIMED-Navarra methylation substudy",
+          "n": {
+            "subjects": 36,
+            "groups": 3
+          },
+          "dose": {
+            "individual_native_compound_dose": null
+          },
+          "duration": {
+            "years": 5
+          },
+          "tissue": "peripheral white blood cell DNA",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        },
+        {
+          "design": "corrected/re-published parent trial with randomization deviations and adjusted estimates",
+          "n": {
+            "subjects": 7447
+          },
+          "dose": {
+            "dietary_pattern": "MedDiet+EVOO / MedDiet+nuts"
+          },
+          "duration": {
+            "median_followup_years": 4.8
+          },
+          "tissue": "major cardiovascular events",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "exact_CpG_DNA_methylation",
+          "targets": [
+            "CPT1B",
+            "CHKB-CPT1B"
+          ],
+          "direction": "increase_in_MedDiet_nuts",
+          "source_ids": [
+            "S10"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "cpgs": [
+            "cg01081346"
+          ],
+          "gene_labels_are_native": true,
+          "per_locus_effect_CI_not_extracted": true
+        },
+        {
+          "kind": "exact_CpG_DNA_methylation",
+          "targets": [
+            "GNAS",
+            "GNASAS"
+          ],
+          "direction": "decrease_in_MedDiet_EVOO",
+          "source_ids": [
+            "S10"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "cpgs": [
+            "cg17071192"
+          ],
+          "gene_labels_are_native": true
+        }
+      ],
+      "health": {
+        "endpoint": "major cardiovascular events in parent trial",
+        "result": "lower adjusted event hazard in supplemented diet arms",
+        "source_ids": [
+          "S11"
+        ],
+        "effect": {
+          "EVOO_HR": 0.69,
+          "EVOO_CI95": [
+            0.53,
+            0.91
+          ],
+          "nuts_HR": 0.72,
+          "nuts_CI95": [
+            0.54,
+            0.95
+          ],
+          "randomization_departures": true,
+          "corrected_report_year": 2018
+        },
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "diet_pattern_not_exact_compound",
+          "source_ids": [
+            "S10"
+          ],
+          "relation": "multiple food/chemical inputs; isolated native compound unverified",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "diet_measured; compound_attribution_unverified",
+          "source_ids": [
+            "S10"
+          ],
+          "relation": "two exact selected CpGs; gene expression not measured",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "cross_study_hypothesis",
+          "source_ids": [
+            "S10",
+            "S11"
+          ],
+          "relation": "36-substudy CpGs have no demonstrated mediation of7447-parent outcomes",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "No participant-level outcome crosswalk/mediation for36",
+        "Individual compound dose unverified",
+        "Use corrected2018report, not retracted2013estimates",
+        "Current50CpGs contain neitherselectedsite"
+      ],
+      "negative_checks": [
+        "TwoCpGs must not stand for current50panel",
+        "PUFA category must not become verified isolatedlinoleicacid",
+        "7447must not become molecularn",
+        "2013retracted report must not supply currenthealthestimates"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [
+          "cg01081346",
+          "cg17071192"
+        ],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": 0,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": 36,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P09",
+      "title": "백차 성분 EGCG → 암 세포 promoter DNAm 감소·재발현",
+      "category": "partial_evidence",
+      "category_reason": "Official brewed-food composition plus separate purified-compound cellular mechanism; no oral human health chain",
+      "food": {
+        "native_id": "USDA-Flav-R03-3:99582",
+        "identity": "Tea, white, brewed",
+        "part": "leaf infusion",
+        "preparation": "USDA standardized1% infusion,1g dry leaf/100mL boiling water; brewingtime not standardized"
+      },
+      "components": [
+        {
+          "native_name": "(-)-epigallocatechin3-gallate",
+          "full_inchikey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "form": "gallate ester retained; no glycoside/aglycone conversion",
+          "amount": 42.45,
+          "unit": "mg",
+          "basis": "per100g edible brewed infusion; not100g dryleaf",
+          "identity_status": "official native row and frozen receipt; exact purified assay-lot structural receipt not imported",
+          "composition_data_points": 6,
+          "min": 38.9,
+          "max": 46
+        }
+      ],
+      "contexts": [
+        {
+          "design": "purified-compound enzyme/cancer-cell assays",
+          "n": {
+            "biological_replicates": null,
+            "clinical_subjects": 0
+          },
+          "dose": {
+            "EGCG_uM_min": 5,
+            "EGCG_uM_max": 50
+          },
+          "duration": {
+            "hours_min": 12,
+            "hours_max": 144
+          },
+          "tissue": "humanKYSE510esophageal cancer cells; supporting cancer cell lines",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": "Abstract does not provide biological replicate n"
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "promoter_region_DNA_methylation",
+          "targets": [
+            "CDKN2A",
+            "RARB",
+            "MGMT",
+            "MLH1"
+          ],
+          "direction": "decrease",
+          "source_ids": [
+            "S13"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "native_target_labels": [
+            "p16INK4a",
+            "RARbeta",
+            "MGMT",
+            "hMLH1"
+          ],
+          "cpgs": [],
+          "exact_array_CpG_ids_not_assayed": true,
+          "enzyme_context": {
+            "DNMT_competitive_inhibition_Ki_uM": 6.89,
+            "assay": "nuclear extract enzyme assay; not a purified-protein bindingKd or clinical target engagement"
+          }
+        },
+        {
+          "kind": "RNA_expression",
+          "targets": [
+            "CDKN2A",
+            "RARB",
+            "MGMT",
+            "MLH1"
+          ],
+          "direction": "reexpression",
+          "source_ids": [
+            "S13"
+          ],
+          "effect": null,
+          "confidence_interval": null
+        },
+        {
+          "kind": "protein_expression",
+          "targets": [
+            "RARB",
+            "MLH1"
+          ],
+          "direction": "reexpression",
+          "source_ids": [
+            "S13"
+          ],
+          "effect": null,
+          "confidence_interval": null
+        }
+      ],
+      "health": {
+        "endpoint": "human cancer incidence/prevention or regression",
+        "result": "not_tested",
+        "source_ids": [],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "official_measured_composition",
+          "source_ids": [
+            "S12"
+          ],
+          "relation": "brewed-white-tea mean composition; separate from purified-assay exposure",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "purified_cellular_assay",
+          "source_ids": [
+            "S13"
+          ],
+          "relation": "promoter demethylation and reexpression in cancer cell models",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "missing_human_outcome",
+          "source_ids": [],
+          "relation": "neither oralfood exposure nor cancer prevention measured",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "5-50uMculture is not inferred plasma exposure from42.45mg/100gtea",
+        "No exact currentpanelCpG assay",
+        "Structural full key alone does not prove native assay-lot equivalence",
+        "No clinical cancer benefit"
+      ],
+      "negative_checks": [
+        "Brewed100gbasis must not become dryleaf100gbasis",
+        "PromoterPCR region must not be assigned fabricatedcgIDs",
+        "CellRNA/protein/demethylation must not become human cancer prevention"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    },
+    {
+      "clinical_chain_qualified": false,
+      "full_causal_chain_verified": false,
+      "independent_replication_count": null,
+      "public_metadata_approved": true,
+      "raw_upstream_export": false,
+      "id": "P10",
+      "title": "백차 EGCG → astrocyte PTGS2/PGE2 증가: 방향 대조",
+      "category": "rejected_control",
+      "category_reason": "Reject a universal EGCG→PTGS2down→anti-inflammatory/protective claim; primary study measured increasedCOX2/PGE2 in this context",
+      "food": {
+        "native_id": "USDA-Flav-R03-3:99582",
+        "identity": "Tea, white, brewed",
+        "part": "leaf infusion",
+        "preparation": "official1% brewed infusion; separate purified cell treatment"
+      },
+      "components": [
+        {
+          "native_name": "(-)-epigallocatechin3-gallate",
+          "full_inchikey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+          "form": "gallate ester",
+          "amount": 42.45,
+          "unit": "mg",
+          "basis": "per100g brewed infusion; sharedsamecompositionmeasurementasP09",
+          "identity_status": "food row verified; exact assay-lot/native match unverified"
+        }
+      ],
+      "contexts": [
+        {
+          "design": "in-vitro expression/signaling perturbations",
+          "n": {
+            "biological_replicates": null,
+            "clinical_subjects": 0
+          },
+          "dose": {
+            "cellular_dose": null
+          },
+          "duration": {
+            "cellular_duration": null
+          },
+          "tissue": "humanU87astrocytoma and primaryratastrocytes",
+          "taxon_ids": [
+            9606
+          ],
+          "missing_details_reason": "Primary abstract does not report exact n/dose/time; rat species/taxon ID not assigned without primary mapping",
+          "native_species_labels": [
+            "human U87 cells",
+            "primary rat astrocytes"
+          ],
+          "additional_species_taxon_id": null
+        }
+      ],
+      "molecular": [
+        {
+          "kind": "protein_expression",
+          "targets": [
+            "PTGS2"
+          ],
+          "direction": "increase",
+          "source_ids": [
+            "S14"
+          ],
+          "effect": null,
+          "confidence_interval": null,
+          "native_target_labels": [
+            "COX-2"
+          ],
+          "RNA_direction_not_assigned_from_protein_abstract": true
+        }
+      ],
+      "health": {
+        "endpoint": "PGE2 cellular production; human inflammatory disease prevention",
+        "result": "PGE2 increased in cell assays; no patient outcome",
+        "source_ids": [
+          "S14"
+        ],
+        "effect": null,
+        "clinical_prevention_proven": false,
+        "mediated_by_selected_molecular_targets": false
+      },
+      "edges": [
+        {
+          "kind": "food_component",
+          "status": "official_measured_composition",
+          "source_ids": [
+            "S12"
+          ],
+          "relation": "samewhite-teacompositionrowasP09; not independentmeasurement",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "component_molecular",
+          "status": "measured_opposite_to_generic_claim",
+          "source_ids": [
+            "S14"
+          ],
+          "relation": "EGCG activatedPKC/p38/PLD-relatedCOX2expression",
+          "direct_mediation_proven": false
+        },
+        {
+          "kind": "molecular_health",
+          "status": "cellular_endpoint_only",
+          "source_ids": [
+            "S14"
+          ],
+          "relation": "PGE2 increase; no oralfood efficacy or patient disease protection",
+          "direct_mediation_proven": false
+        }
+      ],
+      "cross_study_hypothesis": true,
+      "gaps": [
+        "Culturedhumanline and ratcells are separate from oralhumanfood intervention",
+        "COX2 direction is tissue/context-specific",
+        "No disease-protection endpoint or directbindingKd"
+      ],
+      "negative_checks": [
+        "Do not reverseprimaryPTGS2increase todecrease",
+        "Do not infer rat/human-cell result as patient outcome",
+        "Do not countsharedUSDArowastwoindependentfoodmeasurements"
+      ],
+      "panel_overlap": {
+        "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+        "selected_exact_cpg_ids": [],
+        "exact_cpg_hits": [],
+        "exact_cpg_overlap_count": null,
+        "selected_native_gene_name_hits": [],
+        "canonical_gene_overlap": null,
+        "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+      },
+      "rights": {
+        "public_metadata_approved": true,
+        "payload_kind": "new_factual_metadata_and_citations",
+        "raw_text": false,
+        "raw_tables": false,
+        "figures": false,
+        "individual_data": false,
+        "source_dataset_rights_inferred": false
+      },
+      "expected_subject_n": {
+        "RNA_expression": null,
+        "protein_expression": null,
+        "exact_CpG_DNA_methylation": null,
+        "global_DNA_methylation": null
+      },
+      "isolated_compound_causal_effect_proven": false,
+      "gene_to_health_mediation_proven": false
+    }
+  ],
+  "global_limits": {
+    "full_causal_or_clinical_qualified_cases": 0,
+    "full4630linked_structures": null,
+    "full4630unverified_structures": null,
+    "model_training": false,
+    "new_experiments": false,
+    "independent_real_precision_recall": "not_evaluated",
+    "API_HTTP_or_UI_execution": "not_run_by_this_task",
+    "native_Node_execution": false,
+    "individual_crosswalk_verified": false,
+    "unrelated_expansion_stopped": true
+  }
+}
