@@ -1,0 +1,140 @@
+{
+  "prepared_utc": "2026-10-11 13:30:00 UTC",
+  "plan_commit": "00d2cf8c54948a8eb37e6f44a6c7dfa8067e4f56",
+  "performed": {
+    "Library_metadata_inventory": true,
+    "GitHub_frozen_sources_read": true,
+    "source_backed_staged_sections": 15,
+    "traceability_matrices": 8,
+    "traceability_rows": 80,
+    "figure_specs": 4,
+    "current_report_file_modified": false,
+    "current_DOCX_created": false,
+    "current_PDF_created": false,
+    "all_page_visual_review": false,
+    "current_report_hash_verified": false,
+    "consumer_local_Library_materialization_verified": false,
+    "disk_free_verified": false,
+    "local_AGENTS_or_skill_files_read": false,
+    "Library_deliverable_created": false,
+    "API_source_mutated": false,
+    "deploy_or_credential_retried": false
+  },
+  "draft_consistency": {
+    "runtime": "JavaScript V8 through functions.exec",
+    "scope": "Staged revision text/table numerical and reference consistency only; no DOCX/PDF/page/Library-byte/HTTP verification",
+    "checks": [
+      {
+        "name": "all15sections_unique",
+        "passed": true,
+        "evidence": "15preparedsections;actual94pageunmodified"
+      },
+      {
+        "name": "all8matrices_present",
+        "passed": true,
+        "evidence": "80rowsacross8matrixcategories"
+      },
+      {
+        "name": "all_matrix_cells_nonblank",
+        "passed": true,
+        "evidence": "Unknownsdisplay資料미확인;noinventedannualcells"
+      },
+      {
+        "name": "paragraph_source_ids_resolve",
+        "passed": true,
+        "evidence": "E01–E09"
+      },
+      {
+        "name": "matrix_cross_references_resolve",
+        "passed": true,
+        "evidence": "M1–M8"
+      },
+      {
+        "name": "five_year_no_calendar_or_amount_guess",
+        "passed": true,
+        "evidence": "Userstatedfiveyears;noassignedcalendaryears/annualbudget"
+      },
+      {
+        "name": "panel50_complete_unique",
+        "passed": true,
+        "evidence": "SourceCSV50rows"
+      },
+      {
+        "name": "39annotated11unassigned22native",
+        "passed": true,
+        "evidence": "39+11=50;22uniquegenesnotanotherrowcategory"
+      },
+      {
+        "name": "SNP8_replicationmissing4",
+        "passed": true,
+        "evidence": "Categoriesmayoverlap;nofreshprobeQC"
+      },
+      {
+        "name": "10POC_categories2_5_3",
+        "passed": true,
+        "evidence": "Faithfulcardevidenceclassification"
+      },
+      {
+        "name": "four_selected_exactCpGs_zero_hits",
+        "passed": true,
+        "evidence": "Fourselectedloci;notfourhits"
+      },
+      {
+        "name": "causal_clinical_and_report_completion_not_promoted",
+        "passed": true,
+        "evidence": "Causal0;actualreportnotedited/rendered"
+      }
+    ],
+    "passed": true,
+    "checks_count": 12,
+    "sections": 15,
+    "matrices": 8,
+    "matrix_rows": 80,
+    "figures_designed": 4,
+    "figures_rendered": 0,
+    "source_registry": 9,
+    "primary_POC_references": 14,
+    "actual_current94page_modified": false,
+    "actual_output_DOCX_or_PDF": false,
+    "consumer_local_Library_bytes_verified": false
+  },
+  "important_blockers": [
+    {
+      "id": "REQ01",
+      "필수자료또는조건": "Mac실행도구가이작업에노출됨",
+      "검증근거": "기존승인연결의무해한actual실행결과",
+      "현재상태": "현재노출tool목록에terminal/filesystem없음",
+      "종속작업": "실제파일쓰기/디스크/렌더",
+      "연차금액추정": "하지않음"
+    },
+    {
+      "id": "REQ02",
+      "필수자료또는조건": "현재94쪽DOCX/PDF식별",
+      "검증근거": "정확경로/LibraryID/버전/소유권",
+      "현재상태": "Library에서최신판미특정",
+      "종속작업": "원고편집/변경대조",
+      "연차금액추정": "하지않음"
+    },
+    {
+      "id": "REQ03",
+      "필수자료또는조건": "쓰기전디스크여유",
+      "검증근거": "동일Mac의지원되는readonlyfree-space확인",
+      "현재상태": "실행불가;ENOSPC이력만전달",
+      "종속작업": "로컬쓰기",
+      "연차금액추정": "하지않음"
+    },
+    {
+      "id": "REQ04",
+      "필수자료또는조건": "Libraryconsumer-local전달",
+      "검증근거": "현재helper기반materialization+동일consumerbytes확인",
+      "현재상태": "메타데이터만확인;helper실행불가",
+      "종속작업": "Library내용읽기/증빙통합",
+      "연차금액추정": "하지않음"
+    }
+  ],
+  "official_or_financial_missing": "Do not prevent preparing source-backed scientific text; preserve資料미확인 and distinguish official/financial acceptance",
+  "request_pending": "Existing executable Mac route for this task and exact94page LibraryID/path requested; no permission re-request",
+  "original_report_changed": false,
+  "original_before_after_diff_generated": false,
+  "next_step": "On restored existing execution, verify disk/currentfile/ownership/instructions and Libraryconsumerbytes, reconcile official originals, apply prepared text/tables, render and visually inspect all pages, validate counts/crossrefs/references/hashes, save copies toLibrary and inspect each upload receipt."
+}
