@@ -1,0 +1,104 @@
+{
+  "schema_version": "nutriomics-mechanistic-poc-verification-v1",
+  "verified_utc": "2026-10-11 03:20:34 UTC",
+  "implementation_commit": "f39ed2c8c05c9a3166692a0e397ae22003c86a4e",
+  "plan_commit": "10ac91a198bc70c84ae6c34563b71de61c910f3e",
+  "retrieved_files": [
+    {
+      "path": "docs/mechanistic_poc_20261011/pocs.json",
+      "git_blob_sha": "e84a44bd4c4db80d45586e634ca76584e5cf17a7",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/pocs.schema.json",
+      "git_blob_sha": "d862588bdfaaf7d98491c194dac794ffbabc9831",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/validate.mjs",
+      "git_blob_sha": "b0d6c21669c9ffcdff2e6a8c36e94c52310ee681",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/tests.mjs",
+      "git_blob_sha": "1d1e280d4543552d9627238d063383f88ff0ccdc",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/negative_fixtures.json",
+      "git_blob_sha": "989ee44c05086d5b1cec4ab8c58954b4dc91eae9",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/expected_cards.json",
+      "git_blob_sha": "a2bf103c6fe24ef94ce848e53ab9aa9a051dcf20",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/test_results.json",
+      "git_blob_sha": "804ffce1acb2d6fa64313bbb2b4a94f75ee75b6e",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/execution.json",
+      "git_blob_sha": "163003391eb704e37f79075202020d36a79cc18d",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/SOURCE_AUDIT.md",
+      "git_blob_sha": "f51779d6b31b868a23185052272613da39cb6cc2",
+      "byte_equivalent_UTF8_content": true
+    },
+    {
+      "path": "docs/mechanistic_poc_20261011/README.md",
+      "git_blob_sha": "e6c11a0a77762a9cd74e594d9ddd570f119f87f7",
+      "byte_equivalent_UTF8_content": true
+    }
+  ],
+  "persisted_files_executed": true,
+  "runtime": "JavaScript V8 through functions.exec; ESM import/export and Node file-I/O wrapper omitted",
+  "actual_curated_cases": 10,
+  "synthetic_negative_fixtures": 30,
+  "test_count": 91,
+  "passed": true,
+  "test_results_match": true,
+  "expected_cards_match": true,
+  "validation_metrics_match": true,
+  "validation": {
+    "valid": true,
+    "cases": 10,
+    "sources": 14,
+    "panel_cpgs": 50,
+    "categories": {
+      "sufficient_evidence": 2,
+      "partial_evidence": 5,
+      "rejected_control": 3
+    },
+    "causal_or_clinical_qualified": 0,
+    "exact_selected_cpgs": [
+      "cg06191076",
+      "cg19380919",
+      "cg01081346",
+      "cg17071192"
+    ],
+    "exact_selected_cpg_hits": [],
+    "canonical_gene_overlap": null
+  },
+  "compare_since_plan": {
+    "status": "ahead",
+    "only_ten_expected_new_docs": true
+  },
+  "main_refs_unchanged": {
+    "engine": "7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+    "DB_c": "9ca37db477b34ca8a54f986b006c69424dedb81e"
+  },
+  "not_executed": [
+    "Native Node/pytest",
+    "JSON Schema library",
+    "API HTTP/UI tests",
+    "Mac terminal jobs",
+    "Full4630structure join",
+    "Clinical or individual-level causal mediation"
+  ],
+  "remaining_handoff": "Actual platform integration and HTTP/UI checks belong to existing API owner; no new route, endpoint, or unrelated task was created."
+}
