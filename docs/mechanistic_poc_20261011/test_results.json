@@ -1,0 +1,372 @@
+{
+  "runtime": "JavaScript V8 through functions.exec",
+  "scope": "actual curated10-case metadata consistency plus synthetic output-boundary QA; not independent biological accuracy or API HTTP/UI testing",
+  "count": 91,
+  "passed": true,
+  "tests": [
+    {
+      "name": "actual_ten_case_packet_validates",
+      "passed": true
+    },
+    {
+      "name": "actual50panel_and_four_selected_exact_nonoverlappingCpGs",
+      "passed": true
+    },
+    {
+      "name": "P01:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P01:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P01:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P01:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P02:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P02:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P02:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P02:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P03:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P03:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P03:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P03:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P04:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P04:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P04:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P04:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P05:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P05:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P05:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P05:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P06:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P06:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P06:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P06:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P07:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P07:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P07:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P07:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P08:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P08:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P08:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P08:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P09:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P09:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P09:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P09:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P10:source_backed_card_and_limits",
+      "passed": true
+    },
+    {
+      "name": "P10:native_assay_direction_accepted",
+      "passed": true
+    },
+    {
+      "name": "P10:raw_export_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "P10:mediation_promotion_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "N01:unsupported:clinical_chain_qualified",
+      "passed": true
+    },
+    {
+      "name": "N02:direction_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N03:disease_prevention_not_established_by_mechanistic_chain",
+      "passed": true
+    },
+    {
+      "name": "N04:assay_type_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N05:subject_scope_or_n_unverified",
+      "passed": true
+    },
+    {
+      "name": "N06:different_native_component",
+      "passed": true
+    },
+    {
+      "name": "N07:fasting_endpoint_not_significant",
+      "passed": true
+    },
+    {
+      "name": "N08:hydroxytyrosol_unit_unreconciled",
+      "passed": true
+    },
+    {
+      "name": "N09:cpg_not_assayed",
+      "passed": true
+    },
+    {
+      "name": "N10:subject_scope_or_n_unverified",
+      "passed": true
+    },
+    {
+      "name": "N11:bridge_scope_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N12:assay_type_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N13:unsupported:isolated_compound_causal_effect_proven",
+      "passed": true
+    },
+    {
+      "name": "N14:fracture_ITT_CI_includes_one",
+      "passed": true
+    },
+    {
+      "name": "N15:cpg_not_assayed",
+      "passed": true
+    },
+    {
+      "name": "N16:subject_scope_or_n_unverified",
+      "passed": true
+    },
+    {
+      "name": "N17:use_corrected_2018_health_report",
+      "passed": true
+    },
+    {
+      "name": "N18:panel_overlap_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N19:cpg_not_assayed",
+      "passed": true
+    },
+    {
+      "name": "N20:different_food_preparation",
+      "passed": true
+    },
+    {
+      "name": "N21:disease_prevention_not_established_by_mechanistic_chain",
+      "passed": true
+    },
+    {
+      "name": "N22:direction_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N23:assay_type_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N24:bridge_scope_mismatch",
+      "passed": true
+    },
+    {
+      "name": "N25:canonical_mapping_unavailable",
+      "passed": true
+    },
+    {
+      "name": "N26:unsupported:gene_to_health_mediation_proven",
+      "passed": true
+    },
+    {
+      "name": "N27:raw_export_not_authorized",
+      "passed": true
+    },
+    {
+      "name": "N28:subject_scope_or_n_unverified",
+      "passed": true
+    },
+    {
+      "name": "N29:different_food_preparation",
+      "passed": true
+    },
+    {
+      "name": "N30:unsupported:full_causal_chain_verified",
+      "passed": true
+    },
+    {
+      "name": "duplicate_case_identity_rejected",
+      "passed": true
+    },
+    {
+      "name": "source_fk_conflict_rejected",
+      "passed": true
+    },
+    {
+      "name": "fabricated_CpG_on_global_methylation_rejected",
+      "passed": true
+    },
+    {
+      "name": "unknown_assay_kind_rejected",
+      "passed": true
+    },
+    {
+      "name": "clinical_qualification_in_packet_rejected",
+      "passed": true
+    },
+    {
+      "name": "unsupported_canonical_count_in_packet_rejected",
+      "passed": true
+    },
+    {
+      "name": "full4630join_in_packet_rejected",
+      "passed": true
+    },
+    {
+      "name": "panel_overlap_mutation_rejected",
+      "passed": true
+    },
+    {
+      "name": "unknown_POC_claim_rejected",
+      "passed": true
+    },
+    {
+      "name": "same_registered_trial_not_independent_replication",
+      "passed": true
+    },
+    {
+      "name": "only_selected_targets_checked_not_whole3422transcriptome",
+      "passed": true
+    },
+    {
+      "name": "three_rejected_controls_remain_in_output",
+      "passed": true
+    },
+    {
+      "name": "unknown_claim_fields_do_not_silently_pass",
+      "passed": true
+    },
+    {
+      "name": "unknown_health_claim_does_not_silently_pass",
+      "passed": true
+    },
+    {
+      "name": "computed_selected_hit_is_not_hardcoded_zero",
+      "passed": true
+    },
+    {
+      "name": "native22genes_and39annotated_rows_exclude_region_labels",
+      "passed": true
+    },
+    {
+      "name": "region_label_accidentally_parsed_as_gene_is_rejected",
+      "passed": true
+    },
+    {
+      "name": "completed_visits_are_not_per_gene_analyzable_n",
+      "passed": true
+    },
+    {
+      "name": "randomized_total_is_not_exact_IHC_marker_pair_count",
+      "passed": true
+    }
+  ]
+}
