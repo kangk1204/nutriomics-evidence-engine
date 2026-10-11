@@ -1,0 +1,267 @@
+[
+  {
+    "section_id": "R01",
+    "title": "경영 요약",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "사업 규모는 사용자가 제시한 5년·총12억원을 기준으로 서술한다. 공식 협약의 시작·종료연도, 연차별 예산, 집행 및 정산은 자료 미확인으로 남긴다. 본 보강 자료는 사업비 집행이나 공식 인수 완료를 판정하지 않는다.\n\n현재 확보한 문헌 패킷은 음식 조성에서 발현·메틸화와 건강 관찰까지 이어지는 근거를10건으로 정리한다. 표시할 관찰 근거가 충분한2건, 부분 근거5건, 특정 연결을 기각하는3건이며 완전한 인과·임상 체인은0건이다. 현재50CpG 감사와 구현 검사 결과는 각자의 입력 범위 안에서 설명한다. 공식 목표 충족 여부는 원 요구사항과 연차 증빙에 연결한 후 판정한다.",
+    "source_ids": [
+      "E01",
+      "E04",
+      "E05"
+    ],
+    "matrix_refs": [
+      "M1_annual_goal_trace",
+      "M2_claim_evidence",
+      "M8_budget_evidence"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R02",
+    "title": "연구 필요성과 선행연구 대비 평가",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "식품 조성 정보, 조건부 분자 관찰, 건강 결과가 서로 다른 식별자·조리 상태·조직·종·연구 집단으로 기록되므로, 이를 연결할 때 원 맥락과 불확실성을 보존해야 한다. FoodMine은 마늘·코코아의 조성 정보를 문헌에서 회수한 선행연구다. 따라서 조성 DB 통합이나 음식–질환 graph 연결 자체를 독창적 성과로 단정하지 않는다.\n\n차별성은 식품 부위·조리·native 성분 형태·단위 보존, 정확 식별자 검증, 원 관계의 조건과 출처, 결측·반증 표시, 권리별 내보내기, 재현 가능한 산출물에서 평가한다. FoodAtlas 비교를 포함한 기존 조사 계획은 보존하되 이번에 원문을 재확인하지 못한 항목은 그 확인 범위를 명시한다. 동일 자료·분할·metric의 직접 비교 없이 기존 방법보다 우수하다고 결론내리지 않는다.",
+    "source_ids": [
+      "E04",
+      "E09"
+    ],
+    "matrix_refs": [
+      "M2_claim_evidence",
+      "M3_database_denominators"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R03",
+    "title": "5개년 연결 서사와 공식 목표 추적",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "5개년 성과는 공식 목표→연차 수행→정량·정성 산출물→최종 증거→한계→최종 요구 충족의 순서로 제시한다. 연차 번호는1–5차년도만 표시하고 실제 연도는 협약과 계획 확인 전 자료 미확인으로 둔다. 현재 확인한2025연차보고서 파일은 후보이며 아직 로컬 내용을 검증하지 않았으므로 특정 연차의 목표·성과로 배정하지 않는다.\n\n현재 확보한 데이터 감사, 문헌 POC, 소프트웨어 보고가 어느 연차의 공식 산출물인지도 원본 없이 배정하지 않는다. 공식 목표와 수용 기준이 확보되면 충족·부분·미달·미확인 상태를 근거별로 채운다. 공식 문서가 없다는 이유로 연구 결과 설명을 지우지 않으며, 연구 산출물 설명과 사업 목표의 달성 판정을 분리한다.",
+    "source_ids": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "matrix_refs": [
+      "M1_annual_goal_trace"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R04",
+    "title": "DB 규모·정의·분모",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "연구 범위의4,630구조/성분,345,624음식–성분 occurrence,822음식은 서로 다른 단위의 동결 receipt 분모다. 전체 원행 테이블을 이번 작업에서 재읽지 않았다는 한계를 함께 둔다. occurrence를 독립 실험·논문·참가자 수로 표현하지 않는다.\n\n별도 API 전달 수치인 public13,588foods·1,012,333reports·13,888entities·reference exact match53은 원 정의·버전·권리 확인 후 각각의 분모로 제시한다. 연구822음식과 public13,588foods를 더하거나 동일한 식품 집합이라고 보지 않는다. reference53을 전체4,630성분의 기전·현재CpG·임상 검증 수로 승격하지 않는다.",
+    "source_ids": [
+      "E04",
+      "E06",
+      "E07"
+    ],
+    "matrix_refs": [
+      "M3_database_denominators"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R05",
+    "title": "정규화·중복·원본 보존·권리",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "정규화 결과와 native 식품명·성분명·구조형태·원ID·부위·조리·단위·기여원·release를 함께 보존한다. 동일성은 name-only 일치나 exact 상태값만으로 판정하지 않고 확인된 양측 구조·형태와 원 측정 analyte를 대조한다. 서로 다른 assay/보고행을 중복 제거할 때 관측·문헌·참가자 단위를 구별한다.\n\n기록은 원 출처와 파생 자료를 구분하고 원본 해시·변환 규칙·파생 버전을 추적한다. 조성 측정1건을 공유하는 여러 경로를 독립 조성 측정으로 세지 않는다. 공개 메타데이터 승인과 원문·원표·개인 자료의 재배포 권리는 분리하며 미확인/조건부 원자료 export는 완료 성과로 주장하지 않는다.",
+    "source_ids": [
+      "E04",
+      "E05"
+    ],
+    "matrix_refs": [
+      "M2_claim_evidence",
+      "M3_database_denominators"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R06",
+    "title": "모델 성능·누출·교란·외부 검증",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "모델별 데이터 release·참가자/샘플/assay 분모·결측과 제외·분할 manifest·전처리·특징선택·baseline·metric·CI·외부 집단·실패 이력을 함께 제시한다. 프로젝트의 실제 모델 평가 파일을 이번 작업에서 확인하지 못한 항목은 자료 미확인으로 표기한다. 성능 숫자나95%CI를 추정해 보충하지 않는다.\n\n환자 또는 참가자의 반복 자료가 분할 양쪽에 들어가는지, 전처리/특징선택이 훈련 fold 내에서 수행됐는지, batch·조직·연령·성별·BMI·세포 조성이 교란하는지를 기존 증빙으로 검토한다. 소프트웨어 검사 통과를 독립 cohort 성능 또는 임상 교정으로 대체하지 않는다. 실패·음성 결과와 qualification 실패는 기존 기록 확인 후 보존하며 새 훈련·코호트 확장은 수행하지 않는다.",
+    "source_ids": [
+      "E02",
+      "E03"
+    ],
+    "matrix_refs": [
+      "M5_model_validation"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R07",
+    "title": "현재50CpG의 실제 해석 범위",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "원 패널을 인용한 동결 감사에는50CpG가 있다.39행에 native 유전자 주석이 있고11행은 미배정이며 중복 제외 native 유전자 라벨은22개다. 원보고서의 SNP표시8개와 재현 결측4개는50행 안에서 겹칠 수 있는 범주이므로 합산하지 않는다. 이 수치들은 새로운 probe QC 또는 외부 재현 통과 판정이 아니다.\n\n22개 유전자의 authoritative canonical ID 영수증이 없으므로 canonical gene overlap은 미확인이다. 위치·공유 경로·비슷한 심볼로 조인하지 않는다. 선택된 POC의 정확4CpG와 현재50패널의 교집합은0이며4개가 겹친다는 뜻이 아니다. 전체 EWAS/전사체/외부임상 연결은 이 비교로 검증되지 않는다.",
+    "source_ids": [
+      "E04",
+      "E05"
+    ],
+    "matrix_refs": [
+      "M2_claim_evidence",
+      "M4_POC_edges"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R08",
+    "title": "기전 POC10건과 허용 결론",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "10건은 음식·조리 상태→실제 성분 형태→RNA/단백질/전역DNAm/promoter영역/정확CpG→건강 관찰을 각 edge의 원출처,종/조직,설계,n,용량/기간,효과/CI,누락/반증과 함께 표시한다. 같은 연구의 평행 관찰과 서로 다른 연구의 가설 연결을 구분한다. 독립 재현 수는 확인된 참가자·연구집단 없이 PMID 개수로 채우지 않는다.\n\n오렌지주스와 아마씨 사례는 관찰을 표현할 근거가 충분하나 선택 유전자의 건강 매개효과를 입증하지 않는다. 브로콜리 음성 연구, 자연 엽산 음식으로 옮길 수 없는 보충제 연구, EGCG의 PTGS2 증가 방향 대조를 함께 유지한다. 전역 저메틸화를 보편적 건강 개선으로 보거나 정제 성분의 세포 노출을 음식 섭취 후 사람 질환 예방으로 바꾸지 않는다.",
+    "source_ids": [
+      "E05"
+    ],
+    "matrix_refs": [
+      "M4_POC_edges"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R09",
+    "title": "플랫폼 최종 빌드와 소프트웨어 검증",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "별도 API 담당자의2026-10-11 09:13 보고에는118tests·91packetchecks·88HTTP,desktop10cases/42edges,mobile10cases,API/UI각30과도주장 거부,해당브라우저 예외0이 기록되어 있다. 이번 보고서 편집 작업은 관련 Library 파일 메타데이터만 확인했고 consumer-local 원증빙은 아직 읽지 않았다. 최종 원고에서 이 구분을 유지하고 원증빙 확인 후 최종 빌드–요구–검사 연결을 확정한다.\n\n118/91/88은 중첩 가능한 집합이므로 합산해 독립 성과 수로 제시하지 않는다. API와 UI의30fixture도 별개의60개 과학 대조가 아니다.42edges는 화면 표시 단위이며 독립 실험 수가 아니다. 예외0은 확인한 브라우저 실행 범위에 한정한다. 공개 version2와 신규POC 미배포 상태는 로컬 통합·시험 완료와 분리하며 배포/credential 재시도는 수행하지 않는다.",
+    "source_ids": [
+      "E06"
+    ],
+    "matrix_refs": [
+      "M6_build_requirements"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R10",
+    "title": "재현성·내보내기·보안",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "재현성 증거는 코드/자료/환경 버전,실행 명령과 입력 범위,테스트 결과,산출물 hash를 연결한다. V8 문서 검사와 실제 Node/HTTP/화면 검사를 구별한다. 현재94쪽 파일의 해시,로컬 렌더,전체 페이지 검사는 아직 자료 미확인이다. 이 상태를 문서의 품질 검증 완료로 표시하지 않는다.\n\n내보내기는 승인된 사실 메타데이터와 해당 원자료 권리 범위를 기록하고 원문·원표·개인 자료의 허가를 추정하지 않는다. 기능 테스트는 보안 인증이나 침투 시험이 아니다. 기존 접근 권한과 실행 경계를 보존하고 비밀·자격 자료를 보고서나 증빙에 포함하지 않는다. 새로운 host 신뢰·credentials·보안 변경은 수행하지 않는다.",
+    "source_ids": [
+      "E04",
+      "E05",
+      "E06",
+      "E08"
+    ],
+    "matrix_refs": [
+      "M6_build_requirements"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R11",
+    "title": "과학 검증·소프트웨어 검증·공식 사업 인수",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "과학 검증은 측정/관찰/연구간 연결/인과/외부임상 범위를 각각 판정한다. 소프트웨어 검증은 요구사항에 대응하는 유한 API·화면·내보내기·오류 동작 검사로 판정한다. 공식 사업 인수는 공식 목표·지표·수용 조건·인수 기록으로 판정한다. 어느 하나의 완료를 다른 결론으로 대체하지 않는다.\n\n현재 문헌10POC의 완전 인과 체인은0이며,소프트웨어 실행 보고는 존재하나 이 작업의 consumer 원증빙 확인은 미완료다. 공식 과제 요구 및 인수 기준은 자료 미확인이다. 따라서 일괄100%달성·임상효과 검증·공식인수 완료라는 결론을 기재하지 않는다.",
+    "source_ids": [
+      "E01",
+      "E03",
+      "E05",
+      "E06"
+    ],
+    "matrix_refs": [
+      "M1_annual_goal_trace",
+      "M2_claim_evidence",
+      "M6_build_requirements"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R12",
+    "title": "성과 활용·기술이전·운영·인수인계",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "성과 활용은 연구·교육용 근거 탐색과 데이터/표시 방식의 설명부터 기술한다. 기술이전,실시권,운영 유지,사용기관·이용 실적은 계약·인수·운영 기록이 확인된 범위만 완료 성과로 적는다.5년 사업 규모를5년 연속 운영 이력으로 바꾸지 않는다.\n\n인수 목록에는 고정된 보고서/데이터/모델/코드/환경/실행 결과와 확인된 이용 권리,업데이트 원천,운영 책임,오류 대응,백업/복구 시험,보존/반환을 포함한다. 책임자·유지비·절차가 미확인인 항목은 자료 미확인으로 남기며 실행/복구시험을 완료한 것처럼 작성하지 않는다.",
+    "source_ids": [
+      "E01",
+      "E06"
+    ],
+    "matrix_refs": [
+      "M7_handover_operations"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R13",
+    "title": "예산·실집행·정산의 확인 상태",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "총12억원은 현재 사용자의 규모 설명이며 협약·변경협약·재원 계획과 대조되지 않았다. 연차별 계획예산,기관 부담/현물,실집행,잔액·불인정·반납,최종 정산과 감사는 자료 미확인이다. 연차별 금액을 균등 배분하거나 추정 집행액·집행률을 만들지 않는다.\n\n연구 산출물의 존재와 검증 범위는 독립적으로 설명하되 비용효율·ROI·정산 적정성은 실측 비용·활용 성과·정산 원본이 없으면 판정하지 않는다. 예산 증빙의 확인 단계와 미완료 필수 자료를 별표로 제시한다.",
+    "source_ids": [
+      "E01"
+    ],
+    "matrix_refs": [
+      "M8_budget_evidence"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R14",
+    "title": "한계·미완료와 후속 조건",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "전체4,630 실제 테이블의 구조/성분/권리 대조,22유전자 canonical 매핑,외부 EWAS·probe QC·원보충표·개인 건강 crosswalk,모델의 독립 평가와 공식 목표·예산 증빙은 확인 범위 밖이거나 미완료다.10POC도 조성·정제/세포 노출·사람 결과 사이의 일치와 매개효과가 부족하다. 결측과 음성 결과를 성과 표에서 제거하지 않는다.\n\n실제 보고서 편집은 승인된 Mac 실행 도구와 현재94쪽 파일 식별,디스크 여유 확인,Library consumer-local 전달 확인을 전제로 한다. 원본과 이전판을 보존하고 같은 작업의 새 검토판으로 편집한다. 전체 페이지 시각검사·수량·교차참조·참고문헌·파일 hash와 Library 저장 영수증이 확인되기 전 최종 DOCX/PDF 완료를 주장하지 않는다.",
+    "source_ids": [
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E08"
+    ],
+    "matrix_refs": [
+      "M1_annual_goal_trace",
+      "M5_model_validation",
+      "M8_budget_evidence"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  },
+  {
+    "section_id": "R15",
+    "title": "그림·표·참고문헌·부록의 구성",
+    "original_page": "자료 미확인",
+    "original_text": "현재94쪽원고미소비;beforetext자료미확인",
+    "proposed_text": "본문의 핵심 표는 연차 추적,주장–증거,DB 분모,10POC edge,모델 검증,빌드 요구–검사,운영 인수,재무 확인의8개로 구성한다. 본문에서 주장 ID/근거 ID를 연결하고 각 표에 분모·버전·미확인 상태를 표기한다. 모든 인용은 실제 원출처 DOI/PMID/공식 DB 링크와 확인 범위를 유지한다.\n\n그림은5개년 목표 흐름,전체 데이터 계보,10POC 근거 지도,소프트웨어 검증 범위를 제안한다. 연도/달성률/성능/금액을 미확인 상태에서 그림에 채우지 않는다. 부록에는 증거 색인,50CpG 전체 주석과gap,10POC 전체 구조화 자료,원고 변경 대조,실행/렌더 검증과 남은 필수 자료를 포함한다. 현재 그림은 설계만 준비했고 실제 PDF에 렌더하지 않았다.",
+    "source_ids": [
+      "E04",
+      "E05",
+      "E06",
+      "E08"
+    ],
+    "matrix_refs": [
+      "M1_annual_goal_trace",
+      "M2_claim_evidence",
+      "M3_database_denominators",
+      "M4_POC_edges",
+      "M5_model_validation",
+      "M6_build_requirements",
+      "M7_handover_operations",
+      "M8_budget_evidence"
+    ],
+    "actual_report_applied": false,
+    "scope": "planned insertion/reconciliation; actual before-after report diff not generated"
+  }
+]
