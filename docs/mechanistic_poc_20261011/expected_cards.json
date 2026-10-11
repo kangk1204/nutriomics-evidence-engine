@@ -1,0 +1,705 @@
+[
+  {
+    "poc_id": "P01",
+    "title": "브로콜리 새싹 → SFN → 상기도 방어 유전자 RNA",
+    "category": "partial_evidence",
+    "molecular_kinds": [
+      "RNA_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S01:BSH",
+      "identity": "broccoli sprouts",
+      "part": "sprouts",
+      "preparation": "standardized oral homogenate; not boiled mature broccoli"
+    },
+    "native_components": [
+      "sulforaphane"
+    ],
+    "selected_targets": [
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "GSTM1",
+          "GSTP1",
+          "NQO1",
+          "HMOX1"
+        ],
+        "cpgs": [],
+        "direction": "increase"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "airway oxidative/inflammatory disease protection",
+      "result": "not_measured",
+      "source_ids": [],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S01"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "No clinical protection endpoint",
+      "n/duration and exact exposure unavailable in original abstract",
+      "Later analogous human POC was negative",
+      "NRF2 target activation is not NFE2L2 RNA increase or DNAm"
+    ]
+  },
+  {
+    "poc_id": "P02",
+    "title": "브로콜리 새싹 → SFN 노출 증가, 유전자·기도염증 POC 음성",
+    "category": "rejected_control",
+    "molecular_kinds": [
+      "RNA_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S02:BSH",
+      "identity": "broccoli sprout homogenate",
+      "part": "sprouts",
+      "preparation": "200g homogenate equivalent111g commercial sprouts; oral3days"
+    },
+    "native_components": [
+      "sulforaphane"
+    ],
+    "selected_targets": [
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "NFE2L2",
+          "HMOX1",
+          "NQO1",
+          "GSTM1"
+        ],
+        "cpgs": [],
+        "direction": "no_significant_difference"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "ozone-induced sputum neutrophilia",
+      "result": "no_significant_protection",
+      "source_ids": [
+        "S02"
+      ],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": false,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S02"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Small healthy-participant ozone model; not all respiratory patients or every SFN formulation",
+      "Null result is not proof of zero effect in all contexts",
+      "15 completed visits but sputum figure n=14; exact per-gene analyzed n not extracted"
+    ]
+  },
+  {
+    "poc_id": "P03",
+    "title": "오렌지주스 → hesperidin → 백혈구 발현·혈관 생체지표",
+    "category": "sufficient_evidence",
+    "molecular_kinds": [
+      "RNA_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S03:orange_juice",
+      "identity": "orange juice from concentrate supplied for trial",
+      "part": "fruit juice",
+      "preparation": "from concentrate;500mL/day split twice"
+    },
+    "native_components": [
+      "hesperidin"
+    ],
+    "selected_targets": [
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "CCL26",
+          "CX3CR1",
+          "CXCL17"
+        ],
+        "cpgs": [],
+        "direction": "decrease"
+      },
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "NFKBIB"
+        ],
+        "cpgs": [],
+        "direction": "increase"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "diastolic BP and postprandial microvascular reactivity",
+      "result": "DBP lower; postprandial reactivity improved; fasting reactivity not significantly changed",
+      "source_ids": [
+        "S04"
+      ],
+      "effect": {
+        "DBP_p": 0.02,
+        "postprandial_reactivity_p_upper": 0.05,
+        "absolute_effect": null
+      },
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": false,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "No gene-specific mediation analysis",
+      "No hard cardiovascular event endpoint",
+      "Whole3,422-gene differential set not joined to current panel",
+      "Per-gene CI/adjusted p not extracted"
+    ]
+  },
+  {
+    "poc_id": "P04",
+    "title": "페놀 풍부 올리브유 → PBMC 염증 유전자 발현 감소",
+    "category": "partial_evidence",
+    "molecular_kinds": [
+      "RNA_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S05:virgin_olive_oil",
+      "identity": "CANOLIVA virgin olive oil",
+      "part": "fruit oil",
+      "preparation": "40mL oil with60g white bread and vitaminA; matched low-phenol oil produced by extraction"
+    },
+    "native_components": [
+      "olive phenolic mixture including hydroxytyrosol"
+    ],
+    "selected_targets": [
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "PTGS2",
+          "IL1B",
+          "IL6",
+          "EGR1",
+          "JUN"
+        ],
+        "cpgs": [],
+        "direction": "decrease"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "postprandial glucose/insulin/NEFA/TG/HDL iAUC",
+      "result": "no_significant_difference",
+      "source_ids": [
+        "S05"
+      ],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S05"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Individual compound not isolated",
+      "Hydroxytyrosol amount/unit needs primary reconciliation",
+      "Four-hour RNA change is not chronic disease prevention"
+    ]
+  },
+  {
+    "poc_id": "P05",
+    "title": "코코아 크림 → 전역 DNAm, 별도 세포의 methylation-enzyme RNA",
+    "category": "partial_evidence",
+    "molecular_kinds": [
+      "global_DNA_methylation",
+      "RNA_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S06:cocoa_cream",
+      "identity": "cocoa-containing cream product",
+      "part": "cocoa ingredient in formulated food",
+      "preparation": "6units13g each/day supplying6g cocoa; isocaloric-diet run-in"
+    },
+    "native_components": [
+      "cocoa polyphenol mixture"
+    ],
+    "selected_targets": [
+      {
+        "kind": "global_DNA_methylation",
+        "targets": [],
+        "cpgs": [],
+        "direction": "decrease"
+      },
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "DNMT1",
+          "DNMT3A",
+          "DNMT3B",
+          "MTHFR",
+          "MTRR"
+        ],
+        "cpgs": [],
+        "direction": "decrease"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "cardiovascular disease risk/events",
+      "result": "risk-factor participants selected; no DNAm-mediated clinical benefit established",
+      "source_ids": [
+        "S06"
+      ],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S06"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Title says randomized controlled trial, but analyzed human comparison uses two earlier run-in cohorts",
+      "Separate6donors are not214human expression subjects",
+      "No exact CpG/clinical health mediation",
+      "No isolated-epicatechin attribution"
+    ]
+  },
+  {
+    "poc_id": "P06",
+    "title": "아마씨 머핀 → SDG/lignan → ERBB2 단백질·종양 생체표지",
+    "category": "sufficient_evidence",
+    "molecular_kinds": [
+      "protein_expression"
+    ],
+    "native_food": {
+      "native_id": "study:S07:flax_muffin",
+      "identity": "muffin containing ground flaxseed",
+      "part": "ground seeds",
+      "preparation": "baked muffin;25g flaxseed/day; controls matched energy/macronutrients/fiber with different flour/oil formulation"
+    },
+    "native_components": [
+      "secoisolariciresinol diglucoside (SDG)"
+    ],
+    "selected_targets": [
+      {
+        "kind": "protein_expression",
+        "targets": [
+          "ERBB2"
+        ],
+        "cpgs": [],
+        "direction": "decrease"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "tumor proliferation/apoptosis biomarkers",
+      "result": "Ki67 declined; apoptotic index increased",
+      "source_ids": [
+        "S07"
+      ],
+      "effect": {
+        "within_flax_Ki67_relative_change_percent": -34.2,
+        "Ki67_p": 0.001,
+        "apoptotic_relative_change_percent": 30.7,
+        "apoptotic_p": 0.007
+      },
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": false,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S07"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Small presurgery cancer-patient trial",
+      "Whole food includes oil/fiber/other components",
+      "Within-arm percentages are not adjusted between-arm effect estimates",
+      "No recurrence/survival/healthy-person prevention endpoint",
+      "32 randomized participants; exact per-IHC marker analyzable paired-biopsy n not extracted"
+    ]
+  },
+  {
+    "poc_id": "P07",
+    "title": "엽산 음식 가설과 B-PROOF 보충제 → DNAm·골절 예방 기각 대조",
+    "category": "rejected_control",
+    "molecular_kinds": [
+      "exact_CpG_DNA_methylation"
+    ],
+    "native_food": {
+      "native_id": "hypothesis:folate_food",
+      "identity": "folate-rich food candidate, not specified/tested in B-PROOF",
+      "part": null,
+      "preparation": null
+    },
+    "native_components": [
+      "synthetic folic acid plus vitaminB12"
+    ],
+    "selected_targets": [
+      {
+        "kind": "exact_CpG_DNA_methylation",
+        "targets": [
+          "DIRAS3"
+        ],
+        "cpgs": [
+          "cg06191076"
+        ],
+        "direction": "increase_in_treated_vs_decrease_in_control"
+      },
+      {
+        "kind": "exact_CpG_DNA_methylation",
+        "targets": [],
+        "cpgs": [
+          "cg19380919"
+        ],
+        "direction": "not_extracted"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "osteoporotic fractures",
+      "result": "ITT no significant difference",
+      "source_ids": [
+        "S09"
+      ],
+      "effect": {
+        "hazard_ratio": 0.84,
+        "CI95": [
+          0.58,
+          1.21
+        ]
+      },
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [
+        "cg06191076",
+        "cg19380919"
+      ],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": 0,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S08",
+      "S09"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Folic acid is not every natural folate species",
+      "Combination and sharedD3 cannot attribute single compound",
+      "HOXA4/HOXB7 findings are notHOXA10currentSATprobes",
+      "Parent trial overall fracture null; cancer adverse signal requires separate evaluation"
+    ]
+  },
+  {
+    "poc_id": "P08",
+    "title": "지중해식+견과/EVOO → 정확2CpG와 별도 심혈관 관찰",
+    "category": "partial_evidence",
+    "molecular_kinds": [
+      "exact_CpG_DNA_methylation"
+    ],
+    "native_food": {
+      "native_id": "study:S10:MedDiet",
+      "identity": "Mediterranean diet supplemented with mixed nuts or extra-virgin olive oil",
+      "part": "multiple foods",
+      "preparation": "dietary pattern; not a single-food or isolated-fatty-acid treatment"
+    },
+    "native_components": [
+      "unspecified PUFA mixture and EVOO phenolic/fatty-acid mixture"
+    ],
+    "selected_targets": [
+      {
+        "kind": "exact_CpG_DNA_methylation",
+        "targets": [
+          "CPT1B",
+          "CHKB-CPT1B"
+        ],
+        "cpgs": [
+          "cg01081346"
+        ],
+        "direction": "increase_in_MedDiet_nuts"
+      },
+      {
+        "kind": "exact_CpG_DNA_methylation",
+        "targets": [
+          "GNAS",
+          "GNASAS"
+        ],
+        "cpgs": [
+          "cg17071192"
+        ],
+        "direction": "decrease_in_MedDiet_EVOO"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "major cardiovascular events in parent trial",
+      "result": "lower adjusted event hazard in supplemented diet arms",
+      "source_ids": [
+        "S11"
+      ],
+      "effect": {
+        "EVOO_HR": 0.69,
+        "EVOO_CI95": [
+          0.53,
+          0.91
+        ],
+        "nuts_HR": 0.72,
+        "nuts_CI95": [
+          0.54,
+          0.95
+        ],
+        "randomization_departures": true,
+        "corrected_report_year": 2018
+      },
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [
+        "cg01081346",
+        "cg17071192"
+      ],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": 0,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S10",
+      "S11"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "No participant-level outcome crosswalk/mediation for36",
+      "Individual compound dose unverified",
+      "Use corrected2018report, not retracted2013estimates",
+      "Current50CpGs contain neitherselectedsite"
+    ]
+  },
+  {
+    "poc_id": "P09",
+    "title": "백차 성분 EGCG → 암 세포 promoter DNAm 감소·재발현",
+    "category": "partial_evidence",
+    "molecular_kinds": [
+      "promoter_region_DNA_methylation",
+      "RNA_expression",
+      "protein_expression"
+    ],
+    "native_food": {
+      "native_id": "USDA-Flav-R03-3:99582",
+      "identity": "Tea, white, brewed",
+      "part": "leaf infusion",
+      "preparation": "USDA standardized1% infusion,1g dry leaf/100mL boiling water; brewingtime not standardized"
+    },
+    "native_components": [
+      "(-)-epigallocatechin3-gallate"
+    ],
+    "selected_targets": [
+      {
+        "kind": "promoter_region_DNA_methylation",
+        "targets": [
+          "CDKN2A",
+          "RARB",
+          "MGMT",
+          "MLH1"
+        ],
+        "cpgs": [],
+        "direction": "decrease"
+      },
+      {
+        "kind": "RNA_expression",
+        "targets": [
+          "CDKN2A",
+          "RARB",
+          "MGMT",
+          "MLH1"
+        ],
+        "cpgs": [],
+        "direction": "reexpression"
+      },
+      {
+        "kind": "protein_expression",
+        "targets": [
+          "RARB",
+          "MLH1"
+        ],
+        "cpgs": [],
+        "direction": "reexpression"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "human cancer incidence/prevention or regression",
+      "result": "not_tested",
+      "source_ids": [],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S12",
+      "S13"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "5-50uMculture is not inferred plasma exposure from42.45mg/100gtea",
+      "No exact currentpanelCpG assay",
+      "Structural full key alone does not prove native assay-lot equivalence",
+      "No clinical cancer benefit"
+    ]
+  },
+  {
+    "poc_id": "P10",
+    "title": "백차 EGCG → astrocyte PTGS2/PGE2 증가: 방향 대조",
+    "category": "rejected_control",
+    "molecular_kinds": [
+      "protein_expression"
+    ],
+    "native_food": {
+      "native_id": "USDA-Flav-R03-3:99582",
+      "identity": "Tea, white, brewed",
+      "part": "leaf infusion",
+      "preparation": "official1% brewed infusion; separate purified cell treatment"
+    },
+    "native_components": [
+      "(-)-epigallocatechin3-gallate"
+    ],
+    "selected_targets": [
+      {
+        "kind": "protein_expression",
+        "targets": [
+          "PTGS2"
+        ],
+        "cpgs": [],
+        "direction": "increase"
+      }
+    ],
+    "health_observation": {
+      "endpoint": "PGE2 cellular production; human inflammatory disease prevention",
+      "result": "PGE2 increased in cell assays; no patient outcome",
+      "source_ids": [
+        "S14"
+      ],
+      "effect": null,
+      "clinical_prevention_proven": false,
+      "mediated_by_selected_molecular_targets": false
+    },
+    "cross_study_hypothesis": true,
+    "panel_overlap": {
+      "scope": "selected_assay_targets_and_reported_exact_CpGs_only; not entiretranscriptome/supplement",
+      "selected_exact_cpg_ids": [],
+      "exact_cpg_hits": [],
+      "exact_cpg_overlap_count": null,
+      "selected_native_gene_name_hits": [],
+      "canonical_gene_overlap": null,
+      "canonical_reason": "authoritative22panelgeneIDreceiptsnotavailable; no alias/position inference"
+    },
+    "source_ids": [
+      "S12",
+      "S14"
+    ],
+    "clinical_chain_qualified": false,
+    "full_causal_chain_verified": false,
+    "export_scope": "citation_and_new_factual_metadata_only",
+    "limitations": [
+      "Culturedhumanline and ratcells are separate from oralhumanfood intervention",
+      "COX2 direction is tissue/context-specific",
+      "No disease-protection endpoint or directbindingKd"
+    ]
+  }
+]
