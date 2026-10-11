@@ -1,0 +1,145 @@
+{
+  "schema_version": "nutriomics-evidence-upgrade-execution-v1",
+  "recorded_utc": "2026-10-11T02:56:32Z",
+  "plan_saved_before_implementation_commit": "bfb8558ae6b7fcb87192af1135c2b295d26371f2",
+  "baseline_evidence_commit": "7b41dc14bacbf02a8c6fe52810c6a7da10209925",
+  "runtime": "JavaScript V8 through functions.exec",
+  "native_Node_tests_ran": false,
+  "local_project_tests_ran": false,
+  "new_model_runs": false,
+  "test_count": 57,
+  "test_passed": true,
+  "test_scope": "synthetic software boundary QA; no biological negatives, clinical or extraction accuracy claims",
+  "actual_execution_scope": "50 printed CpGs and six complete example traces in frozen selected-graph receipt",
+  "source_receipts": {
+    "panel_library_file_id": "libfile_9da423931d988191b9c84fe7c9e71f14",
+    "panel_pages": [
+      50,
+      51
+    ],
+    "graph_commit": "7733ea43d063e9760f5dd372c8177d20eb74ff8e",
+    "graph_blob_sha1": "b06cc3dcafcbdf75a52a2d8b2ba7b88142fd7786",
+    "inventory_receipt_blob_sha1": "5e904ea38ce868d3f524c7b0791420fd9963e3a7",
+    "score_code_blob_sha1": "602949f2e00f6c2a73d20ae86312083bd927dc28",
+    "HGNC_import_code_blob_sha1": "8df3aa5609edfc5a654b8b61a3df897f4a335a9f"
+  },
+  "actual_metrics": {
+    "panel_cpgs": 50,
+    "native_annotated_cpgs": 39,
+    "native_unassigned_cpgs": 11,
+    "native_gene_labels": 22,
+    "canonical_verified_gene_mappings": 0,
+    "canonical_unresolved_gene_mappings": 22,
+    "reported_SNP_flagged_cpgs": 8,
+    "replication_missing_cpgs": 4,
+    "external_EWAS_hit_cpgs": 0,
+    "external_EWAS_no_hit_cpgs": 0,
+    "external_EWAS_not_queried_cpgs": 50,
+    "trace_count": 6,
+    "unique_trace_foods": 1,
+    "unique_trace_compounds": 1,
+    "unique_composition_measurements": 1,
+    "native_name_overlapping_traces": 0,
+    "canonical_overlapping_traces": null,
+    "nested_reaction_traces": 3,
+    "cotreatment_traces": 2,
+    "quantity_usable_traces": 6,
+    "distinct_reported_PMIDs": 6,
+    "independent_replication_count": null,
+    "dose_and_duration_present_records": 1,
+    "dose_response_experiment_verified_records": 0
+  },
+  "catalogue_scope": {
+    "declared_structures": 4630,
+    "scope": "not_a_complete_catalogue_join",
+    "linked_structures": null,
+    "unverified_structures": null
+  },
+  "implementation_status": [
+    {
+      "id": "W1",
+      "status": "implemented_document_research_plan_source_matrix",
+      "complete_for_authorized_scope": true
+    },
+    {
+      "id": "W2",
+      "status": "implemented_50row_metadata_audit; canonical_QC_and_EWAS_sources_pending",
+      "complete_for_authorized_scope": true,
+      "scientific_completion": false
+    },
+    {
+      "id": "W3",
+      "status": "implemented_generic_join_with_tests; actual22canonical_mappings_unavailable",
+      "complete_for_authorized_scope": true,
+      "scientific_completion": false
+    },
+    {
+      "id": "W4",
+      "status": "implemented_context_quantity_and_shared_source_audits; complete_original_source_independence_unverified",
+      "complete_for_authorized_scope": true,
+      "scientific_completion": false
+    },
+    {
+      "id": "W5",
+      "status": "implemented_export_readiness_diagnostics_only; no_actual_export",
+      "complete_for_authorized_scope": true
+    },
+    {
+      "id": "W6",
+      "status": "executed57tests_and_actual_frozen_document_subset_in_V8",
+      "complete_for_authorized_scope": true
+    },
+    {
+      "id": "W7",
+      "status": "blocked_same_Mac_connection_and_actual4630tables_unavailable",
+      "complete_for_authorized_scope": false
+    },
+    {
+      "id": "W8",
+      "status": "blocked_API_owner_application_and_independent_real_validation_not_performed",
+      "complete_for_authorized_scope": false
+    }
+  ],
+  "remaining_blockers": [
+    "Mac execution environment unavailable and local tools absent; no other machine route used",
+    "Actual serving/extension tables missing: full4630linked/unverified counts stay null",
+    "No authoritative current22gene mapping receipts: canonical overlap unknown, lexical name overlap0/6 only",
+    "Primary GPL/probe QC/cross-reactivity and exact supplementary rows not currently imported",
+    "EWAS home timeout/download503; all50unqueried, not50negative/nohit",
+    "Artifact-specific rights/provenance not verified for exporting datasets; diagnostic outputs only",
+    "API owner01a109e2 separate; report/API not applied",
+    "No independent real gold: precision/recall and clinical qualification unevaluated"
+  ],
+  "main_modified": false,
+  "api_modified": false,
+  "report94p_modified": false,
+  "new_credentials": false,
+  "new_schedules": false,
+  "new_large_downloads": false,
+  "new_training": false,
+  "scientific_submission_ready": false,
+  "audit_improvements": [
+    "Exact native structure status alone does not join: both provided native structure/form receipts must match",
+    "Unassigned or empty CpG panel keeps canonical overlap unknown",
+    "Missing food part/preparation receipt remains unknown; mismatched provided context stays explicit"
+  ],
+  "user_authorized_RDA_application": {
+    "purpose": "학술연구·교육자료 활용",
+    "occupation": "학술연구 관련 종사자",
+    "submission_authorized": true,
+    "submitted_by_this_task": false
+  },
+  "owner_reported_handoff": {
+    "verification_status": "parent-reported; not independently re-executed in this task",
+    "api_owner_thread": "01a109e2-7d7f-7756-b0e5-0d022dc6f00f",
+    "api_paths": 31,
+    "api_tests": 108,
+    "http_checks": 109,
+    "public_allowed_exact_match_structures": 53,
+    "catalogue_declared": 4630,
+    "report_library_file_id": "libfile_e38b950e12988191b13fd483e4041eac",
+    "evidence_library_file_id": "libfile_d8cc1d5ae2348191b719d4d3d58fc81d",
+    "public_site_version": 2,
+    "publication_status": "unchanged; owner awaiting same-site temporary write-credential renewal approval"
+  }
+}
