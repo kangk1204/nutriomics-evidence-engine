@@ -1,0 +1,236 @@
+{
+  "test_scope": "synthetic_code_QA; fixtures are not biological negative experiments or independent performance evaluation",
+  "runtime": "JavaScript V8 through functions.exec",
+  "count": 57,
+  "passed": true,
+  "tests": [
+    {
+      "name": "identical verified native form matches",
+      "passed": true
+    },
+    {
+      "name": "standard key alone does not verify native analyte",
+      "passed": true
+    },
+    {
+      "name": "stereochemistry difference rejects",
+      "passed": true
+    },
+    {
+      "name": "salt/free form difference rejects",
+      "passed": true
+    },
+    {
+      "name": "invalid shortened structure key rejects",
+      "passed": true
+    },
+    {
+      "name": "food part stays paired with native food",
+      "passed": true
+    },
+    {
+      "name": "cooked food is not raw food",
+      "passed": true
+    },
+    {
+      "name": "matched food context retained",
+      "passed": true
+    },
+    {
+      "name": "qualitative stays presence without quantity",
+      "passed": true
+    },
+    {
+      "name": "qualitative fake amount blocked",
+      "passed": true
+    },
+    {
+      "name": "below detection remains censored",
+      "passed": true
+    },
+    {
+      "name": "below detection is not imputed zero",
+      "passed": true
+    },
+    {
+      "name": "measured zero differs from missing",
+      "passed": true
+    },
+    {
+      "name": "missing does not become zero",
+      "passed": true
+    },
+    {
+      "name": "100g mass bounds reject g/mg/ug",
+      "passed": true
+    },
+    {
+      "name": "exact mass boundary accepted",
+      "passed": true
+    },
+    {
+      "name": "nonmass IU not converted to grams",
+      "passed": true
+    },
+    {
+      "name": "NaN and negative reject",
+      "passed": true
+    },
+    {
+      "name": "missing unit/basis blocks quantity",
+      "passed": true
+    },
+    {
+      "name": "name-only gene match cannot canonical join",
+      "passed": true
+    },
+    {
+      "name": "provided verified mapping allows structural gene join",
+      "passed": true
+    },
+    {
+      "name": "ambiguous aliases fail one-to-one join",
+      "passed": true
+    },
+    {
+      "name": "unverified hash receipt blocks mapping",
+      "passed": true
+    },
+    {
+      "name": "non-authoritative mapping URL blocks",
+      "passed": true
+    },
+    {
+      "name": "animal gene mapping cannot become human",
+      "passed": true
+    },
+    {
+      "name": "eight-SNP flag review not clinical exclusion",
+      "passed": true
+    },
+    {
+      "name": "probe and annotation gaps stay explicit",
+      "passed": true
+    },
+    {
+      "name": "unassigned probe not fabricated target",
+      "passed": true
+    },
+    {
+      "name": "timeout/nohit/stale/unqueried remain distinct",
+      "passed": true
+    },
+    {
+      "name": "unknown lookup status rejects",
+      "passed": true
+    },
+    {
+      "name": "duplicate lookup status rejects",
+      "passed": true
+    },
+    {
+      "name": "identical repeated import is idempotent",
+      "passed": true
+    },
+    {
+      "name": "conflicting native duplicate rejects",
+      "passed": true
+    },
+    {
+      "name": "full catalogue declaration must reconcile input rows",
+      "passed": true
+    },
+    {
+      "name": "partial subset keeps4630counts unknown",
+      "passed": true
+    },
+    {
+      "name": "complete structural join remains nonclinical",
+      "passed": true
+    },
+    {
+      "name": "unknown artifact licence blocks export readiness",
+      "passed": true
+    },
+    {
+      "name": "verified CC0 artifact readiness permits",
+      "passed": true
+    },
+    {
+      "name": "CCBY requires attribution",
+      "passed": true
+    },
+    {
+      "name": "conditional/noncommercial source needs scoped review",
+      "passed": true
+    },
+    {
+      "name": "nested reaction not flat contradiction or effect",
+      "passed": true
+    },
+    {
+      "name": "human cell is not a patient intervention",
+      "passed": true
+    },
+    {
+      "name": "joint treatment caveat survives projection",
+      "passed": true
+    },
+    {
+      "name": "distinct PMIDs do not prove independent replication",
+      "passed": true
+    },
+    {
+      "name": "dose duration presence not dose-response experiment",
+      "passed": true
+    },
+    {
+      "name": "no independent real gold gives no precision recall",
+      "passed": true
+    },
+    {
+      "name": "no mutation/qualification/export claims",
+      "passed": true
+    },
+    {
+      "name": "unknown unit blocked instead of guessed",
+      "passed": true
+    },
+    {
+      "name": "animal evidence explicitly retained as nonhuman",
+      "passed": true
+    },
+    {
+      "name": "row order changes do not create evidence",
+      "passed": true
+    },
+    {
+      "name": "claimed exact status without native receipts cannot join",
+      "passed": true
+    },
+    {
+      "name": "same key with unverified native identity cannot join",
+      "passed": true
+    },
+    {
+      "name": "salt mismatch in trace never joins catalogue",
+      "passed": true
+    },
+    {
+      "name": "unassigned CpG prevents canonical zero claim",
+      "passed": true
+    },
+    {
+      "name": "empty panel prevents canonical zero claim",
+      "passed": true
+    },
+    {
+      "name": "trace food preparation mismatch persists warning",
+      "passed": true
+    },
+    {
+      "name": "absent trace food context stays unknown",
+      "passed": true
+    }
+  ]
+}
