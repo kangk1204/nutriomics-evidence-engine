@@ -1,0 +1,56 @@
+{
+  "task": "Food institute final-report revision for user-stated five years and totalKRW1.2billion",
+  "prepared_utc": "2026-10-11 13:19:17 UTC",
+  "status": "draft preparation only; current94-page report not modified",
+  "exclusive_editor": "this delegated task",
+  "API_source_read_only": true,
+  "source_thread": "01a0f9af-1d09-7792-a38e-392334a9f0dc",
+  "execution": {
+    "verified_utc": "2026-10-11 13:16:25 UTC",
+    "tool_count": 288,
+    "terminal_names": [],
+    "executor_skill_count": 0,
+    "mac_attached_connected": "parent_reported; no callable terminal/device-read action exposed in this task",
+    "filesystem_check_executed": false,
+    "disk_free_check_executed": false,
+    "consumer_local_materialization_verified": false,
+    "local_report_file_modified": false,
+    "docx_pdf_rendered": false
+  },
+  "sequence": [
+    "Verify current execution and disk free space using an actually exposed action before local write",
+    "Identify actual94-page DOCX/PDF and preserve original/prior versions",
+    "Materialize Library sources using current supported helper and verify consumer-local bytes before reading",
+    "Read local AGENTS.md/skills and confirm file ownership",
+    "Reconcile official goals/yearly plans/results/financial source status without inventing years or annual amounts",
+    "Apply source-backed draft sections and eight matrices to actual report",
+    "Render DOCX/PDF, inspect every page, validate counts/crossrefs/references/hashes",
+    "Save copies and index/change/missing-material files to Library and verify returned IDs"
+  ],
+  "permitted_independent_now": [
+    "GitHub source-backed draft text and eight matrix preparation",
+    "Library metadata inventory only",
+    "V8 finite draft consistency checks"
+  ],
+  "blocked": [
+    "No Mac execution or filesystem/rendering tool exposed",
+    "Current94-page file identity not resolved",
+    "No consumer-local Library materialization verification",
+    "Official agreement/yearly-plan/evaluation and financial originals not verified"
+  ],
+  "completion_boundaries": {
+    "scientific_validation": "claim-specific; no complete causal/clinical POC established",
+    "software_validation": "latest owner-reported checks await local evidence consumption",
+    "official_project_acceptance": "unverified without official requirements/acceptance records",
+    "financial_settlement": "unverified without agreement/actual-expenditure/settlement originals"
+  },
+  "forbidden": [
+    "API source edits",
+    "Deployment/credential retry",
+    "New model/cohort/large download/paid compute",
+    "External submission/contact",
+    "Security/schedule changes",
+    "Assumed five-year dates or annual budget allocation",
+    "100% achievement/ROI/clinical-benefit claims without evidence"
+  ]
+}
