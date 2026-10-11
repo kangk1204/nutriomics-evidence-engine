@@ -1,0 +1,79 @@
+{
+  "schema_version": "nutriomics-mechanistic-poc-execution-v1",
+  "executed_utc": "2026-10-11 03:18:25 UTC",
+  "plan_saved_before_new_implementation": {
+    "path": "docs/mechanistic_poc_20261011/PLAN.md",
+    "commit": "10ac91a198bc70c84ae6c34563b71de61c910f3e"
+  },
+  "repository": "kangk1204/nutriomics-evidence-engine",
+  "branch": "codex/evidence-review-20261011-0230",
+  "runtime": "JavaScript V8 through functions.exec",
+  "actual_data_used": "Ten curated literature/data cases,14 sources, original50-panel rows",
+  "validation": {
+    "valid": true,
+    "cases": 10,
+    "sources": 14,
+    "panel_cpgs": 50,
+    "categories": {
+      "sufficient_evidence": 2,
+      "partial_evidence": 5,
+      "rejected_control": 3
+    },
+    "causal_or_clinical_qualified": 0,
+    "exact_selected_cpgs": [
+      "cg06191076",
+      "cg19380919",
+      "cg01081346",
+      "cg17071192"
+    ],
+    "exact_selected_cpg_hits": [],
+    "canonical_gene_overlap": null
+  },
+  "QA": {
+    "count": 91,
+    "passed": true,
+    "synthetic_negative_fixture_count": 30,
+    "real_literature_rejected_controls": 3,
+    "independent_real_gold_accuracy": false
+  },
+  "performed": {
+    "primary_source_review": true,
+    "V8_packet_and_claim_checks": true,
+    "source_metadata_drafted": true,
+    "API_HTTP": false,
+    "UI": false,
+    "native_Node": false,
+    "local_Mac_terminal": false,
+    "new_wetlab_or_clinical": false,
+    "model_training": false,
+    "full_catalogue_download_or_join": false
+  },
+  "integration_handoff": {
+    "owner_thread": "01a109e2-7d7f-7756-b0e5-0d022dc6f00f",
+    "semantic_cards": "expected_cards.json",
+    "synthetic_outputs": "negative_fixtures.json",
+    "API_paths_declared": false,
+    "API_applied_by_this_task": false,
+    "HTTP_or_UI_verification_by_this_task": false
+  },
+  "source_access_blockers": [
+    "Some primary full texts/supplements inaccessible; no denied-access bypass",
+    "P01 original n/duration not extracted",
+    "P02 per-gene analyzed n not extracted,15 completed vs14 sputum endpoint",
+    "P06 per-IHC marker paired-analyzable n not extracted",
+    "P04 individual hydroxytyrosol unit unresolved",
+    "Exact per-gene effects/CIs not extracted for several records",
+    "No participant-level molecular-to-health mediation",
+    "No22-gene canonical panel mapping receipts or full4630actual tables"
+  ],
+  "permissions": {
+    "public_new_factual_metadata_approved": true,
+    "raw_article_table_figure_individual_data_export": false
+  },
+  "RDA_application": {
+    "purpose": "학술연구·교육자료 활용",
+    "occupation": "학술연구 관련 종사자",
+    "user_submission_authorized": true,
+    "submission_performed_by_this_task": false
+  }
+}
