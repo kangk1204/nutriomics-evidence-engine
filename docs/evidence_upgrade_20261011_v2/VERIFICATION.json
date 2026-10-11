@@ -1,0 +1,75 @@
+{
+  "head": "e271b2965aebb343f6566865d0d23d3168e7ebee",
+  "all10persisted_contents_identical": true,
+  "test_count": 57,
+  "tests_passed": true,
+  "saved_test_receipt_reproduced": true,
+  "actual_50row_6trace_result_reproduced": true,
+  "native_Node_executed": false,
+  "main_engine_unchanged": true,
+  "docs_only_added_files": true,
+  "db_main_recheck": {
+    "repository": "kangk1204/NutriOmics_DB_c",
+    "baseline": "9ca37db477b34ca8a54f986b006c69424dedb81e",
+    "status": "identical"
+  },
+  "verified_utc": "2026-10-11T02:58:29Z",
+  "runtime": "JavaScript V8 through functions.exec; saved GitHub module+tests re-executed",
+  "scope": "software QA57cases and actual frozen50CpG/6example traces; no independent biological/extraction accuracy evaluation",
+  "saved_blobs": [
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/audit.mjs",
+      "sha1": "c7b90e9ed346d4d2fc0a7529922b2d7b49a435fb",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/run_audit.mjs",
+      "sha1": "07255ee4a42e31e13e39548f83fb0e7e4b8e854c",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/tests.mjs",
+      "sha1": "56e53cf88a174be3c9d7a2116108d4351d8f46a0",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/audit_input.json",
+      "sha1": "cf4b9a7fd077d7fc8341378521ad4ef3627449d8",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/audit_result.json",
+      "sha1": "4f9b1a352acc9e48f7fc0729bc748ba7a16a6e44",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/test_results.json",
+      "sha1": "d71c368836ea4eeefc41e622124bccaf717e38cd",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/gene_mapping_requests.csv",
+      "sha1": "d056b82ef4b7529c7b4b7301ea771adb2a0d5ad6",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/panel_gaps.csv",
+      "sha1": "786b15ceca6514a6f831f398e6a5de6ee07b8991",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/execution.json",
+      "sha1": "006772ad9113e99b9031f10191de1d060713048e",
+      "contents_match": true
+    },
+    {
+      "path": "docs/evidence_upgrade_20261011_v2/README.md",
+      "sha1": "74f7f57f7493b15ef9612845bf41a3a7dee5de83",
+      "contents_match": true
+    }
+  ],
+  "tests_receipt": "docs/evidence_upgrade_20261011_v2/test_results.json",
+  "canonical_overlap": null,
+  "whole4630linked_structures": null,
+  "whole4630unverified_structures": null
+}
