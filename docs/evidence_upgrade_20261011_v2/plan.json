@@ -1,0 +1,335 @@
+{
+  "schema_version": "nutriomics-evidence-upgrade-plan-v1",
+  "recorded_utc": "2026-10-11T02:39:49Z",
+  "baseline_commit": "7b41dc14bacbf02a8c6fe52810c6a7da10209925",
+  "implementation_scope": "Standalone documentation evidence audit, source/identifier requests and frozen-input QA; no API/model/data protocol changes",
+  "source_comparison": [
+    {
+      "id": "FDC",
+      "role": "food composition; preparations and quantitative basis",
+      "strength": "Official analysed/compiled/label sources distinguished",
+      "limit": "Nutrient or aggregate concept is not automatically one exact molecule; label/derived values are not lab measurements",
+      "identity": "native fdc_id + source release + nutrient ID; retain preparation and100g basis",
+      "rights": "CC0",
+      "rights_scope": "FDC data only",
+      "official_url": "https://fdc.nal.usda.gov/api-guide/",
+      "access": "official licence and data-type docs read current",
+      "priority": 1
+    },
+    {
+      "id": "HGNC",
+      "role": "human gene identifiers and aliases",
+      "strength": "Stable HGNC IDs survive nomenclature changes",
+      "limit": "Symbol/nearby-gene matching alone does not identify causal target; REST not accessible currently",
+      "identity": "HGNC ID + NCBI Gene ID + taxon9606; preserve original symbol",
+      "rights": "CC0",
+      "rights_scope": "HGNC data",
+      "official_url": "https://www.genenames.org/about/license/",
+      "access": "official licence read; specific22 mappings not fetched",
+      "priority": 1
+    },
+    {
+      "id": "ChEBI",
+      "role": "chemical ontology and structural forms",
+      "strength": "Defined chemical entities and forms, curated properties",
+      "limit": "Ontology parents, salts or related stereoisomers are not exact identity",
+      "identity": "ChEBI ID + full standard InChIKey + native analyte identity",
+      "rights": "CC-BY-4.0 plus EMBL-EBI terms",
+      "rights_scope": "check per source artifact",
+      "official_url": "https://www.ebi.ac.uk/chebi/about",
+      "access": "official about/licence read",
+      "priority": 1
+    },
+    {
+      "id": "Reactome",
+      "role": "species-specific pathway membership and reactions",
+      "strength": "Curated reactions/participants with stable pathway IDs",
+      "limit": "Pathway sharing is not direction, direct binding or clinical mechanism",
+      "identity": "stable Reactome ID + release + species + event role",
+      "rights": "dataCC0; artworkCC-BY-4.0; codeApache2 with exceptions",
+      "rights_scope": "different terms for data, illustrations and software",
+      "official_url": "https://reactome.org/license",
+      "access": "official current licence read",
+      "priority": 1
+    },
+    {
+      "id": "FooDB_historical",
+      "role": "broad food occurrence and composition",
+      "strength": "4630 structure concepts in frozen receipt with native preparation/part/citations",
+      "limit": "September2022 snapshot; native analyte/stereochemistry/assigned molecular-species uncertainty; numeric and qualitative tiers distinct",
+      "identity": "native food/part/preparation/analyte IDs + structure key and origin basis",
+      "rights": "receipt records CC-BY-NC-4.0; code MIT separate",
+      "rights_scope": "fresh upstream licence page returned403; raw/derived source datasets remain outside Git per project policy",
+      "official_url": "https://foodb.ca/compliance",
+      "access": "pinned source audit/receipt read; upstream403; no bypass",
+      "priority": 2
+    },
+    {
+      "id": "CTD",
+      "role": "contextual compound-gene and disease evidence",
+      "strength": "Source interactions/PMIDs and nested action context",
+      "limit": "Toxicant/co-treatment/animal/cell contexts; curated influence is not ligandKd or food effect; some species missing in disease export",
+      "identity": "CTD IDs + source PMIDs + gene form + actions + nesting + taxon + release",
+      "rights": "conditional_source_terms; no current export approval",
+      "rights_scope": "commercial and redistribution conditions need artifact-specific verification",
+      "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701581/",
+      "access": "parent primary research; local frozen receipts; no new source download",
+      "priority": 2
+    },
+    {
+      "id": "PubChem",
+      "role": "standardized molecular structures/cross-references",
+      "strength": "CID and standard InChIKey support structure identity",
+      "limit": "Standardization cannot resolve original analyte assignment; annotations retain contributor terms",
+      "identity": "CID/fullInChIKey/standardization version plus separate native original identity",
+      "rights": "source_contributor_specific",
+      "rights_scope": "annotation licence not inherited from generic structure availability",
+      "official_url": "https://pubchem.ncbi.nlm.nih.gov/docs/downloads",
+      "access": "parent research; about page JS-only locally",
+      "priority": 2
+    },
+    {
+      "id": "BindingDB_ChEMBL",
+      "role": "typed assay measurements",
+      "strength": "Measured endpoints with assay context and literature references",
+      "limit": "Kd/Ki/IC50/EC50 differ; assay drug exposure does not prove food intake benefit; same assay/source repeated is not replication",
+      "identity": "endpoint,reaction set,assay,unit,qualifier,organism,molecular/protein identity,publication/source cluster",
+      "rights": "BindingDB per-source verification pending; ChEMBLCC-BY-SA3.0 reported by parent",
+      "rights_scope": "no new redistribution licence determined",
+      "official_url": "https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions",
+      "access": "project nativeKd report read; parent rights research; raw assay tables inaccessible",
+      "priority": 2
+    },
+    {
+      "id": "EWAS_Catalog",
+      "role": "exact CpG/trait/tissue association lookup",
+      "strength": "Structured external CpG associations can check exact panel rather than proximal genes",
+      "limit": "Association, study and tissue heterogeneity; query nohit/timeout/unqueried distinct; no50 row lookup done",
+      "identity": "exact CpG ID + genome/annotation version + tissue + trait + study DOI + adjusted statistics",
+      "rights": "not_verified",
+      "rights_scope": "do not copy/export tables until rights verified",
+      "official_url": "https://www.ewascatalog.org/",
+      "access": "home timeout; download503; exact50 lookup not executed",
+      "priority": 2
+    },
+    {
+      "id": "Exposome_Explorer",
+      "role": "intake-to-exposure biomarkers",
+      "strength": "Exposure biomarker evidence may bridge food intake and biologically relevant dose",
+      "limit": "Biomarker associations and analytical exposure ranges do not prove clinical mediation",
+      "identity": "compound/form + biomarker + biospecimen + design + dose/time + reference",
+      "rights": "not_verified",
+      "rights_scope": "no dataset export approved",
+      "official_url": "https://exposome-explorer.iarc.fr/about",
+      "access": "official about page read; individual records and redistribution rights not verified",
+      "priority": 2
+    }
+  ],
+  "related_work": [
+    {
+      "name": "FoodMine2020",
+      "doi": "10.1038/s41598-020-73105-0",
+      "url": "https://www.nature.com/articles/s41598-020-73105-0",
+      "read_scope": "primary abstract and beginning of article read current",
+      "contribution": "Literature discovery/quantities for garlic/cocoa; demonstrates food chemical literature extraction already exists",
+      "limitation": "Different domain/annotation scope; not validation of this project's full compound-panel or clinical chain",
+      "novelty_implication": "Do not claim food chemical text mining or composition expansion as new by itself"
+    },
+    {
+      "name": "FoodAtlas2024",
+      "doi": "10.1016/j.compbiomed.2024.109072",
+      "url": "https://doi.org/10.1016/j.compbiomed.2024.109072",
+      "read_scope": "parent primary study research; direct DOI open failed here",
+      "contribution": "Food knowledge graph predecessor",
+      "limitation": "No locally reproduced evaluation, rights or new model comparison",
+      "novelty_implication": "Compare entity/relation coverage, provenance and evaluation contracts"
+    },
+    {
+      "name": "FoodAtlas2026",
+      "doi": "10.1038/s41538-025-00680-9",
+      "url": "https://www.nature.com/articles/s41538-025-00680-9",
+      "read_scope": "parent primary study research; title/metadata retrieved here; detailed follow-up failed",
+      "contribution": "Quantitative food-chemical graph plus CTD/ChEMBL and provenance; similar architecture",
+      "limitation": "ReportedF1.67 belongs to its extraction evaluation; disease-risk reduction is simulation; upstream CTD redistribution excluded according to parent reading",
+      "novelty_implication": "No first-of-kind graph claim; distinguish exact panel audit, contextual evidence and honest validation scope"
+    }
+  ],
+  "study_comparison": [
+    {
+      "study": "McAllan2023",
+      "doi": "10.1038/s41467-023-38439-z",
+      "role": "actual adipocyte model source",
+      "design": "EWAS/integrative genomics",
+      "tissue": "SAT/VAT adipocytes",
+      "n": 190,
+      "n_unit": "samples; paired RNA subset89samples",
+      "direct_current_panel_overlap": "exact native panel recovered; supplemental association rows transcribed only",
+      "strength": "cell/tissue-specific mechanistic context",
+      "limit": "same source reuse; extreme obesity/surgical cohort; does not establish diet response",
+      "access": "primary abstract/results partial"
+    },
+    {
+      "study": "BPROOF2015",
+      "doi": "10.1186/s13148-015-0154-5",
+      "role": "nutrition-to-bloodDNAm primary intervention",
+      "design": "RCT selected subset",
+      "tissue": "blood leukocytes",
+      "n": 87,
+      "n_unit": "44/43 people",
+      "direct_current_panel_overlap": "not_established; cg19380919 not in current50",
+      "strength": "intervention, dose and time",
+      "limit": "combined nutrients; sharedD3; individualCpG findings differ; not health mediation",
+      "access": "primary HTML sections"
+    },
+    {
+      "study": "PREDIMEDNavarra2017",
+      "doi": "10.3390/nu10010015",
+      "pmid": "29295516",
+      "role": "whole-diet-to-bloodDNAm",
+      "design": "selected RCT subset",
+      "tissue": "peripheralwhitebloodcells",
+      "n": 36,
+      "n_unit": "three groups; per-arm n not re-extracted from abstract",
+      "duration": "5years",
+      "dose": null,
+      "exact_cpgs": [
+        "cg01081346",
+        "cg17071192"
+      ],
+      "direct_current_panel_overlap": "0 of these two exact reported loci overlap current50",
+      "strength": "baseline/followup diet randomization",
+      "limit": "selected small sample; gene/pathway enrichment and within-group versus between-diet tests differ; no isolated compound/clinical mediation",
+      "access": "primary PubMed abstract/figure legends"
+    },
+    {
+      "study": "Mandaviya2019",
+      "doi": "10.1093/ajcn/nqz031",
+      "role": "dietary folate/B12 exposure associations",
+      "design": "10cohortEWAS meta-analysis",
+      "tissue": "blood",
+      "n": 5841,
+      "n_unit": "participants",
+      "direct_current_panel_overlap": "not_computed; full CpG list not retrieved",
+      "strength": "large exposure/association dataset",
+      "limit": "FFQ exposure,error/confounding; B12 had0singleDMP in author abstract; independent replication required",
+      "access": "authorinstitutionabstract; publisher inaccessible"
+    },
+    {
+      "study": "Wilson2024",
+      "doi": "10.1016/j.tjnut.2024.08.010",
+      "role": "actualhistoricalFooDBsource-linked nutrition study",
+      "design": "observational_cross_sectional",
+      "tissue": "diet recalls and GI/systemic biomarkers",
+      "n": 358,
+      "n_unit": "healthy adults",
+      "direct_current_panel_overlap": "not_established; no current50CpG bridge",
+      "strength": "shows fine-scale composition estimates applied to measured outcomes",
+      "limit": "association not causation; total/class-specific signals differ; CI/FDR and variable units not fully resolved from official abstract; participant diets not acquired",
+      "access": "officialUSDAtechnicalabstract"
+    },
+    {
+      "study": "CALERIE2023_DOHEALTH2025",
+      "urls": [
+        "https://www.nature.com/articles/s43587-022-00357-y",
+        "https://www.nature.com/articles/s43587-024-00793-y"
+      ],
+      "role": "clockendpointcomparators",
+      "direct_current_panel_overlap": "not_evidence_for_current50",
+      "strength": "specificintervention/clockevaluations",
+      "limit": "clockchange is not thisCpGpanel effect or clinicallifespan endpoint",
+      "access": "parentprimaryresearch; localdirectfetchCALERIEfailed; no reanalysis"
+    }
+  ],
+  "work_items": [
+    {
+      "id": "W1",
+      "work": "Freeze source identity/counts/permissions",
+      "deliverable": "plan+source matrix+baseline manifest",
+      "end_condition": "pinned SHA and scope recorded; unavailable/denied sources explicitly marked",
+      "status": "ready"
+    },
+    {
+      "id": "W2",
+      "work": "Audit all50 native positions, missing annotation/QC and exact external lookup state",
+      "deliverable": "50rowpanelgapreport+22geneIDrequests",
+      "end_condition": "all50 rows accounted for; unresolvedHGNC/aliases/build/probeQC/EWAS are unknown rather than negative",
+      "status": "implement_next"
+    },
+    {
+      "id": "W3",
+      "work": "Exact identifier joins across provided verified mapping receipts and traces",
+      "deliverable": "standalone auditor + currentsubsetjoinresult",
+      "end_condition": "name-only/ambiguous/missing/unverified mapping never joins; full4630coverage remains unknown without actualrows",
+      "status": "implement_next"
+    },
+    {
+      "id": "W4",
+      "work": "Audit context, source independence and measured vs qualitative quantity",
+      "deliverable": "context/sourcegroup/unit findings",
+      "end_condition": "co-treatment/nested/organism/tissue preserved; distinctPMID not counted as independent experiments; dose presence not dose-response",
+      "status": "implement_next"
+    },
+    {
+      "id": "W5",
+      "work": "Separate transport metadata from export permissions",
+      "deliverable": "source rights requests+export readiness diagnostics",
+      "end_condition": "unknown/conditional rights block dataset export diagnostics; no actual public export/publishing",
+      "status": "implement_next"
+    },
+    {
+      "id": "W6",
+      "work": "Bounded deterministic tests and actual frozen subset execution",
+      "deliverable": "testresults+sourceinputreceipts",
+      "end_condition": "identity/forms/units/context/rights/idempotence/error-state tests pass; synthetic cases labelledcodeQA; no precision/recall without independent realgold",
+      "status": "implement_next"
+    },
+    {
+      "id": "W7",
+      "work": "Whole4630actualtable audit and primarysupplement/reconciliation",
+      "deliverable": "fullcoverage/stats/QCsourceaudit",
+      "end_condition": "sameMacrestored, owner/dataaccess verified; fullactualinputrows+sourcehashes+rights; reconcileallcounts",
+      "status": "blocked_connection_and_source_tables"
+    },
+    {
+      "id": "W8",
+      "work": "Report/API integration and scientific validation",
+      "deliverable": "reviewedreport/APIhandover",
+      "end_condition": "owner-applied receipts and actual tests; no clinical qualification unless existing strictcontract evidence present",
+      "status": "blocked_not_applied"
+    }
+  ],
+  "acceptance": {
+    "plan_is_not_implementation": true,
+    "code_tests_are_not_biological_validation": true,
+    "full_catalog_denominator": 4630,
+    "small_development_cases_do_not_reduce_catalog_scope": true,
+    "precision_recall": "not_evaluated_without_independent_real_labels",
+    "false_claims_to_reject": [
+      "nearby_gene_is_causal_target",
+      "pathway_membership_is_binding",
+      "human_cell_is_clinical_trial",
+      "PMID_count_is_independent_replication",
+      "dose_and_duration_present_is_dose_response",
+      "qualitative_presence_is_numeric_amount",
+      "food_content_is_blood_dose",
+      "simulation_is_measured_clinical_effect"
+    ]
+  },
+  "restrictions": {
+    "api_owner_thread": "01a109e2-7d7f-7756-b0e5-0d022dc6f00f",
+    "api_edits": false,
+    "model_training": false,
+    "new_cohort": false,
+    "large_downloads": false,
+    "new_credentials": false,
+    "new_security_settings": false,
+    "new_schedules": false,
+    "external_submission": false,
+    "other_machine_access": false
+  },
+  "probe_qc_reference": {
+    "pmid": "27924034",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27924034/",
+    "access": "citation supplied by parent; local page yielded no article content; no probe flags imported"
+  }
+}
