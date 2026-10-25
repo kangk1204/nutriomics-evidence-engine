@@ -1,129 +1,82 @@
-# Nutriomics evidence engine
+# NutriOmics 식품·분자 근거 연결
 
-Private source-backed research implementation for the 2026 NutriGenomics final report. It builds a hypertension evidence graph from actual CTD snapshots and verified food composition records. It also provides a conservative DrugProt rule baseline and a strict parser for generated evidence JSON. A successful model-output parse establishes entity and quotation validity; scientific entailment still requires review.
+식품 성분, 화합물·유전자·질환 관계와 문헌 출처를 하나의 조회 구조로 연결하는 코드입니다. CTD를 정제해 고혈압 관련 근거를 구성하고, 식품 조성과 FDA 사용조건을 근거 종류별로 저장합니다.
 
-## Install and tests
+[구축 결과와 입력 해시](docs/validated_snapshot.json) · [문헌 추출 평가](docs/qwen_drugprot_summary.json) · [통합 웹](https://github.com/kangk1204/nutriomics-db) · [통합 보고서](https://github.com/kangk1204/nutriomics-final-report)
 
-Python 3.11+; runtime dependencies are DuckDB and PyArrow. RDA XLSX input additionally requires `openpyxl`. Model inference is a separate process.
+## 구현 내용
+
+- CTD 파일의 압축 무결성·열 구조를 검사하고 Parquet으로 정제합니다.
+- 식품·성분·유전자·질환·경로를 식별자로 연결합니다.
+- 관계마다 PMID, 원자료, 종·조직·조건과 근거 종류를 보존합니다.
+- 영양성분의 측정값·계산값·0·결측을 구분합니다.
+- SQLite 근거 DB에서 질환과 근거 종류별로 결과를 조회합니다.
+
+초기 질환 범위는 일반 고혈압 `MESH:D006973`과 본태성 고혈압 `MESH:D000075222`입니다. 인간 화합물·유전자 관계에는 종 ID `9606`을 사용합니다.
+
+## 구축 규모
+
+CTD는 2026년 9월 29일 생성본이며, 아래는 10월 1일 검증한 초기 고혈압 근거 DB입니다.
+
+| 항목 | 건수 | 집계 단위 |
+|---|---:|---|
+| CTD 화합물·유전자 원자료 | 3,171,202 | 전체 원자료 행 |
+| CTD 직접 화합물·질환 원자료 | 109,737 | 전체 원자료 행 |
+| CTD 직접 유전자·질환 원자료 | 34,315 | 전체 원자료 행 |
+| 근거 DB의 노드 | 8,120 | 식품·성분·유전자·질환·경로 등의 식별 항목 |
+| 근거 DB의 관계 | 426,922 | 조성·문헌·경로 관계 |
+| 인용 기록 | 66,833 | 근거 DB의 인용 항목 |
+| 식품 조성 기록 | 369,408 | 측정·계산·결측 상태를 포함한 식품·성분 기록 |
+
+근거 DB의 관계 수에는 식품 조성 관계가 포함됩니다. CTD 전체 원자료 규모, 고혈압 관련 부분집합과 [통합 DB의 후속 확장 규모](https://github.com/kangk1204/nutriomics-final-report)는 각각 집계합니다.
+
+## 근거를 읽는 방법
+
+| 근거 종류 | 담고 있는 정보 |
+|---|---|
+| 식품 조성 | 출처별 성분량, 단위와 측정 상태 |
+| 직접 문헌 근거 | CTD가 문헌으로 연결한 화합물·유전자·질환 관계 |
+| 추론 관계 | 직접 근거를 연결해 얻은 연관성 |
+| 모델 예측 | 문헌 관계 후보와 예측 점수 |
+| FDA 사용조건 | 성분의 규격·용도·사용조건 |
+
+CTD의 화합물·유전자 관계는 발현 변화 등 분자 반응을 포함합니다. 측정 Kd를 사용하는 결합력 예측은 [성분·표적 모델](https://github.com/kangk1204/nutriomics-compound-target)에서 수행합니다. 화학 구조의 확정 연결은 구조 식별자로 관리하고, 이름 기반 후보 연결은 검토 상태를 함께 저장합니다.
+
+## 문헌 분석과 통합 웹
+
+이 저장소에는 규칙 기반 추출과 Qwen2.5-7B-Instruct의 초기 비교, 문헌 서비스 연계 코드가 있습니다. DrugProt 개발 750편의 엄격한 관계 추출 평가에서 규칙 기반 F1은 **0.041**, Qwen F1은 **0.000**이었습니다. 생성 응답 726편과 메모리 오류 24편을 포함한 전체 분모로 계산했습니다.
+
+이후 개발한 BiomedBERT 관계 분류, 개체 탐지와 문헌 검색·요약 화면은 [NutriOmics DB의 문헌 플랫폼](https://github.com/kangk1204/nutriomics-db#문헌-분석-결과)에서 확인할 수 있습니다. 정답 개체를 제공한 관계 존재 예측과 전체 자동 추출의 평가 조건을 각각 제공합니다.
+
+| 확인할 내용 | 파일 |
+|---|---|
+| CTD·식품 DB 검증 결과 | [validated_snapshot.json](docs/validated_snapshot.json) |
+| 규칙·Qwen 추출 결과 | [qwen_drugprot_summary.json](docs/qwen_drugprot_summary.json) |
+| DrugProt 공식 평가기 결과 | [drugprot_official_qwen_evaluator.json](docs/drugprot_official_qwen_evaluator.json) |
+| 문헌 서비스 연계 | [literature_service_integration.json](docs/literature_service_integration.json) |
+| 재사용 코드 목록 | [literature_service_source_manifest.json](docs/literature_service_source_manifest.json) |
+
+## 설치와 실행
+
+Python 3.11 이상에서 설치합니다.
 
 ```sh
-python -m pip install -e '.[dev]'
-mkdir -p artifacts
-python -m pytest -q --basetemp artifacts/pytest_tmp
+python -m pip install -e ".[dev]"
+nutriomics-evidence --help
+python -m pytest -q
 ```
 
-If pip cannot access its build dependencies, use an existing environment with setuptools and `pip install --no-build-isolation -e .`. Alternatively run `PYTHONPATH=src python -m nutriomics_evidence ...`; in PowerShell set `$env:PYTHONPATH = (Join-Path $PWD src)`.
-
-## CTD ingestion and graph
+CTD 파일을 준비한 뒤 실행합니다.
 
 ```sh
-nutriomics-evidence ingest-ctd --source-dir /path/to/CTD \
-  --output-dir artifacts/ctd-2026-09-29 --source-registry artifacts/source-registry.json
-nutriomics-evidence build-graph --input-dir artifacts/ctd-2026-09-29 \
-  --database artifacts/hypertension.sqlite
+nutriomics-evidence ingest-ctd --source-dir /absolute/path/to/CTD --output-dir artifacts/ctd --source-registry artifacts/source-registry.json
+nutriomics-evidence build-graph --input-dir artifacts/ctd --database artifacts/hypertension.sqlite
 nutriomics-evidence validate --database artifacts/hypertension.sqlite
-nutriomics-evidence query --database artifacts/hypertension.sqlite \
-  --disease MESH:D006973 --tier curated --limit 10
+nutriomics-evidence query --database artifacts/hypertension.sqlite --disease MESH:D006973 --tier curated --limit 10
 ```
 
-Default ingestion reads seven files: chemical–gene interactions, both curated disease files, chemical and disease dictionaries, gene–pathway annotations and pathway dictionary. Standard CSV quoting, schema-width checks and gzip CRC/footer are verified through EOF. SHA-256 identifies original bytes and Parquet outputs. Header dates identify releases; filesystem times do not. `.crdownload` files are rejected. Changed source bytes require a new output directory. Unchanged ingestion verifies artifacts and rebuilds DuckDB views after relocation.
+Parquet은 원자료 정제에, SQLite는 근거 조회에 사용합니다. 원자료·생성 DB는 Git 밖의 연구 저장소에 보관하고, 이 저장소에는 코드·스키마·집계·해시를 제공합니다.
 
-To include protein cross-references, additionally ingest `CTD_genes.csv.gz`. To include inferred chemical–disease evidence, additionally ingest `CTD_chemicals_diseases.csv.gz` and build with `--include-inferred`:
+## 출처와 사용 조건
 
-```sh
-nutriomics-evidence ingest-ctd --source-dir /path/to/CTD \
-  --output-dir artifacts/ctd-2026-09-29 \
-  --files CTD_genes.csv.gz CTD_chemicals_diseases.csv.gz
-nutriomics-evidence build-graph --input-dir artifacts/ctd-2026-09-29 \
-  --database artifacts/hypertension.sqlite --include-inferred --overwrite
-```
-
-Graph scope is exact `MESH:D006973` (Hypertension) and `MESH:D000075222` (Hypertension, Essential). Chemical–gene rows require `OrganismID=9606` and both endpoints in the selected curated disease sets. Disease exports do not encode species; this limitation is retained. Human experimental interactions do not imply clinical trials. Dictionary hierarchy roots such as `MESH:D` are kept in bulk data but never promoted to molecular nodes.
-
-`marker/mechanism`, `therapeutic` and inferred evidence remain distinct. Curated/full export overlap has one edge with multiple source links; PMID citations merge without duplicate counting. Distinct interaction text, action sets and gene forms remain distinct contexts. Inference scores are source scores, not probabilities. CTD `affects^binding` is not a direct ligand-binding or DTI training label. The engine does not infer causal food-to-health effects.
-
-SQLite tables: `source`, `node`, `edge`, `edge_source`, `citation`, `identifier_mapping`, `measurement`. Coverage reports contain relation counts and unresolved structures. Queries return source IDs, PMIDs and context together. `export --output evidence.json` marks `redistribution_verified=false`; source-specific reuse conditions still apply. Raw snapshots and large artifacts are ignored by Git.
-
-## Food composition and identity
-
-```sh
-nutriomics-evidence ingest-food --format fdc --input /path/food.json /path/FoundationFoods.zip \
-  --database artifacts/hypertension.sqlite --source-registry artifacts/source-registry.json
-nutriomics-evidence ingest-food --format kfind \
-  --input /path/raw-material-standard-2026-09-30 /path/food-standard-2026-09-30 \
-  --selection config/kfind_food_selection.json --database artifacts/hypertension.sqlite
-nutriomics-evidence ingest-identities --format pubchem --input /path/pug-properties.json \
-  --database artifacts/hypertension.sqlite
-```
-
-FDC admits SR Legacy, Foundation and Survey/FNDDS detail JSON and official JSON ZIP wrappers. Branded serving-only records are rejected. Source nutrient derivations are retained: calculated/derived and imputed-zero values differ from measured values. `meal` includes only measured classes. Each food has one explicitly ingested active source release, avoiding double summation of older releases. FoodOn annotations describe food concepts; they do not establish molecular equivalence.
-
-K-FIND ingestion verifies page/column hashes, page counts and total row counts. The selection contains 50 Korean foods inherited only as a reviewed input list from the earlier project's selection JSON; measurements are read again from raw releases. Exact dataset/code/name must uniquely match with analyzed values and verified 100 g basis. Preparation and `REFUSE` are retained; cooking/edible-portion conversions are not guessed. Missing, below-detection and measured-zero values remain distinct.
-
-RDA CSV/XLSX requires explicit mapping JSON: `source_url`, `version`, `basis="source_100g"`, `basis_verified=true`, `food_code`, `food_name`, and `nutrients` (source column to `id`, `name`, `unit`). XLSX additionally requires `sheet` and optional `header_row`; CSV supports `encoding`. The adapter does not establish that an RDA source has actually been acquired or run.
-
-CTD CID/InChIKey/DTXSID and optional UniProt cross-references are `source_reported`. Reviewed identity JSON contains `source_url`, `version`, `mappings`; each mapping requires `subject`, `namespace`, `identifier`, `relation`, `basis`. `exact_structure` additionally requires identical valid full standard InChIKeys, `method="same_standard_inchikey"`, `reviewed=true`, no mixture, and independently loaded source properties for both nodes. Names remain `candidate_name`. FDA UNII alone is regulatory identity. A gene symbol never supplies a fabricated protein sequence.
-
-`meal --input meal.json` accepts `{"foods":[{"food_id":"FDC:171688","grams":150}]}` and reports composition sums plus excluded/unknown quantities. It does not predict blood concentration or clinical response.
-
-## Literature extraction and evaluation
-
-```sh
-nutriomics-evidence extract-drugprot --abstracts /path/development_abstracs.tsv \
-  --entities /path/development_entities.tsv --output artifacts/rule-relations.tsv \
-  --evidence-output artifacts/rule-evidence.json --prompt-output artifacts/qwen-prompts.jsonl
-nutriomics-evidence evaluate-drugprot --abstracts /path/development_abstracs.tsv \
-  --entities /path/development_entities.tsv --gold /path/development_relations.tsv \
-  --predictions artifacts/rule-relations.tsv --output artifacts/rule-evaluation.json
-```
-
-DrugProt character offsets are checked against `title + " " + abstract`. The baseline accepts one chemical/gene pair in one non-negated sentence with an explicit cue. It uses the 13 official relation classes and benchmark gold entity mentions: this evaluates relation extraction, not end-to-end NER. Exact tuple micro/per-class precision, recall and F1 report real counts; the official evaluator is the challenge reference: [DrugProt corpus and scripts](https://github.com/tonifuc3m/drugprot).
-
-Model responses are JSONL records `{"pmid":"...","response":{...}}`. Use `parse-qwen --documents artifacts/rule-evidence.json --responses responses.jsonl --output artifacts/qwen-validation.json --relations-output artifacts/qwen-relations.tsv`. Allowed relations, known chemical/gene IDs, argument direction, exact quotation and offsets covering both mentions are required. Unknown keys, invented affinities, bad offsets and unknown relations are rejected. Quoted negation is sent to review. Missing documents are reported. Accepted rows retain `semantic_entailment_validated=false`; parser acceptance is not scientific validation or proof that Qwen inference was run.
-
-## Verification status
-
-The frozen DrugProt development run covers all750 documents (726 generated replies and24 CUDA-memory failures kept in the evaluation denominator). Strict exact-tuple Qwen F1 is0.000 (TP0/FP5/FN3,761); the rule baseline is0.040984 (TP80/FP63/FN3,681). JSON/top-schema failures156 include the24 generation failures, rather than being an additional independent count. The unchanged official evaluator also returns Qwen F1 of0.000; its boundary indexing collapses three gold slots, so FN3,758 is recorded separately. This extraction protocol did not establish useful relation accuracy. The original outputs and mixed276 batch4/474 batch8 execution remain immutable; later diagnostics must be labeled separately. See `docs/qwen_drugprot_summary.json` and `docs/drugprot_official_qwen_evaluator.json`.
-
-The independent exact-quotation parser accepts150 relations and gives strict F1=0.021989 on the same750 documents; this is a post-hoc diagnostic after development scores were exposed, below the rule baseline. It neither repairs JSON nor uses reference relations to ground text. See `docs/qwen_quote_grounding_diagnostic_v1.json`. Exact grounding does not validate the relation's meaning, food-domain accuracy or an API deployment.
-
-The separate frozen six-topic PubMed run retains all1,198 records:202 eligible dictionary chemical/gene co-mention documents (194 generated replies,8 CUDA OOM failures) and996 explicit abstentions. Original strict extraction accepts0 relations. `docs/literature/inference_summary.json` records actual execution, failures and source/output hashes. Neither food precision nor dictionary NER accuracy has been evaluated. The heuristic summary/review prototype below supplies a separately sourced, usable review workflow; automatic candidates are not curated findings.
-
-`python scripts/ground_literature_quotes.py --root . --out data/literature_quote_grounding_v1` applies the separate, fixed exact-quote policy to those immutable responses in a new output directory. It recovers13 review-pending candidates from11 papers, retaining all1,198 response records and original strict0. The quotation-free index is `docs/literature/quote_grounding_candidate_index.csv`; exact source quotes remain in ignored local data. The summary verifies source/prompt/response/code hashes and18 boundary tests. No food gold standard, semantic accuracy, binding label or clinical effect was established. These are the same source papers, not13 new independent experimental findings.
-
-### Existing literature summary prototype
-
-The user's **LLM 문헌요약 시스템 계획** prototype is reused through its immutable report interface. Exact source copies and the independent pinned environment are in `integrations/literature_service`; provenance is in `docs/literature_service_source_manifest.json`. This is a `heuristic-v1` CPU summary/reviewer service, separate from Qwen relation inference. The frozen report contains597 unique PMIDs,325 licensed XML full texts,597 current summaries,1,465 automatic candidates and0 human-approved relations. Expert annotation and scientific precision/recall are pending. Operating software tests are not scientific accuracy scores.
-
-```sh
-python scripts/import_literature_service.py \
-  --report /path/to/literature_service/runtime/reports/02410eff582343e59818008de87b77e9/snapshot.json \
-  --expected-sha256 023fe5e1e187dd31049f508344697da0db470735388acbe6de4605348a5785a2 \
-  --database artifacts/literature_snapshot_v3.sqlite \
-  --previous-manifest docs/pubmed_source_manifest.json \
-  --deployment /path/to/literature_service/runtime/validation/deployment.json \
-  --receipt docs/literature_service_integration.json
-```
-
-This writes a separate immutable SQLite view. It never modifies the live service DB or CTD graph and never promotes automatic relations to curated binding/clinical labels. Provider exact-span checks are recorded as provider receipts, not independently repeated semantic validation. PMID overlap with the original1,198 selected documents is91; the union is1,704. Heterogeneous publication dates, including updated book chapters, are preserved rather than silently forced to the service's query-start year. The final-report API exposes summaries and source-aware candidate filters under `/literature/`. Source quotations and the snapshot database remain outside Git, including private Git.
-
-See `docs/validated_snapshot.json` for completed source validation and measured coverage. Test fixtures validate implementation and are never model performance evidence. Existing `NutriOmics_DB_c` import code was inspected as a reference; its Django/dev-corpus machinery was not used to establish this new snapshot's evidence.
-
-Audit every completed local CTD file without producing additional Parquet tables with `audit-ctd --source-dir /path/CTD --previous-manifest artifacts/ctd-2026-09-29/manifest.json --output artifacts/ctd-all-files-audit.json --workers 4`. A prior complete ingestion is reused only after verifying the original source hash. Other files are fully streamed; failures are recorded and return a nonzero exit status. No partial download is opened.
-
-Generate a reviewable run summary after execution:
-
-```sh
-python -m pytest -q --basetemp artifacts/pytest_tmp --junitxml artifacts/test-results.xml
-python scripts/record_validation.py --manifest artifacts/ctd-2026-09-29/manifest.json \
-  --database artifacts/hypertension.sqlite --ctd-audit artifacts/ctd-all-files-audit.json \
-  --junit artifacts/test-results.xml --output docs/validated_snapshot.json
-```
-
-The summary derives test counts from JUnit and graph counts from SQLite. Optional `--drugprot-evaluation` records a completed real corpus evaluation; without it, corpus/model evaluation is explicitly unrecorded.
-
-### Separate operational retry
-
-`scripts/retry_literature_oom.py` performs one frozen, fixed-batch1 retry of exactly the eight CUDA OOM records from the original1,198-document literature run. The actual authorized RTX5060Ti run generated8/8 replies with0 retry errors; source/code bytes and all model-file hashes were verified unchanged before and after execution. `docs/literature/oom_retry_protocol.json` records the original response SHA, selected PMIDs, exact prompts, model commit, generation settings and separate output hashes. Raw responses remain in ignored `data/literature_oom_retry_batch1_v1`.
-
-This is an operational generation-success check. The original194 replies+8 failures+996 abstentions, strict0 relations and separate13 review-pending candidates remain unchanged. The retry was not scored against relation gold and does not establish extraction accuracy, semantic validity, output parity, binding or clinical efficacy.
+CTD, 식품 조성 자료와 FDA 자료는 제공기관의 이용조건에 따라 수집·분석합니다. 자료별 출처와 해시는 [구축 결과](docs/validated_snapshot.json)에 기록했습니다. 문헌 원문은 해당 문헌의 접근·재사용 조건에 맞춰 보관합니다.
