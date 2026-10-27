@@ -1,64 +1,66 @@
-# NutriOmics 식품·분자 근거 연결
+**English** | [한국어](README.ko.md)
 
-식품 성분, 화합물·유전자·질환 관계와 문헌 출처를 하나의 조회 구조로 연결하는 코드입니다. CTD를 정제해 고혈압 관련 근거를 구성하고, 식품 조성과 FDA 사용조건을 근거 종류별로 저장합니다.
+# NutriOmics Evidence Engine
 
-[구축 결과와 입력 해시](docs/validated_snapshot.json) · [문헌 추출 평가](docs/qwen_drugprot_summary.json) · [통합 웹](https://github.com/kangk1204/nutriomics-db) · [통합 보고서](https://github.com/kangk1204/nutriomics-final-report)
+This repository connects food composition, chemical-gene-disease relationships and literature sources in a searchable evidence database. It processes CTD records for hypertension research and stores food composition and FDA conditions of use as separate evidence types.
 
-## 구현 내용
+[Database results and input hashes](docs/validated_snapshot.json) | [Literature extraction results](docs/qwen_drugprot_summary.json) | [NutriOmics web platform](https://github.com/kangk1204/nutriomics-db) | [Project report, restricted access](https://github.com/kangk1204/nutriomics-final-report)
 
-- CTD 파일의 압축 무결성·열 구조를 검사하고 Parquet으로 정제합니다.
-- 식품·성분·유전자·질환·경로를 식별자로 연결합니다.
-- 관계마다 PMID, 원자료, 종·조직·조건과 근거 종류를 보존합니다.
-- 영양성분의 측정값·계산값·0·결측을 구분합니다.
-- SQLite 근거 DB에서 질환과 근거 종류별로 결과를 조회합니다.
+## What the software does
 
-초기 질환 범위는 일반 고혈압 `MESH:D006973`과 본태성 고혈압 `MESH:D000075222`입니다. 인간 화합물·유전자 관계에는 종 ID `9606`을 사용합니다.
+- Checks compressed CTD files and column layouts, then writes normalized Parquet files.
+- Links foods, compounds, genes, diseases and pathways through identifiers.
+- Preserves PMID references, source records, species, tissues, experimental conditions and evidence types for each relationship.
+- Distinguishes measured values, calculated values, zeros and missing food composition values.
+- Queries the SQLite evidence database by disease and evidence type.
 
-## 구축 규모
+The initial disease scope covers hypertension (`MESH:D006973`) and essential hypertension (`MESH:D000075222`). Human chemical-gene relationships use taxonomy ID `9606`.
 
-CTD는 2026년 9월 29일 생성본이며, 아래는 10월 1일 검증한 초기 고혈압 근거 DB입니다.
+## Initial database results
 
-| 항목 | 건수 | 집계 단위 |
+The CTD source files were released on September 29, 2026. The table below describes the initial hypertension evidence database checked on October 1, 2026.
+
+| Item | Count | Counting unit |
 |---|---:|---|
-| CTD 화합물·유전자 원자료 | 3,171,202 | 전체 원자료 행 |
-| CTD 직접 화합물·질환 원자료 | 109,737 | 전체 원자료 행 |
-| CTD 직접 유전자·질환 원자료 | 34,315 | 전체 원자료 행 |
-| 근거 DB의 노드 | 8,120 | 식품·성분·유전자·질환·경로 등의 식별 항목 |
-| 근거 DB의 관계 | 426,922 | 조성·문헌·경로 관계 |
-| 인용 기록 | 66,833 | 근거 DB의 인용 항목 |
-| 식품 조성 기록 | 369,408 | 측정·계산·결측 상태를 포함한 식품·성분 기록 |
+| CTD chemical-gene source data | 3,171,202 | Rows in the complete source files |
+| CTD direct chemical-disease source data | 109,737 | Rows in the complete source files |
+| CTD direct gene-disease source data | 34,315 | Rows in the complete source files |
+| Evidence database nodes | 8,120 | Identified entities, including foods, compounds, genes, diseases and pathways |
+| Evidence database relationships | 426,922 | Food composition, literature and pathway relationships |
+| Citation records | 66,833 | References attached to database evidence |
+| Food composition records | 369,408 | Food-component records with measurement, calculation or missing-value status |
 
-근거 DB의 관계 수에는 식품 조성 관계가 포함됩니다. CTD 전체 원자료 규모, 고혈압 관련 부분집합과 [통합 DB의 후속 확장 규모](https://github.com/kangk1204/nutriomics-final-report)는 각각 집계합니다.
+The relationship count includes food composition links. Complete CTD source counts, the hypertension subset and [subsequent integrated database counts](https://github.com/kangk1204/nutriomics-final-report) are reported separately. The integrated report repository requires access permission.
 
-## 근거를 읽는 방법
+## Reading the evidence
 
-| 근거 종류 | 담고 있는 정보 |
+| Evidence type | Information provided |
 |---|---|
-| 식품 조성 | 출처별 성분량, 단위와 측정 상태 |
-| 직접 문헌 근거 | CTD가 문헌으로 연결한 화합물·유전자·질환 관계 |
-| 추론 관계 | 직접 근거를 연결해 얻은 연관성 |
-| 모델 예측 | 문헌 관계 후보와 예측 점수 |
-| FDA 사용조건 | 성분의 규격·용도·사용조건 |
+| Food composition | Component amounts, units and measurement status from each source |
+| Direct literature evidence | Chemical, gene and disease relationships curated by CTD from publications |
+| Inferred relationships | Associations derived by linking direct evidence |
+| Model predictions | Candidate literature relationships and prediction scores |
+| FDA conditions of use | Ingredient specifications, intended uses and conditions of use |
 
-CTD의 화합물·유전자 관계는 발현 변화 등 분자 반응을 포함합니다. 측정 Kd를 사용하는 결합력 예측은 [성분·표적 모델](https://github.com/kangk1204/nutriomics-compound-target)에서 수행합니다. 화학 구조의 확정 연결은 구조 식별자로 관리하고, 이름 기반 후보 연결은 검토 상태를 함께 저장합니다.
+CTD chemical-gene relationships include molecular responses such as changes in gene expression. Binding-affinity prediction from measured Kd values is available in [DearDTI KFRI](https://github.com/kangk1204/DearDTI_kfri). Confirmed chemical matches use structure identifiers; name-based candidate matches retain their review status.
 
-## 문헌 분석과 통합 웹
+## Literature analysis and the web platform
 
-이 저장소에는 규칙 기반 추출과 Qwen2.5-7B-Instruct의 초기 비교, 문헌 서비스 연계 코드가 있습니다. DrugProt 개발 750편의 엄격한 관계 추출 평가에서 규칙 기반 F1은 **0.041**, Qwen F1은 **0.000**이었습니다. 생성 응답 726편과 메모리 오류 24편을 포함한 전체 분모로 계산했습니다.
+This repository contains the initial comparison of rule-based extraction with Qwen2.5-7B-Instruct, together with the literature service integration code. On the 750-document DrugProt development set, strict relation-extraction F1 was **0.041** for the rule-based method and **0.000** for Qwen. The denominator included all documents: 726 generated responses and 24 memory failures.
 
-이후 개발한 BiomedBERT 관계 분류, 개체 탐지와 문헌 검색·요약 화면은 [NutriOmics DB의 문헌 플랫폼](https://github.com/kangk1204/nutriomics-db#문헌-분석-결과)에서 확인할 수 있습니다. 정답 개체를 제공한 관계 존재 예측과 전체 자동 추출의 평가 조건을 각각 제공합니다.
+Subsequent BiomedBERT relation classification, entity recognition, literature search and summary interfaces are described in the [NutriOmics literature platform](https://github.com/kangk1204/nutriomics-db#문헌-분석-결과). Evaluation with supplied reference entities and evaluation of fully automatic extraction are documented separately.
 
-| 확인할 내용 | 파일 |
+| Information | File |
 |---|---|
-| CTD·식품 DB 검증 결과 | [validated_snapshot.json](docs/validated_snapshot.json) |
-| 규칙·Qwen 추출 결과 | [qwen_drugprot_summary.json](docs/qwen_drugprot_summary.json) |
-| DrugProt 공식 평가기 결과 | [drugprot_official_qwen_evaluator.json](docs/drugprot_official_qwen_evaluator.json) |
-| 문헌 서비스 연계 | [literature_service_integration.json](docs/literature_service_integration.json) |
-| 재사용 코드 목록 | [literature_service_source_manifest.json](docs/literature_service_source_manifest.json) |
+| CTD and food database validation | [validated_snapshot.json](docs/validated_snapshot.json) |
+| Rule-based and Qwen extraction results | [qwen_drugprot_summary.json](docs/qwen_drugprot_summary.json) |
+| Official DrugProt evaluator results | [drugprot_official_qwen_evaluator.json](docs/drugprot_official_qwen_evaluator.json) |
+| Literature service integration | [literature_service_integration.json](docs/literature_service_integration.json) |
+| Reused source files | [literature_service_source_manifest.json](docs/literature_service_source_manifest.json) |
 
-## 설치와 실행
+## Installation and use
 
-Python 3.11 이상에서 설치합니다.
+Use Python 3.11 or later.
 
 ```sh
 python -m pip install -e ".[dev]"
@@ -66,7 +68,7 @@ nutriomics-evidence --help
 python -m pytest -q
 ```
 
-CTD 파일을 준비한 뒤 실행합니다.
+After obtaining the CTD files, run:
 
 ```sh
 nutriomics-evidence ingest-ctd --source-dir /absolute/path/to/CTD --output-dir artifacts/ctd --source-registry artifacts/source-registry.json
@@ -75,10 +77,10 @@ nutriomics-evidence validate --database artifacts/hypertension.sqlite
 nutriomics-evidence query --database artifacts/hypertension.sqlite --disease MESH:D006973 --tier curated --limit 10
 ```
 
-Parquet은 원자료 정제에, SQLite는 근거 조회에 사용합니다. 원자료·생성 DB는 Git 밖의 연구 저장소에 보관하고, 이 저장소에는 코드·스키마·집계·해시를 제공합니다.
+Parquet stores normalized source records, and SQLite supports evidence queries. Source datasets and generated databases are held in research data storage. This repository provides code, schemas, counts and file hashes.
 
-## 출처와 사용 조건
+## Sources and licensing
 
-CTD, 식품 조성 자료와 FDA 자료는 제공기관의 이용조건에 따라 수집·분석합니다. 자료별 출처와 해시는 [구축 결과](docs/validated_snapshot.json)에 기록했습니다. 문헌 원문은 해당 문헌의 접근·재사용 조건에 맞춰 보관합니다.
+CTD, food composition and FDA data are collected and analyzed under their providers' terms. Source identifiers and hashes are recorded in the [database results](docs/validated_snapshot.json). Literature full text is stored according to each publication's access and reuse terms.
 
-코드는 [MIT 라이선스](LICENSE)로 제공합니다. 외부 자료와 모델의 출처 및 이용조건은 [데이터와 소프트웨어 이용 안내](DATA_LICENSES.md)에 정리했습니다.
+The code is available under the [MIT License](LICENSE). [Software and data licenses](DATA_LICENSES.md) lists the sources and terms for external data and models.
